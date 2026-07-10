@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>罪名量刑指引汇总（江西）</title>
+<style>
+  :root{
+    --bg:#f5f7fa; --panel:#ffffff; --ink:#1f2a33; --sub:#5b6b78; --line:#e3e8ee;
+    --brand:#1a5fb4; --brand2:#2f7fd1; --amber:#b8821a; --green:#1f8a4c; --red:#c0392b;
+    --chip:#eaf1fb;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+    background:var(--bg);color:var(--ink);font-size:14px;line-height:1.55}
+  header.top{background:linear-gradient(120deg,#1a5fb4,#2f7fd1);color:#fff;padding:18px 24px;
+    display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+  header.top h1{font-size:19px;margin:0;font-weight:700;letter-spacing:.5px}
+  header.top .sub{font-size:12.5px;opacity:.9;margin-top:2px}
+  .search{flex:1;min-width:220px;max-width:460px;margin-left:auto;position:relative}
+  .search input{width:100%;padding:9px 14px 9px 34px;border:none;border-radius:20px;font-size:14px;
+    background:rgba(255,255,255,.95);color:var(--ink);outline:none}
+  .search::before{content:"🔍";position:absolute;left:11px;top:50%;transform:translateY(-50%);font-size:13px;opacity:.6}
+  .wrap{display:flex;align-items:flex-start;max-width:1200px;margin:0 auto;padding:0 16px}
+  /* sidebar */
+  nav.side{width:248px;flex:0 0 248px;position:sticky;top:0;align-self:flex-start;
+    max-height:100vh;overflow:auto;padding:16px 8px 40px 0}
+  nav.side h3{font-size:12px;color:var(--sub);margin:6px 10px 8px;letter-spacing:1px}
+  .chap{border:1px solid var(--line);border-radius:10px;background:var(--panel);margin-bottom:8px;overflow:hidden}
+  .chap>.ch{display:flex;align-items:center;gap:6px;padding:9px 11px;cursor:pointer;font-weight:600;font-size:13px}
+  .chap>.ch:hover{background:var(--chip)}
+  .chap>.ch .cnt{margin-left:auto;font-size:11px;color:var(--sub);background:var(--bg);
+    border-radius:10px;padding:1px 7px;font-weight:500}
+  .chap>.ch .tw{transition:transform .15s;font-size:10px;color:var(--sub)}
+  .chap.open>.ch .tw{transform:rotate(90deg)}
+  .secs{display:none;padding:4px 0 8px}
+  .chap.open .secs{display:block}
+  .sec-wrap .sec{display:flex;align-items:center;gap:5px;padding:5px 12px 5px 20px;font-size:12.5px;color:var(--sub);cursor:pointer}
+  .sec-wrap .sec:hover{color:var(--brand);background:var(--chip)}
+  .sec-wrap .sec .tw-sec{transition:transform .15s;font-size:9px;color:var(--sub)}
+  .sec-wrap.open>.sec .tw-sec{transform:rotate(90deg)}
+  .sec-wrap .crimes{display:none;padding-left:8px}
+  .sec-wrap.open .crimes{display:block}
+  .sec.pend{color:#9aa7b2;cursor:default}
+  .sec.pend:hover{background:transparent;color:#9aa7b2}
+  .sec .sc{font-size:11px;color:#9aa7b2;margin-left:6px}
+  /* 侧栏具体罪名：上下结构，法条在罪名下方，左侧带序号 */
+  .crime{display:flex;flex-direction:row;align-items:baseline;gap:6px;padding:5px 12px 6px 28px;font-size:12px;cursor:pointer;color:var(--ink);line-height:1.45}
+  .crime .num{flex:0 0 auto;min-width:18px;text-align:right;font-size:11px;color:#9aa7b2;font-weight:500}
+  .crime .body{display:flex;flex-direction:column;align-items:flex-start;gap:2px;min-width:0;flex:1}
+  .crime .cnm{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .crime .cart-s{font-size:10px;color:#8a6d3b;background:#fdf6e3;font-weight:500;padding:1px 6px;border-radius:6px;white-space:nowrap}
+  .crime .sc{margin-left:auto;font-size:10px;color:#9aa7b2;white-space:nowrap}
+  .crime:hover{color:var(--brand);background:var(--chip)}
+  .crime:hover .cart-s{background:#fff3cd;color:#856404}
+  .crime.pend{color:#9aa7b2;cursor:default}
+  .crime.pend:hover{background:transparent;color:#9aa7b2}
+  .crime.pend .cart-s{background:#f5f7f9;color:#b0b8c0}
+  /* main */
+  main{flex:1;min-width:0;padding:16px 4px 60px}
+  .bar{display:flex;align-items:center;gap:10px;margin:2px 0 14px;flex-wrap:wrap}
+  .bar .ttl{font-size:15px;font-weight:700}
+  .bar .meta{font-size:12px;color:var(--sub)}
+  .grp{margin-bottom:22px}
+  .grp>.gh{display:flex;align-items:baseline;gap:10px;border-left:4px solid var(--brand);
+    padding-left:10px;margin-bottom:10px}
+  .grp>.gh .gn{font-size:15px;font-weight:700}
+  .grp>.gh .gx{font-size:12px;color:var(--sub)}
+  .grp>.gh .cnt{font-size:11px;color:var(--sub);background:var(--bg);border-radius:10px;padding:1px 8px;font-weight:500}
+  .sec-h{font-size:13px;color:var(--amber);font-weight:700;margin:12px 0 8px;padding-left:10px;
+    border-left:3px solid var(--amber);display:flex;align-items:center;gap:8px}
+  .sec-h .cnt{font-size:11px;color:var(--sub);background:#fff8e6;border-radius:10px;padding:1px 8px;font-weight:500}
+  .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 15px;
+    text-decoration:none;color:inherit;display:block;transition:.15s;position:relative}
+  .card:hover{border-color:var(--brand2);box-shadow:0 4px 14px rgba(26,95,180,.12);transform:translateY(-1px)}
+  .card.pending{cursor:default;opacity:.85}
+  .card.pending:hover{border-color:var(--line);box-shadow:none;transform:none}
+  /* 左侧悬停定位高亮：用明显蓝色方框 + 浅蓝底框住 */
+  .card.locate{outline:3px solid var(--brand);outline-offset:2px;background:#eef5ff;border-color:var(--brand);
+    box-shadow:0 6px 18px rgba(26,95,180,.22);transform:translateY(-1px)}
+  .card .cn{font-size:15px;font-weight:700;color:var(--brand);padding-right:72px}
+  .card.pending .cn{color:var(--ink)}
+  .card .cl{font-size:11.5px;color:var(--sub);margin:3px 0 4px}
+  .card .cart{display:inline-block;font-size:11px;color:#7a4f0c;background:#fdf6e3;border:1px solid #f0e2c1;font-weight:600;
+    margin:5px 0 7px;padding:3px 10px;border-radius:12px;letter-spacing:.3px}
+  .card .cnote{font-size:12px;color:var(--ink);background:var(--bg);border-radius:8px;padding:7px 9px;
+    line-height:1.5}
+  .card .tag{position:absolute;top:12px;right:12px;font-size:10.5px;padding:2px 8px;border-radius:11px;font-weight:600}
+  .tag.on{color:var(--green);background:#e7f6ec}
+  .tag.off{color:#8a97a3;background:#eef1f4}
+  .grp.flash{animation:flash .8s ease}
+  @keyframes flash{0%{background:#fff9e6}100%{background:transparent}}
+  .sec-h.flash{animation:flashSec .8s ease}
+  @keyframes flashSec{0%{background:#fff9e6;border-left-color:var(--amber)}100%{background:transparent;border-left-color:var(--amber)}}
+  .empty{color:#9aa7b2;font-size:12.5px;padding:6px 2px}
+  footer{border-top:1px solid var(--line);background:var(--panel);padding:14px 24px;color:var(--sub);font-size:12px}
+  footer b{color:var(--ink)}
+  @media(max-width:760px){nav.side{display:none}.wrap{padding:0 10px}main{padding-top:12px}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div>
+    <h1>罪名量刑指引汇总（江西）</h1>
+    <div class="sub">按《刑法》分则章节分类 · 共465个罪名 · 依法条顺序排序 · 标注「量刑指引」的可点开江西量刑计算表</div>
+  </div>
+  <div class="search"><input id="q" placeholder="搜索罪名 / 章节 / 法条，如：盗窃、侵犯财产、第六章、第293条…"></div>
+</header>
+
+<div class="wrap">
+  <nav class="side">
+    <h3>刑法分则 · 章节</h3>
+    <div id="tree"></div>
+  </nav>
+  <main>
+    <div class="bar">
+      <span class="ttl" id="viewTitle">全部罪名</span>
+      <span class="meta" id="viewMeta"></span>
+    </div>
+    <div id="list"></div>
+  </main>
+</div>
+
+<footer>
+  <b>说明：</b>本站点目录涵盖《刑法》分则全部 465 个罪名（按章节分类，每章/每节内依法条序号顺序排列）。其中 <b>15 个常见罪名</b>已生成可编辑的「量刑指引」表（依据《最高人民法院、最高人民检察院关于常见犯罪的量刑指导意见（试行）》（法发〔2021〕21号）、《江西省高级人民法院、江西省人民检察院关于常见犯罪的量刑指导意见（试行）的实施细则（试行）》（赣高法〔2022〕115号），以及非法经营、猥亵儿童、侵犯公民个人信息、帮助信息网络犯罪活动、开设赌场、拒不执行判决裁定、组织卖淫等七罪另依据《江西省高院、江西省检关于常见犯罪的量刑指导意见（二）（试行）的实施细则（试行）》（赣高法〔2025〕20号）整理）；其余罪名标注「释义待生成」，日后将逐条补充。表中数值仅供办案参考，<b>非裁判依据</b>。
+  新增罪名：将单文件 HTML 放入 <code>crimes/</code>，并在 <code>assets/build_index.py</code> 的 <code>GUIDE</code> 中登记文件名与摘要，重新运行该脚本即可（双击 index.html 离线可用）。
+</footer>
+
+<script src="assets/crimes_data.js"></script>
+<script>
+/* ===== 刑法分则章节体系（章 → 节）===== */
+const CHAPTERS = [
+  {num:1, name:"危害国家安全罪"},
+  {num:2, name:"危害公共安全罪", secs:[]},
+  {num:3, name:"破坏社会主义市场经济秩序罪", secs:[
+    {num:1,name:"生产、销售伪劣商品罪"},{num:2,name:"走私罪"},
+    {num:3,name:"妨害对公司、企业的管理秩序罪"},{num:4,name:"破坏金融管理秩序罪"},
+    {num:5,name:"金融诈骗罪"},{num:6,name:"危害税收征管罪"},
+    {num:7,name:"侵犯知识产权罪"},{num:8,name:"扰乱市场秩序罪"}]},
+  {num:4, name:"侵犯公民人身权利、民主权利罪"},
+  {num:5, name:"侵犯财产罪"},
+  {num:6, name:"妨害社会管理秩序罪", secs:[
+    {num:1,name:"扰乱公共秩序罪"},{num:2,name:"妨害司法罪"},{num:3,name:"妨害国（边）境管理罪"},
+    {num:4,name:"妨害文物管理罪"},{num:5,name:"危害公共卫生罪"},{num:6,name:"破坏环境资源保护罪"},
+    {num:7,name:"走私、贩卖、运输、制造毒品罪"},{num:8,name:"组织、强迫、引诱、容留、介绍卖淫罪"},
+    {num:9,name:"制作、贩卖、传播淫秽物品罪"}]},
+  {num:7, name:"危害国防利益罪"},
+  {num:8, name:"贪污贿赂罪"},
+  {num:9, name:"渎职罪"},
+  {num:10, name:"军人违反职责罪"},
+];
+
+/* ===== 罪名全目录（由 assets/crimes_data.js 注入）===== */
+const CRIMES = (window.ALL_CRIMES || []).map((c,i)=>({...c,_id:i}));
+
+/* ===== 渲染 ===== */
+const chapName = n => (CHAPTERS.find(c=>c.num===n)||{}).name || ("第"+n+"章");
+const secName = (cn,sn) => { const ch=CHAPTERS.find(c=>c.num===cn); if(!ch||!ch.secs) return "";
+  const s=ch.secs.find(x=>x.num===sn); return s?s.name:""; };
+const crimeLabel = c => "第"+c.chap+"章 " + chapName(c.chap) + (c.sec?(" · 第"+c.sec+"节 "+secName(c.chap,c.sec)):"");
+
+function match(q){
+  q=(q||"").trim().toLowerCase();
+  if(!q) return CRIMES.slice();
+  return CRIMES.filter(c=>{
+    const hay = (c.name+c.note+(c.art||"")+chapName(c.chap)+crimeLabel(c)).toLowerCase();
+    return hay.includes(q);
+  });
+}
+
+/* 侧栏具体罪名节点：点击在右侧定位 */
+function crimeNode(c,q,idx){
+  const art = c.art?esc(c.art):'';
+  const common=' data-anchor="crime-'+c._id+'"';
+  const left='<span class="num">'+idx+'</span><span class="body">';
+  const body='<span class="cnm">'+hl(c.name,q)+'</span>'+(art?'<span class="cart-s">'+art+'</span>':'')+'</span>';
+  if(c.file){
+    return '<div class="crime"'+common+'>'+left+body+'</div>';
+  }
+  return '<div class="crime pend"'+common+'>'+left+body+'<span class="sc">释义待生成</span></div>';
+}
+
+function renderTree(q){
+  const tree=document.getElementById('tree'); tree.innerHTML='';
+  const hasQ = !!q;
+  CHAPTERS.forEach(ch=>{
+    const list = match(q).filter(c=>c.chap===ch.num);
+    const cnt = list.length;
+    if(!cnt && hasQ) return;            // 搜索时隐藏空章
+    const div=document.createElement('div'); div.className='chap'+(cnt?' open':'');
+    let inner='<div class="ch" data-chap="'+ch.num+'"><span class="tw">▶</span>第'+ch.num+'章 '+ch.name
+      +'<span class="cnt">'+(cnt?cnt:'—')+'</span></div>';
+    inner+='<div class="secs">';
+    const secs = ch.secs||[];
+    secs.forEach(s=>{
+      const slist = list.filter(c=>c.sec===s.num);
+      if(slist.length){
+        inner+='<div class="sec-wrap open">';
+        inner+='<div class="sec" data-chap="'+ch.num+'" data-sec="'+s.num+'"><span class="tw-sec">▶</span>第'+s.num+'节 '+s.name
+          +'<span class="sc">'+slist.length+'</span></div>';
+        inner+='<div class="crimes">';
+        let idx=1;
+        slist.forEach(c=>{ inner+=crimeNode(c,q,idx++); });   // 节下罪名（已按法条顺序）
+        inner+='</div></div>';
+      }
+    });
+    let idx=1;
+    list.filter(c=>!c.sec).forEach(c=>{ inner+=crimeNode(c,q,idx++); }); // 直接挂在章下的罪名
+    if(!list.length) inner+='<div class="sec" style="color:#b9c2cb">（暂无收录）</div>';
+    inner+='</div>';
+    div.innerHTML=inner;
+    tree.appendChild(div);
+  });
+  tree.querySelectorAll('.ch').forEach(el=>{
+    el.onclick=()=>{
+      const chap=el.parentElement;
+      const cn=el.dataset.chap;
+      if(chap.classList.contains('open')){
+        // 已展开 → 收起（不再定位）
+        chap.classList.remove('open');
+        return;
+      }
+      chap.classList.add('open');   // 展开
+      // 找到该章第一个可见的 grp（有节取第一节，无章下节取 chap-N-sec-0）
+      let t=document.getElementById('chap-'+cn+'-gh-sec-1') || document.getElementById('sec-'+cn+'-1') || document.getElementById('chap-'+cn+'-sec-0');
+      if(t){
+        t.scrollIntoView({behavior:'smooth',block:'start'});
+        const grp=t.closest('.grp');
+        if(grp){ grp.classList.remove('flash'); void grp.offsetWidth; grp.classList.add('flash'); }
+      }
+    };
+  });
+  tree.querySelectorAll('.sec-wrap>.sec').forEach(el=>el.onclick=()=>{
+    const wrap=el.parentElement;
+    if(wrap.classList.contains('open')){
+      wrap.classList.remove('open');   // 已展开 → 收起
+      return;
+    }
+    wrap.classList.add('open');        // 展开
+    const t=document.getElementById('sec-'+el.dataset.chap+'-'+el.dataset.sec);
+    if(t){
+      t.scrollIntoView({behavior:'smooth',block:'start'});
+      t.classList.remove('flash'); void t.offsetWidth; t.classList.add('flash');
+    }
+  });
+  tree.querySelectorAll('.crime[data-anchor]').forEach(el=>{
+    el.onclick=()=>{
+      const t=document.getElementById(el.dataset.anchor);
+      if(t){
+        t.scrollIntoView({behavior:'smooth',block:'center'});
+        t.classList.remove('flash'); void t.offsetWidth; t.classList.add('flash');
+      }
+    }; // 具体罪名 → 右侧定位
+    el.onmouseenter=()=>{
+      const t=document.getElementById(el.dataset.anchor);
+      if(t){
+        if(!inView(t)) t.scrollIntoView({behavior:'smooth',block:'center'});
+        t.classList.add('locate');
+      }
+    }; // 悬停 → 右侧卡片高亮方框
+    el.onmouseleave=()=>{
+      const t=document.getElementById(el.dataset.anchor);
+      if(t) t.classList.remove('locate');
+    }; // 移出 → 取消高亮
+  });
+}
+
+function inView(el){const r=el.getBoundingClientRect();return r.top>=60 && r.bottom<=window.innerHeight-60;}
+function esc(s){return (s||"").replace(/[&<>]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[m]));}
+function hl(text,q){
+  if(!q) return esc(text);
+  const i=text.toLowerCase().indexOf(q.toLowerCase());
+  if(i<0) return esc(text);
+  return esc(text.slice(0,i))+'<mark>'+esc(text.slice(i,i+q.length))+'</mark>'+esc(text.slice(i+q.length));
+}
+
+function renderList(q){
+  const list=match(q); const box=document.getElementById('list'); box.innerHTML='';
+  const have=list.filter(c=>c.file).length;
+  document.getElementById('viewMeta').textContent = '共 '+list.length+' 个罪名（含已生成量刑指引 '+have+' 个）';
+  if(!list.length){ box.innerHTML='<div class="empty">未找到匹配罪名。</div>'; return; }
+
+  // group by chap(,sec)
+  const groups={};
+  list.forEach(c=>{ const k=c.chap+'_'+(c.sec||0); (groups[k]=groups[k]||[]).push(c); });
+  const keys=Object.keys(groups).sort((a,b)=>{
+    const [ca,sa]=a.split('_').map(Number),[cb,sb]=b.split('_').map(Number);
+    return ca!==cb?ca-cb:sa-sb;
+  });
+  // 计算每章总罪名数（用于右侧章节标题）
+  const chapCounts={};
+  Object.keys(groups).forEach(k=>{ const cn=Number(k.split('_')[0]); chapCounts[cn]=(chapCounts[cn]||0)+groups[k].length; });
+  keys.forEach(k=>{
+    const [cn,sn]=k.split('_').map(Number);
+    const total=chapCounts[cn]||0;
+    const here=groups[k].length;
+    const g=document.createElement('div'); g.className='grp'; g.id='chap-'+cn+'-sec-'+(sn||0);
+    const gh=document.createElement('div'); gh.className='gh';
+    gh.innerHTML='<span class="gn">第'+cn+'章 '+chapName(cn)+'</span><span class="gx">'+cn+'</span>'
+      +'<span class="cnt">共 '+total+' 个罪名</span>';
+    if(sn) gh.id='chap-'+cn+'-gh-sec-'+sn;
+    g.appendChild(gh);
+    if(sn){ const sh=document.createElement('div'); sh.className='sec-h'; sh.id='sec-'+cn+'-'+sn;
+      sh.textContent='第'+sn+'节 '+secName(cn,sn);
+      sh.innerHTML+='<span class="cnt">'+here+' 个</span>'; g.appendChild(sh); }
+    const cards=document.createElement('div'); cards.className='cards';
+    groups[k].forEach(c=>{
+      const tag = c.file ? '<span class="tag on">量刑指引</span>' : '<span class="tag off">释义待生成</span>';
+      const a=document.createElement(c.file?'a':'div');
+      a.className='card'+(c.file?'':' pending');
+      a.id='crime-'+c._id;
+      if(c.file) a.href=c.file;
+      a.innerHTML=tag
+        +'<div class="cn">'+hl(c.name,q)+'</div>'
+        +'<div class="cart">'+(c.art?('⚖ '+esc(c.art)):'')+'</div>'
+        +'<div class="cl">'+crimeLabel(c)+'</div>'
+        +'<div class="cnote">'+hl(c.note,q)+'</div>';
+      cards.appendChild(a);
+    });
+    g.appendChild(cards); box.appendChild(g);
+  });
+}
+
+document.getElementById('q').addEventListener('input',e=>{
+  const q=e.target.value; renderTree(q); renderList(q);
+});
+renderTree(''); renderList('');
+</script>
+</body>
+</html>

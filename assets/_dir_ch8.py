@@ -1,0 +1,16 @@
+ENTRIES = [
+  {"name":"贪污罪","art":"刑法第382条","chap":8,"sec":None,"guideline":False},
+  {"name":"挪用公款罪","art":"刑法第384条","chap":8,"sec":None,"guideline":False},
+  {"name":"受贿罪","art":"刑法第385条","chap":8,"sec":None,"guideline":False},
+  {"name":"单位受贿罪","art":"刑法第387条","chap":8,"sec":None,"guideline":False},
+  {"name":"利用影响力受贿罪","art":"刑法第388条之一","chap":8,"sec":None,"guideline":False},
+  {"name":"行贿罪","art":"刑法第389条","chap":8,"sec":None,"guideline":False},
+  {"name":"对有影响力的人行贿罪","art":"刑法第390条之一","chap":8,"sec":None,"guideline":False},
+  {"name":"对单位行贿罪","art":"刑法第391条","chap":8,"sec":None,"guideline":False},
+  {"name":"介绍贿赂罪","art":"刑法第392条","chap":8,"sec":None,"guideline":False},
+  {"name":"单位行贿罪","art":"刑法第393条","chap":8,"sec":None,"guideline":False},
+  {"name":"巨额财产来源不明罪","art":"刑法第395条第1款","chap":8,"sec":None,"guideline":False},
+  {"name":"隐瞒境外存款罪","art":"刑法第395条第2款","chap":8,"sec":None,"guideline":False},
+  {"name":"私分国有资产罪","art":"刑法第396条第1款","chap":8,"sec":None,"guideline":False},
+  {"name":"私分罚没财物罪","art":"刑法第396条第2款","chap":8,"sec":None,"guideline":False},
+]

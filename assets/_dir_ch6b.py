@@ -1,0 +1,61 @@
+ENTRIES = [
+  # 第5节 危害公共卫生罪
+  {"name":"妨害传染病防治罪","art":"刑法第330条","chap":6,"sec":5,"guideline":False},
+  {"name":"传染病菌种、毒种扩散罪","art":"刑法第331条","chap":6,"sec":5,"guideline":False},
+  {"name":"妨害国境卫生检疫罪","art":"刑法第332条","chap":6,"sec":5,"guideline":False},
+  {"name":"非法组织卖血罪","art":"刑法第333条","chap":6,"sec":5,"guideline":False},
+  {"name":"强迫卖血罪","art":"刑法第333条","chap":6,"sec":5,"guideline":False},
+  {"name":"非法采集、供应血液、制作、供应血液制品罪","art":"刑法第334条","chap":6,"sec":5,"guideline":False},
+  {"name":"采集、供应血液、制作、供应血液制品事故罪","art":"刑法第334条","chap":6,"sec":5,"guideline":False},
+  {"name":"医疗事故罪","art":"刑法第335条","chap":6,"sec":5,"guideline":False},
+  {"name":"非法行医罪","art":"刑法第336条","chap":6,"sec":5,"guideline":False},
+  {"name":"非法进行节育手术罪","art":"刑法第336条","chap":6,"sec":5,"guideline":False},
+  {"name":"妨害动植物防疫、检疫罪","art":"刑法第337条","chap":6,"sec":5,"guideline":False},
+
+  # 第6节 破坏环境资源保护罪
+  {"name":"污染环境罪","art":"刑法第338条","chap":6,"sec":6,"guideline":False},
+  {"name":"非法处置进口的固体废物罪","art":"刑法第339条","chap":6,"sec":6,"guideline":False},
+  {"name":"擅自进口固体废物罪","art":"刑法第339条","chap":6,"sec":6,"guideline":False},
+  {"name":"非法捕捞水产品罪","art":"刑法第340条","chap":6,"sec":6,"guideline":False},
+  {"name":"非法猎捕、杀害珍贵、濒危野生动物罪","art":"刑法第341条","chap":6,"sec":6,"guideline":False},
+  {"name":"非法收购、运输、出售珍贵、濒危野生动物、珍贵、濒危野生动物制品罪","art":"刑法第341条","chap":6,"sec":6,"guideline":False},
+  {"name":"非法狩猎罪","art":"刑法第341条","chap":6,"sec":6,"guideline":False},
+  {"name":"非法占用农用地罪","art":"刑法第342条","chap":6,"sec":6,"guideline":False},
+  {"name":"非法采矿罪","art":"刑法第343条","chap":6,"sec":6,"guideline":False},
+  {"name":"破坏性采矿罪","art":"刑法第343条","chap":6,"sec":6,"guideline":False},
+  {"name":"非法采伐、毁坏国家重点保护植物罪","art":"刑法第344条","chap":6,"sec":6,"guideline":False},
+  {"name":"非法收购、运输、加工、出售国家重点保护植物、国家重点保护植物制品罪","art":"刑法第344条","chap":6,"sec":6,"guideline":False},
+  {"name":"盗伐林木罪","art":"刑法第345条","chap":6,"sec":6,"guideline":False},
+  {"name":"滥伐林木罪","art":"刑法第345条","chap":6,"sec":6,"guideline":False},
+  {"name":"非法收购、运输盗伐、滥伐的林木罪","art":"刑法第345条","chap":6,"sec":6,"guideline":False},
+  {"name":"走私废物罪","art":"刑法第152条第2款","chap":3,"sec":2,"guideline":False},
+
+  # 第7节 走私、贩卖、运输、制造毒品罪
+  {"name":"走私、贩卖、运输、制造毒品罪","art":"刑法第347条","chap":6,"sec":7,"guideline":False},
+  {"name":"非法持有毒品罪","art":"刑法第348条","chap":6,"sec":7,"guideline":False},
+  {"name":"包庇毒品犯罪分子罪","art":"刑法第349条","chap":6,"sec":7,"guideline":False},
+  {"name":"窝藏、转移、隐瞒毒品、毒赃罪","art":"刑法第349条","chap":6,"sec":7,"guideline":False},
+  {"name":"非法生产、买卖、运输制毒物品、走私制毒物品罪","art":"刑法第350条","chap":6,"sec":7,"guideline":False},
+  {"name":"非法种植毒品原植物罪","art":"刑法第351条","chap":6,"sec":7,"guideline":False},
+  {"name":"非法买卖、运输、携带、持有毒品原植物种子、幼苗罪","art":"刑法第352条","chap":6,"sec":7,"guideline":False},
+  {"name":"引诱、教唆、欺骗他人吸毒罪","art":"刑法第353条","chap":6,"sec":7,"guideline":False},
+  {"name":"强迫他人吸毒罪","art":"刑法第353条","chap":6,"sec":7,"guideline":False},
+  {"name":"容留他人吸毒罪","art":"刑法第354条","chap":6,"sec":7,"guideline":False},
+  {"name":"非法提供麻醉药品、精神药品罪","art":"刑法第355条","chap":6,"sec":7,"guideline":False},
+
+  # 第8节 组织、强迫、引诱、容留、介绍卖淫罪
+  {"name":"组织卖淫罪","art":"刑法第358条","chap":6,"sec":8,"guideline":True},
+  {"name":"强迫卖淫罪","art":"刑法第358条","chap":6,"sec":8,"guideline":False},
+  {"name":"协助组织卖淫罪","art":"刑法第358条","chap":6,"sec":8,"guideline":False},
+  {"name":"引诱、容留、介绍卖淫罪","art":"刑法第359条","chap":6,"sec":8,"guideline":False},
+  {"name":"引诱幼女卖淫罪","art":"刑法第359条","chap":6,"sec":8,"guideline":False},
+  {"name":"传播性病罪","art":"刑法第360条","chap":6,"sec":8,"guideline":False},
+  {"name":"故意传播艾滋病罪","art":"刑法第360条","chap":6,"sec":8,"guideline":False},
+
+  # 第9节 制作、贩卖、传播淫秽物品罪
+  {"name":"制作、复制、出版、贩卖、传播淫秽物品牟利罪","art":"刑法第363条","chap":6,"sec":9,"guideline":False},
+  {"name":"为他人提供书号出版淫秽书刊罪","art":"刑法第363条","chap":6,"sec":9,"guideline":False},
+  {"name":"传播淫秽物品罪","art":"刑法第364条","chap":6,"sec":9,"guideline":False},
+  {"name":"组织播放淫秽音像制品罪","art":"刑法第364条","chap":6,"sec":9,"guideline":False},
+  {"name":"组织淫秽表演罪","art":"刑法第365条","chap":6,"sec":9,"guideline":False},
+]
