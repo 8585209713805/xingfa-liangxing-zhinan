@@ -64,3 +64,13 @@
 | 第四项标题 | 法定刑幅度与数额档位对照 | 量刑起点与法定刑幅度对照（依文件列示） |
 
 > ⚠ 审稿注意：A类（有依据）页面保留的"拘役–1年/3年–4年/10年–12年"等起点，须由律师对照赣高法实施细则原文核验，本工具无法联网逐一确认。
+
+## 通用功能（所有罪名页必带，A类/B类都要）
+每个新生成的罪名页（克隆样板时自动继承，务必检查存在）必须包含：
+1. **`<head>` 内**：`<meta name="repo-path" content="crimes/<本文件名>.html">`（供浏览器直传定位）。
+2. **工具栏（toolbar）**：`恢复默认内容`、`打印/导出PDF`（对所有人可见）；`进入页面编辑模式`、`下载修改版 HTML`、`上传到网站` 三个按钮 + 说明 span 均加 `owner-only` class（仅本人可见）。
+3. **CSS**：`.owner-only{display:none;}` + `body.is-owner button.owner-only{display:inline-block;}` + `body.is-owner span.owner-only{display:inline;}` + `body.page-edit .wrap{outline:2px dashed var(--blue);...}`。
+4. **JS 函数**：`serializeCurrentPage()`、`togglePageEdit()`、`downloadEditedPage()`、`showToast()`、`uploadToSite()`（GitHub Contents API 直传，仓库常量 `GH_OWNER='8585209713805'`/`GH_REPO='xingfa-liangxing-zhinan'`，PAT 存 `localStorage('gh_pat')`）、`initOwner()`（`?owner=1` 解锁写 `localStorage('lx_owner')`，`?owner=0` 清除）。脚本末尾调用 `initEditor(); initOwner();`。
+5. **权限模型**：默认访客只读、看不到编辑/上传按钮；仅本人以 `?owner=1` 解锁一次后长期可编辑；真正写库需 GitHub Token（仅存本机），访客无 token 无法改动线上网站。
+
+> 批量注入脚本参考：`/tmp/add_upload.py`（上传功能）、`/tmp/add_owner_gate.py`（编辑者模式）。新增罪名页若从旧样板克隆缺功能，可复用这两个脚本按 marker 幂等注入。
