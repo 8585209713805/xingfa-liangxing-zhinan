@@ -24,6 +24,8 @@
     cursor:pointer; font-size:13px; color:var(--ink);}
   .btn:hover{background:var(--blue-lighter); border-color:var(--blue);}
   .note-tip{font-size:12px; color:var(--muted);}
+  body.page-edit .wrap{outline:2px dashed var(--blue); background:#fff; padding:18px 20px 60px; border-radius:8px;}
+  body.page-edit .toolbar .note-tip{color:var(--blue-deep); font-weight:500;}
 
   /* 速览卡片 */
   .overview{display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:16px 0 22px;}
@@ -215,7 +217,9 @@
   <div class="toolbar">
     <button class="btn" onclick="clearNotes()">恢复默认内容</button>
     <button class="btn" onclick="window.print()">打印 / 导出 PDF</button>
-    <span class="note-tip">表格内所有文字均可直接点击编辑，自动保存在本机浏览器（localStorage）；"恢复默认内容"可一键还原。</span>
+    <button class="btn" id="editBtn" onclick="togglePageEdit()">进入页面编辑模式</button>
+    <button class="btn" id="dlBtn" onclick="downloadEditedPage()" style="display:none;color:#1f4e79;font-weight:600">下载修改版 HTML</button>
+    <span class="note-tip">表格内所有文字均可直接点击编辑，自动保存在本机浏览器（localStorage）；"恢复默认内容"可一键还原。需要自由改页面结构/文字时，点<b>进入页面编辑模式</b>，改完点<b>下载修改版 HTML</b>发给我，我再上传更新。</span>
   </div>
 
   <!-- 速览 -->
@@ -1186,6 +1190,48 @@
     try { localStorage.removeItem(KEY+'_params'); } catch(e){}
     syncLabels();
     if(typeof calc==='function') calc();
+  }
+
+  /* ---- 页面编辑模式：让浏览器可直接 WYSIWYG 改整页，然后下载修改版 ---- */
+  function togglePageEdit(){
+    const body = document.body;
+    const isOn = !body.classList.contains('page-edit');
+    body.classList.toggle('page-edit', isOn);
+    document.designMode = isOn ? 'on' : 'off';
+    const btn = document.getElementById('editBtn');
+    const dl  = document.getElementById('dlBtn');
+    if(btn) btn.textContent = isOn ? '退出页面编辑模式' : '进入页面编辑模式';
+    if(dl)  dl.style.display = isOn ? 'inline-block' : 'none';
+  }
+  function downloadEditedPage(){
+    document.querySelectorAll('input, select, textarea').forEach(el=>{
+      if(el.type==='checkbox' || el.type==='radio'){
+        el.checked ? el.setAttribute('checked','checked') : el.removeAttribute('checked');
+      } else if(el.tagName==='SELECT'){
+        Array.from(el.options).forEach(opt=> opt.removeAttribute('selected'));
+        if(el.selectedIndex>=0) el.options[el.selectedIndex].setAttribute('selected','selected');
+      } else if(el.tagName==='TEXTAREA'){
+        el.textContent = el.value;
+      } else {
+        el.setAttribute('value', el.value);
+      }
+    });
+    const root = document.documentElement.cloneNode(true);
+    root.querySelector('body').classList.remove('page-edit');
+    const btn = root.querySelector('#editBtn');
+    const dl  = root.querySelector('#dlBtn');
+    if(btn) btn.textContent = '进入页面编辑模式';
+    if(dl)  dl.style.display = 'none';
+    const html = '<!DOCTYPE html>\n' + new XMLSerializer().serializeToString(root);
+    const blob = new Blob([html], {type:'text/html;charset=utf-8'});
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = (document.title || '量刑指引') + '-修改版.html';
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    setTimeout(()=>URL.revokeObjectURL(url), 2000);
   }
 
   initEditor();
