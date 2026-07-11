@@ -186,6 +186,23 @@
     table, .card, .block{box-shadow:none;} .editable{background:transparent;}
     .wrap{max-width:100%;}
   }
+  /* 实务案例参考 */
+  .cases{display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:14px 0 6px;}
+  .case{border:1px solid var(--line); border-radius:11px; padding:14px 16px; background:#fff;
+    box-shadow:0 1px 3px rgba(0,0,0,.05); display:flex; flex-direction:column;}
+  .case .ctop{display:flex; align-items:center; gap:7px; margin-bottom:4px; flex-wrap:wrap;}
+  .case .cname{font-size:14.5px; font-weight:700; color:var(--blue-deep);}
+  .case .csrc{font-size:11px; font-weight:700; color:#fff; border-radius:4px; padding:1px 7px; white-space:nowrap;}
+  .case .csrc.sup{background:var(--red);} .case .csrc.pro{background:var(--teal);}
+  .case .cmeta{font-size:12px; color:var(--muted); margin-bottom:6px;}
+  .case h4{font-size:12.5px; margin:8px 0 2px; color:var(--ink);}
+  .case p{margin:0 0 5px; font-size:12.5px; line-height:1.55;}
+  .case .note{font-size:12px; color:var(--muted); background:var(--bg); border-radius:7px; padding:6px 9px; margin-top:6px;}
+  .case .note .lab{font-weight:700; color:var(--amber);}
+  .case .src{margin-top:8px; font-size:12px;}
+  .case .src a{color:var(--blue); text-decoration:none;}
+  .case .src a:hover{text-decoration:underline;}
+  @media(max-width:680px){.cases{grid-template-columns:1fr;}}
 </style>
 </head>
 <body>
@@ -537,6 +554,79 @@
 </div>
 
   <!-- CAPS_OVERRIDE -->
+
+
+  <h2 class="section">实务参考案例</h2>
+  <div class="legend" style="margin-top:-2px;">
+    <span>下列案例选自 <b>最高人民法院</b>、<b>最高人民检察院</b> 公开发布的典型案例（官方来源可核实），供量刑与辩护思路参考；可在每张卡片「参考要点」处直接批注。</span>
+  </div>
+  <div class="cases">
+<div class="case">
+  <div class="ctop"><span class="cname">隋某某利用网络猥亵儿童、强奸、敲诈勒索、制作贩卖传播淫秽物品牟利案（检例第200号）</span><span class="csrc pro">最高检指导</span></div>
+  <div class="cmeta">未公开审理法院　|　最高人民检察院第五十批指导性案例（未成年人网络保护主题），2024-02-22发布</div>
+  <h4>基本案情</h4>
+  <p>被告人隋某某（男，2002年生，无业）以满足性刺激为目的，利用网络胁迫、诱骗<b>被害女童刘某某（2009年生，学生）</b>拍摄裸体、敏感部位照片、视频供其观看，实施线上"隔空猥亵"；后又以散布上述私密照片、视频相要挟，强迫被害人与其发生性关系，并实施敲诈勒索、制作贩卖传播淫秽物品牟利。</p>
+  <h4>裁判结果</h4>
+  <p>最高检明确：线上猥亵后以私密照片、视频要挟实施线下强奸，应分别认定为<b>猥亵儿童罪</b>与<b>强奸罪</b>，实行数罪并罚；办案中发现私密照片、视频在网络空间传播扩散的，检察机关应及时督促有关部门删除信息、阻断传播，从线下到线上全方位保护未成年人。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">隔空猥亵同样构成猥亵儿童罪；辩护可重点审查"是否实际接触被害人身体、是否以传播相要挟、有无阻断传播与退赔"等从宽情节。</span></div>
+  <div class="src">来源：<a href="https://www.spp.gov.cn/spp/jczdal/202403/t20240301_646694.shtml" target="_blank">最高人民检察院：关于印发最高人民检察院第五十批指导性案例的通知</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">鲍某某强奸、猥亵儿童案</span><span class="csrc sup">最高法典型</span></div>
+  <div class="cmeta">未公开具体法院　|　最高人民法院发布侵犯未成年人权益犯罪典型案例（公报案例）</div>
+  <h4>基本案情</h4>
+  <p>被告人鲍某某系小学教师。2009年4月至2011年6月，利用教师身份，以辅导学习、打扫卫生等名义，先后将<b>7名不满14周岁女学生</b>骗至学校器材室、办公室等处，强制观看淫秽图片并猥亵共计数十次；又奸淫其中6名女学生数十次，并拍摄裸照、视频。</p>
+  <h4>裁判结果</h4>
+  <p>法院认定鲍某某构成<b>强奸罪（判处死刑，剥夺政治权利终身）</b>与<b>猥亵儿童罪（判处有期徒刑五年）</b>，数罪并罚，决定执行<b>死刑，剥夺政治权利终身</b>；其投案后供述猥亵主要事实，所犯猥亵儿童罪构成自首可从轻处罚，但强奸罪不构成自首。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">利用教师身份、长期多次猥亵多人属"情节恶劣"从重处罚情形；辩护可审查自首认定范围、猥亵与强奸事实区分及证据充分性。</span></div>
+  <div class="src">来源：<a href="http://gongbao.court.gov.cn/Details/a3a39d0c584c19c218b0ec36a3b76e.html" target="_blank">最高人民法院公报：发布侵犯未成年人权益犯罪典型案例（案例1 鲍某某强奸、猥亵儿童案）</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">王某猥亵儿童、强制猥亵案（继父）</span><span class="csrc sup">最高法典型</span></div>
+  <div class="cmeta">未公开具体法院　|　最高人民法院发布加强未成年人综合司法保护典型案例，2024年发布</div>
+  <h4>基本案情</h4>
+  <p>被告人王某系被害人小丽（继女）的继父。2021年6月，王某对来家中找小丽的同学（时年<b>14岁</b>）实施猥亵行为，并于次日被抓获；另查明王某还对小丽实施猥亵。刑事判决生效后，小丽生父提起诉讼要求撤销王某监护人资格。</p>
+  <h4>裁判结果</h4>
+  <p>法院认为王某身为继父，对被监护人小丽及其同学实施猥亵，构成<b>猥亵儿童罪</b>和<b>强制猥亵罪</b>，且属侵害有共同家庭生活关系的未成年人，应从重处罚，依法两罪并罚；同时尊重被害人意愿，民事判决撤销王某的监护人资格，并给予司法救助与长期心理疏导帮扶。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">"有共同家庭共同生活关系"的未成年人被侵害依法从重；可从是否如实供述、认罪认罚、赔偿被害人、取得谅解等争取量刑从宽。</span></div>
+  <div class="src">来源：<a href="https://www.court.gov.cn/zixun/xiangqing/465721.html" target="_blank">最高人民法院：加强未成年人综合司法保护典型案例</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">邹某某猥亵儿童案</span><span class="csrc sup">最高法典型</span></div>
+  <div class="cmeta">未公开具体法院　|　最高人民法院未成年人司法保护典型案例</div>
+  <h4>基本案情</h4>
+  <p>被告人邹某某利用与被害人家庭熟悉、受委托照看儿童的机会，于2017年至2019年多次对<b>黄某甲（男，时年5岁）、黄某乙（男，时年7岁）</b>两名不满10周岁男童的生殖器实施猥亵，并播放淫秽视频、用手机拍摄两名男童裸体照片及多名身份不明男童生殖器照片。</p>
+  <h4>裁判结果</h4>
+  <p>法院认定邹某某长期猥亵两名幼童，手段恶劣并致严重心理创伤，属于猥亵儿童"情节恶劣"，以<b>猥亵儿童罪判处有期徒刑十年</b>；本案警示男童同样易受性侵害，应给予同等重视。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">十年系"五年以上十五年以下"幅度顶格附近，多因"情节恶劣"；辩护可审查是否具其他恶劣情节、猥亵具体手段与次数认定、有无退赔救助等。</span></div>
+  <div class="src">来源：<a href="https://www.court.gov.cn/zixun/xiangqing/288721.html" target="_blank">最高人民法院：未成年人司法保护典型案例（邹某某猥亵儿童案）</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">张宝战猥亵儿童案</span><span class="csrc sup">最高法典型</span></div>
+  <div class="cmeta">天津市某区人民法院　|　最高人民法院性侵害儿童犯罪典型案例，2019-07-24发布</div>
+  <h4>基本案情</h4>
+  <p>被告人张宝战系天津市某区小学数学教师。自2017年至2018年10月，多次在学校教室对<b>被害人B某等8名女学生（时年10至11岁）</b>采取搂抱、亲吻、抚摸嘴部、胸部、臀部及阴部等方式进行猥亵。</p>
+  <h4>裁判结果</h4>
+  <p>法院认为张宝战身为对未成年人负有特殊职责的教师，多次在校园内猥亵多名女童，情节恶劣，依法从重处罚，以<b>猥亵儿童罪判处有期徒刑十一年六个月</b>；宣判后无上诉、抗诉，判决生效。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">教师身份+校园内+多名被害人是典型从重情节；可从报案及时性、证据链（监控/陈述一致性）、是否初犯偶犯等角度做罪轻辩护。</span></div>
+  <div class="src">来源：<a href="https://www.court.gov.cn/zixun/xiangqing/172962.html" target="_blank">最高人民法院：性侵害儿童犯罪典型案例（张宝战猥亵儿童案）</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">蒋成飞猥亵儿童案</span><span class="csrc sup">最高法典型</span></div>
+  <div class="cmeta">南京市某区人民法院　|　最高人民法院性侵害儿童犯罪典型案例，2019-07-24发布</div>
+  <h4>基本案情</h4>
+  <p>2015年5月至2016年11月，被告人蒋成飞虚构身份谎称代表影视公司招聘童星，在QQ聊天软件上结识<b>31名女童（10至13岁）</b>，诱骗被害人在线拍摄、发送裸照，以诱骗、逼迫方式使被害人视频裸聊并做出淫秽动作，并以公开裸照相威胁逼迫继续裸聊，还将裸聊视频刻录留存。</p>
+  <h4>裁判结果</h4>
+  <p>法院认为蒋成飞借助网络通信手段诱使众多女童暴露身体隐私部位、做出淫秽动作，严重侵害儿童身心健康，属情节恶劣，以<b>猥亵儿童罪判处有期徒刑十一年</b>；二审驳回上诉、维持原判。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">网络"隔空猥亵"同样构罪且被害人众多从重；辩护可审查被害人年龄明知、行为次数与被害人范围认定、有无退赃退赔与认罪认罚。</span></div>
+  <div class="src">来源：<a href="https://www.court.gov.cn/zixun/xiangqing/172962.html" target="_blank">最高人民法院：性侵害儿童犯罪典型案例（蒋成飞猥亵儿童案）</a></div>
+</div>
+  </div>
 <script>
 window.SENTENCE_CAPS = {1:36,2:84};
   // ---- 全表内容可编辑 + 自动保存 ----

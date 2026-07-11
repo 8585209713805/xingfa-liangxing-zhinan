@@ -186,6 +186,23 @@
     table, .card, .block{box-shadow:none;} .editable{background:transparent;}
     .wrap{max-width:100%;}
   }
+  /* 实务案例参考 */
+  .cases{display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:14px 0 6px;}
+  .case{border:1px solid var(--line); border-radius:11px; padding:14px 16px; background:#fff;
+    box-shadow:0 1px 3px rgba(0,0,0,.05); display:flex; flex-direction:column;}
+  .case .ctop{display:flex; align-items:center; gap:7px; margin-bottom:4px; flex-wrap:wrap;}
+  .case .cname{font-size:14.5px; font-weight:700; color:var(--blue-deep);}
+  .case .csrc{font-size:11px; font-weight:700; color:#fff; border-radius:4px; padding:1px 7px; white-space:nowrap;}
+  .case .csrc.sup{background:var(--red);} .case .csrc.pro{background:var(--teal);}
+  .case .cmeta{font-size:12px; color:var(--muted); margin-bottom:6px;}
+  .case h4{font-size:12.5px; margin:8px 0 2px; color:var(--ink);}
+  .case p{margin:0 0 5px; font-size:12.5px; line-height:1.55;}
+  .case .note{font-size:12px; color:var(--muted); background:var(--bg); border-radius:7px; padding:6px 9px; margin-top:6px;}
+  .case .note .lab{font-weight:700; color:var(--amber);}
+  .case .src{margin-top:8px; font-size:12px;}
+  .case .src a{color:var(--blue); text-decoration:none;}
+  .case .src a:hover{text-decoration:underline;}
+  @media(max-width:680px){.cases{grid-template-columns:1fr;}}
 </style>
 </head>
 <body>
@@ -564,6 +581,68 @@
 </div>
 
   <!-- CAPS_OVERRIDE -->
+
+
+  <h2 class="section">实务参考案例</h2>
+  <div class="legend" style="margin-top:-2px;">
+    <span>下列案例选自 <b>最高人民法院</b>、<b>最高人民检察院</b> 公开发布的典型案例（官方来源可核实），供量刑与辩护思路参考；可在每张卡片「参考要点」处直接批注。</span>
+  </div>
+  <div class="cases">
+<div class="case">
+  <div class="ctop"><span class="cname">刘某江交通肇事宣告无罪案</span><span class="csrc sup">指导案例</span></div>
+  <div class="cmeta">河北省邢台市任泽区人民法院（一审）　|　最高人民法院指导性案例269号，2026-02-13发布</div>
+  <h4>基本案情</h4>
+  <p>2023年6月9日，刘某江驾驶无号牌电动三轮车，孙某平驾驶二轮摩托车载李某坤同向行驶；孙某平超车时为避让对向卡车右打方向，与刘某江车辆发生剐蹭，致李某坤摔下后经抢救无效死亡。事故认定书以刘某江<b>逃逸</b>为由认定其负<b>全部责任</b>；刘某江在现场短暂停留后离开。</p>
+  <h4>裁判结果</h4>
+  <p>任泽区法院作出（2024）冀0505刑初8号刑事判决：被告人刘某江<b>无罪</b>。宣判后无上诉、抗诉，判决已发生法律效力。裁判要点明确：逃逸情节对引发或扩大事故没有原因力的，不作为刑法意义上认定事故责任的依据。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">交通事故责任认定书中基于“逃逸”推定的全部责任，需结合因果关系实质审查；逃逸对事故发生无原因力的，应作无罪辩护。</span></div>
+  <div class="src">来源：<a href="https://www.court.gov.cn/shenpan/xiangqing/489301.html" target="_blank">最高人民法院：指导性案例269号刘某江交通肇事宣告无罪案</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">陈某交通肇事案</span><span class="csrc sup">入库参考案例</span></div>
+  <div class="cmeta">上海市第一中级人民法院（二审）　|　人民法院案例库2024-06-1-054-003，2024-08-29发布</div>
+  <h4>基本案情</h4>
+  <p>2018年8月6日，陈某驾驶不符合安全标准的电动自行车，在并行时因后备箱保温箱碰撞储某车辆，致储某<b>重伤</b>。陈某报警时隐瞒事实并逃离现场。事故认定陈某负<b>全部责任</b>。</p>
+  <h4>裁判结果</h4>
+  <p>一审法院以交通肇事罪判处陈某<b>有期徒刑一年六个月</b>；二审（2019）沪01刑终588号改判<b>有期徒刑十一个月</b>。认定致一人重伤、负全部责任并具有逃避法律追究逃离现场情节的，以交通肇事罪定罪处罚；剔除逃逸情节仍可认定全责的，不违反重复评价。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">逃逸情节已用于认定全部责任的，定罪后量刑应避免重复评价；二审阶段赔偿谅解可从宽，争取降档量刑。</span></div>
+  <div class="src">来源：<a href="https://www.court.gov.cn/zixun/xiangqing/441381.html" target="_blank">最高人民法院：入库参考案例选介——陈某交通肇事案</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">周某刚交通肇事案</span><span class="csrc sup">入库参考案例</span></div>
+  <div class="cmeta">上海市普陀区人民法院（一审）　|　人民法院案例库2024-18-1-054-001，2025-01-21发布</div>
+  <h4>基本案情</h4>
+  <p>2024年5月17日，周某刚<b>闯红灯</b>小跑穿行人行横道，与骑电动自行车的凌某某碰撞，凌某某倒地后遭绿灯放行车辆碾轧死亡。交警认定周某刚负事故<b>主要责任</b>、凌某某次要责任，周某刚当日投案。</p>
+  <h4>裁判结果</h4>
+  <p>普陀区法院（2024）沪0107刑初594号：周某刚犯交通肇事罪，判处<b>有期徒刑二年六个月</b>。案例明确行人等非交通运输人员亦可构成本罪；正常行驶、无法预见的司机属意外事件不担刑责。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">行人亦可为犯罪主体；多因一果时应区分各主体过错，对无过错司机作无罪/意外事件辩护，注意自首情节运用。</span></div>
+  <div class="src">来源：<a href="https://finance.sina.cn/2025-01-21/detail-ineftwet8421738.d.html" target="_blank">最高人民法院官方账号：从“上海行人闯红灯案”谈交通肇事罪的司法认定</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">徐某康交通肇事案</span><span class="csrc sup">入库参考案例</span></div>
+  <div class="cmeta">广东省阳西县人民法院（一审）　|　人民法院案例库2025-02-1-054-001，2025年发布</div>
+  <h4>基本案情</h4>
+  <p>2024年3月8日，徐某康驾车与行人刘某兴碰撞致其<b>当场死亡</b>，徐某康立即报警并拨打120，后因害怕遭家属报复短暂躲藏，交警到场即返回。交警认定徐某康负<b>全部责任</b>。</p>
+  <h4>裁判结果</h4>
+  <p>阳西县法院（2024）粤1721刑初157号：徐某康犯交通肇事罪，判处<b>有期徒刑一年六个月</b>。认定其虽短暂离开但无逃避法律追究目的，<b>不构成逃逸</b>。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">“逃逸”须主客观一致；及时报警救助、交警到场即返回的可主张不成立逃逸，避免升档至三年以上七年以下量刑。</span></div>
+  <div class="src">来源：<a href="https://m.thepaper.cn/baijiahao_31546381" target="_blank">澎湃新闻·政务：入库案例｜交通肇事后短暂离开事故现场，算“逃逸”吗？</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">范某堂交通肇事案</span><span class="csrc sup">入库参考案例</span></div>
+  <div class="cmeta">北京市昌平区人民法院（一审）　|　人民法院案例库2025-06-1-054-001，2025年发布</div>
+  <h4>基本案情</h4>
+  <p>2023年3月14日，范某堂<b>饮酒后驾车</b>与摩托车相撞致袁某亮受伤，后袁某亮抢救无效死亡。范某堂报警并指使同乘人<b>顶包</b>，初期否认驾车，侦查后期才承认。事故认定范某堂负<b>全部责任</b>并构成肇事逃逸。</p>
+  <h4>裁判结果</h4>
+  <p>昌平区法院（2023）京0114刑初650号：范某堂犯交通肇事罪，判处<b>有期徒刑四年</b>。即使事后报警救治，指使顶包仍认定为肇事逃逸。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">顶包/事后否认驾驶属逃逸，升档至三年以上七年以下；应尽早如实供述争取从宽，避免加重处罚。</span></div>
+  <div class="src">来源：<a href="https://k.sina.cn/article_1893892941_70e2834d02001vqt2.html" target="_blank">京典案例｜范某堂交通肇事案（指使他人顶包）</a></div>
+</div>
+  </div>
 <script>
   // ---- 全表内容可编辑 + 自动保存 ----
   const KEY = "traffic_notes_v1";

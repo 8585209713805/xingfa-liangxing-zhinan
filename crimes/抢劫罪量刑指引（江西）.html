@@ -186,6 +186,23 @@
     table, .card, .block{box-shadow:none;} .editable{background:transparent;}
     .wrap{max-width:100%;}
   }
+  /* 实务案例参考 */
+  .cases{display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:14px 0 6px;}
+  .case{border:1px solid var(--line); border-radius:11px; padding:14px 16px; background:#fff;
+    box-shadow:0 1px 3px rgba(0,0,0,.05); display:flex; flex-direction:column;}
+  .case .ctop{display:flex; align-items:center; gap:7px; margin-bottom:4px; flex-wrap:wrap;}
+  .case .cname{font-size:14.5px; font-weight:700; color:var(--blue-deep);}
+  .case .csrc{font-size:11px; font-weight:700; color:#fff; border-radius:4px; padding:1px 7px; white-space:nowrap;}
+  .case .csrc.sup{background:var(--red);} .case .csrc.pro{background:var(--teal);}
+  .case .cmeta{font-size:12px; color:var(--muted); margin-bottom:6px;}
+  .case h4{font-size:12.5px; margin:8px 0 2px; color:var(--ink);}
+  .case p{margin:0 0 5px; font-size:12.5px; line-height:1.55;}
+  .case .note{font-size:12px; color:var(--muted); background:var(--bg); border-radius:7px; padding:6px 9px; margin-top:6px;}
+  .case .note .lab{font-weight:700; color:var(--amber);}
+  .case .src{margin-top:8px; font-size:12px;}
+  .case .src a{color:var(--blue); text-decoration:none;}
+  .case .src a:hover{text-decoration:underline;}
+  @media(max-width:680px){.cases{grid-template-columns:1fr;}}
 </style>
 </head>
 <body>
@@ -563,6 +580,57 @@
 </div>
 
   <!-- CAPS_OVERRIDE -->
+
+
+  <h2 class="section">实务参考案例</h2>
+  <div class="legend" style="margin-top:-2px;">
+    <span>下列案例选自 <b>最高人民法院</b>、<b>最高人民检察院</b> 公开发布的典型案例（官方来源可核实），供量刑与辩护思路参考；可在每张卡片「参考要点」处直接批注。</span>
+  </div>
+  <div class="cases">
+<div class="case">
+  <div class="ctop"><span class="cname">马世龙（抢劫）核准追诉案</span><span class="csrc pro">最高检指导案例20号</span></div>
+  <div class="cmeta">吉林省四平市中级人民法院（一审）　|　最高人民检察院第六批指导性案例，2015-07-03</div>
+  <h4>基本案情</h4>
+  <p>1989年马世龙伙同他人<b>蒙面持刀入户抢劫</b>李树振家，抢得现金380余元，并持刀乱捅致李树振<b>死亡</b>。</p>
+  <h4>裁判结果</h4>
+  <p>最高检核准追诉；法院以抢劫罪（考虑自首）判处马世龙<b>有期徒刑十五年，并处罚金1000元</b>。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">入户抢劫致死亡、逾20年仍追诉，自首为关键从轻情节，可重点论证。</span></div>
+  <div class="src">来源：<a href="https://www.spp.gov.cn/spp/zxjy/qwfb/201608/t20160811_362937.shtml" target="_blank">最高人民检察院：第六批指导性案例（检例第20号）</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">胡某某抢劫案</span><span class="csrc pro">最高检指导案例103号</span></div>
+  <div class="cmeta">检察机关附条件不起诉　|　最高人民检察院第二十七批指导性案例，2021-03-03</div>
+  <h4>基本案情</h4>
+  <p>17岁高中生胡某某谎称购物，趁店主不备用网购电击器杵其腰部索要钱款，致<b>轻微伤</b>，未劫得财物；家长赔偿获谅解。</p>
+  <h4>裁判结果</h4>
+  <p>检察机关作出<b>附条件不起诉决定（考验期一年，后缩短为八个月）</b>，考验期满依法不起诉。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">涉罪未成年在校学生，坚持最有利于未成年人原则，可争取附条件不起诉与动态帮教。</span></div>
+  <div class="src">来源：<a href="https://www.spp.gov.cn/jczdal/202103/t20210303_510511.shtml" target="_blank">最高人民检察院：第二十七批指导性案例（检例第103号）</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">李某抢劫、强奸、强制猥亵二审抗诉案</span><span class="csrc pro">最高检指导案例（第四十五批）</span></div>
+  <div class="cmeta">天津市和平区人民法院（重审）、天津市第一中级人民法院（二审）　|　最高人民检察院第四十五批指导性案例，2023-07-06</div>
+  <h4>基本案情</h4>
+  <p>李某通过网络结识女性，在饮品中投放精神类药物致被害人昏迷后劫财，采用同样手段<b>劫取荣某4000元、于某500元、常某1000元</b>，并涉强奸、强制猥亵。</p>
+  <h4>裁判结果</h4>
+  <p>一审错定盗窃判1年11个月；抗诉发回重审并补充起诉后，以抢劫罪判处<b>有期徒刑十五年，剥夺政治权利二年，罚金20万元</b>，数罪并罚决定执行<b>有期徒刑二十年</b>。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">投放药物致"不知反抗"劫财构成抢劫而非盗窃，辩护应关注间接证据链与补充起诉程序。</span></div>
+  <div class="src">来源：<a href="https://news.china.com.cn/2023-07/06/content_91517569_3.shtml" target="_blank">中国网：最高人民检察院第四十五批指导性案例（李某抢劫、强奸、强制猥亵二审抗诉案）</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">杨保营等人抢劫、绑架、寻衅滋事案</span><span class="csrc sup">最高法公报案例</span></div>
+  <div class="cmeta">山东省淄博市中级人民法院（一审）、山东省高级人民法院（二审）　|　《最高人民法院公报》</div>
+  <h4>基本案情</h4>
+  <p>杨保营等三人以骗乘出租车为手段，<b>多次暴力劫取出租车3辆（价值6万余元）及现金40余元</b>，并绑架他人。</p>
+  <h4>裁判结果</h4>
+  <p>杨保营犯抢劫罪判处<b>无期徒刑，剥夺政治权利终身，并处罚金2万元</b>（与绑架罪并罚）；吴润鹏、李波分别判处有期徒刑。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">多次抢劫、数额巨大，累犯从重，可关注自首、从犯地位等法定从轻情节。</span></div>
+  <div class="src">来源：<a href="http://gongbao.court.gov.cn/Details/13a15646a538cd4f483417e4cdc410.html" target="_blank">最高人民法院公报：淄博市人民检察院诉杨保营等人抢劫、绑架、寻衅滋事案</a></div>
+</div>
+  </div>
 <script>
   // ---- 全表内容可编辑 + 自动保存 ----
   const KEY = "robbery_notes_v1";

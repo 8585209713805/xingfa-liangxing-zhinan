@@ -186,6 +186,23 @@
     table, .card, .block{box-shadow:none;} .editable{background:transparent;}
     .wrap{max-width:100%;}
   }
+  /* 实务案例参考 */
+  .cases{display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:14px 0 6px;}
+  .case{border:1px solid var(--line); border-radius:11px; padding:14px 16px; background:#fff;
+    box-shadow:0 1px 3px rgba(0,0,0,.05); display:flex; flex-direction:column;}
+  .case .ctop{display:flex; align-items:center; gap:7px; margin-bottom:4px; flex-wrap:wrap;}
+  .case .cname{font-size:14.5px; font-weight:700; color:var(--blue-deep);}
+  .case .csrc{font-size:11px; font-weight:700; color:#fff; border-radius:4px; padding:1px 7px; white-space:nowrap;}
+  .case .csrc.sup{background:var(--red);} .case .csrc.pro{background:var(--teal);}
+  .case .cmeta{font-size:12px; color:var(--muted); margin-bottom:6px;}
+  .case h4{font-size:12.5px; margin:8px 0 2px; color:var(--ink);}
+  .case p{margin:0 0 5px; font-size:12.5px; line-height:1.55;}
+  .case .note{font-size:12px; color:var(--muted); background:var(--bg); border-radius:7px; padding:6px 9px; margin-top:6px;}
+  .case .note .lab{font-weight:700; color:var(--amber);}
+  .case .src{margin-top:8px; font-size:12px;}
+  .case .src a{color:var(--blue); text-decoration:none;}
+  .case .src a:hover{text-decoration:underline;}
+  @media(max-width:680px){.cases{grid-template-columns:1fr;}}
 </style>
 </head>
 <body>
@@ -525,6 +542,68 @@
 </div>
 
   <!-- CAPS_OVERRIDE -->
+
+
+  <h2 class="section">实务参考案例</h2>
+  <div class="legend" style="margin-top:-2px;">
+    <span>下列案例选自 <b>最高人民法院</b>、<b>最高人民检察院</b> 公开发布的典型案例（官方来源可核实），供量刑与辩护思路参考；可在每张卡片「参考要点」处直接批注。</span>
+  </div>
+  <div class="cases">
+<div class="case">
+  <div class="ctop"><span class="cname">张某某帮助信息网络犯罪活动案</span><span class="csrc sup">两高一部典型</span></div>
+  <div class="cmeta">福建省晋江市人民法院　|　“两高一部”依法惩治帮助信息网络犯罪活动及相关犯罪典型案例（2025年7月28日发布）</div>
+  <h4>基本案情</h4>
+  <p>2020年12月至2021年8月，被告人张某某伙同他人开设“工作室”，明知客户利用信息网络实施犯罪仍提供QQ账号“解封”等帮助；经查至少<b>79个</b>被解封QQ账号用于电诈，致<b>68名</b>被害人被诈骗<b>1350余万元</b>。</p>
+  <h4>裁判结果</h4>
+  <p>法院以帮助信息网络犯罪活动罪判处张某某<b>有期徒刑一年六个月，并处罚金人民币二万元</b>（二审维持原判）。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">组织化、职业化提供技术支持属重点打击；可从获利数额、退赃（4000元）及主观明知程度论证量刑。</span></div>
+  <div class="src">来源：<a href="https://www.court.gov.cn/zixun/xiangqing/472111.html" target="_blank">依法惩治帮助信息网络犯罪活动及相关犯罪典型案例（最高人民法院）</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">邓某某、王某某帮助信息网络犯罪活动、黄某帮助信息网络犯罪活动、侵犯公民个人信息案</span><span class="csrc sup">两高一部典型</span></div>
+  <div class="cmeta">四川省成都市温江区人民法院　|　“两高一部”依法惩治帮助信息网络犯罪活动及相关犯罪典型案例（2025年7月28日发布）</div>
+  <h4>基本案情</h4>
+  <p>2020年7月起，被告人邓某某、王某某、黄某架设具有远程操控功能的GOIP设备，为电诈犯罪提供通讯传输支持，致多名被害人被诈骗<b>30余万元</b>；黄某另非法持有含身份证照片等公民个人信息<b>6.6万余条</b>。</p>
+  <h4>裁判结果</h4>
+  <p>法院以帮信罪判处邓某某<b>有期徒刑十一个月，罚金一万元</b>、王某某<b>有期徒刑十个月，罚金一万元</b>；以帮信罪和侵犯公民个人信息罪对黄某数罪并罚，决定执行<b>有期徒刑三年二个月，罚金三万元</b>。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">GOIP设备属新型技术支持；黄某数罪并罚可从信息数量与设备作用区分主从，争取量刑平衡。</span></div>
+  <div class="src">来源：<a href="https://www.court.gov.cn/zixun/xiangqing/472111.html" target="_blank">依法惩治帮助信息网络犯罪活动及相关犯罪典型案例（最高人民法院）</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">薛某帮助信息网络犯罪活动案</span><span class="csrc sup">两高一部典型</span></div>
+  <div class="cmeta">福建省仙游县人民法院　|　“两高一部”依法惩治帮助信息网络犯罪活动及相关犯罪典型案例（2025年7月28日发布）</div>
+  <h4>基本案情</h4>
+  <p>被告人薛某系通信运营商分公司站长，2023年2月明知他人办卡用于犯罪，仍违规办理电话卡<b>24张</b>，致被害人被诈骗共计<b>9.4万余元</b>。</p>
+  <h4>裁判结果</h4>
+  <p>法院以帮助信息网络犯罪活动罪判处薛某<b>有期徒刑八个月，并处罚金一万元</b>，并禁止其在刑罚执行完毕之日起<b>五年内</b>从事通信运营类相关工作。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">行业“内鬼”依法宣告职业禁止；可从办卡数量、获利与下游危害后果论证主刑与职业禁止期限。</span></div>
+  <div class="src">来源：<a href="https://www.court.gov.cn/zixun/xiangqing/472111.html" target="_blank">依法惩治帮助信息网络犯罪活动及相关犯罪典型案例（最高人民法院）</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">高某等人帮助信息网络犯罪活动案</span><span class="csrc sup">两高一部典型</span></div>
+  <div class="cmeta">上海市闵行区人民法院　|　“两高一部”依法惩治帮助信息网络犯罪活动及相关犯罪典型案例（2025年7月28日发布）</div>
+  <h4>基本案情</h4>
+  <p>2022年9月至11月，职业学校在校生高某组织同学顾某、师某（未成年人）出租银行卡，顾某卡流入诈骗资金<b>34万余元</b>、师某卡流入<b>23万余元</b>。</p>
+  <h4>裁判结果</h4>
+  <p>法院以帮助信息网络犯罪活动罪判处高某<b>有期徒刑八个月，缓刑一年，并处罚金五千元</b>；顾某、师某（未成年/在校）依法分别作出不起诉决定。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">对未成年人、在校学生贯彻宽严相济；组织者与受雇“卡农”区别处置，可从被组织、获利少、认罪认罚争取不起诉或轻缓。</span></div>
+  <div class="src">来源：<a href="https://www.court.gov.cn/zixun/xiangqing/472111.html" target="_blank">依法惩治帮助信息网络犯罪活动及相关犯罪典型案例（最高人民法院）</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">游某龙等9人帮助信息网络犯罪活动案</span><span class="csrc sup">最高法典型</span></div>
+  <div class="cmeta">四川省广元市利州区人民法院　|　最高人民法院依法惩治电信网络诈骗等侵犯财产犯罪典型案例（2024年发布）</div>
+  <h4>基本案情</h4>
+  <p>2023年6月，被告人游某龙等9人明知他人利用信息网络实施犯罪，仍提供银行卡、手机及支付密码等帮助转移资金，共查明诈骗资金<b>410万余元</b>，涉及被害人<b>80名</b>。</p>
+  <h4>裁判结果</h4>
+  <p>法院认定9人均构成帮助信息网络犯罪活动罪，结合自首、坦白、认罪认罚及主动退缴违法所得、向被骗人员补偿经济损失等情节，依法从宽判处相应有期徒刑（部分适用缓刑）并处罚金。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">出租、出售“两卡”系帮信罪常见类型；可从全部退赃退赔、补偿被害人、自首坦白等争取最大幅度从宽。</span></div>
+  <div class="src">来源：<a href="https://www.court.gov.cn/zixun/xiangqing/490051.html" target="_blank">人民法院依法惩治电信网络诈骗等侵犯财产犯罪典型案例（最高人民法院）</a></div>
+</div>
+  </div>
 <script>
 window.SENTENCE_CAPS = {1:36};
   // ---- 全表内容可编辑 + 自动保存 ----

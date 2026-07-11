@@ -186,6 +186,23 @@
     table, .card, .block{box-shadow:none;} .editable{background:transparent;}
     .wrap{max-width:100%;}
   }
+  /* 实务案例参考 */
+  .cases{display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:14px 0 6px;}
+  .case{border:1px solid var(--line); border-radius:11px; padding:14px 16px; background:#fff;
+    box-shadow:0 1px 3px rgba(0,0,0,.05); display:flex; flex-direction:column;}
+  .case .ctop{display:flex; align-items:center; gap:7px; margin-bottom:4px; flex-wrap:wrap;}
+  .case .cname{font-size:14.5px; font-weight:700; color:var(--blue-deep);}
+  .case .csrc{font-size:11px; font-weight:700; color:#fff; border-radius:4px; padding:1px 7px; white-space:nowrap;}
+  .case .csrc.sup{background:var(--red);} .case .csrc.pro{background:var(--teal);}
+  .case .cmeta{font-size:12px; color:var(--muted); margin-bottom:6px;}
+  .case h4{font-size:12.5px; margin:8px 0 2px; color:var(--ink);}
+  .case p{margin:0 0 5px; font-size:12.5px; line-height:1.55;}
+  .case .note{font-size:12px; color:var(--muted); background:var(--bg); border-radius:7px; padding:6px 9px; margin-top:6px;}
+  .case .note .lab{font-weight:700; color:var(--amber);}
+  .case .src{margin-top:8px; font-size:12px;}
+  .case .src a{color:var(--blue); text-decoration:none;}
+  .case .src a:hover{text-decoration:underline;}
+  @media(max-width:680px){.cases{grid-template-columns:1fr;}}
 </style>
 </head>
 <body>
@@ -531,6 +548,68 @@
 </div>
 
   <!-- CAPS_OVERRIDE -->
+
+
+  <h2 class="section">实务参考案例</h2>
+  <div class="legend" style="margin-top:-2px;">
+    <span>下列案例选自 <b>最高人民法院</b>、<b>最高人民检察院</b> 公开发布的典型案例（官方来源可核实），供量刑与辩护思路参考；可在每张卡片「参考要点」处直接批注。</span>
+  </div>
+  <div class="cases">
+<div class="case">
+  <div class="ctop"><span class="cname">洪小强、洪礼沃、洪清泉、李志荣开设赌场案</span><span class="csrc sup">指导案例105号</span></div>
+  <div class="cmeta">江西省赣州市章贡区人民法院　|　最高人民法院第20批指导性案例（2018年12月25日发布）</div>
+  <h4>基本案情</h4>
+  <p>2016年2月起，四被告人以营利为目的，建立微信群招揽赌客，根据竞猜游戏网站开奖结果以押大小、单双方式赌博并控制管理，持续组织网络赌博，共接受赌资<b>3237300元</b>。</p>
+  <h4>裁判结果</h4>
+  <p>法院以开设赌场罪分别判处洪小强、洪礼沃、洪清泉、李志荣<b>有期徒刑四年，各并处罚金五万元</b>，违法所得6.6万元及作案工具予以没收。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">微信群+竞猜网站持续组织赌博认定为“开设赌场”；可从赌资数额、主从犯地位及坦白退赃论证“情节严重”档量刑。</span></div>
+  <div class="src">来源：<a href="https://www.court.gov.cn/zixun/xiangqing/137101.html" target="_blank">指导案例105号：洪小强、洪礼沃、洪清泉、李志荣开设赌场案（最高人民法院）</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">谢检军、高垒、高尔樵、杨泽彬开设赌场案</span><span class="csrc sup">指导案例106号</span></div>
+  <div class="cmeta">浙江省杭州市中级人民法院（二审）　|　最高人民法院第20批指导性案例（2018年12月25日发布）</div>
+  <h4>基本案情</h4>
+  <p>2015年9月至11月，被告人等受邀在微信群内以“抢红包”方式组织赌博，代发红包并从抽头款中分取好处费，设定赌博规则并持续组织网络赌博活动。</p>
+  <h4>裁判结果</h4>
+  <p>二审以开设赌场罪判处谢检军<b>有期徒刑三年，罚金二万五千元</b>；高垒、高尔樵各<b>有期徒刑二年六个月，分别罚金二万、一万五千元</b>；杨泽彬<b>有期徒刑一年六个月，罚金一万元</b>。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">微信群抢红包赌博亦属“开设赌场”；可从系从犯、获利较少、认罪认罚争取减轻处罚。</span></div>
+  <div class="src">来源：<a href="https://www.court.gov.cn/zixun/xiangqing/137111.html" target="_blank">指导案例106号：谢检军、高垒、高尔樵、杨泽彬开设赌场案（最高人民法院）</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">陈庆豪、陈淑娟、赵延海开设赌场案</span><span class="csrc sup">指导案例146号</span></div>
+  <div class="cmeta">江西省高级人民法院（二审）　|　最高人民法院指导性案例（2020年12月29日发布）</div>
+  <h4>基本案情</h4>
+  <p>2016年起，被告人等以“二元期权”交易为名，在法定期货交易场所外利用互联网招揽投资者，以“买涨买跌”定盈亏、盈亏不与价格实际涨跌挂钩，实为网络赌博，龙汇网站全国约<b>10万会员</b>。</p>
+  <h4>裁判结果</h4>
+  <p>二审以开设赌场罪改判陈庆豪<b>有期徒刑二年六个月，罚金五十万元，驱逐出境</b>；陈淑娟<b>有期徒刑二年，罚金三十万元</b>；赵延海<b>有期徒刑一年十个月，罚金二十万元</b>。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">披着期权外衣的“对赌”被认定为赌博网站；可从“情节严重”认定、境内外作用分工及退缴违法所得论证量刑。</span></div>
+  <div class="src">来源：<a href="https://www.court.gov.cn/fabu/xiangqing/283901.html" target="_blank">指导案例146号：陈庆豪、陈淑娟、赵延海开设赌场案（最高人民法院）</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">郑某、龚某开设赌场案</span><span class="csrc sup">最高法典型</span></div>
+  <div class="cmeta">重庆市江津区人民法院　|　最高人民法院依法惩治赌博及关联犯罪典型案例（2025年1月21日发布）</div>
+  <h4>基本案情</h4>
+  <p>2020年以来，被告人郑某注册境外赌博网站股东代理，招募下级代理及会员，以“六合彩”开奖结果作为中奖依据开设网络赌场，共接受投注<b>1.9亿余元</b>。</p>
+  <h4>裁判结果</h4>
+  <p>法院以开设赌场罪判处主犯郑某<b>有期徒刑五年十个月，并处罚金</b>；从犯龚某<b>有期徒刑二年六个月，缓刑三年，并处罚金</b>。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">“地下六合彩”网络赌场涉赌资特别巨大；可从主从犯区分、坦白认罪认罚争取减轻处罚及缓刑。</span></div>
+  <div class="src">来源：<a href="https://www.court.gov.cn/zixun/xiangqing/453211.html" target="_blank">最高人民法院发布依法惩治赌博及关联犯罪典型案例</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">唐某芬等11人开设赌场案</span><span class="csrc sup">最高法典型</span></div>
+  <div class="cmeta">湖北省荆门市掇刀区人民法院　|　最高人民法院跨境赌博及其关联犯罪典型案例（2024年7月22日发布）</div>
+  <h4>基本案情</h4>
+  <p>2018年起，被告人唐某芬代理境外赌博网站，雇人通过电话、微信等招揽境内人员网络赌博，唐某芬个人获利<b>700万余元</b>，案发后冻结涉案资金<b>141万余元</b>。</p>
+  <h4>裁判结果</h4>
+  <p>法院以开设赌场罪判处唐某芬等11人<b>有期徒刑三年至一年不等，均适用缓刑，并处罚金三十万元至一万五千元不等</b>。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">跨境网络赌博代理亦构本罪；唐某芬有立功、退赃、认罪认罚可争取缓刑，可从宽情节充分举证。</span></div>
+  <div class="src">来源：<a href="https://www.court.gov.cn/zixun/xiangqing/438871.html" target="_blank">最高人民法院发布跨境赌博及其关联犯罪典型案例</a></div>
+</div>
+  </div>
 <script>
 window.SENTENCE_CAPS = {1:60,2:120};
   // ---- 全表内容可编辑 + 自动保存 ----

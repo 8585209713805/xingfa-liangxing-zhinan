@@ -186,6 +186,23 @@
     table, .card, .block{box-shadow:none;} .editable{background:transparent;}
     .wrap{max-width:100%;}
   }
+  /* 实务案例参考 */
+  .cases{display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:14px 0 6px;}
+  .case{border:1px solid var(--line); border-radius:11px; padding:14px 16px; background:#fff;
+    box-shadow:0 1px 3px rgba(0,0,0,.05); display:flex; flex-direction:column;}
+  .case .ctop{display:flex; align-items:center; gap:7px; margin-bottom:4px; flex-wrap:wrap;}
+  .case .cname{font-size:14.5px; font-weight:700; color:var(--blue-deep);}
+  .case .csrc{font-size:11px; font-weight:700; color:#fff; border-radius:4px; padding:1px 7px; white-space:nowrap;}
+  .case .csrc.sup{background:var(--red);} .case .csrc.pro{background:var(--teal);}
+  .case .cmeta{font-size:12px; color:var(--muted); margin-bottom:6px;}
+  .case h4{font-size:12.5px; margin:8px 0 2px; color:var(--ink);}
+  .case p{margin:0 0 5px; font-size:12.5px; line-height:1.55;}
+  .case .note{font-size:12px; color:var(--muted); background:var(--bg); border-radius:7px; padding:6px 9px; margin-top:6px;}
+  .case .note .lab{font-weight:700; color:var(--amber);}
+  .case .src{margin-top:8px; font-size:12px;}
+  .case .src a{color:var(--blue); text-decoration:none;}
+  .case .src a:hover{text-decoration:underline;}
+  @media(max-width:680px){.cases{grid-template-columns:1fr;}}
 </style>
 </head>
 <body>
@@ -743,6 +760,79 @@
 
 </div>
 
+
+
+  <h2 class="section">实务参考案例</h2>
+  <div class="legend" style="margin-top:-2px;">
+    <span>下列案例选自 <b>最高人民法院</b>、<b>最高人民检察院</b> 公开发布的典型案例（官方来源可核实），供量刑与辩护思路参考；可在每张卡片「参考要点」处直接批注。</span>
+  </div>
+  <div class="cases">
+<div class="case">
+  <div class="ctop"><span class="cname">柯金山寻衅滋事案</span><span class="csrc sup">最高法典型案例</span></div>
+  <div class="cmeta">湖北省武汉市硚口区人民法院（一审）　|　最高人民法院依法惩处涉医犯罪典型案例，2020-05-11</div>
+  <h4>基本案情</h4>
+  <p>疫情防控期间，柯金山在隔离病区因对医生处置不满，<b>殴打医生高某并撕扯防护服</b>，致其轻微伤、防护服脱落，使医生处于感染风险。</p>
+  <h4>裁判结果</h4>
+  <p>以寻衅滋事罪判处<b>有期徒刑八个月</b>。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">疫情防控期间伤医情节恶劣，如实供述、认罪认罚可从宽，可论证量刑平衡。</span></div>
+  <div class="src">来源：<a href="https://www.court.gov.cn/zixun/xiangqing/228681.html" target="_blank">最高人民法院：人民法院依法惩处涉医犯罪典型案例</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">李苏颖寻衅滋事案</span><span class="csrc sup">最高法典型案例</span></div>
+  <div class="cmeta">广东省广州市越秀区人民法院（一审）　|　最高人民法院依法惩处涉医犯罪典型案例，2020-05-11</div>
+  <h4>基本案情</h4>
+  <p>李苏颖在新冠肺炎定点医院护士站，<b>持注射器针头抵住护士颈部挟持</b>约半小时，致护士皮肤损伤。</p>
+  <h4>裁判结果</h4>
+  <p>以寻衅滋事罪从重判处<b>有期徒刑一年</b>。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">定点医院持械挟持医护人员可从重；认罪认罚为从轻情节，可权衡主张。</span></div>
+  <div class="src">来源：<a href="https://www.court.gov.cn/zixun/xiangqing/228681.html" target="_blank">最高人民法院：人民法院依法惩处涉医犯罪典型案例</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">李广伟寻衅滋事案</span><span class="csrc sup">最高法典型案例</span></div>
+  <div class="cmeta">黑龙江省哈尔滨市南岗区人民法院（一审）　|　最高人民法院依法惩处涉医犯罪典型案例，2020-05-11</div>
+  <h4>基本案情</h4>
+  <p>李广伟因认为医生钩坏其牙，返回口腔门诊<b>持刀捅刺、砸打医务人员，致1人轻伤、1人轻微伤</b>。</p>
+  <h4>裁判结果</h4>
+  <p>以寻衅滋事罪判处<b>有期徒刑三年</b>。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">有犯罪前科、持刀伤医后果较重，不足以从轻，可关注认罪与赔偿情节。</span></div>
+  <div class="src">来源：<a href="https://www.court.gov.cn/zixun/xiangqing/228681.html" target="_blank">最高人民法院：人民法院依法惩处涉医犯罪典型案例</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">曹会勇寻衅滋事案</span><span class="csrc sup">最高法典型案例</span></div>
+  <div class="cmeta">陕西省太白县人民法院（一审）　|　最高人民法院依法惩处涉医犯罪典型案例，2020-05-11</div>
+  <h4>基本案情</h4>
+  <p>曹会勇酒后送友就医，无端持听诊器扔砸、<b>拳脚击打医生致轻伤二级</b>，并脚踢阻拦护士，系累犯。</p>
+  <h4>裁判结果</h4>
+  <p>以寻衅滋事罪判处<b>有期徒刑二年</b>（累犯从重，认罪认罚、获谅解从轻）。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">累犯从重，但认罪认罚、取得谅解可从宽，量刑情节交叉运用。</span></div>
+  <div class="src">来源：<a href="https://www.court.gov.cn/zixun/xiangqing/228681.html" target="_blank">最高人民法院：人民法院依法惩处涉医犯罪典型案例</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">龚品文等组织、领导、参加黑社会性质组织案</span><span class="csrc sup">最高法指导案例186号</span></div>
+  <div class="cmeta">江苏省常熟市相关法院　|　最高人民法院发布第33批指导性案例，2022-11-29</div>
+  <h4>基本案情</h4>
+  <p>龚品文、刘海涛组织黑社会性质组织，长期采用"软暴力"及非法拘禁、<b>寻衅滋事、敲诈勒索、强迫交易</b>等违法犯罪敛财。</p>
+  <h4>裁判结果</h4>
+  <p>该组织成员实施的寻衅滋事等违法犯罪行为被依法认定，相关被告人以组织、领导、参加黑社会性质组织罪等<b>数罪并罚</b>。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">寻衅滋事作为黑社会性质组织行为特征的组成部分，辩护应区分个罪与组织犯罪责任。</span></div>
+  <div class="src">来源：<a href="https://www.court.gov.cn/fabu/xiangqing/382211.html" target="_blank">最高人民法院：指导案例186号龚品文等组织、领导、参加黑社会性质组织案</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">吴润鹏寻衅滋事案</span><span class="csrc sup">最高法公报案例</span></div>
+  <div class="cmeta">山东省淄博市中级人民法院　|　《最高人民法院公报》</div>
+  <h4>基本案情</h4>
+  <p>吴润鹏纠集多人<b>随意殴打他人致三人轻微伤并损毁财物</b>，构成寻衅滋事。</p>
+  <h4>裁判结果</h4>
+  <p>以寻衅滋事罪判处<b>有期徒刑二年</b>（与抢劫、绑架罪并罚）。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">随意殴打致多人轻微伤，可关注其在共同犯罪中的作用与并罚量刑。</span></div>
+  <div class="src">来源：<a href="http://gongbao.court.gov.cn/Details/13a15646a538cd4f483417e4cdc410.html" target="_blank">最高人民法院公报：淄博市人民检察院诉杨保营等人抢劫、绑架、寻衅滋事案</a></div>
+</div>
+  </div>
 <script>
   // ---- 全表内容可编辑 + 自动保存 ----
   const KEY = 'xinzheng_notes_v2';

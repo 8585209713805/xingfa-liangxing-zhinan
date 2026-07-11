@@ -186,6 +186,23 @@
     table, .card, .block{box-shadow:none;} .editable{background:transparent;}
     .wrap{max-width:100%;}
   }
+  /* 实务案例参考 */
+  .cases{display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:14px 0 6px;}
+  .case{border:1px solid var(--line); border-radius:11px; padding:14px 16px; background:#fff;
+    box-shadow:0 1px 3px rgba(0,0,0,.05); display:flex; flex-direction:column;}
+  .case .ctop{display:flex; align-items:center; gap:7px; margin-bottom:4px; flex-wrap:wrap;}
+  .case .cname{font-size:14.5px; font-weight:700; color:var(--blue-deep);}
+  .case .csrc{font-size:11px; font-weight:700; color:#fff; border-radius:4px; padding:1px 7px; white-space:nowrap;}
+  .case .csrc.sup{background:var(--red);} .case .csrc.pro{background:var(--teal);}
+  .case .cmeta{font-size:12px; color:var(--muted); margin-bottom:6px;}
+  .case h4{font-size:12.5px; margin:8px 0 2px; color:var(--ink);}
+  .case p{margin:0 0 5px; font-size:12.5px; line-height:1.55;}
+  .case .note{font-size:12px; color:var(--muted); background:var(--bg); border-radius:7px; padding:6px 9px; margin-top:6px;}
+  .case .note .lab{font-weight:700; color:var(--amber);}
+  .case .src{margin-top:8px; font-size:12px;}
+  .case .src a{color:var(--blue); text-decoration:none;}
+  .case .src a:hover{text-decoration:underline;}
+  @media(max-width:680px){.cases{grid-template-columns:1fr;}}
 </style>
 </head>
 <body>
@@ -531,6 +548,68 @@
 </div>
 
   <!-- CAPS_OVERRIDE -->
+
+
+  <h2 class="section">实务参考案例</h2>
+  <div class="legend" style="margin-top:-2px;">
+    <span>下列案例选自 <b>最高人民法院</b>、<b>最高人民检察院</b> 公开发布的典型案例（官方来源可核实），供量刑与辩护思路参考；可在每张卡片「参考要点」处直接批注。</span>
+  </div>
+  <div class="cases">
+<div class="case">
+  <div class="ctop"><span class="cname">金某等组织卖淫案</span><span class="csrc sup">最高法指导案例</span></div>
+  <div class="cmeta">江苏省宿迁市宿城区人民法院（一审）·宿迁市中级法院（二审）　|　最高人民法院第44批指导案例248号（2025-03-12发布）</div>
+  <h4>基本案情</h4>
+  <p>2019年1月至3月，金某与臧某乐、郑某、戈某宇共同出资开设养生会所，组织<b>7名卖淫人员</b>从事卖淫活动，非法获利共计<b>62万余元</b>，金某分得76485元。</p>
+  <h4>裁判结果</h4>
+  <p>四人均构成组织卖淫罪；金某判处<b>有期徒刑三年六个月，并处罚金人民币三十六万元</b>。二审维持（取保候审期间约购毒品并揭发不认定立功，依上诉不加刑原则维持）。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">取保候审期间以非法手段"制造"立功线索不认定立功；可从自首、退缴违法所得、立功认定争议争取量刑。</span></div>
+  <div class="src">来源：<a href="https://www.court.gov.cn/zixun/xiangqing/459201.html" target="_blank">最高人民法院：指导性案例248号 金某等组织卖淫案</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">茅某组织卖淫不起诉复议复核案</span><span class="csrc pro">最高检指导案例</span></div>
+  <div class="cmeta">检例第212号（最高检第五十二批指导性案例）　|　最高人民检察院（2024-04-23发布）</div>
+  <h4>基本案情</h4>
+  <p>茅某系某浴场股东兼实际经营者，自2012年12月起明知王某等人组织卖淫，仍将浴场包厢区租赁给王某并约定嫖资分配比例、管理卖淫场所、统一收取嫖资，浴场从中获利。</p>
+  <h4>裁判结果</h4>
+  <p>法院以茅某犯组织卖淫罪判处<b>有期徒刑五年三个月，并处罚金人民币二十万元</b>（原存疑不起诉经上级检察院复核纠正后提起公诉，判决已生效）。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">场所经营者提供场所并有管理、控制行为的，应定组织卖淫而非容留卖淫；可从主观明知、管理控制程度争取定性辩护。</span></div>
+  <div class="src">来源：<a href="https://www.spp.gov.cn/xwfbh/wsfbt/202405/t20240514_654060.shtml" target="_blank">最高人民检察院：第五十二批指导性案例（茅某组织卖淫不起诉复议复核案）</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">于某、彭某蓉组织卖淫案</span><span class="csrc sup">最高法案例库</span></div>
+  <div class="cmeta">湖南省益阳市中级人民法院（二审）　|　人民法院案例库（入库编号2023-05-1-368-006）</div>
+  <h4>基本案情</h4>
+  <p>2014年3月至2015年12月，于某单独或伙同彭某蓉引诱在校女学生，先后组织<b>十余名未成年女性（含一名未满14周岁幼女）</b>在其控制下多次卖淫，获利十余万元由于某支配。</p>
+  <h4>裁判结果</h4>
+  <p>于某以组织卖淫罪判处<b>无期徒刑，剥夺政治权利终身，并处没收个人全部财产</b>；彭某蓉判处<b>有期徒刑十五年，并处罚金十万元</b>。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">组织未成年人、幼女卖淫属"情节严重"并从重；可从引诱/介绍行为择一重、主从犯地位辩护。</span></div>
+  <div class="src">来源：<a href="https://m.thepaper.cn/newsDetail_forward_32668730" target="_blank">人民法院案例库选介：于某、彭某蓉组织卖淫案（入库编号2023-05-1-368-006）</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">方某甲组织卖淫案</span><span class="csrc sup">最高法案例库</span></div>
+  <div class="cmeta">四川省绵阳市涪城区人民法院（一审）·绵阳市中级法院（二审）　|　人民法院案例库（入库编号2023-05-1-368-004）</div>
+  <h4>基本案情</h4>
+  <p>方某甲租用酒店8楼成立商务娱乐会所并聘用人员经营管理，2016年4月至8月组织多名卖淫人员从事卖淫活动，其中2016年8月1日至18日组织卖淫<b>346次</b>。</p>
+  <h4>裁判结果</h4>
+  <p>方某甲以组织卖淫罪判处<b>有期徒刑五年六个月，并处罚金二十万元</b>；秦某明、于某洋均处五年六个月以下并处罚金；其余人员定协助组织卖淫罪判缓刑。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">主要投资人、实际经营者认定为主犯；可从出资比例、管理职责、自首坦白争取量刑。</span></div>
+  <div class="src">来源：<a href="https://m.055110.com/xs/1/24414.html" target="_blank">人民法院案例库：方某甲等组织卖淫案（入库编号2023-05-1-368-004）</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">周军辉、秦星案（秦星组织卖淫部分）</span><span class="csrc sup">最高法典型</span></div>
+  <div class="cmeta">最高人民法院（死刑复核）　|　最高人民法院不核准死刑案</div>
+  <h4>基本案情</h4>
+  <p>秦星伙同他人采取招募、容留等手段，组织多名妇女从事卖淫活动；周军辉、秦星还强迫不满14周岁幼女多次卖淫，致被害人身心受严重侵害。</p>
+  <h4>裁判结果</h4>
+  <p>最高人民法院认定秦星行为构成<b>组织卖淫罪</b>（与强迫卖淫罪等数罪并罚），但裁定<b>不核准死刑</b>，发回湖南省高级人民法院重新审判。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">组织卖淫与强迫卖淫并存时数罪并罚；可从犯罪作用、量刑平衡、事实证据争取辩护。</span></div>
+  <div class="src">来源：<a href="http://www.court.gov.cn/zixun/xiangqing/6468.html" target="_blank">最高人民法院：最高法院依法不予核准被告人周军辉、秦星死刑</a></div>
+</div>
+  </div>
 <script>
 window.SENTENCE_CAPS = {1:120,2:180};
   // ---- 全表内容可编辑 + 自动保存 ----

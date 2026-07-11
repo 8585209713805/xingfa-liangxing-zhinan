@@ -186,6 +186,23 @@
     table, .card, .block{box-shadow:none;} .editable{background:transparent;}
     .wrap{max-width:100%;}
   }
+  /* 实务案例参考 */
+  .cases{display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:14px 0 6px;}
+  .case{border:1px solid var(--line); border-radius:11px; padding:14px 16px; background:#fff;
+    box-shadow:0 1px 3px rgba(0,0,0,.05); display:flex; flex-direction:column;}
+  .case .ctop{display:flex; align-items:center; gap:7px; margin-bottom:4px; flex-wrap:wrap;}
+  .case .cname{font-size:14.5px; font-weight:700; color:var(--blue-deep);}
+  .case .csrc{font-size:11px; font-weight:700; color:#fff; border-radius:4px; padding:1px 7px; white-space:nowrap;}
+  .case .csrc.sup{background:var(--red);} .case .csrc.pro{background:var(--teal);}
+  .case .cmeta{font-size:12px; color:var(--muted); margin-bottom:6px;}
+  .case h4{font-size:12.5px; margin:8px 0 2px; color:var(--ink);}
+  .case p{margin:0 0 5px; font-size:12.5px; line-height:1.55;}
+  .case .note{font-size:12px; color:var(--muted); background:var(--bg); border-radius:7px; padding:6px 9px; margin-top:6px;}
+  .case .note .lab{font-weight:700; color:var(--amber);}
+  .case .src{margin-top:8px; font-size:12px;}
+  .case .src a{color:var(--blue); text-decoration:none;}
+  .case .src a:hover{text-decoration:underline;}
+  @media(max-width:680px){.cases{grid-template-columns:1fr;}}
 </style>
 </head>
 <body>
@@ -677,6 +694,57 @@
 
 </div>
 
+
+
+  <h2 class="section">实务参考案例</h2>
+  <div class="legend" style="margin-top:-2px;">
+    <span>下列案例选自 <b>最高人民法院</b>、<b>最高人民检察院</b> 公开发布的典型案例（官方来源可核实），供量刑与辩护思路参考；可在每张卡片「参考要点」处直接批注。</span>
+  </div>
+  <div class="cases">
+<div class="case">
+  <div class="ctop"><span class="cname">臧进泉等盗窃、诈骗案</span><span class="csrc sup">指导案例</span></div>
+  <div class="cmeta">浙江省高级人民法院（二审）　|　最高人民法院第七批指导性案例27号，2014-06-26发布</div>
+  <h4>基本案情</h4>
+  <p>臧进泉等人利用信息网络，发送植入计算机程序的虚假<b>1元</b>支付链接，诱骗被害人金某点击，秘密窃取其网银账户<b>305000元</b>；另虚构可供交易的商品或服务，欺骗他人点击付款链接骗取财物。郑必玲参与窃取。</p>
+  <h4>裁判结果</h4>
+  <p>臧进泉犯盗窃罪判处<b>有期徒刑十三年</b>、剥夺政治权利一年、罚金<b>3万元</b>，犯诈骗罪二年、罚金5千，决定执行十四年六个月；郑必玲犯盗窃罪<b>有期徒刑十年</b>、剥夺政治权利一年、罚金1万，犯诈骗罪六个月、罚金2千，决定执行十年三个月；刘涛犯诈骗罪<b>有期徒刑一年六个月</b>、罚金5千。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">利用虚假链接秘密窃取定盗窃、虚构交易骗财定诈骗，应区分主要手段与被害人处分自愿性；数罪并罚时分别量刑再合并。</span></div>
+  <div class="src">来源：<a href="http://gongbao.court.gov.cn/Details/a6291a51c2bb06fa56f914d70a92a3.html" target="_blank">《最高人民法院公报》：指导案例27号臧进泉等盗窃、诈骗案</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">崔勇、仇国宾、张志国盗窃案</span><span class="csrc sup">最高法公报</span></div>
+  <div class="cmeta">上海市第二中级人民法院（二审）　|　《最高人民法院公报》2011年第9期（总第179期）</div>
+  <h4>基本案情</h4>
+  <p>三被告人将银行卡出租后，在租用人掌握密码、实际占有控制卡内存款的情况下，通过<b>挂失、补卡</b>等手段将租用人存储在卡内资金取出占为己有，数额特别巨大。</p>
+  <h4>裁判结果</h4>
+  <p>黄浦区法院一审：崔勇犯盗窃罪处<b>有期徒刑十年</b>、罚金1万元；仇国宾处<b>有期徒刑六年</b>、罚金6000元；张志国（从犯）处<b>有期徒刑七年</b>、罚金7000元。上海市二中院二审维持原判。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">银行卡租用人掌握密码仍占有存款，挂失补卡转移占有符合“秘密窃取”；从犯可争取减轻处罚，自首、退赃可酌情从轻。</span></div>
+  <div class="src">来源：<a href="http://gongbao.court.gov.cn/Details/f7c27894a20927a65d72232ab5468e.html" target="_blank">《最高人民法院公报》：上海市黄浦区人民检察院诉崔勇、仇国宾、张志国盗窃案</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">徐某盗窃、王某掩饰、隐瞒犯罪所得案</span><span class="csrc sup">入库参考案例</span></div>
+  <div class="cmeta">安徽省明光市人民法院（一审）　|　人民法院案例库2024-18-1-221-001，2024年发布</div>
+  <h4>基本案情</h4>
+  <p>2021年4—5月，徐某先后<b>24次</b>盗窃工地脚手架扣件，价值<b>32400元</b>，分29次售予明知来路不明的王某，王某支付19741元。</p>
+  <h4>裁判结果</h4>
+  <p>明光市法院（2021）皖1182刑初151号：徐某犯盗窃罪处<b>有期徒刑一年六个月</b>、罚金1.8万元；王某犯掩饰、隐瞒犯罪所得罪处有期徒刑七个月、罚金8千元。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">多次盗窃数额累计计算；收赃方明知来路不明构成掩隐罪，“情节严重”需结合收购次数与价值判断，注意与上游量刑均衡。</span></div>
+  <div class="src">来源：<a href="https://www.court.gov.cn/zixun/xiangqing/452231.html" target="_blank">最高人民法院：入库参考案例选介——徐某盗窃、王某掩饰、隐瞒犯罪所得案</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">宋某严盗窃、罗某礼掩饰、隐瞒犯罪所得案</span><span class="csrc sup">入库参考案例</span></div>
+  <div class="cmeta">云南省昆明市中级人民法院（二审）　|　人民法院案例库2024-18-1-221-002，2024年发布</div>
+  <h4>基本案情</h4>
+  <p>2012年8月至2013年1月，宋某严<b>九次</b>盗窃二轮摩托车共九辆，价值<b>19981元</b>；罗某礼明知系犯罪所得仍收购其中六辆，价值11245元。</p>
+  <h4>裁判结果</h4>
+  <p>一审嵩明县法院：宋某严犯盗窃罪处<b>有期徒刑二年</b>、罚金1万元；罗某礼犯掩饰、隐瞒犯罪所得罪处有期徒刑三年、罚金7千元。二审昆明中院改判罗某礼<b>有期徒刑一年</b>、罚金7千元。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">上下游量刑应均衡；收赃“机动车五辆以上”方属情节严重，不足五辆应在三年以下量刑，二审已作纠正。</span></div>
+  <div class="src">来源：<a href="https://www.court.gov.cn/zixun/xiangqing/476081.html" target="_blank">最高人民法院：入库参考案例选介——宋某严盗窃，罗某礼掩饰、隐瞒犯罪所得案</a></div>
+</div>
+  </div>
 <script>
   // ---- 全表内容可编辑 + 自动保存 ----
   const KEY = "theft_notes_v1";

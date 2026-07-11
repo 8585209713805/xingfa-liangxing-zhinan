@@ -186,6 +186,23 @@
     table, .card, .block{box-shadow:none;} .editable{background:transparent;}
     .wrap{max-width:100%;}
   }
+  /* 实务案例参考 */
+  .cases{display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:14px 0 6px;}
+  .case{border:1px solid var(--line); border-radius:11px; padding:14px 16px; background:#fff;
+    box-shadow:0 1px 3px rgba(0,0,0,.05); display:flex; flex-direction:column;}
+  .case .ctop{display:flex; align-items:center; gap:7px; margin-bottom:4px; flex-wrap:wrap;}
+  .case .cname{font-size:14.5px; font-weight:700; color:var(--blue-deep);}
+  .case .csrc{font-size:11px; font-weight:700; color:#fff; border-radius:4px; padding:1px 7px; white-space:nowrap;}
+  .case .csrc.sup{background:var(--red);} .case .csrc.pro{background:var(--teal);}
+  .case .cmeta{font-size:12px; color:var(--muted); margin-bottom:6px;}
+  .case h4{font-size:12.5px; margin:8px 0 2px; color:var(--ink);}
+  .case p{margin:0 0 5px; font-size:12.5px; line-height:1.55;}
+  .case .note{font-size:12px; color:var(--muted); background:var(--bg); border-radius:7px; padding:6px 9px; margin-top:6px;}
+  .case .note .lab{font-weight:700; color:var(--amber);}
+  .case .src{margin-top:8px; font-size:12px;}
+  .case .src a{color:var(--blue); text-decoration:none;}
+  .case .src a:hover{text-decoration:underline;}
+  @media(max-width:680px){.cases{grid-template-columns:1fr;}}
 </style>
 </head>
 <body>
@@ -531,6 +548,79 @@
 </div>
 
   <!-- CAPS_OVERRIDE -->
+
+
+  <h2 class="section">实务参考案例</h2>
+  <div class="legend" style="margin-top:-2px;">
+    <span>下列案例选自 <b>最高人民法院</b>、<b>最高人民检察院</b> 公开发布的典型案例（官方来源可核实），供量刑与辩护思路参考；可在每张卡片「参考要点」处直接批注。</span>
+  </div>
+  <div class="cases">
+<div class="case">
+  <div class="ctop"><span class="cname">侯某某、邱某拒不执行判决、裁定案</span><span class="csrc sup">两高典型</span></div>
+  <div class="cmeta">深圳市南山区人民法院　|　"两高"拒不执行判决、裁定罪典型案例（2025-01-20发布）</div>
+  <h4>基本案情</h4>
+  <p>侯某某拖欠程某借款本金<b>310万余元</b>及利息，其对邱某享有<b>210万余元</b>到期债权。二人于2021年8月达成虚假执行和解协议，以支付10万元对价换取侯某某放弃剩余债权并申请结案、解除查封，意图规避执行。</p>
+  <h4>裁判结果</h4>
+  <p>侯某某、邱某均构成拒不执行判决、裁定罪，分别判处<b>有期徒刑八个月、有期徒刑六个月</b>。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">虚假和解放弃到期债权属"有能力执行而拒不执行"；可从是否实质致使判决无法执行、事后撤销协议补救措施争取从宽。</span></div>
+  <div class="src">来源：<a href="https://www.spp.gov.cn/xwfbh/wsfbt/202501/t20250120_679889.shtml" target="_blank">最高人民检察院："两高"联合发布拒不执行判决、裁定罪典型案例</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">邱某等拒不执行判决、裁定案</span><span class="csrc sup">两高典型</span></div>
+  <div class="cmeta">苏州市姑苏区人民法院　|　"两高"拒不执行判决、裁定罪典型案例（2025-01-20发布）</div>
+  <h4>基本案情</h4>
+  <p>邱某为规避执行，与朱某等人共谋虚构房屋存在<b>长达15年租赁关系</b>并伪造租金凭证，使房屋"带租拍卖"，由朱某以<b>300万余元</b>低价竞得后转售540万元。</p>
+  <h4>裁判结果</h4>
+  <p>邱某、朱某、郁某均构成拒不执行判决、裁定罪，分别判处<b>二年至六个月不等刑期并适用缓刑</b>。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">虚构租赁"带租拍卖"低价受让系典型拒执；可从参与程度、是否实际获利、退赔争取从宽。</span></div>
+  <div class="src">来源：<a href="https://www.spp.gov.cn/xwfbh/wsfbt/202501/t20250120_679889.shtml" target="_blank">最高人民检察院："两高"联合发布拒不执行判决、裁定罪典型案例</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">王某、王某某拒不执行判决、裁定案</span><span class="csrc sup">两高典型</span></div>
+  <div class="cmeta">天津市宝坻区人民法院　|　"两高"拒不执行判决、裁定罪典型案例（2025-01-20发布）</div>
+  <h4>基本案情</h4>
+  <p>王某欠李某借款50万元及利息4万元，收到执行通知后次日即与妻子王某某协议离婚，将名下全部财产转移至王某某名下、债务由王某负担，并将钱款用于赌博，致使判决长期无法执行。</p>
+  <h4>裁判结果</h4>
+  <p>王某、王某某均构成拒执罪，王某判处<b>拘役五个月，缓刑六个月</b>；王某某判处<b>拘役三个月，缓刑六个月</b>（家属已代为付清借款并取得谅解）。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">协议离婚转移财产逃避执行可构罪；全额履行并取得谅解是从宽、争取缓刑的关键情节。</span></div>
+  <div class="src">来源：<a href="https://www.spp.gov.cn/xwfbh/wsfbt/202501/t20250120_679889.shtml" target="_blank">最高人民检察院："两高"联合发布拒不执行判决、裁定罪典型案例</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">孙某、刘某辉拒不执行判决、裁定案</span><span class="csrc sup">两高典型</span></div>
+  <div class="cmeta">哈尔滨市平房区人民法院　|　"两高"拒不执行判决、裁定罪典型案例（2025-01-20发布）</div>
+  <h4>基本案情</h4>
+  <p>刘某辉欠某公司<b>99万余元</b>，执行和解中孙某以其轿车及房产提供担保。2019年12月孙某、刘某辉将担保车辆以<b>10万元</b>转让他人并过户，款项未用于履行义务，致使判决无法执行。</p>
+  <h4>裁判结果</h4>
+  <p>孙某、刘某辉均构成拒执罪，孙某判处<b>有期徒刑十个月，缓刑二年</b>；刘某辉判处<b>有期徒刑九个月，缓刑一年九个月</b>。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">转让已提供担保财产属情节严重；可从担保财产价值、履行意愿、是否造成不能执行争取缓刑。</span></div>
+  <div class="src">来源：<a href="https://www.spp.gov.cn/xwfbh/wsfbt/202501/t20250120_679889.shtml" target="_blank">最高人民检察院："两高"联合发布拒不执行判决、裁定罪典型案例</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">李某某拒不执行判决、裁定案</span><span class="csrc sup">两高典型</span></div>
+  <div class="cmeta">衡水市桃城区人民检察院　|　"两高"拒不执行判决、裁定罪典型案例（2025-01-20发布）</div>
+  <h4>基本案情</h4>
+  <p>李某某系房地产公司实际控制人，公司欠王某某本金200万元及利息，法院查封多套房产。双方签以房抵债协议后王某某反悔，李某某以"债务已结清、查封物价值远超执行标的"提出异议且未报告财产，公安机关立案。</p>
+  <h4>裁判结果</h4>
+  <p>检察机关审查认定该公司、李某某<b>不构成拒执罪，依法作出不起诉决定</b>，同时建议当事人通过民事途径解决借贷纠纷。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">查封物价值远超执行标的、无转移隐匿行为的，应避免客观归罪；可作无罪/不诉辩护切入点。</span></div>
+  <div class="src">来源：<a href="https://www.spp.gov.cn/xwfbh/wsfbt/202501/t20250120_679889.shtml" target="_blank">最高人民检察院："两高"联合发布拒不执行判决、裁定罪典型案例</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">邓某拒不执行判决、裁定案</span><span class="csrc sup">最高法典型</span></div>
+  <div class="cmeta">广东省深圳市盐田区人民法院　|　最高法、人社部依法惩治恶意欠薪犯罪典型案例（2025-01-22发布）</div>
+  <h4>基本案情</h4>
+  <p>邓某系被执行检测公司总经理、股东，2020年11月至2023年3月擅自使用他人账户收支公司款项，<b>转移资金234万余元</b>，未如实申报财产，致众多劳动者胜诉权益无法及时兑现。</p>
+  <h4>裁判结果</h4>
+  <p>邓某构成拒不执行判决、裁定罪，依法从重处罚，判处<b>有期徒刑七个月</b>（家属代为清偿所欠劳动报酬）。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">转移公司资金逃避劳动报酬执行可从重；家属代为清偿欠薪系重要从宽情节，可争取更轻量刑。</span></div>
+  <div class="src">来源：<a href="http://www.court.gov.cn/zixun/xiangqing/453301.html" target="_blank">最高人民法院：依法惩治恶意欠薪犯罪典型案例（邓某拒执案）</a></div>
+</div>
+  </div>
 <script>
 window.SENTENCE_CAPS = {1:36,2:84};
   // ---- 全表内容可编辑 + 自动保存 ----

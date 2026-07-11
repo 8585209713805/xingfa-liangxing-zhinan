@@ -186,6 +186,23 @@
     table, .card, .block{box-shadow:none;} .editable{background:transparent;}
     .wrap{max-width:100%;}
   }
+  /* 实务案例参考 */
+  .cases{display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:14px 0 6px;}
+  .case{border:1px solid var(--line); border-radius:11px; padding:14px 16px; background:#fff;
+    box-shadow:0 1px 3px rgba(0,0,0,.05); display:flex; flex-direction:column;}
+  .case .ctop{display:flex; align-items:center; gap:7px; margin-bottom:4px; flex-wrap:wrap;}
+  .case .cname{font-size:14.5px; font-weight:700; color:var(--blue-deep);}
+  .case .csrc{font-size:11px; font-weight:700; color:#fff; border-radius:4px; padding:1px 7px; white-space:nowrap;}
+  .case .csrc.sup{background:var(--red);} .case .csrc.pro{background:var(--teal);}
+  .case .cmeta{font-size:12px; color:var(--muted); margin-bottom:6px;}
+  .case h4{font-size:12.5px; margin:8px 0 2px; color:var(--ink);}
+  .case p{margin:0 0 5px; font-size:12.5px; line-height:1.55;}
+  .case .note{font-size:12px; color:var(--muted); background:var(--bg); border-radius:7px; padding:6px 9px; margin-top:6px;}
+  .case .note .lab{font-weight:700; color:var(--amber);}
+  .case .src{margin-top:8px; font-size:12px;}
+  .case .src a{color:var(--blue); text-decoration:none;}
+  .case .src a:hover{text-decoration:underline;}
+  @media(max-width:680px){.cases{grid-template-columns:1fr;}}
 </style>
 </head>
 <body>
@@ -532,6 +549,79 @@
 </div>
 
   <!-- CAPS_OVERRIDE -->
+
+
+  <h2 class="section">实务参考案例</h2>
+  <div class="legend" style="margin-top:-2px;">
+    <span>下列案例选自 <b>最高人民法院</b>、<b>最高人民检察院</b> 公开发布的典型案例（官方来源可核实），供量刑与辩护思路参考；可在每张卡片「参考要点」处直接批注。</span>
+  </div>
+  <div class="cases">
+<div class="case">
+  <div class="ctop"><span class="cname">李开祥侵犯公民个人信息刑事附带民事公益诉讼案</span><span class="csrc sup">指导案例192号</span></div>
+  <div class="cmeta">上海市奉贤区人民法院　|　最高人民法院第35批指导性案例（2022年12月26日发布）</div>
+  <h4>基本案情</h4>
+  <p>2020年6月至9月，被告人李开祥制作可窃取安装者相册照片的手机“黑客软件”，伪装成“颜值检测”软件发布，非法获取安装者相册照片<b>1751张</b>，其中含人脸信息、姓名、身份证号等公民个人信息<b>100余条</b>；后又购买“社工库资料”，经去重后含各类公民个人信息<b>8100万余条</b>并分享至QQ群供成员下载。</p>
+  <h4>裁判结果</h4>
+  <p>上海市奉贤区人民法院以侵犯公民个人信息罪判处李开祥<b>有期徒刑三年，缓刑三年，并处罚金人民币一万元</b>。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">人脸信息已被明确纳入刑法保护的公民个人信息；可重点围绕信息数量认定、获利情节及退赔退赃提出从宽辩护。</span></div>
+  <div class="src">来源：<a href="https://www.court.gov.cn/zixun/xiangqing/384401.html" target="_blank">最高人民法院发布第35批指导性案例</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">罗文君、瞿小珍侵犯公民个人信息刑事附带民事公益诉讼案</span><span class="csrc sup">指导案例195号</span></div>
+  <div class="cmeta">湖南省株洲市渌口区人民法院　|　最高人民法院第35批指导性案例（2022年12月26日发布）</div>
+  <h4>基本案情</h4>
+  <p>2019年12月至2021年7月，被告人罗文君利用电信公司培训老师便利，组织学员非法获取客户手机号及随机验证码出售给他人用于“拉新”注册；罗文君获利<b>13000元</b>，被告人瞿小珍获利<b>9266.5元</b>。</p>
+  <h4>裁判结果</h4>
+  <p>法院以侵犯公民个人信息罪判处罗文君<b>有期徒刑八个月，并处罚金二万元</b>；判处瞿小珍<b>有期徒刑六个月，并处罚金一万五千元</b>；违法所得予以没收。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">验证码属刑法保护的公民个人信息；可从“提供服务过程中出售信息应从重”与“坦白、退赃、认罪认罚可从宽”双向论证量刑。</span></div>
+  <div class="src">来源：<a href="http://gongbao.court.gov.cn/Details/f99fbda36fc973edf2ba8f67e69dc6.html" target="_blank">最高人民法院关于发布第35批指导性案例的通知</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">柯某侵犯公民个人信息案</span><span class="csrc pro">最高检指导案例140号</span></div>
+  <div class="cmeta">上海市金山区人民法院　|　最高人民检察院第三十四批指导性案例（检例第140号，2022年2月发布）</div>
+  <h4>基本案情</h4>
+  <p>被告人柯某运营“房利帮”网站，通过现金激励吸引房产中介上传真实业主房源信息，有偿获取含门牌号、业主姓名、电话的非公开信息<b>30余万条</b>，以会员套餐形式出售获利<b>150余万元</b>。</p>
+  <h4>裁判结果</h4>
+  <p>上海市金山区人民法院以侵犯公民个人信息罪判处柯某<b>有期徒刑三年，缓刑四年，并处罚金人民币一百六十万元</b>。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">业主房源信息属身份识别信息组合；可围绕信息数量甄别（筛除模糊、重复信息）及主从犯地位展开辩护。</span></div>
+  <div class="src">来源：<a href="https://www.spp.gov.cn/zdgz/202202/t20220223_545391.shtml" target="_blank">最高检：他非法获取业主房源信息30余万条并以会员套餐方式出售</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">吴某某、陈某某等侵犯公民个人信息案</span><span class="csrc sup">最高法典型</span></div>
+  <div class="cmeta">江苏省苏州市姑苏区人民法院　|　最高人民法院依法惩治网络暴力违法犯罪典型案例（2023年发布）</div>
+  <h4>基本案情</h4>
+  <p>被告人吴某某与朱某发生矛盾后，提供亲属身份证信息供被告人陈某某查询；2020年5月，陈某某以<b>13150元</b>购买含住宿记录、购票记录等公民个人信息<b>1442条</b>，用于在网络发帖抹黑他人，相关帖文阅读、转发及跟帖逾<b>200万</b>。</p>
+  <h4>裁判结果</h4>
+  <p>法院以侵犯公民个人信息罪判处吴某某<b>有期徒刑十一个月，并处罚金二千元</b>；判处陈某某<b>有期徒刑一年，并处罚金二千元</b>。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">为实施网络暴力而“开盒”获取个人信息依法入罪；可从信息用途、造成后果及退赔谅解情节论证量刑。</span></div>
+  <div class="src">来源：<a href="https://www.court.gov.cn/zixun/xiangqing/490901.html" target="_blank">最高人民法院依法惩治网络暴力违法犯罪典型案例</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">陈某某等侵犯公民个人信息案</span><span class="csrc sup">最高法典型</span></div>
+  <div class="cmeta">广东省佛山市南海区人民法院　|　最高人民法院依法惩治侵犯公民个人信息犯罪及关联犯罪典型案例（2026年5月8日发布）</div>
+  <h4>基本案情</h4>
+  <p>2019年1月起，被告人陈某某利用铁路车站客运员职务便利，通过车票系统查询他人高铁出行信息，以每条<b>10元至60元</b>出售；截至2021年9月违法所得共计约<b>19万元</b>。</p>
+  <h4>裁判结果</h4>
+  <p>法院以侵犯公民个人信息罪判处陈某某等人<b>有期徒刑三年八个月至九个月（部分缓刑一年六个月）不等，并处罚金二十万元至一万四千元不等</b>。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">行业“内鬼”依法从重处罚；可从是否达“情节特别严重”量刑档、退赃及附带民事公益诉讼赔偿角度提出辩护。</span></div>
+  <div class="src">来源：<a href="https://app.xinhuanet.com/news/article.html?articleId=20260508c03370b6d88d48c9a29de5dc472d3a8c" target="_blank">最高法发布人民法院依法惩治侵犯公民个人信息犯罪及关联犯罪典型案例（新华网）</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">黄某某等侵犯公民个人信息案</span><span class="csrc sup">最高法典型</span></div>
+  <div class="cmeta">北京市西城区人民法院　|　最高人民法院依法惩治侵犯公民个人信息犯罪及关联犯罪典型案例（2026年5月8日发布）</div>
+  <h4>基本案情</h4>
+  <p>2021年8月以来，被告人黄某某等人通过伪造身份证图片、租用手机号注册“学信网”账号等手法，绕过实名认证非法下载《教育部学历证书电子注册备案表》出售牟利；各被告人违法所得约<b>30万元至6000元不等</b>。</p>
+  <h4>裁判结果</h4>
+  <p>法院以侵犯公民个人信息罪判处黄某某等人<b>有期徒刑三年八个月至八个月不等，并处罚金三十一万元至一万元不等</b>。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">利用技术手段窃取政务平台数据，多认定情节特别严重；可从技术手段作用、个人获利金额及从犯地位争取从宽。</span></div>
+  <div class="src">来源：<a href="https://app.xinhuanet.com/news/article.html?articleId=20260508c03370b6d88d48c9a29de5dc472d3a8c" target="_blank">最高法发布人民法院依法惩治侵犯公民个人信息犯罪及关联犯罪典型案例（新华网）</a></div>
+</div>
+  </div>
 <script>
 window.SENTENCE_CAPS = {1:36,2:84};
   // ---- 全表内容可编辑 + 自动保存 ----

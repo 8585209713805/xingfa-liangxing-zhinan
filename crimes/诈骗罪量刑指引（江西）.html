@@ -186,6 +186,23 @@
     table, .card, .block{box-shadow:none;} .editable{background:transparent;}
     .wrap{max-width:100%;}
   }
+  /* 实务案例参考 */
+  .cases{display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:14px 0 6px;}
+  .case{border:1px solid var(--line); border-radius:11px; padding:14px 16px; background:#fff;
+    box-shadow:0 1px 3px rgba(0,0,0,.05); display:flex; flex-direction:column;}
+  .case .ctop{display:flex; align-items:center; gap:7px; margin-bottom:4px; flex-wrap:wrap;}
+  .case .cname{font-size:14.5px; font-weight:700; color:var(--blue-deep);}
+  .case .csrc{font-size:11px; font-weight:700; color:#fff; border-radius:4px; padding:1px 7px; white-space:nowrap;}
+  .case .csrc.sup{background:var(--red);} .case .csrc.pro{background:var(--teal);}
+  .case .cmeta{font-size:12px; color:var(--muted); margin-bottom:6px;}
+  .case h4{font-size:12.5px; margin:8px 0 2px; color:var(--ink);}
+  .case p{margin:0 0 5px; font-size:12.5px; line-height:1.55;}
+  .case .note{font-size:12px; color:var(--muted); background:var(--bg); border-radius:7px; padding:6px 9px; margin-top:6px;}
+  .case .note .lab{font-weight:700; color:var(--amber);}
+  .case .src{margin-top:8px; font-size:12px;}
+  .case .src a{color:var(--blue); text-decoration:none;}
+  .case .src a:hover{text-decoration:underline;}
+  @media(max-width:680px){.cases{grid-template-columns:1fr;}}
 </style>
 </head>
 <body>
@@ -569,6 +586,79 @@
 </div>
 
   <!-- CAPS_OVERRIDE -->
+
+
+  <h2 class="section">实务参考案例</h2>
+  <div class="legend" style="margin-top:-2px;">
+    <span>下列案例选自 <b>最高人民法院</b>、<b>最高人民检察院</b> 公开发布的典型案例（官方来源可核实），供量刑与辩护思路参考；可在每张卡片「参考要点」处直接批注。</span>
+  </div>
+  <div class="cases">
+<div class="case">
+  <div class="ctop"><span class="cname">余某波等14人诈骗案</span><span class="csrc sup">最高法典型</span></div>
+  <div class="cmeta">山东省高级人民法院（二审）　|　最高法惩治电信网络诈骗等侵财犯罪典型案例，2026-02-26发布</div>
+  <h4>基本案情</h4>
+  <p>余某波在境外利用“创利丰金业”平台虚构黄金交易，纠集13人针对境内居民实施电诈，造成<b>1789名</b>被害人损失<b>2.8亿余元</b>。</p>
+  <h4>裁判结果</h4>
+  <p>余某波（首要分子）以诈骗罪判处<b>无期徒刑</b>、剥夺政治权利终身、并处没收个人全部财产；其余13人判处<b>十三年至二年不等有期徒刑</b>并处罚金。查扣在案的7381万余元财物按比例发还被害人。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">跨境电诈集团首要分子顶格量刑；到案后退赃、立功可从宽但不足以抵消特别巨大数额，应重点厘清个人参与数额与地位。</span></div>
+  <div class="src">来源：<a href="https://www.court.gov.cn/zixun/xiangqing/490051.html" target="_blank">最高人民法院：人民法院依法惩治电信网络诈骗等侵犯财产犯罪典型案例</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">徐某楠等9人诈骗案</span><span class="csrc sup">最高法典型</span></div>
+  <div class="cmeta">上海市松江区人民法院（一审）　|　同上典型案例，2026-02-26发布</div>
+  <h4>基本案情</h4>
+  <p>2022年11月至2023年8月，徐某楠等以“思跃教育公司”幌子，谎称名企兼职诱骗求职者购买课程，骗取学费<b>2200万余元</b>；张某后续收购战队继续骗取<b>700万余元</b>。</p>
+  <h4>裁判结果</h4>
+  <p>徐某楠犯诈骗罪处<b>有期徒刑十一年三个月</b>；张某处<b>有期徒刑十年二个月</b>；其余7人处<b>五年至三年不等有期徒刑</b>并处罚金。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">“招转培”以培训费为名非法占有定诈骗；主犯按组织、领导作用认定，自首、认罪认罚、退赃可从轻。</span></div>
+  <div class="src">来源：<a href="https://www.court.gov.cn/zixun/xiangqing/490051.html" target="_blank">最高人民法院：人民法院依法惩治电信网络诈骗等侵犯财产犯罪典型案例</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">吴某涛诈骗案</span><span class="csrc sup">最高法典型</span></div>
+  <div class="cmeta">湖北省黄石市黄石港区人民法院（一审）　|　同上典型案例，2026-02-26发布</div>
+  <h4>基本案情</h4>
+  <p>2025年4月，吴某涛按上线指令上门，配合利用<b>AI拟声</b>冒充亲属，从三名老人处骗取现金<b>6万元</b>，从中获利1700元。</p>
+  <h4>裁判结果</h4>
+  <p>吴某涛犯诈骗罪（从犯）处<b>有期徒刑二年一个月</b>并处罚金；因坦白、全部退赔并取得被害人谅解，依法减轻处罚。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">线下取款配合诈骗构成诈骗罪共犯（从犯）；全额退赔谅解可从宽减轻，应争取在法定刑以下量刑。</span></div>
+  <div class="src">来源：<a href="https://www.court.gov.cn/zixun/xiangqing/490051.html" target="_blank">最高人民法院：人民法院依法惩治电信网络诈骗等侵犯财产犯罪典型案例</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">黄某等3人诈骗案</span><span class="csrc sup">最高法典型</span></div>
+  <div class="cmeta">上海市高级人民法院（二审）　|　最高法电信网络诈骗及其关联犯罪典型案例，2025-02-24发布</div>
+  <h4>基本案情</h4>
+  <p>2020年初，黄某、李某辉在柬埔寨“财神国际”园区组建诈骗集团，冒充“高富帅”诱骗女性投资虚假平台，自2020年9月至2021年底骗取<b>100余名</b>被害人共计<b>1亿余元</b>。</p>
+  <h4>裁判结果</h4>
+  <p>黄某、李某辉、周某刚均系首要分子，以诈骗罪判处<b>无期徒刑</b>、剥夺政治权利终身，并处没收个人全部财产。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">境外组建诈骗集团首要分子顶格刑；针对特定群体“杀猪盘”情节恶劣，从宽空间小，应重点厘清个人涉案数额。</span></div>
+  <div class="src">来源：<a href="https://www.court.gov.cn/zixun/xiangqing/455701.html" target="_blank">最高人民法院：电信网络诈骗及其关联犯罪典型案例</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">杨某等3人诈骗案</span><span class="csrc sup">最高法典型</span></div>
+  <div class="cmeta">江西省新干县人民法院（一审）　|　同上典型案例，2025-02-24发布</div>
+  <h4>基本案情</h4>
+  <p>杨某曾因“虚假期货理财”电诈被判刑，2023年底又与吁某、方某文利用购物平台实施网络<b>刷单诈骗</b>，引诱下单300余单，诈骗<b>103名</b>被害人<b>5万余元</b>。</p>
+  <h4>裁判结果</h4>
+  <p>杨某（累犯）以诈骗罪判处<b>有期徒刑三年五个月</b>、罚金3万元；方某文有期徒刑三年一个月、罚金2万元；吁某有期徒刑三年、罚金2万元。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">电诈前科再犯从重；可从涉案数额、从犯地位及退赃退赔情节争取量刑空间，区分主从犯作用。</span></div>
+  <div class="src">来源：<a href="https://www.court.gov.cn/zixun/xiangqing/455701.html" target="_blank">最高人民法院：电信网络诈骗及其关联犯罪典型案例</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">肖某诚等2人诈骗案</span><span class="csrc sup">最高法典型</span></div>
+  <div class="cmeta">福建省武夷山市人民法院（一审）　|　同上典型案例，2025-02-24发布</div>
+  <h4>基本案情</h4>
+  <p>肖某诚、洪某煌向多名<b>未成年人</b>收购电话卡4张，并组织两名未成年人拨打诈骗电话<b>1524条</b>，造成5名被害人被骗共计<b>47余万元</b>。</p>
+  <h4>裁判结果</h4>
+  <p>二人虽系从犯、坦白，但利用未成年人实施犯罪予以从重：肖某诚以诈骗罪判处<b>有期徒刑五年六个月</b>、罚金5万元；洪某煌有期徒刑四年六个月、罚金2万元。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">利用未成年人实施电诈依法从重；若被告人本身系被利用的未成年人则应区分罪轻/不构成犯罪辩护。</span></div>
+  <div class="src">来源：<a href="https://www.court.gov.cn/zixun/xiangqing/455701.html" target="_blank">最高人民法院：电信网络诈骗及其关联犯罪典型案例</a></div>
+</div>
+  </div>
 <script>
   // ---- 全表内容可编辑 + 自动保存 ----
   const KEY = "fraud_notes_v1";

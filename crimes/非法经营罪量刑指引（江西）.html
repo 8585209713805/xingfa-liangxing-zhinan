@@ -186,6 +186,23 @@
     table, .card, .block{box-shadow:none;} .editable{background:transparent;}
     .wrap{max-width:100%;}
   }
+  /* 实务案例参考 */
+  .cases{display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:14px 0 6px;}
+  .case{border:1px solid var(--line); border-radius:11px; padding:14px 16px; background:#fff;
+    box-shadow:0 1px 3px rgba(0,0,0,.05); display:flex; flex-direction:column;}
+  .case .ctop{display:flex; align-items:center; gap:7px; margin-bottom:4px; flex-wrap:wrap;}
+  .case .cname{font-size:14.5px; font-weight:700; color:var(--blue-deep);}
+  .case .csrc{font-size:11px; font-weight:700; color:#fff; border-radius:4px; padding:1px 7px; white-space:nowrap;}
+  .case .csrc.sup{background:var(--red);} .case .csrc.pro{background:var(--teal);}
+  .case .cmeta{font-size:12px; color:var(--muted); margin-bottom:6px;}
+  .case h4{font-size:12.5px; margin:8px 0 2px; color:var(--ink);}
+  .case p{margin:0 0 5px; font-size:12.5px; line-height:1.55;}
+  .case .note{font-size:12px; color:var(--muted); background:var(--bg); border-radius:7px; padding:6px 9px; margin-top:6px;}
+  .case .note .lab{font-weight:700; color:var(--amber);}
+  .case .src{margin-top:8px; font-size:12px;}
+  .case .src a{color:var(--blue); text-decoration:none;}
+  .case .src a:hover{text-decoration:underline;}
+  @media(max-width:680px){.cases{grid-template-columns:1fr;}}
 </style>
 </head>
 <body>
@@ -551,6 +568,68 @@
 </div>
 
   <!-- CAPS_OVERRIDE -->
+
+
+  <h2 class="section">实务参考案例</h2>
+  <div class="legend" style="margin-top:-2px;">
+    <span>下列案例选自 <b>最高人民法院</b>、<b>最高人民检察院</b> 公开发布的典型案例（官方来源可核实），供量刑与辩护思路参考；可在每张卡片「参考要点」处直接批注。</span>
+  </div>
+  <div class="cases">
+<div class="case">
+  <div class="ctop"><span class="cname">王力军非法经营再审改判无罪案</span><span class="csrc sup">最高法指导案例</span></div>
+  <div class="cmeta">内蒙古巴彦淖尔市临河区法院（一审）·巴彦淖尔市中级法院（再审）　|　最高人民法院第19批指导案例97号（2018-12-19发布）</div>
+  <h4>基本案情</h4>
+  <p>2014年11月至2015年1月，被告人王力军未办理粮食收购许可证、未经工商登记，在临河区白脑包镇附近村组无证收购玉米并卖给粮油公司，<b>非法经营数额218288.6元</b>，<b>非法获利6000元</b>。</p>
+  <h4>裁判结果</h4>
+  <p>临河区法院一审以非法经营罪判处<b>有期徒刑一年，缓刑二年，并处罚金人民币二万元</b>；最高人民法院指令再审后，巴彦淖尔市中院于2017年2月14日再审改判<b>无罪</b>。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">非法经营罪兜底条款（刑法第225条第4项）应坚持谦抑，对仅违反行政管理、未严重扰乱市场秩序的经营行为，可从无罪辩护或排除刑事处罚必要性角度切入。</span></div>
+  <div class="src">来源：<a href="http://gongbao.court.gov.cn/Details/9ff8a95343191faba43205c3fcedf2.html" target="_blank">最高人民法院公报：指导案例97号 王力军非法经营再审改判无罪案</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">万某园等人非法经营罪案</span><span class="csrc sup">最高法典型</span></div>
+  <div class="cmeta">四川省乐山市中级人民法院　|　最高人民法院2024年度提级管辖典型案例（2024-08-28判决）</div>
+  <h4>基本案情</h4>
+  <p>2020年11月至2021年3月，被告人万某园、陈某文、黄某圆以虚拟货币USDT为媒介，通过"外汇—虚拟货币—人民币"方式在国家规定交易场所外变相买卖外汇，收取客户用于购汇的人民币共计<b>234043558.52元</b>。</p>
+  <h4>裁判结果</h4>
+  <p>万某园犯非法经营罪，判处有期徒刑六年，并处罚金七十四万元，数罪并罚决定执行<b>有期徒刑十三年六个月，并处罚金一百一十四万元</b>；黄某圆、陈某文分别判处<b>有期徒刑五年六个月、二年六个月</b>，并处罚金<b>七十一万元、二十五万元</b>。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">虚拟货币仅系资金通道，实质为变相买卖外汇；可从涉案数额认定、主从犯地位、实际获利与分成比例争取从宽量刑。</span></div>
+  <div class="src">来源：<a href="https://www.court.gov.cn/zixun/xiangqing/472271.html" target="_blank">最高人民法院：2024年度提级管辖典型案例（万某园等人非法经营罪案）</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">顾某国非法经营、潘某栋等销售有毒有害食品案</span><span class="csrc sup">两高典型</span></div>
+  <div class="cmeta">河北省泊头市人民法院　|　"两高"依法严惩危害食用农产品安全犯罪典型案例（2024-09-25发布）</div>
+  <h4>基本案情</h4>
+  <p>2018年5月至2022年7月，被告人顾某国违反国家规定，在家中私设屠宰场非法屠宰、销售未经检验检疫的生猪，<b>非法经营数额102万余元</b>，<b>违法所得9万余元</b>；所售猪肉检出"瘦肉精"（沙丁胺醇）成分。</p>
+  <h4>裁判结果</h4>
+  <p>顾某国以非法经营罪判处<b>有期徒刑五年四个月，并处罚金人民币十万元</b>；潘某栋、李某卫以销售有毒、有害食品罪分别判处有期徒刑（缓刑）并处罚金。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">私设屠宰场、销售未经检疫生猪属"其他严重扰乱市场秩序"的非法经营；可从涉案数额、自首、退赔、是否造成实害争取量刑。</span></div>
+  <div class="src">来源：<a href="https://www.court.gov.cn/zixun/xiangqing/443721.html" target="_blank">最高人民法院："两高"依法严惩危害食用农产品安全犯罪典型案例</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">范光非法经营案</span><span class="csrc sup">最高法典型</span></div>
+  <div class="cmeta">山东省利津县人民法院　|　最高人民法院危害食品安全刑事案件典型案例（2013年发布）</div>
+  <h4>基本案情</h4>
+  <p>2009年至2011年9月，被告人范光多次购买盐酸克仑特罗（"瘦肉精"）原粉，勾兑加工成袋装肉用动物饲料添加剂层层转售给养殖户，<b>销售金额200余万元</b>。</p>
+  <h4>裁判结果</h4>
+  <p>范光以非法经营罪判处<b>有期徒刑十年，并处罚金人民币三十万元</b>，判决已发生法律效力。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">非法销售瘦肉精属非法经营，数额特别巨大系从重量刑基础；可从主从犯、销售流向、是否造成实害争取量刑。</span></div>
+  <div class="src">来源：<a href="https://www.court.gov.cn/zixun/xiangqing/7794.html" target="_blank">最高人民法院：范光非法销售"瘦肉精"被判刑10年处罚金30万</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">马某甲等人非法经营案</span><span class="csrc sup">最高法典型</span></div>
+  <div class="cmeta">江苏省南通市崇川区人民法院　|　最高法惩治新型毒品犯罪及防范未成年人药物滥用典型案事例（2026-06-25发布）</div>
+  <h4>基本案情</h4>
+  <p>2021年8月至2023年5月，被告人马某甲、马某乙在未取得危险化学品经营许可证情况下销售一氧化二氮（"笑气"），<b>销售金额250余万元</b>，<b>非法获利85万余元</b>，其中向15名未成年人销售约1.48万支，致未成年人神经受损。</p>
+  <h4>裁判结果</h4>
+  <p>马某甲以非法经营罪判处<b>有期徒刑四年六个月，并处罚金人民币六十万元</b>；马某乙（从犯）判处<b>有期徒刑三年，并处罚金四十万元</b>。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">向未成年人贩卖危化品酌情从重；可从涉案地位（主从犯）、认罪认罚、退缴违法所得争取从宽。</span></div>
+  <div class="src">来源：<a href="https://www.court.gov.cn/zixun/xiangqing/503791.html" target="_blank">最高人民法院：人民法院依法惩治新型毒品犯罪典型案事例（马某甲等人非法经营案）</a></div>
+</div>
+  </div>
 <script>
 window.SENTENCE_CAPS = {1:60,2:180};
   // ---- 全表内容可编辑 + 自动保存 ----

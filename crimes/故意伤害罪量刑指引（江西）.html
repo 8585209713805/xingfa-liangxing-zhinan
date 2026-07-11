@@ -186,6 +186,23 @@
     table, .card, .block{box-shadow:none;} .editable{background:transparent;}
     .wrap{max-width:100%;}
   }
+  /* 实务案例参考 */
+  .cases{display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:14px 0 6px;}
+  .case{border:1px solid var(--line); border-radius:11px; padding:14px 16px; background:#fff;
+    box-shadow:0 1px 3px rgba(0,0,0,.05); display:flex; flex-direction:column;}
+  .case .ctop{display:flex; align-items:center; gap:7px; margin-bottom:4px; flex-wrap:wrap;}
+  .case .cname{font-size:14.5px; font-weight:700; color:var(--blue-deep);}
+  .case .csrc{font-size:11px; font-weight:700; color:#fff; border-radius:4px; padding:1px 7px; white-space:nowrap;}
+  .case .csrc.sup{background:var(--red);} .case .csrc.pro{background:var(--teal);}
+  .case .cmeta{font-size:12px; color:var(--muted); margin-bottom:6px;}
+  .case h4{font-size:12.5px; margin:8px 0 2px; color:var(--ink);}
+  .case p{margin:0 0 5px; font-size:12.5px; line-height:1.55;}
+  .case .note{font-size:12px; color:var(--muted); background:var(--bg); border-radius:7px; padding:6px 9px; margin-top:6px;}
+  .case .note .lab{font-weight:700; color:var(--amber);}
+  .case .src{margin-top:8px; font-size:12px;}
+  .case .src a{color:var(--blue); text-decoration:none;}
+  .case .src a:hover{text-decoration:underline;}
+  @media(max-width:680px){.cases{grid-template-columns:1fr;}}
 </style>
 </head>
 <body>
@@ -568,6 +585,68 @@
 </div>
 
   <!-- CAPS_OVERRIDE -->
+
+
+  <h2 class="section">实务参考案例</h2>
+  <div class="legend" style="margin-top:-2px;">
+    <span>下列案例选自 <b>最高人民法院</b>、<b>最高人民检察院</b> 公开发布的典型案例（官方来源可核实），供量刑与辩护思路参考；可在每张卡片「参考要点」处直接批注。</span>
+  </div>
+  <div class="cases">
+<div class="case">
+  <div class="ctop"><span class="cname">于欢故意伤害案</span><span class="csrc sup">最高法指导案例93号</span></div>
+  <div class="cmeta">山东省高级人民法院（二审）　|　最高人民法院发布第18批指导性案例，2018-06-20</div>
+  <h4>基本案情</h4>
+  <p>于欢母亲苏某因高利贷被吴某等人<b>非法限制人身自由并侮辱</b>，于欢持刀捅刺杜志浩等四人，致<b>一人死亡、二人重伤、一人轻伤</b>。</p>
+  <h4>裁判结果</h4>
+  <p>一审法院以故意伤害罪判处于欢<b>无期徒刑</b>；山东省高院二审认定其行为具有防卫性质但明显超过必要限度，属防卫过当，改判<b>有期徒刑五年</b>。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">被害人以恶劣手段侮辱于欢之母属严重过错，防卫过当依法应减轻处罚，可重点论证防卫情节与量刑。</span></div>
+  <div class="src">来源：<a href="https://www.court.gov.cn/fabu/xiangqing/104262.html" target="_blank">最高人民法院：指导案例93号于欢故意伤害案</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">陈某某、刘某某故意伤害、虐待案</span><span class="csrc sup">最高法指导案例226号</span></div>
+  <div class="cmeta">辽宁省抚顺市新抚区人民法院（一审）　|　最高人民法院发布第40批指导性案例，2024-05-30</div>
+  <h4>基本案情</h4>
+  <p>陈某某与刘某某同居期间，长期以殴打、烟头烫、<b>热水浇淋</b>等方式虐待刘某某之女童某某（6岁），造成<b>一处重伤、十处轻伤、七级残疾</b>等严重后果。</p>
+  <h4>裁判结果</h4>
+  <p>陈某某犯故意伤害罪、虐待罪，数罪并罚决定执行<b>有期徒刑十六年</b>；刘某某犯同两罪，决定执行<b>有期徒刑三年</b>。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">同居伴侣被认定为"家庭成员"，单次严重暴力以故意伤害罪、其余虐待行为以虐待罪数罪并罚，辩护可区分暴力次数与伤害后果。</span></div>
+  <div class="src">来源：<a href="https://www.court.gov.cn/shenpan/xiangqing/433791.html" target="_blank">最高人民法院：指导性案例226号陈某某、刘某某故意伤害、虐待案</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">朱某飞故意伤害、马某民正当防卫案</span><span class="csrc sup">最高法入库参考案例</span></div>
+  <div class="cmeta">人民法院案例库（入库编号2023-04-1-179-027）　|　最高人民法院，2023年</div>
+  <h4>基本案情</h4>
+  <p>被害人朱某酒后携尖刀返回广场滋事，保安朱某飞、马某民反击，<b>朱某飞持木棒连续强力击打被害人头部致其死亡</b>，马某民用金属杆将刀打落。</p>
+  <h4>裁判结果</h4>
+  <p>朱某飞防卫过当，以<b>故意伤害罪</b>追究刑事责任，二审在量刑基础上再予从轻处罚；马某民属正当防卫，<b>改判无罪</b>。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">欠缺意思联络的数人同时防卫应分别认定，朱某飞可重点论证防卫过当的减轻、免除处罚情节。</span></div>
+  <div class="src">来源：<a href="https://www.court.gov.cn/zixun/xiangqing/442021.html" target="_blank">最高人民法院：入库参考案例选介朱某飞故意伤害、马某民正当防卫案</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">李发才等故意伤害案</span><span class="csrc sup">最高法典型案例</span></div>
+  <div class="cmeta">云南省昆明市盘龙区人民法院（一审）　|　最高人民法院依法惩处涉医犯罪典型案例，2020-05-11</div>
+  <h4>基本案情</h4>
+  <p>李发才、郭辉等人陪同他人就医，因对医生詹某建议转院不满，<b>殴打詹某致轻伤二级</b>。</p>
+  <h4>裁判结果</h4>
+  <p>二人构成故意伤害罪，分别判处<b>有期徒刑一年</b>。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">在医院殴打医生致轻伤，可结合当庭认罪、赔偿谅解等情节争取从宽处理。</span></div>
+  <div class="src">来源：<a href="https://www.court.gov.cn/zixun/xiangqing/228681.html" target="_blank">最高人民法院：人民法院依法惩处涉医犯罪典型案例</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">丁国山等（故意伤害）核准追诉案</span><span class="csrc pro">最高检指导案例21号</span></div>
+  <div class="cmeta">内蒙古自治区呼伦贝尔市中级人民法院（一审）　|　最高人民检察院第六批指导性案例，2015-07-03</div>
+  <h4>基本案情</h4>
+  <p>丁国山等四人为报复泄愤，将李万山、董立君装麻袋持木棒殴打要害并吊于房梁，致<b>李万山死亡</b>。</p>
+  <h4>裁判结果</h4>
+  <p>最高检核准追诉；法院以故意伤害罪判处主犯丁国山、常永龙、丁国义<b>有期徒刑十四年、十三年、十二年</b>，从犯闫立军<b>有期徒刑三年</b>。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">案发逾20年仍核准追诉，辩护可关注赔偿谅解、从犯地位等量刑情节。</span></div>
+  <div class="src">来源：<a href="https://www.spp.gov.cn/spp/zxjy/qwfb/201608/t20160811_362937.shtml" target="_blank">最高人民检察院：第六批指导性案例（检例第21号）</a></div>
+</div>
+  </div>
 <script>
   // ---- 全表内容可编辑 + 自动保存 ----
   const KEY = "injury_notes_v1";

@@ -187,6 +187,23 @@
     table, .card, .block{box-shadow:none;} .editable{background:transparent;}
     .wrap{max-width:100%;}
   }
+  /* 实务案例参考 */
+  .cases{display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:14px 0 6px;}
+  .case{border:1px solid var(--line); border-radius:11px; padding:14px 16px; background:#fff;
+    box-shadow:0 1px 3px rgba(0,0,0,.05); display:flex; flex-direction:column;}
+  .case .ctop{display:flex; align-items:center; gap:7px; margin-bottom:4px; flex-wrap:wrap;}
+  .case .cname{font-size:14.5px; font-weight:700; color:var(--blue-deep);}
+  .case .csrc{font-size:11px; font-weight:700; color:#fff; border-radius:4px; padding:1px 7px; white-space:nowrap;}
+  .case .csrc.sup{background:var(--red);} .case .csrc.pro{background:var(--teal);}
+  .case .cmeta{font-size:12px; color:var(--muted); margin-bottom:6px;}
+  .case h4{font-size:12.5px; margin:8px 0 2px; color:var(--ink);}
+  .case p{margin:0 0 5px; font-size:12.5px; line-height:1.55;}
+  .case .note{font-size:12px; color:var(--muted); background:var(--bg); border-radius:7px; padding:6px 9px; margin-top:6px;}
+  .case .note .lab{font-weight:700; color:var(--amber);}
+  .case .src{margin-top:8px; font-size:12px;}
+  .case .src a{color:var(--blue); text-decoration:none;}
+  .case .src a:hover{text-decoration:underline;}
+  @media(max-width:680px){.cases{grid-template-columns:1fr;}}
 </style>
 </head>
 <body>
@@ -554,6 +571,68 @@
 </div>
 
   <!-- CAPS_OVERRIDE -->
+
+
+  <h2 class="section">实务参考案例</h2>
+  <div class="legend" style="margin-top:-2px;">
+    <span>下列案例选自 <b>最高人民法院</b>、<b>最高人民检察院</b> 公开发布的典型案例（官方来源可核实），供量刑与辩护思路参考；可在每张卡片「参考要点」处直接批注。</span>
+  </div>
+  <div class="cases">
+<div class="case">
+  <div class="ctop"><span class="cname">陈某某虚开增值税专用发票案</span><span class="csrc sup">最高法典型</span></div>
+  <div class="cmeta">江苏省句容市人民法院（一审）、镇江市中级人民法院（二审）　|　最高人民法院依法惩治危害税收征管犯罪典型案例，2025-11-24发布</div>
+  <h4>基本案情</h4>
+  <p>2016年3月至2019年4月，被告人陈某某在明知与罗某某等人控制的<b>上海觅某实业有限公司等9家公司</b>无真实货物交易、相关糖业公司亦无真实交易的情况下，采取票、货分离、资金走账等手段，安排其实际控制企业的会计人员转账走账，为上海公司取得进项增值税专用发票，<b>税款数额巨大</b>，并收取好处费。</p>
+  <h4>裁判结果</h4>
+  <p>法院认定陈某某为他人虚开增值税专用发票、税款数额巨大，构成<b>虚开增值税专用发票罪</b>；鉴于其有自首、自愿认罪认罚、退赃表现，判处<b>有期徒刑三年六个月，并处罚金人民币三十万元</b>；二审驳回上诉、维持原判。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">明知他人骗税仍提供"票货分离"帮助以虚开论；自首+认罪认罚+退赃是争取轻判（本案仅三年六个月）的关键从宽情节。</span></div>
+  <div class="src">来源：<a href="https://www.court.gov.cn/zixun/xiangqing/482251.html" target="_blank">最高人民法院：依法惩治危害税收征管犯罪典型案例（案例6 陈某某虚开增值税专用发票案）</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">郭某、刘某逃税案（虚开抵扣）</span><span class="csrc sup">最高法典型</span></div>
+  <div class="cmeta">天津市西青区人民法院（一审）、天津市第一中级人民法院（二审）　|　最高人民法院依法惩治危害税收征管犯罪典型案例，2025-11-24发布</div>
+  <h4>基本案情</h4>
+  <p>2018年2月至12月，被告人郭某、刘某在无真实交易情况下，让他人为索某公司虚开增值税专用发票<b>880份</b>，价税合计<b>1.6亿元</b>，税额<b>2300余万元</b>用于抵扣税款；2022年9月二人被抓获归案，一审期间刘某家属退赔20万元。</p>
+  <h4>裁判结果</h4>
+  <p>一审法院以<b>虚开增值税专用发票罪</b>判处郭某<b>有期徒刑十三年六个月、罚金四十万元</b>，刘某<b>有期徒刑四年六个月、罚金十五万元</b>；二审法院认为二人是基于逃避纳税义务而非骗税故意，改判<b>逃税罪</b>，郭某<b>有期徒刑六年、罚金四十万元</b>，刘某（从犯）<b>有期徒刑二年、罚金十五万元</b>。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">虚开与逃税界分关键在于主观是否具骗税故意；负有纳税义务者在应纳税额范围内虚增进项抵扣，宜争取以逃税罪定性，量刑显著从轻。</span></div>
+  <div class="src">来源：<a href="https://www.court.gov.cn/zixun/xiangqing/482251.html" target="_blank">最高人民法院：依法惩治危害税收征管犯罪典型案例（案例1 郭某、刘某逃税案）</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">沈某某非法出售增值税专用发票案（一审定虚开）</span><span class="csrc sup">最高法典型</span></div>
+  <div class="cmeta">浙江省丽水市中级人民法院（一审）、浙江省高级人民法院（二审）　|　最高人民法院依法惩治危害税收征管犯罪典型案例，2025-11-24发布</div>
+  <h4>基本案情</h4>
+  <p>2019年，被告人沈某某成立网络货运公司，利用平台"补录运单"功能，向缺少进项发票的物流、建筑企业虚构运输业务开具增值税专用发票，自2019年6月至2021年4月累计<b>18323份</b>、税额<b>8.27亿余元</b>（已抵扣8.23亿元），收取价税合计5.3%以上服务费。</p>
+  <h4>裁判结果</h4>
+  <p>一审法院认为沈某某在无真实业务下为他人虚开，构成<b>虚开增值税专用发票罪</b>，判处<b>有期徒刑十五年、罚金四十万元</b>；二审法院认定其以经营网络货运为名行非法出售之实，改判<b>非法出售增值税专用发票罪，有期徒刑十年、罚金二十五万元</b>。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">平台"卖票"行为此罪彼罪争议大；若实控方未承担承运人责任，争取定性为非法出售而非虚开，法定刑与量刑空间不同。</span></div>
+  <div class="src">来源：<a href="https://www.court.gov.cn/zixun/xiangqing/482251.html" target="_blank">最高人民法院：依法惩治危害税收征管犯罪典型案例（案例5 沈某某非法出售增值税专用发票案）</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">张某强虚开增值税专用发票案（最高人民法院改判无罪）</span><span class="csrc sup">最高法典型</span></div>
+  <div class="cmeta">某州市人民法院（一审及重审）、最高人民法院复核　|　最高人民法院保护产权和企业家合法权益典型案例（第二批），2018-12-04发布</div>
+  <h4>基本案情</h4>
+  <p>2004年被告人张某强成立个体龙骨厂，因系小规模纳税人无法开票，遂以鑫源公司名义对外签订销售合同并由该公司收取货款、开具增值税专用发票<b>53张</b>，价税合计<b>4457701.36元</b>、税额<b>647700.18元</b>；检察机关以虚开增值税专用发票罪起诉。</p>
+  <h4>裁判结果</h4>
+  <p>一审法院在法定刑以下判处张某强<b>有期徒刑三年、缓刑五年、罚金五万元</b>并报请最高法核准；最高人民法院复核认为张某强不具有骗取国家税款目的、未造成国家税款损失，不构成虚开增值税专用发票罪，裁定撤销并发回重审，最终<b>宣告张某强无罪</b>（案例索引：(2016)最高法刑核51732773号刑事裁定书）。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">虚开罪须以骗抵税款为目的且造成税款损失；挂靠/代开有真实交易背景、无骗税故意的可作无罪辩护，善用最高法复核要旨。</span></div>
+  <div class="src">来源：<a href="https://www.court.gov.cn/zixun/xiangqing/133721.html" target="_blank">最高人民法院：人民法院充分发挥审判职能作用保护产权和企业家合法权益典型案例（第二批）</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">H公司、赵某等虚开增值税专用发票案（二审改判）</span><span class="csrc sup">税务司法典型</span></div>
+  <div class="cmeta">北京市第二中级人民法院（二审，(2019)京02刑终113号）　|　年度十大税务司法审判案例</div>
+  <h4>基本案情</h4>
+  <p>H公司因与CT公司之间的贸易融资，给后者虚开了大量增值税专用发票；为避免因此产生纳税义务，H公司在2012年8月至2013年3月间，在无真实交易情况下以购进钢材名义取得甲公司、乙公司虚开、税款数额为<b>1600余万元</b>的增值税专用发票。</p>
+  <h4>裁判结果</h4>
+  <p>一审法院认定三家公司的行为均构成<b>虚开增值税专用发票罪</b>；二审法院认为H公司及其实际控制人赵某主观上不具有骗取国家税款目的、客观上造成国家税款损失的证据不足，不构成虚开罪，改判H公司、赵某构成<b>非法购买增值税专用发票罪</b>，甲公司、乙公司、刘某洋构成<b>非法出售增值税专用发票罪</b>。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">融资性贸易中无骗税目的、无税款损失的可排除虚开罪；以"主观目的+客观损失"区分此罪彼罪，争取改为非法买卖类轻罪。</span></div>
+  <div class="src">来源：<a href="https://thepaper.cn/newsDetail_forward_5469815" target="_blank">澎湃新闻：年度10大税务司法审判案例出炉（H公司等虚开增值税专用发票案）</a></div>
+</div>
+  </div>
 <script>
 window.SENTENCE_CAPS = {1:36,2:120,3:180};
   // ---- 全表内容可编辑 + 自动保存 ----
