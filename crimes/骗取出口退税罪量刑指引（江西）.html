@@ -188,9 +188,9 @@
     .wrap{max-width:100%;}
   }
 
-  /* 实务案例参考（单列紧凑） */
-  .cases{display:flex; flex-direction:column; gap:10px; margin:14px 0 6px;}
-  .case{border:1px solid #e5e9ec; border-radius:8px; padding:12px 14px; background:#fff;}
+  /* 实务案例参考（双列紧凑） */
+  .cases{display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:14px 0 6px;}
+  .case{border:1px solid #e5e9ec; border-radius:8px; padding:12px 14px; background:#fff; display:flex; flex-direction:column;}
   .case .ctop{display:flex; justify-content:space-between; align-items:flex-start; gap:10px; margin-bottom:3px;}
   .case .cname{font-size:14.5px; font-weight:700; color:var(--blue-deep); line-height:1.4;}
   .case .csrc{font-size:10px; font-weight:600; color:#fff; border-radius:3px; padding:2px 6px; white-space:nowrap; flex-shrink:0; margin-top:2px;}
@@ -203,6 +203,7 @@
   .case .src{margin-top:8px; font-size:11.5px; color:#8a949b;}
   .case .src a{color:var(--blue); text-decoration:none;}
   .case .src a:hover{text-decoration:underline;}
+  @media(max-width:680px){.cases{grid-template-columns:1fr;}}
 
 </style>
 </head>
