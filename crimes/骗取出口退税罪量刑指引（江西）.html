@@ -25,6 +25,9 @@
     cursor:pointer; font-size:13px; color:var(--ink);}
   .btn:hover{background:var(--blue-lighter); border-color:var(--blue);}
   .note-tip{font-size:12px; color:var(--muted);}
+  .owner-only{display:none;}
+  body.is-owner button.owner-only{display:inline-block;}
+  body.is-owner span.owner-only{display:inline;}
   body.page-edit .wrap{outline:2px dashed var(--blue); background:#fff; padding:18px 20px 60px; border-radius:8px;}
   body.page-edit .toolbar .note-tip{color:var(--blue-deep); font-weight:500;}
 
@@ -221,10 +224,10 @@
   <div class="toolbar">
     <button class="btn" onclick="clearNotes()">恢复默认内容</button>
     <button class="btn" onclick="window.print()">打印 / 导出 PDF</button>
-    <button class="btn" id="editBtn" onclick="togglePageEdit()">进入页面编辑模式</button>
-    <button class="btn" id="dlBtn" onclick="downloadEditedPage()" style="display:none;color:#1f4e79;font-weight:600">下载修改版 HTML</button>
-    <button class="btn" id="upBtn" onclick="uploadToSite()" style="color:#1a7f37;font-weight:600">上传到网站</button>
-    <span class="note-tip">表格内所有文字均可直接点击编辑，自动保存在本机浏览器（localStorage）；"恢复默认内容"可一键还原。需要自由改页面结构/文字时，点<b>进入页面编辑模式</b>，改完点<b>下载修改版 HTML</b>发给我，我再上传更新。</span>
+    <button class="btn owner-only" id="editBtn" onclick="togglePageEdit()">进入页面编辑模式</button>
+    <button class="btn owner-only" id="dlBtn" onclick="downloadEditedPage()" style="display:none;color:#1f4e79;font-weight:600">下载修改版 HTML</button>
+    <button class="btn owner-only" id="upBtn" onclick="uploadToSite()" style="color:#1a7f37;font-weight:600">上传到网站</button>
+    <span class="note-tip owner-only">【编辑者模式·仅你本人可见】点<b>进入页面编辑模式</b>直接改整页文字/表格，改完点<b>上传到网站</b>即可推送更新（需 GitHub Token，仅存本机浏览器）；也可<b>下载修改版 HTML</b>留存。普通访客看不到这些按钮，无法修改本网站。</span>
   </div>
 
   <!-- 编制依据声明 -->  <div style="margin:10px 0 6px;padding:10px 14px;border-left:4px solid #c0392b;background:#fdf3f2;border-radius:4px;font-size:13px;line-height:1.7;color:#7a2e2a;">
@@ -1083,7 +1086,16 @@ window.SENTENCE_CAPS = {1:60,2:120,3:180};
     }catch(err){ showToast('❌ '+err.message, false); }
   }
 
+  function initOwner(){
+    try{
+      var q=new URLSearchParams(location.search);
+      if(q.get('owner')==='0'){ localStorage.removeItem('lx_owner'); }
+      else if(q.get('owner')==='1' || location.hash==='#owner'){ localStorage.setItem('lx_owner','1'); }
+      if(localStorage.getItem('lx_owner')==='1'){ document.body.classList.add('is-owner'); }
+    }catch(e){}
+  }
   initEditor();
+  initOwner();
 </script>
 </body>
 </html>
