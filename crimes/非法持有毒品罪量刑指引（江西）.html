@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+  <meta name="repo-path" content="crimes/非法持有毒品罪量刑指引（江西）.html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>非法持有毒品罪量刑指引（江西·法发〔2021〕21号 / 赣高法〔2022〕115号）</title>
+<style>
+  :root{
+    --blue-deep:#1f4e79; --blue:#2e6da4; --blue-light:#dce9f5; --blue-lighter:#eef4fb;
+    --red-deep:#9c2b2b; --red:#c0392b; --red-light:#fbe3e1; --red-lighter:#fdf0ef;
+    --amber:#b8860b; --amber-light:#fdf3d8; --amber-lighter:#fefaf0;
+    --teal:#1f7a6e; --teal-light:#d8f0ec;
+    --green:#1e7a3a; --green-light:#dcf1e2; --green-lighter:#eef9f1;
+    --ink:#23303a; --muted:#5b6b78; --line:#d9e0e6; --bg:#f5f7f9;
+  }
+  *{box-sizing:border-box}
+  body{font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",sans-serif;
+    color:var(--ink); background:var(--bg); margin:0; line-height:1.6; font-size:14px;}
+  .wrap{max-width:1180px; margin:0 auto; padding:22px 20px 60px;}
+  header h1{font-size:21px; margin:0 0 4px; color:var(--blue-deep);}
+  header .sub{color:var(--muted); font-size:13px;}
+  .toolbar{margin:14px 0; display:flex; gap:10px; flex-wrap:wrap; align-items:center;}
+  .btn{background:#fff; border:1px solid var(--line); border-radius:7px; padding:6px 12px;
+    cursor:pointer; font-size:13px; color:var(--ink);}
+  .btn:hover{background:var(--blue-lighter); border-color:var(--blue);}
+  .note-tip{font-size:12px; color:var(--muted);}
+  .owner-only{display:none;}
+  body.is-owner button.owner-only{display:inline-block;}
+  body.is-owner span.owner-only{display:inline;}
+  body.page-edit .wrap{outline:2px dashed var(--blue); background:#fff; padding:18px 20px 60px; border-radius:8px;}
+  body.page-edit .toolbar .note-tip{color:var(--blue-deep); font-weight:500;}
+
+  /* 速览卡片 */
+  .overview{display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:16px 0 22px;}
+  .card{border-radius:11px; padding:14px 16px; border-left:7px solid;}
+  .card h3{margin:0 0 6px; font-size:15px;}
+  .card .range{font-size:26px; font-weight:700; letter-spacing:.5px;}
+  .card .desc{font-size:12.5px; color:var(--muted); margin-top:4px;}
+  .card.first{border-color:var(--blue); background:var(--blue-lighter);}
+  .card.first .range{color:var(--blue-deep);}
+  .card.second{border-color:var(--red); background:var(--red-lighter);}
+  .card.second .range{color:var(--red-deep);}
+
+  h2.section{font-size:16px; margin:26px 0 10px; padding-left:10px; border-left:5px solid var(--blue); color:var(--blue-deep);}
+  .legend{display:flex; gap:14px; flex-wrap:wrap; font-size:12px; color:var(--muted); margin:4px 0 10px;}
+  .legend span{display:inline-flex; align-items:center; gap:5px;}
+  .chip{width:14px; height:14px; border-radius:3px; display:inline-block;}
+
+  table{border-collapse:collapse; width:100%; background:#fff; font-size:13px;
+    box-shadow:0 1px 3px rgba(0,0,0,.06); border-radius:9px; overflow:hidden;}
+  th,td{border:1px solid var(--line); padding:8px 10px; vertical-align:top; text-align:left;}
+  thead th{background:#eef2f6; color:var(--ink); font-weight:600; font-size:12.5px;}
+  .tier{width:78px; text-align:center; font-weight:700; color:#fff; font-size:12px; border-radius:4px; padding:3px 0;}
+  .tier.t1{background:var(--blue);} .tier.t1d{background:var(--blue-deep);}
+  .tier.t2{background:var(--red);} .tier.t3{background:var(--amber);}
+  .tier.t4{background:var(--teal);} .tier.t5{background:var(--green);}
+  .bar{width:6px;}
+  .bar.b1{background:var(--blue);} .bar.b1d{background:var(--blue-deep);}
+  .bar.b2{background:var(--red);} .bar.b3{background:var(--amber);}
+  .bar.b4{background:var(--teal);} .bar.b5{background:var(--green);}
+  .grp-first1 td{background:var(--blue-light);}
+  .grp-first2 td{background:var(--blue-lighter);}
+  .grp-first3 td{background:var(--blue-lighter);}
+  .grp-second td{background:var(--red-light);}
+  .start{font-weight:700; white-space:nowrap;}
+  .start.s1{color:var(--blue-deep);} .start.s2{color:var(--red-deep);}
+  ul.cond{margin:0; padding-left:18px;}
+  ul.cond li{margin:2px 0;}
+
+  .editable{background:#fffdf5; cursor:text; min-height:22px;}
+  .editable:focus{outline:2px solid var(--amber); background:#fffbe9;}
+  .editable:empty:before{content:attr(data-ph); color:#b9b09a; font-style:italic;}
+
+  /* 全表内容可编辑 */
+  .cedit{cursor:text;}
+  .cedit:hover{background:#f4f8fc; outline:1px dashed #bcd2e6;}
+  .cedit:focus{outline:2px solid var(--amber); background:#fffbe9; box-shadow:0 0 0 2px rgba(184,134,11,.18);}
+
+  /* 增量对照 */
+  .cmp td.c1{background:var(--blue-lighter);} .cmp td.c2{background:var(--red-lighter);}
+  .cmp th.c1{background:var(--blue-light);} .cmp th.c2{background:var(--red-light);}
+
+  /* 块 */
+  .block{border-radius:10px; padding:12px 16px; margin:10px 0; border:1px solid var(--line);}
+  .block h3{margin:0 0 8px; font-size:14.5px;}
+  .block.heavy{background:var(--amber-lighter); border-color:var(--amber);}
+  .block.heavy h3{color:var(--amber);}
+  .block.fine{background:var(--teal-light); border-color:var(--teal);}
+  .block.fine h3{color:var(--teal);}
+  .block.pro-yes{background:var(--green-lighter); border-color:var(--green);}
+  .block.pro-yes h3{color:var(--green);}
+  .block.pro-no{background:var(--red-lighter); border-color:var(--red);}
+  .block.pro-no h3{color:var(--red-deep);}
+  .block ul{margin:4px 0; padding-left:20px;}
+  .block li{margin:3px 0;}
+
+  /* 法条依据（刑法 / 司法解释） */
+  .block.law{background:#f4f1fb; border-color:#8a63c0; border-left:6px solid #8a63c0; page-break-inside:avoid;}
+  .block.law h3{color:#5a3e87;}
+  .block.law li b{color:#5a3e87;}
+  .law-src{display:inline-block; font-size:11px; font-weight:700; color:#fff; background:#8a63c0;
+    border-radius:4px; padding:1px 7px; margin-right:6px; vertical-align:middle;}
+
+  /* 构成要件 / 立案追诉 */
+  .block.const{background:#eef6f0; border-color:#3f8f5f; border-left:6px solid #3f8f5f; page-break-inside:avoid;}
+  .block.const h3{color:#27613f;}
+  .block.const li b{color:#27613f;}
+  .block.info{background:#eef3f8; border-color:#4a78b0; border-left:6px solid #4a78b0; page-break-inside:avoid;}
+  .block.info h3{color:#2f5688;}
+  .block.info li b{color:#2f5688;}
+  .tag-const{display:inline-block; font-size:11px; font-weight:700; color:#fff; background:#3f8f5f;
+    border-radius:4px; padding:1px 7px; margin-right:6px; vertical-align:middle;}
+  .tag-info{display:inline-block; font-size:11px; font-weight:700; color:#fff; background:#4a78b0;
+    border-radius:4px; padding:1px 7px; margin-right:6px; vertical-align:middle;}
+  /* 此罪彼罪界限表 */
+  .distTbl th.c1{background:#dceaf6;}
+  .distTbl th.c2{background:#e7eef6;}
+  .distTbl th.c3{background:#f0eaf6;}
+  .distTbl td{vertical-align:top;}
+
+  /* 估算器 */
+  .calc{background:#fff; border:1px solid var(--line); border-radius:11px; padding:16px;
+    box-shadow:0 1px 3px rgba(0,0,0,.06);}
+  .calc .row{display:flex; flex-wrap:wrap; gap:14px; margin:8px 0; align-items:center;}
+  .calc label{font-size:12.5px; color:var(--muted); min-width:96px;}
+  .calc input[type=number]{width:70px; padding:4px 6px; border:1px solid var(--line); border-radius:5px;}
+  .calc .chips button{margin:0 4px 4px 0;}
+  .chip-btn{border:1px solid var(--line); background:#fff; border-radius:20px; padding:4px 11px;
+    cursor:pointer; font-size:12px;}
+  .chip-btn:hover{background:var(--blue-lighter);}
+  .chip-btn.on{background:var(--blue); color:#fff; border-color:var(--blue);}
+  .result{margin-top:12px; padding:12px 16px; background:var(--blue-lighter); border-radius:9px;
+    font-size:15px; }
+  .result b{font-size:22px; color:var(--blue-deep);}
+  .disclaimer{font-size:12px; color:var(--muted); margin-top:8px;}
+
+  /* 量刑建议高亮块 */
+  .sugbox{margin-top:14px; padding:16px 18px; border-radius:12px; text-align:center;
+    background:linear-gradient(135deg,#e8f1fb,#dcebfa); border:1px solid #9cc2e6;}
+  .sug-label{font-size:13px; color:#3a5b80; font-weight:600; letter-spacing:.5px; margin-bottom:10px;}
+  .sugcols{display:flex; gap:12px; justify-content:center; align-items:stretch; flex-wrap:wrap;}
+  .sugcol{flex:1 1 0; min-width:150px; background:#fff; border-radius:10px; padding:10px 8px;
+    border:1px solid #c4d8ee;}
+  .sugcol.judge{border:2px solid #2f6fb0; box-shadow:0 2px 10px rgba(47,111,176,.18);}
+  .sugcol.high{opacity:.92;}
+  .sugcol .ct{font-size:12px; color:#4a6285; font-weight:600; line-height:1.4;}
+  .sugcol .cv{font-size:30px; font-weight:800; color:#15406e; line-height:1.2; margin:3px 0;}
+  .sugcol.judge .cv{color:#13355c;}
+  .sugcol .cp{font-size:11px; color:#7a8aaa;}
+  .sug-sub{font-size:13px; color:#4a6285; margin-top:12px;}
+  .sug-extra{font-size:13px; color:#5a6b7d; margin-top:8px; line-height:1.6; text-align:left;
+    display:inline-block; max-width:680px;}
+  .sug-extra .ok{color:#1a7a3a; font-weight:700;}
+  .sug-extra .no{color:#b03a2e; font-weight:700;}
+  .sug-extra .warn{color:#b8860b; font-weight:700;}
+
+  /* 参数覆盖面板 */
+  .params{border:1px dashed var(--line); border-radius:9px; padding:10px 14px; margin:6px 0 12px; background:#fbfcfe;}
+  .params>summary{cursor:pointer; font-size:13px; color:var(--blue-deep); font-weight:600; user-select:none;}
+  .params .pgrid{display:grid; grid-template-columns:1fr 1fr; gap:6px 26px; margin-top:10px;}
+  .params .pgroup{min-width:0;}
+  .params h4{margin:4px 0 6px; font-size:12.5px; color:var(--muted);}
+  .params .prow{display:flex; align-items:center; gap:5px; font-size:12px; margin:2px 0;}
+  .params .prow>span{flex:1;}
+  .params .prow i{color:var(--muted); font-style:normal;}
+  .params .prow input{width:52px; padding:3px 5px; border:1px solid var(--line); border-radius:5px;}
+  .params .pbtns{margin-top:8px; grid-column:1 / -1;}
+
+  /* 反向测算表 */
+  .rev-title{font-size:14px; font-weight:700; color:var(--blue-deep); margin:4px 0 8px;}
+  .revtable{width:100%; border-collapse:collapse; margin-top:10px; font-size:13px;}
+  .revtable th,.revtable td{border:1px solid var(--line); padding:6px 10px; text-align:left;}
+  .revtable th{background:#eef2f6; font-size:12.5px; font-weight:600;}
+  .revtable .rok td{background:var(--green-lighter);}
+  .revtable .rnok td{background:#fbeaea;}
+  .revtable tr.best td{outline:2px solid var(--blue); background:#eaf2fb;}
+
+  /* 常见量刑情节表 */
+  .cmnTbl td:nth-child(2){font-weight:700;text-align:center;white-space:nowrap;}
+  .cmnTbl .up{color:var(--green);} .cmnTbl .down{color:var(--red-deep);}
+  .cmnTbl td:nth-child(5){text-align:center;vertical-align:middle;white-space:nowrap;}
+  .cmnTbl .pcol{color:#8a96a0;}
+  .pval{width:58px;text-align:center;border:1px solid var(--line);border-radius:4px;padding:2px 3px;font-size:13px;background:#fff;}
+  .pct{font-size:12px;color:#b8860b;font-weight:600;}
+  /* 参数面板区间提示 */
+  .params .prow i.rng{color:#a8741b;font-style:normal;font-size:11px;margin-left:3px;}
+
+  @media print{
+    body{background:#fff;} .toolbar,.params,.row,.note-tip,[name=tier]{display:none;}
+    .calc{display:block;} .sugbox,.sugcols,.revtable{-webkit-print-color-adjust:exact; print-color-adjust:exact;}
+    table, .card, .block{box-shadow:none;} .editable{background:transparent;}
+    .wrap{max-width:100%;}
+  }
+  /* 实务案例参考（双列紧凑） */
+  .cases{display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:14px 0 6px;}
+  .case{border:1px solid #e5e9ec; border-radius:8px; padding:12px 14px; background:#fff; display:flex; flex-direction:column;}
+  .case .ctop{display:flex; justify-content:space-between; align-items:flex-start; gap:10px; margin-bottom:3px;}
+  .case .cname{font-size:14.5px; font-weight:700; color:var(--blue-deep); line-height:1.4;}
+  .case .csrc{font-size:10px; font-weight:600; color:#fff; border-radius:3px; padding:2px 6px; white-space:nowrap; flex-shrink:0; margin-top:2px;}
+  .case .csrc.sup{background:#c94a4a;} .case .csrc.pro{background:#3a9b8e;}
+  .case .cmeta{font-size:11.5px; color:#8a949b; margin-bottom:8px;}
+  .case h4{font-size:12px; margin:8px 0 2px; color:#4a5562; font-weight:600;}
+  .case p{margin:0 0 5px; font-size:12.5px; line-height:1.6; color:#3a444d;}
+  .case .note{font-size:11.5px; color:#6b7680; background:#f8f9fa; border-left:3px solid #d0d7dd; border-radius:0 6px 6px 0; padding:6px 10px; margin-top:8px;}
+  .case .note .lab{font-weight:600; color:#6b7680;}
+  .case .src{margin-top:8px; font-size:11.5px; color:#8a949b;}
+  .case .src a{color:var(--blue); text-decoration:none;}
+  .case .src a:hover{text-decoration:underline;}
+  @media(max-width:680px){.cases{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>非法持有毒品罪 · 量刑指引表（可编辑）</h1>
+    <div class="sub">依据：法发〔2021〕21号本罪名专章；江西省实施细则（赣高法〔2022〕115号）据此细化。</div>
+  </header>
+
+  <div class="toolbar">
+    <button class="btn" onclick="clearNotes()">恢复默认内容</button>
+    <button class="btn" onclick="window.print()">打印 / 导出 PDF</button>
+    <button class="btn owner-only" id="editBtn" onclick="togglePageEdit()">进入页面编辑模式</button>
+    <button class="btn owner-only" id="dlBtn" onclick="downloadEditedPage()" style="display:none;color:#1f4e79;font-weight:600">下载修改版 HTML</button>
+    <button class="btn owner-only" id="upBtn" onclick="uploadToSite()" style="color:#1a7f37;font-weight:600">上传到网站</button>
+    <span class="note-tip owner-only">【编辑者模式·仅你本人可见】点<b>进入页面编辑模式</b>直接改整页文字/表格，改完点<b>上传到网站</b>即可推送更新（需 GitHub Token，仅存本机浏览器）；也可<b>下载修改版 HTML</b>留存。普通访客看不到这些按钮，无法修改本网站。</span>
+  </div>
+
+  <!-- 速览 -->
+  <div class="overview">
+    <div class="card first">
+      <h3>第一量刑幅度</h3>
+      <div class="range">拘役 – 3年</div>
+      <div class="desc">基本犯：非法持有毒品"数量较大"（海洛因/甲基苯丙胺10克、鸦片200克、氯胺酮100克……，详 docx 第一幅度）。量刑起点 3个月拘役 – 1年。</div>
+    </div>
+    <div class="card second">
+      <h3>第二量刑幅度</h3>
+      <div class="range">3年 – 4年</div>
+      <div class="desc">数量较大 + 情节严重（戒毒/监管场所持有、利用教唆未成年人、国家工作人员等）：量刑起点 3 – 4年。</div>
+    </div>
+    <div class="card" style="border-color:var(--amber); background:var(--amber-lighter);">
+      <h3>第三量刑幅度</h3>
+      <div class="range" style="color:var(--amber);">7年 – 无期</div>
+      <div class="desc">非法持有毒品"数量大"（海洛因/甲基苯丙胺50克、鸦片1千克……）：量刑起点 7 – 9年；依法应判无期除外。</div>
+    </div>
+  </div>  <!-- 编制依据说明 -->
+  <div style="margin:14px 0;padding:12px 14px;border-left:4px solid #e0a100;background:#fffaf0;border-radius:8px;font-size:13px;color:#7a5a17;line-height:1.75">
+    <b>📌 编制依据说明：</b>本页「量刑起点 / 档位」及「基准刑增量」均依据页面顶部「依据」所列<b>法律、司法解释及江西省实施细则</b>整理（如法发〔2021〕21号、赣高法〔2022〕115号等）。
+    本罪<b>有专门量刑起点细则</b>，本页所列起点、增率为该等文件规定（<b>法定依据</b>），非内部推演。
+    实际量刑由审理法院在法定刑幅度内依法裁量，本页不替代裁判，可在批注区记录个案判断。
+  </div>
+
+  <!-- 法条依据 -->
+  <h2 class="section" style="border-left-color:var(--teal)">〇、刑法与司法解释规定（定罪依据）</h2>
+  <p class="note-tip" style="margin:2px 0 12px;">
+    本表量刑的前提是行为已构成<b>非法持有毒品罪</b>。以下列明定罪所依据的刑法条文与司法解释关键条款（条文以官方发布文本为准，可点击编辑、补充批注）。
+  </p>
+
+  <div class="block law">
+    <h3><span class="law-src">刑法</span>第三百四十八条【非法持有毒品罪】</h3>
+    <ul>
+      <li>非法持有<b>鸦片一千克以上、海洛因或者甲基苯丙胺五十克以上或者其他毒品数量大</b>的，处<b>七年以上有期徒刑或者无期徒刑，可以并处没收财产</b>；</li>
+      <li>非法持有<b>毒品数量较大</b>的，处<b>三年以下有期徒刑、拘役或者管制，并处罚金</b>。</li>
+    </ul>
+  </div>
+
+  <div class="block law">
+    <h3><span class="law-src">司法解释</span>法释〔2016〕8号 · 关于审理毒品犯罪案件适用法律若干问题的解释</h3>
+    <ul>
+      <li><b>第2条（数量较大）</b> 非法持有下列毒品，应当认定为刑法第348条规定的"其他毒品数量较大"：鸦片200克、海洛因或甲基苯丙胺10克、可卡因10克、3,4-亚甲二氧基甲基苯丙胺（MDMA）等苯丙胺类毒品20克、吗啡20克、氯胺酮100克、芬太尼25克、甲卡西酮40克、二氢埃托啡2毫克、哌替啶50克、曲马多/γ-羟丁酸400克、大麻油1千克/大麻脂2千克/大麻叶及大麻烟30千克、可待因/丁丙诺啡1千克、三唑仑/安眠酮10千克、阿普唑仑/恰特草20千克、咖啡因/罂粟壳40千克、巴比妥等50千克、氯氮卓等100千克，或者其他毒品数量较大。</li>
+      <li><b>第1条（数量大）</b> 非法持有上述毒品达到第2条标准5倍（如海洛因/甲基苯丙胺50克、鸦片1千克、氯胺酮500克……）或者其他毒品数量大的，属"数量大"。</li>
+      <li><b>第5条（情节严重）</b> 达到"数量较大"标准且具有：①在戒毒场所、监管场所持有；②利用、教唆未成年人持有；③国家工作人员持有；④其他情节严重情形——应当认定为"情节严重"。</li>
+    </ul>
+  </div>
+
+  <div class="block law">
+    <h3><span class="law-src">量刑规范</span>法发〔2021〕21号 · 关于常见犯罪的量刑指导意见（试行）</h3>
+    <ul>
+      <li>总则：规定自首、立功、坦白、认罪认罚、赔偿谅解等通用量刑情节的调节比例，适用于本罪（见本表估算器"通用情节"）。</li>
+      <li>分则「二十一、非法持有毒品罪」专章：即本表量刑起点、基准刑增量、从重与缓刑规则的来源（赣高法〔2022〕115号据此细化）。</li>
+      <li>赣高法〔2022〕115号「二十一」另规定毒品再犯、特定从重与从宽情节（见本表第六、十项）。</li>
+    </ul>
+  </div>  <!-- 一、构成要件与罪与非罪 -->
+  <h2 class="section" style="border-left-color:var(--green)">一、构成要件与罪与非罪界限（定罪分析）</h2>
+  <p class="note-tip" style="margin:2px 0 12px;">
+    量刑的前提是行为已构成本罪。本节先拆解<b>构成要件</b>，再列出实务中最常用的<b>出罪抗辩点</b>——拿到案子先过这一关。
+  </p>
+
+  <div class="block const">
+    <h3><span class="tag-const">四要件</span>非法持有毒品罪的犯罪构成</h3>
+    <ul>
+      <li><b>客体</b>：国家对毒品的管制秩序和他人的身心健康。对象是毒品（鸦片、海洛因、甲基苯丙胺等《麻醉药品和精神药品目录》所列物质）。</li>
+      <li><b>客观方面</b>：违反国家毒品管制法规，<b>非法持有</b>毒品且达到法定数量（"数量较大"以上）。"持有"=行为人对毒品形成事实上的支配、控制（携有、藏有、存管等）；"非法"=无合法依据。</li>
+      <li><b>主体</b>：一般主体，已满<b>16周岁</b>具有刑事责任能力的自然人（单位不能构成本罪）。</li>
+      <li><b>主观方面</b>：<b>故意</b>，即明知是毒品而非法持有。不明知是毒品的，不构成本罪。</li>
+    </ul>
+  </div>
+
+  <div class="block const">
+    <h3><span class="tag-const">出罪</span>罪与非罪的界限 · 出罪抗辩点</h3>
+    <ul>
+      <li><b>① 数量未达"数量较大"</b>：持有数量低于法释〔2016〕8号第2条标准，不构成犯罪，按《禁毒法》/治安处罚处理。</li>
+      <li><b>② 不明知是毒品</b>：无犯罪故意（如被蒙骗夹带），不构成本罪。</li>
+      <li><b>③ 被利用、诱骗持有</b>（docx 从宽）：被利用或被诱骗非法持有，可减少基准刑 30%以下。</li>
+      <li><b>④ 为减轻病痛吸食而持有</b>（docx 从宽）：患有严重疾病、为减轻病痛吸食毒品而持有，可减少基准刑 30%以下。</li>
+      <li><b>⑤ 代家庭成员持有且数量较大</b>（docx 缓刑）：替共同生活家庭成员持有数量较大，可考虑适用缓刑，情节显著轻微可不作为犯罪处理。</li>
+      <li><b>⑥ 持有本人吸食的少量毒品</b>：未达数量较大，治安处罚，不构罪。</li>
+    </ul>
+  </div>  <!-- 二、此罪与彼罪 -->
+  <h2 class="section" style="border-left-color:#6a5acd">二、此罪与彼罪的界限（竞合 / 区分）</h2>
+  <p class="note-tip" style="margin:2px 0 12px;">
+    非法持有毒品罪常与下列毒品犯罪混淆。下表列明<b>关键区分点</b>与<b>处理规则</b>；核心在于行为人主观目的（为自己吸食 vs 贩卖/运输/窝藏）及客观支配状态。
+  </p>
+  <table class="distTbl" id="distTbl">
+    <thead>
+      <tr><th class="c1">易混淆罪名</th><th class="c2">关键区分点</th><th class="c3">处理规则（竞合 / 定性）</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="cedit" data-key="d1">运输毒品罪（第347条）</td>
+        <td class="cedit" data-key="d1b">持有是静态支配；运输是使毒品发生<b>空间位移</b>并具流通、贩卖目的。吸毒者为自己吸食短距离携带有别于运输。</td>
+        <td class="cedit" data-key="d1c">有贩卖/运输目的且发生位移→运输；仅为自己吸食持有→持有。购毒者接收寄递毒品且无其他犯罪故意、达数量较大→非法持有。</td>
+      </tr>
+      <tr>
+        <td class="cedit" data-key="d2">贩卖毒品罪（第347条）</td>
+        <td class="cedit" data-key="d2b">持有常为贩卖的预备/组成部分。区别在行为人是否具有<b>贩卖目的</b>（牟利转让）。</td>
+        <td class="cedit" data-key="d2c">有贩卖故意并持有→贩卖；仅为自己吸食持有→持有。贩卖证据不足、查获毒品系用于吸食→定非法持有。</td>
+      </tr>
+      <tr>
+        <td class="cedit" data-key="d3">窝藏、转移、隐瞒毒品罪（第349条）</td>
+        <td class="cedit" data-key="d3b">本罪为自己持有；第349条是为<b>其他毒品犯罪分子</b>窝藏、转移、隐瞒毒品。</td>
+        <td class="cedit" data-key="d3c">对象是否"他人犯罪所得毒品"是分界；为自己持有→348，为同伙窝藏→349。</td>
+      </tr>
+      <tr>
+        <td class="cedit" data-key="d4">容留他人吸毒罪（第354条）</td>
+        <td class="cedit" data-key="d4b">本罪是持有毒品；容留是提供场所供他人吸毒。二者行为性质不同。</td>
+        <td class="cedit" data-key="d4c">既持有又容留他人吸毒→一般<b>数罪并罚</b>。</td>
+      </tr>
+      <tr>
+        <td class="cedit" data-key="d5">非法持有毒品原植物种子、幼苗罪（第352条）</td>
+        <td class="cedit" data-key="d5b">对象不同：本罪对象为制成毒品；第352条为毒品原植物<b>种子、幼苗</b>。</td>
+        <td class="cedit" data-key="d5c">按对象区分；持有制成毒品达数量较大→本罪，持有种子幼苗达数量较大→第352条。</td>
+      </tr>
+      <tr>
+        <td class="cedit" data-key="d6">制造毒品罪（第347条）</td>
+        <td class="cedit" data-key="d6b">为制造而持有原料→制造；制造完成后持有成品→可能被吸收。</td>
+        <td class="cedit" data-key="d6c">为制造持有原料→定制造；制出成品后持有，一般被制造吸收，不另定持有。</td>
+      </tr>
+    </tbody>
+  </table>  <!-- 三、立案追诉标准 / 管辖 / 时效 -->
+  <h2 class="section" style="border-left-color:var(--teal)">三、立案追诉标准、管辖与时效</h2>
+  <p class="note-tip" style="margin:2px 0 12px;">
+    本节速查本罪作为公诉案件的立案门槛、管辖与追诉时效等程序性要点（数量标准以法释〔2016〕8号及江西实践为准）。
+  </p>
+  <div class="block info">
+    <ul>
+      <li><b>案件性质</b>：<b>公诉案件</b>，由公安机关侦查、检察院审查起诉。</li>
+      <li><b>立案追诉门槛</b>：非法持有毒品达到"数量较大"标准（法释〔2016〕8号第2条；如海洛因/甲基苯丙胺10克、鸦片200克、氯胺酮100克等，详见本表 §〇 司法解释块）。低于该标准一般不作为犯罪处理（治安处罚）。</li>
+      <li><b>数量折算</b>：持有<b>两种以上毒品</b>或持有上述以外其他毒品的，可将不同种类毒品分别折算为海洛因数量，以折算后总量作为量刑依据（docx 第4条）。</li>
+      <li><b>管辖法院</b>：犯罪地基层人民法院一审；法定最高刑为无期徒刑，但绝大多数案件由基层法院管辖。</li>
+      <li><b>追诉时效</b>：数量较大（3年以下）→ 追诉时效 <b>5年</b>；数量大（7年以上/无期）→ <b>15年 / 20年</b>（刑法第87条）。</li>
+      <li><b>程序适用</b>：认罪认罚且可能判3年以下可适用速裁 / 简易程序；毒品再犯依法从严。</li>
+      <li><b>认罪认罚从宽</b>：可减基准刑30%以下（总则），直接影响量刑起点与缓刑判断。</li>
+    </ul>
+  </div>  <!-- 量刑起点一览 -->  <h2 class="section">四、量刑起点与法定刑幅度对照（依文件列示）</h2>
+
+  <p class="note-tip" style="margin:2px 0 10px;">
+    <b>结构说明：</b>蓝色块＝<b>第一量刑幅度</b>（基本犯，数量较大，最高 3 年）；
+    红色块＝<b>第二量刑幅度</b>（数量较大+情节严重，3 – 4 年）；
+    黄色块＝<b>第三量刑幅度</b>（数量大，7 年 – 无期）。
+    同一幅度内按情节轻重在起点幅度内确定具体起点。
+  </p>
+  <div class="legend">
+    <span><i class="chip" style="background:var(--blue)"></i>第一量刑幅度（数量较大·拘役–3年）</span>
+    <span><i class="chip" style="background:var(--red)"></i>第二量刑幅度（情节严重·3–4年）</span>
+    <span><i class="chip" style="background:var(--amber)"></i>第三量刑幅度（数量大·7年–无期）</span>
+    <span><i class="chip" style="background:#b9b09a"></i>批注（可编辑）</span>
+  </div>
+  <table id="startTbl">
+    <thead>
+      <tr><th style="width:72px">起点档</th><th style="width:120px">行为类型</th><th>具体情形（数额 / 行为类型）</th><th style="width:150px">量刑起点幅度</th><th style="width:200px">✎ 我的批注</th></tr>
+    </thead>
+    <tbody>
+      <tr class="grp-first1">
+        <td><span class="tier t1d">第一幅度</span></td>
+        <td>非法持有毒品<br>数量较大</td>
+        <td>海洛因/甲基苯丙胺/可卡因 <b>10克</b>，或鸦片/美沙酮 200克，或 MDMA等苯丙胺类/吗啡 20克，或氯胺酮 100克，或芬太尼 25克，或甲卡西酮 40克，或二氢埃托啡 2毫克，或哌替啶 50克，或曲马多/γ-羟丁酸 400克，或大麻油1kg/大麻脂2kg/大麻叶大麻烟30kg，或可待因/丁丙诺啡 1kg，或三唑仑/安眠酮 10kg，或阿普唑仑/恰特草 20kg，或咖啡因/罂粟壳 40kg，或巴比妥类 50kg，或氯氮卓类 100kg，<b>或者其他毒品数量较大</b></td>
+        <td class="start s1">3个月拘役 – 1年</td>
+        <td class="editable" data-ph="点击添加批注" contenteditable="true" data-key="r1"></td>
+      </tr>
+      <tr class="grp-second">
+        <td><span class="tier t2">第二幅度</span></td>
+        <td>数量较大<br>+ 情节严重</td>
+        <td>达到第一幅度标准，且具有：①在戒毒场所、监管场所持有；②利用、教唆未成年人持有；③国家工作人员持有；④其他情节严重情形</td>
+        <td class="start s2">3年 – 4年</td>
+        <td class="editable" data-ph="点击添加批注" contenteditable="true" data-key="r2"></td>
+      </tr>
+      <tr class="grp-first3">
+        <td><span class="tier t3">第三幅度</span></td>
+        <td>非法持有毒品<br>数量大</td>
+        <td>海洛因/甲基苯丙胺/可卡因 <b>50克</b>，或鸦片/美沙酮 1千克，或 MDMA等苯丙胺类/吗啡 100克，或氯胺酮 500克，或芬太尼 125克，或甲卡西酮 200克，或二氢埃托啡 10毫克，或哌替啶 250克，或曲马多/γ-羟丁酸 2千克，或大麻油5kg/大麻脂10kg/大麻叶大麻烟150kg，或可待因/丁丙诺啡 5kg，或三唑仑/安眠酮 50kg，或阿普唑仑/恰特草 100kg，或咖啡因/罂粟壳 200kg，或巴比妥类 250kg，或氯氮卓类 500kg，<b>或者其他毒品数量大</b>（依法应判无期除外）</td>
+        <td class="start s3">7年 – 9年</td>
+        <td class="editable" data-ph="点击添加批注" contenteditable="true" data-key="r3"></td>
+      </tr>
+    </tbody>
+  </table>  <!-- 基准刑增量 -->
+  <h2 class="section">五、基准刑增量（依法发〔2021〕21号、赣高法〔2022〕115号）</h2>
+  <p class="note-tip" style="margin:2px 0 8px;">在量刑起点基础上，根据毒品<b>数量</b>等其他影响犯罪构成的犯罪事实增加刑罚量，确定基准刑。下表"增率"严格照录 docx 各幅度"每增加 X 增 Y 月"；估算器仅对下表带勾稽关系的增量项可计算，其余为法定参照。</p>
+  <table class="cmp">
+    <thead>
+      <tr><th style="width:40px">项</th><th class="c1">基准刑增量项</th><th class="c2">增率（月 / 单位）</th></tr>
+    </thead>
+    <tbody>      <tr data-tier="1" data-f="f_heroin1" data-pmin="p_heroin1_min" data-pmax="p_heroin1_max"><td>1</td><td class="c1">海洛因、甲基苯丙胺或者可卡因（每+1克）</td><td class="c2">+1至2个月 / 1克</td></tr>
+      <tr data-tier="1" data-f="f_opium1" data-pmin="p_opium1" data-pmax="p_opium1"><td>2</td><td class="c1">鸦片、美沙酮（每+20克）</td><td class="c2">+1个月 / 20克</td></tr>
+      <tr data-tier="1" data-f="f_mdma1" data-pmin="p_mdma1" data-pmax="p_mdma1"><td>3</td><td class="c1">MDMA等苯丙胺类（甲基苯丙胺除外）、吗啡（每+2克）</td><td class="c2">+1个月 / 2克</td></tr>
+      <tr data-tier="1" data-f="f_keta1" data-pmin="p_keta1" data-pmax="p_keta1"><td>4</td><td class="c1">氯胺酮（每+10克）</td><td class="c2">+1个月 / 10克</td></tr>
+      <tr data-tier="1" data-f="f_fent1" data-pmin="p_fent1" data-pmax="p_fent1"><td>5</td><td class="c1">芬太尼（每+2.5克）</td><td class="c2">+1个月 / 2.5克</td></tr>
+      <tr data-tier="1" data-f="f_canna1" data-pmin="p_canna1" data-pmax="p_canna1"><td>6</td><td class="c1">大麻油、大麻脂、大麻叶及大麻烟（每+大麻油100克/大麻脂200克/大麻叶及大麻烟3千克）</td><td class="c2">+1个月 / 大麻油100克/大麻脂200克/大麻叶及大麻烟3千克</td></tr>
+      <tr data-tier="1" data-f="f_codeine1" data-pmin="p_codeine1" data-pmax="p_codeine1"><td>7</td><td class="c1">可待因、丁丙诺啡（每+100克）</td><td class="c2">+1个月 / 100克</td></tr>
+      <tr data-tier="1"><td>8</td><td class="c1">甲卡西酮（每+4克）</td><td class="c2">+1个月 / 4克</td></tr>
+      <tr data-tier="1"><td>9</td><td class="c1">二氢埃托啡（每+0.2毫克）</td><td class="c2">+1个月 / 0.2毫克</td></tr>
+      <tr data-tier="1"><td>10</td><td class="c1">哌替啶（度冷丁）（每+5克）</td><td class="c2">+1个月 / 5克</td></tr>
+      <tr data-tier="1"><td>11</td><td class="c1">曲马多、γ-羟丁酸（每+40克）</td><td class="c2">+1个月 / 40克</td></tr>
+      <tr data-tier="1"><td>12</td><td class="c1">三唑仑、安眠酮（每+1千克）</td><td class="c2">+1个月 / 1千克</td></tr>
+      <tr data-tier="1"><td>13</td><td class="c1">阿普唑仑、恰特草（每+2千克）</td><td class="c2">+1个月 / 2千克</td></tr>
+      <tr data-tier="1"><td>14</td><td class="c1">咖啡因、罂粟壳（每+4千克）</td><td class="c2">+1个月 / 4千克</td></tr>
+      <tr data-tier="1"><td>15</td><td class="c1">巴比妥、苯巴比妥、安钠咖、尼美西泮（每+5千克）</td><td class="c2">+1个月 / 5千克</td></tr>
+      <tr data-tier="1"><td>16</td><td class="c1">氯氮卓、艾司唑仑、地西泮、溴西泮（每+10千克）</td><td class="c2">+1个月 / 10千克</td></tr>
+      <tr data-tier="2" data-f="f_heroin2" data-pmin="p_heroin2_min" data-pmax="p_heroin2_max"><td>17</td><td class="c1">海洛因、甲基苯丙胺或者可卡因（每+1克）</td><td class="c2">+2至3个月 / 1克</td></tr>
+      <tr data-tier="2" data-f="f_opium2" data-pmin="p_opium2" data-pmax="p_opium2"><td>18</td><td class="c1">鸦片、美沙酮（每+20克）</td><td class="c2">+2个月 / 20克</td></tr>
+      <tr data-tier="2" data-f="f_mdma2" data-pmin="p_mdma2" data-pmax="p_mdma2"><td>19</td><td class="c1">MDMA等苯丙胺类（甲基苯丙胺除外）、吗啡（每+2克）</td><td class="c2">+2个月 / 2克</td></tr>
+      <tr data-tier="2" data-f="f_keta2" data-pmin="p_keta2" data-pmax="p_keta2"><td>20</td><td class="c1">氯胺酮（每+10克）</td><td class="c2">+2个月 / 10克</td></tr>
+      <tr data-tier="2" data-f="f_fent2" data-pmin="p_fent2" data-pmax="p_fent2"><td>21</td><td class="c1">芬太尼（每+2.5克）</td><td class="c2">+2个月 / 2.5克</td></tr>
+      <tr data-tier="2" data-f="f_canna2" data-pmin="p_canna2" data-pmax="p_canna2"><td>22</td><td class="c1">大麻油、大麻脂、大麻叶及大麻烟（每+大麻油100克/大麻脂200克/大麻叶及大麻烟3千克）</td><td class="c2">+2个月 / 大麻油100克/大麻脂200克/大麻叶及大麻烟3千克</td></tr>
+      <tr data-tier="2" data-f="f_codeine2" data-pmin="p_codeine2" data-pmax="p_codeine2"><td>23</td><td class="c1">可待因、丁丙诺啡（每+100克）</td><td class="c2">+2个月 / 100克</td></tr>
+      <tr data-tier="2"><td>24</td><td class="c1">甲卡西酮（每+4克）</td><td class="c2">+2个月 / 4克</td></tr>
+      <tr data-tier="2"><td>25</td><td class="c1">二氢埃托啡（每+0.2毫克）</td><td class="c2">+2个月 / 0.2毫克</td></tr>
+      <tr data-tier="2"><td>26</td><td class="c1">哌替啶（度冷丁）（每+5克）</td><td class="c2">+2个月 / 5克</td></tr>
+      <tr data-tier="2"><td>27</td><td class="c1">曲马多、γ-羟丁酸（每+40克）</td><td class="c2">+2个月 / 40克</td></tr>
+      <tr data-tier="2"><td>28</td><td class="c1">三唑仑、安眠酮（每+1千克）</td><td class="c2">+2个月 / 1千克</td></tr>
+      <tr data-tier="2"><td>29</td><td class="c1">阿普唑仑、恰特草（每+2千克）</td><td class="c2">+2个月 / 2千克</td></tr>
+      <tr data-tier="2"><td>30</td><td class="c1">咖啡因、罂粟壳（每+4千克）</td><td class="c2">+2个月 / 4千克</td></tr>
+      <tr data-tier="2"><td>31</td><td class="c1">巴比妥、苯巴比妥、安钠咖、尼美西泮（每+5千克）</td><td class="c2">+2个月 / 5千克</td></tr>
+      <tr data-tier="2"><td>32</td><td class="c1">氯氮卓、艾司唑仑、地西泮、溴西泮（每+10千克）</td><td class="c2">+2个月 / 10千克</td></tr>
+      <tr data-tier="3" data-f="f_heroin3" data-pmin="p_heroin3_min" data-pmax="p_heroin3_max"><td>33</td><td class="c1">海洛因、甲基苯丙胺或者可卡因（每+10克）</td><td class="c2">+1至2个月 / 10克</td></tr>
+      <tr data-tier="3" data-f="f_opium3" data-pmin="p_opium3" data-pmax="p_opium3"><td>34</td><td class="c1">鸦片、美沙酮（每+200克）</td><td class="c2">+1个月 / 200克</td></tr>
+      <tr data-tier="3" data-f="f_mdma3" data-pmin="p_mdma3" data-pmax="p_mdma3"><td>35</td><td class="c1">MDMA等苯丙胺类（甲基苯丙胺除外）、吗啡（每+20克）</td><td class="c2">+1个月 / 20克</td></tr>
+      <tr data-tier="3" data-f="f_keta3" data-pmin="p_keta3" data-pmax="p_keta3"><td>36</td><td class="c1">氯胺酮（每+100克）</td><td class="c2">+1个月 / 100克</td></tr>
+      <tr data-tier="3" data-f="f_fent3" data-pmin="p_fent3" data-pmax="p_fent3"><td>37</td><td class="c1">芬太尼（每+25克）</td><td class="c2">+1个月 / 25克</td></tr>
+      <tr data-tier="3" data-f="f_canna3" data-pmin="p_canna3" data-pmax="p_canna3"><td>38</td><td class="c1">大麻油、大麻脂、大麻叶及大麻烟（每+大麻油1kg/大麻脂2kg/大麻叶大麻烟30kg）</td><td class="c2">+1个月 / 大麻油1kg/大麻脂2kg/大麻叶大麻烟30kg</td></tr>
+      <tr data-tier="3" data-f="f_codeine3" data-pmin="p_codeine3" data-pmax="p_codeine3"><td>39</td><td class="c1">可待因、丁丙诺啡（每+1千克）</td><td class="c2">+1个月 / 1千克</td></tr>
+      <tr data-tier="3"><td>40</td><td class="c1">甲卡西酮（每+40克）</td><td class="c2">+1个月 / 40克</td></tr>
+      <tr data-tier="3"><td>41</td><td class="c1">二氢埃托啡（每+2毫克）</td><td class="c2">+1个月 / 2毫克</td></tr>
+      <tr data-tier="3"><td>42</td><td class="c1">哌替啶（度冷丁）（每+50克）</td><td class="c2">+1个月 / 50克</td></tr>
+      <tr data-tier="3"><td>43</td><td class="c1">曲马多、γ-羟丁酸（每+400克）</td><td class="c2">+1个月 / 400克</td></tr>
+      <tr data-tier="3"><td>44</td><td class="c1">三唑仑、安眠酮（每+10千克）</td><td class="c2">+1个月 / 10千克</td></tr>
+      <tr data-tier="3"><td>45</td><td class="c1">阿普唑仑、恰特草（每+20千克）</td><td class="c2">+1个月 / 20千克</td></tr>
+      <tr data-tier="3"><td>46</td><td class="c1">咖啡因、罂粟壳（每+40千克）</td><td class="c2">+1个月 / 40千克</td></tr>
+      <tr data-tier="3"><td>47</td><td class="c1">巴比妥、苯巴比妥、安钠咖、尼美西泮（每+50千克）</td><td class="c2">+1个月 / 50千克</td></tr>
+      <tr data-tier="3"><td>48</td><td class="c1">氯氮卓、艾司唑仑、地西泮、溴西泮（每+100千克）</td><td class="c2">+1个月 / 100千克</td></tr>
+    </tbody>
+  </table>  <!-- 从重情节 -->
+  <h2 class="section">六、从重处罚情节（调节基准刑）</h2>
+  <div class="block heavy">
+    <h3>⚠ 从重调节（docx「五、构成非法持有毒品罪，具有下列不同情形的，按照以下方法调节刑罚量」）</h3>
+    <ul>
+      <li><b>（1）毒品再犯</b>：增加基准刑的 <b>10% – 30%</b>。</li>
+      <li><b>（2）具有下列情形之一的</b>，可以增加基准刑的 <b>30%以下</b>（已确定为犯罪构成事实的除外）：①在戒毒场所、监管场所非法持有毒品；②利用、教唆未成年人非法持有毒品；③国家工作人员非法持有毒品；④其他可以从重处罚的情形。</li>
+      <li><b>（3）累计上限</b>：上述两款情节<b>累计增加的比例不得超过基准刑的 60%</b>。</li>
+      <li><b>（4）从宽情形</b>（可减少基准刑 30%以下，见下方"本罪特定从宽"）：①毒品含量明显偏低；②被利用或被诱骗非法持有毒品；③患有严重疾病、为减轻病痛吸食毒品而持有；④孕妇、哺乳期妇女、患有严重疾病人员及其他特殊人群被利用或被强迫参与毒品犯罪；⑤其他可以从轻处罚情形。</li>
+      <li>具体比例见上方估算器「本罪特定从重 / 从宽」（默认 20%，可调；docx 上限见各档）。</li>
+    </ul>
+  </div>  <!-- 常见量刑情节 -->
+  <h2 class="section" style="border-left-color:var(--amber)">七、常见量刑情节的适用（通用从宽 / 从重 · 赣高法〔2022〕115号「三、常见量刑情节的适用」原文）</h2>
+  <p class="note-tip" style="margin:2px 0 10px;">
+    以下为<b>通用量刑情节</b>的调节比例，逐条照录赣高法〔2022〕115号「三、常见量刑情节的适用」（一）—（二十二）。
+    对黑恶势力犯罪、严重暴力犯罪、毒品犯罪、性侵未成年人犯罪等危害严重的犯罪，在确定从宽幅度时<b>应当从严掌握</b>；对犯罪情节较轻的犯罪，应当充分体现从宽。确定比例时应综合平衡调节幅度与实际增减刑罚量的关系，确保罪责刑相适应。
+    本表为"比例区间"（如自首主动投案＝减少基准刑的 <b>40%以下</b>，并非固定40%）；最右「设置比例」列是区间的可调代表值（默认取区间上限），<b>在此修改后，第十项勾选对应情节即自动套用该比例</b>，无需再翻原文件或去参数面板。
+  </p>
+  <table class="cmnTbl" id="cmnTbl">
+    <thead>
+      <tr><th style="width:158px">情节</th><th style="width:46px">性质</th><th style="width:300px">调节比例区间（赣高法〔2022〕115号原文）</th><th>适用要点 / 备注</th><th style="width:152px">设置比例(%)</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>（一）未成年人犯罪</td><td class="up">从宽</td><td>已满12不满16：减30%–60%<br>已满16不满18：减10%–50%<br>法定刑3年以下+特定情形+认罪悔罪→可免除处罚（刑37）<br>跨18周岁：前三条定幅度；同种犯罪适当从宽，减刑量不超对应刑罚量<br>同案多未成年人：均衡，因年龄刑期差异不宜过大</td><td>综合认知能力、动机目的、年龄、初/偶犯、悔罪、成长经历与一贯表现</td><td class="pcol">12–16岁：<input type="number" id="p_juv1" data-def="60" value="60" class="pval"><br>16–18岁：<input type="number" id="p_juv2" data-def="50" value="50" class="pval"></td></tr>
+      <tr><td>（二）老年人犯罪</td><td class="up">从宽</td><td>75周岁以上：减40%以下；过失犯罪减20%–50%<br>65周岁以上不满75周岁：减10%以下；过失犯罪减20%以下<br>跨年龄段：前二条定幅度；同种犯罪适当从宽，减刑量不超对应刑罚量</td><td>综合犯罪性质、情节、后果、人身危险性与再犯可能</td><td class="pcol">65–75：<input type="number" id="p_elder65" data-def="10" value="10" class="pval"><br>75+：<input type="number" id="p_elder75" data-def="40" value="40" class="pval"></td></tr>
+      <tr><td>（三）未完全丧失辨认/控制能力的精神病人犯罪</td><td class="up">从宽</td><td>减40%以下</td><td>综合犯罪性质及精神障碍对辨认、控制能力的影响</td><td class="pcol"><input type="number" id="p_psy" data-def="40" value="40" class="pval"></td></tr>
+      <tr><td>（四）又聋又哑的人或者盲人犯罪</td><td class="up">从宽</td><td>减50%以下；情节较轻减50%以上或者依法免除处罚</td><td>综合性质、情节、后果、控制能力、动机目的、认知、初犯、悔罪、一贯表现</td><td class="pcol"><input type="number" id="p_deaf" data-def="50" value="50" class="pval"></td></tr>
+      <tr><td>（五）防卫过当 / 避险过当</td><td class="up">从宽</td><td>防卫过当：减60%以上或者依法免除处罚<br>避险过当：减50%以上或者依法免除处罚</td><td>综合不法侵害/危险来源性质程度、过当程度原因、损害大小</td><td class="pcol">防卫过当：<input type="number" id="p_defn" data-def="60" value="60" class="pval"><br>避险过当：<input type="number" id="p_nec" data-def="50" value="50" class="pval"></td></tr>
+      <tr><td>（六）预备犯 / 未遂犯 / 中止犯</td><td class="up">从宽</td><td>预备犯：减50%以下；犯罪较轻减50%以上或者免除<br>未遂犯：减50%以下<br>中止犯：造成损害减30%–40%；损害较轻减40%–60%；无损害免除</td><td>比照既遂犯；综合实行程度、损害大小、未得逞原因、中止动机阶段等</td><td class="pcol">预备：<input type="number" id="p_prep" data-def="50" value="50" class="pval"><br>未遂：<input type="number" id="p_att" data-def="50" value="50" class="pval"><br>中止·损：<input type="number" id="p_dis1" data-def="40" value="40" class="pval"><br>中止·轻：<input type="number" id="p_dis2" data-def="60" value="60" class="pval"></td></tr>
+      <tr><td>（七）从犯 / 胁从犯 / 教唆犯</td><td class="up">从宽</td><td>从犯：减20%–50%；犯罪较轻减50%以上或者免除<br>胁从犯：减40%–60%；犯罪较轻减60%以上或者免除<br>被教唆未犯被教唆之罪：减50%以下<br>教唆不满18周岁：加10%–30%<br>教唆限制行为能力精神病人：加30%以下</td><td>综合在共同犯罪中的地位、作用、被教唆对象及是否实施实行行为</td><td class="pcol">从犯：<input type="number" id="p_acc" data-def="50" value="50" class="pval"><br>胁从：<input type="number" id="p_coer" data-def="60" value="60" class="pval"><br>教唆未成年+：<input type="number" id="p_inst1" data-def="30" value="30" class="pval"><br>教唆精障+：<input type="number" id="p_inst2" data-def="30" value="30" class="pval"></td></tr>
+      <tr><td>（八）自首</td><td class="up">从宽</td><td>①未被发觉主动直接投案：减40%以下<br>②已发觉未受调查谈话/讯问、未宣布措施主动投案：减35%以下<br>③已发觉主动投案：减30%以下<br>④如实供述未掌握不同种罪行（以自首论）：减30%以下<br>⑤亲友规劝陪同/送去投案：减30%以下<br>⑥形迹可疑盘问教育后主动交代：减30%以下<br>⑦脱逃/抗拒后再投案、一审前如实供述：减20%以下<br>⑧其他自首：减20%以下<br>⑨犯罪较轻自首：减40%以上或者依法免除处罚</td><td>综合动机、时间、方式、罪行轻重、供述程度、悔罪；恶意利用自首规避法律除外</td><td class="pcol"><input type="number" id="p_self" data-def="40" value="40" class="pval"></td></tr>
+      <tr><td>（九）坦白</td><td class="up">从宽</td><td>如实供述自己+同案犯：减20%以下<br>供述未掌握同种较重罪行：减10%–30%<br>避免特别严重后果发生：减30%–50%</td><td>综合阶段、程度、罪行轻重、悔罪</td><td class="pcol"><input type="number" id="p_conf" data-def="20" value="20" class="pval"></td></tr>
+      <tr><td>（十）当庭自愿认罪</td><td class="up">从宽</td><td>减10%以下（依法认定自首、坦白或者认罪认罚的除外）</td><td>综合犯罪性质、罪行轻重、认罪程度、悔罪表现</td><td class="pcol"><input type="number" id="p_court" data-def="10" value="10" class="pval"></td></tr>
+      <tr><td>（十一）立功</td><td class="up">从宽</td><td>一般立功：减20%以下<br>重大立功：减20%–50%；犯罪较轻减50%以上或者免除</td><td>综合立功大小、次数、内容、来源、效果、罪行轻重</td><td class="pcol">一般：<input type="number" id="p_merit1" data-def="20" value="20" class="pval"><br>重大：<input type="number" id="p_merit2" data-def="50" value="50" class="pval"></td></tr>
+      <tr><td>（十二）退赃、退赔</td><td class="up">从宽</td><td>积极配合追赃退赃+积极退赔+未造成损失：减30%以下；损失较小减20%以下<br>配合追赃退赃+未造成损失：减20%以下；损失较小减10%以下<br>配合追缴赃款未造成损失：减20%以下<br>共同犯罪：综合全案+实际参与数额/损失/分赃，减30%以下<br>抢劫等严重危害社会治安：从严，减不超10%且不超1年</td><td>综合犯罪性质、弥补程度、数额、主动程度</td><td class="pcol">追赃退赔：<input type="number" id="p_rest1" data-def="30" value="30" class="pval"><br>追赃未损：<input type="number" id="p_rest2" data-def="20" value="20" class="pval"><br>追缴未损：<input type="number" id="p_rest3" data-def="20" value="20" class="pval"><br>共同犯：<input type="number" id="p_rest4" data-def="30" value="30" class="pval"><br>抢劫从严≤10%：<input type="number" id="p_rest5" data-def="10" value="10" class="pval"></td></tr>
+      <tr><td>（十三）积极赔偿并取得谅解</td><td class="up">从宽</td><td>赔偿+谅解：减40%以下<br>赔偿未谅解：减30%以下<br>未赔偿但谅解：减20%以下<br>抢劫、强奸等严重危害社会治安：从严掌握</td><td>综合犯罪性质、赔偿合理性、能力、认罪悔罪</td><td class="pcol"><input type="number" id="p_comp" data-def="40" value="40" class="pval"></td></tr>
+      <tr><td>（十四）刑事和解（刑诉法第288条）</td><td class="up">从宽</td><td>减50%以下；犯罪较轻减50%以上或者依法免除处罚</td><td>综合犯罪性质、赔偿数额、赔礼道歉、真诚悔罪</td><td class="pcol"><input type="number" id="p_set" data-def="50" value="50" class="pval"></td></tr>
+      <tr><td>（十五）羁押期间表现好</td><td class="up">从宽</td><td>减10%以下</td><td>—</td><td class="pcol"><input type="number" id="p_det" data-def="10" value="10" class="pval"></td></tr>
+      <tr><td>（十六）认罪认罚</td><td class="up">从宽</td><td>签署具结+同意量刑建议：减30%以下（按阶段）<br>同时具自首/重大坦白/退赃退赔/赔偿谅解/刑事和解：减60%以下；犯罪较轻减60%以上或者免除<br>与自首、坦白、当庭认罪、退赃退赔、赔偿谅解、刑事和解、羁押表现好不作重复评价</td><td>综合犯罪性质、罪行轻重、阶段、程度、价值、悔罪</td><td class="pcol"><input type="number" id="p_plea" data-def="30" value="30" class="pval"></td></tr>
+      <tr><td>（十七）犯罪后积极救助被害人</td><td class="up">从宽</td><td>减25%以下（系行政法定义务除外）</td><td>综合犯罪性质、救助效果、人身损害后果</td><td class="pcol"><input type="number" id="p_rescue" data-def="25" value="25" class="pval"></td></tr>
+      <tr><td>（十八）累犯</td><td class="down">从重</td><td>加10%–40%（一般不少于3个月）</td><td>综合前后罪性质、执行完毕至再犯时间、前后罪轻重；依法不适用缓刑</td><td class="pcol"><input type="number" id="p_recid" data-def="30" value="30" class="pval"></td></tr>
+      <tr><td>（十九）前科</td><td class="down">从重</td><td>加10%以下（过失犯罪和未成年人犯罪除外）；已适用累犯不再适用本条</td><td>综合前科性质、间隔、次数、处罚轻重</td><td class="pcol"><input type="number" id="p_prior" data-def="10" value="10" class="pval"></td></tr>
+      <tr><td>（二十）犯罪对象为弱势群体</td><td class="down">从重</td><td>加20%以下</td><td>未成年人、老年人、残疾人、孕妇等；综合犯罪性质、严重程度</td><td class="pcol"><input type="number" id="p_weak" data-def="20" value="20" class="pval"></td></tr>
+      <tr><td>（二十一）重大灾害/疫情防控期间故意犯罪</td><td class="down">从重</td><td>加20%以下</td><td>重大自然灾害、预防控制突发传染病疫情等；按案件具体情况</td><td class="pcol"><input type="number" id="p_disaster" data-def="20" value="20" class="pval"></td></tr>
+      <tr><td>（二十二）调节方法冲突处理</td><td>规则</td><td>"常见量刑情节"的调节方法在"具体常见犯罪量刑"有特殊规定的，优先适用特殊规定，一般不重复调节基准刑比例</td><td>特殊规定优先</td><td class="pcol">—</td></tr>
+    </tbody>
+  </table>
+
+  <!-- 罚金 -->
+  <h2 class="section">八、罚金</h2>
+  <div class="block fine">
+    <h3>罚金幅度（docx「六、构成非法持有毒品罪的，根据……决定罚金数额」）</h3>
+    <ul>
+      <li><b>判处三年以下</b>（拘役/管制/有期徒刑）：一般并处 <b>1000元 – 30000元</b>。其中：管制 1000–10000元；拘役 2000–20000元；三年以下有期徒刑 5000–30000元。</li>
+      <li><b>判处三年以上七年以下</b>：一般并处 <b>3000元 – 50000元</b>。其中：3–5年 3000–30000元；5–7年 20000–50000元。</li>
+      <li><b>判处七年以上</b>：一般并处 <b>5000元 – 100000元</b>。其中：7–10年 5000–70000元；10年以上 50000–100000元。</li>
+      <li class="note-tip">（综合持有毒品种类、数量、缴纳能力确定；江西实践一般并处。）</li>
+    </ul>
+  </div>  <!-- 缓刑 -->
+  <h2 class="section">九、缓刑适用</h2>
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px;">
+    <div class="block pro-yes">
+      <h3>✓ 可以考虑适用缓刑（docx「七、……从严把握缓刑的适用」）</h3>
+      <ul>
+        <li>①替共同生活的家庭成员非法持有毒品数量较大的；</li>
+        <li>②系没有生活自理能力家庭成员的唯一监护人，非法持有毒品数量较大的；</li>
+        <li>③其他可以适用缓刑的情形（须同时满足刑法第72条）。</li>
+      </ul>
+    </div>
+    <div class="block pro-no">
+      <h3>✕ 一般不得 / 严格限制缓刑</h3>
+      <ul>
+        <li>①<b>毒品再犯</b>，一般不得适用缓刑；</li>
+        <li>②不能排除多次贩毒嫌疑、因认定贩卖等犯罪证据不足而认定为非法持有的，应当严格限制缓刑适用；</li>
+        <li>③数量大（第三幅度）一般从严把握缓刑。</li>
+      </ul>
+    </div>
+  </div>  <!-- 估算器 -->
+  <h2 class="section">十、情景 → 刑期估算器（附量刑建议，辅助，非裁判依据）</h2>
+  <p class="note-tip" style="margin:2px 0 10px;">⚠ <b>本估算器为推演参考工具，非法定量刑依据</b>；具体量刑起点须以本页「依据」所列文件及审理法院裁判为准。</p>
+  <div class="calc">
+    <details class="params" id="calcParams">
+      <summary>⚙ 计算参数覆盖（默认＝赣高法〔2022〕115号，修改后即时生效）</summary>
+      <div class="pgrid">
+        <div class="pgroup">
+          <h4>基准刑增量（增率，可调）</h4>
+          <div class="prow"><span>海洛因、甲基苯丙胺或者可卡因 每+1克</span><input type="number" id="p_heroin1_min" data-def="1" value="1">–<input type="number" id="p_heroin1_max" data-def="2" value="2"><span>月</span></div>
+          <div class="prow"><span>鸦片、美沙酮 每+20克</span><input type="number" id="p_opium1" data-def="1" value="1"><span>月</span></div>
+          <div class="prow"><span>MDMA等苯丙胺类（甲基苯丙胺除外）、吗啡 每+2克</span><input type="number" id="p_mdma1" data-def="1" value="1"><span>月</span></div>
+          <div class="prow"><span>氯胺酮 每+10克</span><input type="number" id="p_keta1" data-def="1" value="1"><span>月</span></div>
+          <div class="prow"><span>芬太尼 每+2.5克</span><input type="number" id="p_fent1" data-def="1" value="1"><span>月</span></div>
+          <div class="prow"><span>大麻油、大麻脂、大麻叶及大麻烟 每+大麻油100克/大麻脂200克/大麻叶及大麻烟3千克</span><input type="number" id="p_canna1" data-def="1" value="1"><span>月</span></div>
+          <div class="prow"><span>可待因、丁丙诺啡 每+100克</span><input type="number" id="p_codeine1" data-def="1" value="1"><span>月</span></div>
+          <div class="prow"><span>海洛因、甲基苯丙胺或者可卡因 每+1克</span><input type="number" id="p_heroin2_min" data-def="2" value="2">–<input type="number" id="p_heroin2_max" data-def="3" value="3"><span>月</span></div>
+          <div class="prow"><span>鸦片、美沙酮 每+20克</span><input type="number" id="p_opium2" data-def="2" value="2"><span>月</span></div>
+          <div class="prow"><span>MDMA等苯丙胺类（甲基苯丙胺除外）、吗啡 每+2克</span><input type="number" id="p_mdma2" data-def="2" value="2"><span>月</span></div>
+          <div class="prow"><span>氯胺酮 每+10克</span><input type="number" id="p_keta2" data-def="2" value="2"><span>月</span></div>
+          <div class="prow"><span>芬太尼 每+2.5克</span><input type="number" id="p_fent2" data-def="2" value="2"><span>月</span></div>
+          <div class="prow"><span>大麻油、大麻脂、大麻叶及大麻烟 每+大麻油100克/大麻脂200克/大麻叶及大麻烟3千克</span><input type="number" id="p_canna2" data-def="2" value="2"><span>月</span></div>
+          <div class="prow"><span>可待因、丁丙诺啡 每+100克</span><input type="number" id="p_codeine2" data-def="2" value="2"><span>月</span></div>
+          <div class="prow"><span>海洛因、甲基苯丙胺或者可卡因 每+10克</span><input type="number" id="p_heroin3_min" data-def="1" value="1">–<input type="number" id="p_heroin3_max" data-def="2" value="2"><span>月</span></div>
+          <div class="prow"><span>鸦片、美沙酮 每+200克</span><input type="number" id="p_opium3" data-def="1" value="1"><span>月</span></div>
+          <div class="prow"><span>MDMA等苯丙胺类（甲基苯丙胺除外）、吗啡 每+20克</span><input type="number" id="p_mdma3" data-def="1" value="1"><span>月</span></div>
+          <div class="prow"><span>氯胺酮 每+100克</span><input type="number" id="p_keta3" data-def="1" value="1"><span>月</span></div>
+          <div class="prow"><span>芬太尼 每+25克</span><input type="number" id="p_fent3" data-def="1" value="1"><span>月</span></div>
+          <div class="prow"><span>大麻油、大麻脂、大麻叶及大麻烟 每+大麻油1kg/大麻脂2kg/大麻叶大麻烟30kg</span><input type="number" id="p_canna3" data-def="1" value="1"><span>月</span></div>
+          <div class="prow"><span>可待因、丁丙诺啡 每+1千克</span><input type="number" id="p_codeine3" data-def="1" value="1"><span>月</span></div>
+        </div>
+        <div class="pgroup">
+          <h4>本罪特定从重/从宽比例（%，可调）</h4>
+
+          <div class="prow"><span>毒品再犯 +10%–30%<i class="rng">30%以下</i></span><input type="number" id="p_d_spec" data-def="20" value="20"></div>
+          <div class="prow"><span>其他从重（戒毒/监管场所、利用教唆未成年、国家工作人员等）+30%以下<i class="rng">30%以下</i></span><input type="number" id="p_d_other" data-def="20" value="20"></div>
+          <div class="prow"><span>毒品含量明显偏低 −30%以下<i class="rng">30%以下</i></span><input type="number" id="p_l_purity" data-def="20" value="20"></div>
+          <div class="prow"><span>被利用/诱骗持有 −30%以下<i class="rng">30%以下</i></span><input type="number" id="p_l_duped" data-def="20" value="20"></div>
+          <div class="prow"><span>患严重疾病为减轻病痛持有 −30%以下<i class="rng">30%以下</i></span><input type="number" id="p_l_ill" data-def="20" value="20"></div>
+          <div class="prow"><span>特殊人群被利用/强迫 −30%以下<i class="rng">30%以下</i></span><input type="number" id="p_l_sp" data-def="20" value="20"></div>
+          <div class="prow" style="font-size:12px;color:#8a96a0;">（通用从重情节见下方「通用情节·从重」；通用情节比例见第七项「设置比例」列，在此处修改即时生效）</div>
+        </div>
+        <div class="pgroup">
+          <h4>量刑建议取点（占区间比例 %，可调）</h4>
+          <div class="prow"><span>偏轻（检察院建议）</span><input type="number" id="p_low" data-def="33" value="33"></div>
+          <div class="prow"><span>中肯（法院宣告）</span><input type="number" id="p_mid" data-def="50" value="50"></div>
+          <div class="prow"><span>偏重（情形参考）</span><input type="number" id="p_high" data-def="67" value="67"></div>
+        </div>
+      </div>
+      <div class="pbtns"><button type="button" class="btn" onclick="resetParams()">恢复默认参数</button></div>
+    </details>
+    <div class="row">
+      <label>量刑幅度</label>
+      <label><input type="radio" name="tier" value="1" checked> 第一幅度</label>
+      <label><input type="radio" name="tier" value="2"> 第二幅度</label>
+      <label><input type="radio" name="tier" value="3"> 第三幅度</label>
+
+    </div>
+    <div class="row">
+      <label>量刑起点</label>
+
+      <span class="chips" id="startChips">
+        <button type="button" class="chip-btn" data-min="3" data-max="12" data-tier="1">3个月拘役–1年（数量较大）</button>
+        <button type="button" class="chip-btn" data-min="36" data-max="48" data-tier="2">3年–4年（情节严重）</button>
+        <button type="button" class="chip-btn" data-min="84" data-max="108" data-tier="3">7年–9年（数量大）</button>
+      </span>
+      <span class="note-tip">或手动输入（月）：下限<input type="number" id="sMin" style="width:56px" value="3"> 上限<input type="number" id="sMax" style="width:56px" value="12"></span>
+    </div>
+    <div class="row">
+      <label>基准刑增量·第1幅度</label>
+      海洛因、甲基苯丙胺或者可卡因 每+1克<input type="number" id="f_heroin1" value="0" min="0" style="width:64px"> <span class="note-tip unit">（每1克）</span>
+      鸦片、美沙酮 每+20克<input type="number" id="f_opium1" value="0" min="0" style="width:64px"> <span class="note-tip unit">（每20克）</span>
+      MDMA等苯丙胺类（甲基苯丙胺除外）、吗啡 每+2克<input type="number" id="f_mdma1" value="0" min="0" style="width:64px"> <span class="note-tip unit">（每2克）</span>
+      氯胺酮 每+10克<input type="number" id="f_keta1" value="0" min="0" style="width:64px"> <span class="note-tip unit">（每10克）</span>
+      芬太尼 每+2.5克<input type="number" id="f_fent1" value="0" min="0" style="width:64px"> <span class="note-tip unit">（每2.5克）</span>
+      大麻油、大麻脂、大麻叶及大麻烟 每+大麻油100克/大麻脂200克/大麻叶及大麻烟3千克<input type="number" id="f_canna1" value="0" min="0" style="width:64px"> <span class="note-tip unit">（每大麻油100克/大麻脂200克/大麻叶及大麻烟3千克）</span>
+      可待因、丁丙诺啡 每+100克<input type="number" id="f_codeine1" value="0" min="0" style="width:64px"> <span class="note-tip unit">（每100克）</span>
+      <span class="note-tip" style="margin-left:8px">事实数值在此直接填写，增率可在上方「⚙ 计算参数覆盖」面板调整。</span>
+    </div>
+    <div class="row">
+      <label>基准刑增量·第2幅度</label>
+      海洛因、甲基苯丙胺或者可卡因 每+1克<input type="number" id="f_heroin2" value="0" min="0" style="width:64px"> <span class="note-tip unit">（每1克）</span>
+      鸦片、美沙酮 每+20克<input type="number" id="f_opium2" value="0" min="0" style="width:64px"> <span class="note-tip unit">（每20克）</span>
+      MDMA等苯丙胺类（甲基苯丙胺除外）、吗啡 每+2克<input type="number" id="f_mdma2" value="0" min="0" style="width:64px"> <span class="note-tip unit">（每2克）</span>
+      氯胺酮 每+10克<input type="number" id="f_keta2" value="0" min="0" style="width:64px"> <span class="note-tip unit">（每10克）</span>
+      芬太尼 每+2.5克<input type="number" id="f_fent2" value="0" min="0" style="width:64px"> <span class="note-tip unit">（每2.5克）</span>
+      大麻油、大麻脂、大麻叶及大麻烟 每+大麻油100克/大麻脂200克/大麻叶及大麻烟3千克<input type="number" id="f_canna2" value="0" min="0" style="width:64px"> <span class="note-tip unit">（每大麻油100克/大麻脂200克/大麻叶及大麻烟3千克）</span>
+      可待因、丁丙诺啡 每+100克<input type="number" id="f_codeine2" value="0" min="0" style="width:64px"> <span class="note-tip unit">（每100克）</span>
+      <span class="note-tip" style="margin-left:8px">事实数值在此直接填写，增率可在上方「⚙ 计算参数覆盖」面板调整。</span>
+    </div>
+    <div class="row">
+      <label>基准刑增量·第3幅度</label>
+      海洛因、甲基苯丙胺或者可卡因 每+10克<input type="number" id="f_heroin3" value="0" min="0" style="width:64px"> <span class="note-tip unit">（每10克）</span>
+      鸦片、美沙酮 每+200克<input type="number" id="f_opium3" value="0" min="0" style="width:64px"> <span class="note-tip unit">（每200克）</span>
+      MDMA等苯丙胺类（甲基苯丙胺除外）、吗啡 每+20克<input type="number" id="f_mdma3" value="0" min="0" style="width:64px"> <span class="note-tip unit">（每20克）</span>
+      氯胺酮 每+100克<input type="number" id="f_keta3" value="0" min="0" style="width:64px"> <span class="note-tip unit">（每100克）</span>
+      芬太尼 每+25克<input type="number" id="f_fent3" value="0" min="0" style="width:64px"> <span class="note-tip unit">（每25克）</span>
+      大麻油、大麻脂、大麻叶及大麻烟 每+大麻油1kg/大麻脂2kg/大麻叶大麻烟30kg<input type="number" id="f_canna3" value="0" min="0" style="width:64px"> <span class="note-tip unit">（每大麻油1kg/大麻脂2kg/大麻叶大麻烟30kg）</span>
+      可待因、丁丙诺啡 每+1千克<input type="number" id="f_codeine3" value="0" min="0" style="width:64px"> <span class="note-tip unit">（每1千克）</span>
+      <span class="note-tip" style="margin-left:8px">事实数值在此直接填写，增率可在上方「⚙ 计算参数覆盖」面板调整。</span>
+    </div>
+
+
+    <div class="row">
+      <label>本罪特定从重</label>
+      <span class="chips" id="specHeavy">
+        <label title="毒品再犯（比例见参数面板「本罪特定从重」）"><input type="checkbox" data-param="p_d_spec"> 毒品再犯 +10%–30%</label>
+        <label title="其他从重：戒毒/监管场所持有、利用教唆未成年、国家工作人员、其他情节严重（比例见参数面板）"><input type="checkbox" data-param="p_d_other"> 其他从重情形 +30%以下</label>
+      </span>
+    </div>
+
+    <div class="row">
+      <label>本罪特定从宽</label>
+      <span class="chips" id="specLenient">
+        <label title="毒品含量明显偏低（比例见参数面板）"><input type="checkbox" data-param="p_l_purity"> 毒品含量明显偏低 −30%以下</label>
+        <label title="被利用或被诱骗持有"><input type="checkbox" data-param="p_l_duped"> 被利用/诱骗持有 −30%以下</label>
+        <label title="患严重疾病为减轻病痛吸食而持有"><input type="checkbox" data-param="p_l_ill"> 患严重疾病为减轻病痛持有 −30%以下</label>
+        <label title="孕妇/哺乳期妇女/严重疾病人员等被利用或强迫参与"><input type="checkbox" data-param="p_l_sp"> 特殊人群被利用/强迫 −30%以下</label>
+      </span>
+    </div>
+    <div class="row">
+      <label>通用情节·从轻</label>
+      <span style="font-size:12px;color:#b8860b;display:block;margin-bottom:3px;">⚠ 分组取大 / 叠加规则（与赣高法115号「三、常见量刑情节」逐条对应）：<b>态度类</b>（自首/坦白/当庭认罪/认罪认罚）取最大；<b>赔偿退赃类</b>（赔偿谅解/刑事和解/退赃各档）取最大；<b>身份能力类</b>（未成年/老年/精神病人/聋哑盲人）取最大；<b>法定减免类</b>（防卫/避险过当、预备/未遂/中止、从犯/胁从、立功、羁押表现、救助）可叠加；<b>从重类</b>（累犯/前科/教唆未成年·精障+/弱势群体/灾害）可叠加。<b>总减幅封顶65%</b>。勾选项比例＝第七项「设置比例」列的值，改第七项即时生效。</span>
+      <span class="chips" id="genUp">
+        <span class="gh" style="flex-basis:100%;font-weight:700;color:#3a4a57;margin:4px 0 2px;">身份 / 能力（取最大）</span>
+        <label title="身份能力类·取最大（比例见第七项设置）"><input type="checkbox" data-param="p_juv1" data-grp="C"> 未成年·12–16岁<span class="pct"></span></label>
+        <label title="身份能力类·取最大（比例见第七项设置）"><input type="checkbox" data-param="p_juv2" data-grp="C"> 未成年·16–18岁<span class="pct"></span></label>
+        <label title="身份能力类·取最大（比例见第七项设置）"><input type="checkbox" data-param="p_elder65" data-grp="C"> 老年·65–75<span class="pct"></span></label>
+        <label title="身份能力类·取最大（比例见第七项设置）"><input type="checkbox" data-param="p_elder75" data-grp="C"> 老年·75+<span class="pct"></span></label>
+        <label title="身份能力类·取最大（比例见第七项设置）"><input type="checkbox" data-param="p_psy" data-grp="C"> 精神病人(限制能力)<span class="pct"></span></label>
+        <label title="身份能力类·取最大（比例见第七项设置）"><input type="checkbox" data-param="p_deaf" data-grp="C"> 聋哑/盲人<span class="pct"></span></label>
+
+        <span class="gh" style="flex-basis:100%;font-weight:700;color:#3a4a57;margin:4px 0 2px;">犯罪形态 / 法定减免（可叠加）</span>
+        <label title="法定减免类·可叠加（比例见第七项设置）"><input type="checkbox" data-param="p_defn" data-grp="D"> 防卫过当<span class="pct"></span></label>
+        <label title="法定减免类·可叠加（比例见第七项设置）"><input type="checkbox" data-param="p_nec" data-grp="D"> 避险过当<span class="pct"></span></label>
+        <label title="法定减免类·可叠加（比例见第七项设置）"><input type="checkbox" data-param="p_prep" data-grp="D"> 预备犯<span class="pct"></span></label>
+        <label title="法定减免类·可叠加（比例见第七项设置）"><input type="checkbox" data-param="p_att" data-grp="D"> 未遂犯<span class="pct"></span></label>
+        <label title="法定减免类·可叠加（比例见第七项设置）"><input type="checkbox" data-param="p_dis1" data-grp="D"> 中止·造成损害<span class="pct"></span></label>
+        <label title="法定减免类·可叠加（比例见第七项设置）"><input type="checkbox" data-param="p_dis2" data-grp="D"> 中止·损害较轻<span class="pct"></span></label>
+        <label title="法定减免类·可叠加（比例见第七项设置）"><input type="checkbox" data-param="p_acc" data-grp="D"> 从犯<span class="pct"></span></label>
+        <label title="法定减免类·可叠加（比例见第七项设置）"><input type="checkbox" data-param="p_coer" data-grp="D"> 胁从犯<span class="pct"></span></label>
+        <label title="法定减免类·可叠加（比例见第七项设置）"><input type="checkbox" data-param="p_merit1" data-grp="D"> 立功·一般<span class="pct"></span></label>
+        <label title="法定减免类·可叠加（比例见第七项设置）"><input type="checkbox" data-param="p_merit2" data-grp="D"> 立功·重大<span class="pct"></span></label>
+        <label title="法定减免类·可叠加（比例见第七项设置）"><input type="checkbox" data-param="p_det" data-grp="D"> 羁押表现好<span class="pct"></span></label>
+        <label title="法定减免类·可叠加（比例见第七项设置）"><input type="checkbox" data-param="p_rescue" data-grp="D"> 积极救助<span class="pct"></span></label>
+
+        <span class="gh" style="flex-basis:100%;font-weight:700;color:#3a4a57;margin:4px 0 2px;">态度类（取最大）</span>
+        <label title="态度类·取最大（比例见第七项设置）"><input type="checkbox" data-param="p_self" data-grp="A"> 自首<span class="pct"></span></label>
+        <label title="态度类·取最大（比例见第七项设置）"><input type="checkbox" data-param="p_conf" data-grp="A"> 坦白<span class="pct"></span></label>
+        <label title="态度类·取最大（比例见第七项设置）"><input type="checkbox" data-param="p_court" data-grp="A"> 当庭认罪<span class="pct"></span></label>
+        <label title="态度类·取最大（比例见第七项设置）"><input type="checkbox" data-param="p_plea" data-grp="A"> 认罪认罚<span class="pct"></span></label>
+
+        <span class="gh" style="flex-basis:100%;font-weight:700;color:#3a4a57;margin:4px 0 2px;">赔偿 / 退赃（取最大）</span>
+        <label title="赔偿退赃类·取最大（比例见第七项设置）"><input type="checkbox" data-param="p_comp" data-grp="B"> 赔偿谅解<span class="pct"></span></label>
+        <label title="赔偿退赃类·取最大（比例见第七项设置）"><input type="checkbox" data-param="p_set" data-grp="B"> 刑事和解<span class="pct"></span></label>
+        <label title="赔偿退赃类·取最大（比例见第七项设置）"><input type="checkbox" data-param="p_rest1" data-grp="B"> 退赃·追赃退赔<span class="pct"></span></label>
+        <label title="赔偿退赃类·取最大（比例见第七项设置）"><input type="checkbox" data-param="p_rest2" data-grp="B"> 退赃·追赃未损<span class="pct"></span></label>
+        <label title="赔偿退赃类·取最大（比例见第七项设置）"><input type="checkbox" data-param="p_rest3" data-grp="B"> 退赃·追缴未损<span class="pct"></span></label>
+        <label title="赔偿退赃类·取最大（比例见第七项设置）"><input type="checkbox" data-param="p_rest4" data-grp="B"> 退赃·共同犯<span class="pct"></span></label>
+        <label title="赔偿退赃类·取最大（比例见第七项设置）"><input type="checkbox" data-param="p_rest5" data-grp="B"> 退赃·抢劫从严≤10<span class="pct"></span></label>
+      </span>
+    </div>
+    <div class="row">
+      <label>通用情节·从重</label>
+      <span class="chips" id="genDown">
+        <span class="gh" style="flex-basis:100%;font-weight:700;color:#a23b3b;margin:4px 0 2px;">从重（可叠加）</span>
+        <label><input type="checkbox" data-param="p_recid"> 累犯<span class="pct"></span></label>
+        <label><input type="checkbox" data-param="p_prior"> 前科<span class="pct"></span></label>
+        <label><input type="checkbox" data-param="p_inst1"> 教唆未成年+(重)<span class="pct"></span></label>
+        <label><input type="checkbox" data-param="p_inst2"> 教唆精障+(重)<span class="pct"></span></label>
+        <label><input type="checkbox" data-param="p_weak"> 弱势群体对象<span class="pct"></span></label>
+        <label><input type="checkbox" data-param="p_disaster"> 灾害/疫情期间<span class="pct"></span></label>
+      </span>
+      <span class="note-tip">比例区间见上方「七、常见量刑情节的适用」（赣高法〔2022〕115号「三、常见量刑情节的适用」原文）；累犯一般不少于3个月；自首/坦白/认罪认罚等原则上不重复评价，请择一或谨慎勾选。</span>
+    </div>
+    <div class="row">
+      <span class="note-tip">结果以三栏对比呈现：①<b>认罪认罚后·检察院建议刑</b>（按"偏轻"取点）②<b>法院最终宣告刑</b>（按"中肯"取点）③<b>偏重情形参考</b>（按"偏重"取点）。各取点比例可在上方"计算参数覆盖"面板调整。</span>
+    </div>
+    <div class="row">
+      <button class="btn" onclick="calc()">估算刑期区间</button>
+    </div>
+    <div class="result" id="out">点击"估算刑期区间"生成结果。</div>
+    <div class="disclaimer">说明：非法持有毒品罪特定从重/从宽按赣高法〔2022〕115号「二十一」。通用情节比例按赣高法〔2022〕115号「三、常见量刑情节的适用」（与上方第七项「设置比例」列一致）。估算分组取大/叠加：态度类（自首/坦白/当庭认罪/认罪认罚）取最大，赔偿退赃类（赔偿谅解/刑事和解/退赃各档）取最大，身份能力类（未成年/老年/精神病人/聋哑盲人）取最大，法定减免类（防卫/避险过当、预备/未遂/中止、从犯/胁从、立功、羁押表现、救助）可叠加，从重类（累犯/前科/教唆未成年·精障+/弱势群体/灾害）可叠加；总减幅封顶65%（机械累加，未处理个案裁量）。"量刑建议"三栏（认罪认罚后检察院建议刑 / 法院最终宣告刑 / 偏重情形参考）为按参数面板中可调的取点比例（偏轻33%／中肯50%／偏重67%，默认）从测算区间取出的点估计，仅供律师评估检方、法官可能给出的刑期、做到心里有数，不作裁判依据；宣告刑受法定上限（第一幅度3年、第二幅度7年、第三幅度无期）约束，且累犯一般不少于3个月。缓刑提示仅为初步筛查，最终以法院认定为准。</div>
+
+    <hr style="margin:20px 0; border:none; border-top:1px dashed var(--line);">
+    <div class="rev-title">↩ 反向测算：输入目标刑期 → 反推需要哪些情节 / 减多少（沿用上方起点·增量·本罪特定从重设定）</div>
+    <div class="row">
+      <label>目标刑期</label>
+      年<input type="number" id="rYear" value="1" min="0" style="width:50px"> 月<input type="number" id="rMonth" value="0" min="0" style="width:50px">
+      <span class="note-tip">填你期望争取到的刑期（如实刑1年→1年；"判1缓2"→1年）。工具反推：在现有事实下，需叠加哪些从轻情节、减多少才能达到，并列出可行组合。</span>
+    </div>
+    <div class="row">
+      <button class="btn" onclick="reverseCalc()">反推情节需求</button>
+      <span class="note-tip">组合规则同前：态度类取最大、赔偿退赃类取最大、身份能力类取最大、法定减免类可叠加、从重类可叠加；总减幅封顶65%。</span>
+    </div>
+    <div class="result" id="revout">点击"反推情节需求"生成结果。</div>
+  </div>  <p class="disclaimer" style="margin-top:24px;">
+    本表依据赣高法〔2022〕115号整理，仅供办案参考。正式引用请以官方发布文本为准。所有修改内容仅保存在本地浏览器，清除浏览器数据会丢失。
+  </p>
+
+<h2 class="section">实务参考案例</h2>
+  <div class="legend" style="margin-top:-2px;">
+    <span>案例选自<b>最高人民法院</b>、<b>中国法院网</b>公开发布的典型案例（官方来源可核实），可在每张卡片「参考要点」处直接批注。</span>
+  </div>
+  <div class="cases">
+<div class="case">
+  <div class="ctop"><span class="cname">谢元庆非法持有毒品、容留他人吸毒案</span><span class="csrc sup">最高法典型案例</span></div>
+  <div class="cmeta">广西壮族自治区陆川县人民法院（一审）　|　最高人民法院2019年十大毒品犯罪典型案例</div>
+  <h4>基本案情</h4>
+  <p>谢元庆非法持有<b>甲基苯丙胺数量大</b>，并多次提供场所容留他人（含多名未成年人）吸食毒品。</p>
+  <h4>裁判结果</h4>
+  <p>以非法持有毒品罪判处<b>有期徒刑八年</b>、并处罚金5000元；以容留他人吸毒罪判处有期徒刑一年、并处罚金2000元，决定执行有期徒刑八年六个月。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">非法持有"数量大"落入第三量刑幅度（7年以上）；毒品再犯、容留未成年人等从重情节叠加，且累计从重比例不超基准刑60%（docx 第5条）。</span></div>
+  <div class="src">来源：<a href="https://www.court.gov.cn/zixun/xiangqing/166442.html" target="_blank">《最高人民法院》：2019年十大毒品（涉毒）犯罪典型案例</a></div>
+</div>
+
+<div class="case">
+  <div class="ctop"><span class="cname">李某非法持有合成大麻素电子烟油案</span><span class="csrc sup">中国法院网</span></div>
+  <div class="cmeta">江西省南昌市西湖区人民法院（一审）　|　中国法院网 2022-04 报道</div>
+  <h4>基本案情</h4>
+  <p>李某经营电子烟店，被查扣含合成大麻素（5F-ADB、AMB-FUBINACA、MDMB-4en-PINACA）成分的3瓶烟油，折算成海洛因数量<b>201.2602克</b>（远超"数量大"标准）。</p>
+  <h4>裁判结果</h4>
+  <p>以非法持有毒品罪判处<b>有期徒刑七年</b>，并处罚金2万元；扣押烟油没收。</p>
+  <div class="note"><span class="lab">参考要点：</span><span class="editable" contenteditable="true" data-ph="点击补充你的辩护/量刑思路批注…">混合型毒品以毒性较大成分折算海洛因数量量刑；"毒品含量明显偏低"可作为从宽情节（docx 第5条④），但本案折算量巨大仍处七年以上。可重点审查折算方法与含量鉴定。</span></div>
+  <div class="src">来源：<a href="https://www.chinacourt.cn/article/detail/2022/04/id/6613293.shtml" target="_blank">中国法院网：南昌西湖区法院审结一起非法持有毒品案件</a></div>
+</div>
+  </div>
+</div>
+<script>
+  // ---- 全表内容可编辑 + 自动保存 ----
+  const KEY = "非法持有毒品罪_notes_v1";
+  window.SENTENCE_CAPS = {1:36, 2:84, 3:180};
+  const ORIG = {};   // 默认内容快照（用于"恢复默认"）
+
+  // 自动把指定单元格/列表项变为可编辑，并生成稳定 data-key
+  function makeEditable(selector, prefix){
+    document.querySelectorAll(selector).forEach((el, i)=>{
+      if(el.hasAttribute('data-key')) return;          // 已有 key（如批注列）跳过
+      el.setAttribute('data-key', prefix + i);
+      el.setAttribute('contenteditable', 'true');
+      el.classList.add('cedit');
+    });
+  }
+
+  function loadNotes(){
+    let saved = {};
+    try { saved = JSON.parse(localStorage.getItem(KEY) || '{}'); } catch(e){}
+    document.querySelectorAll('[data-key]').forEach(c=>{
+      const k = c.dataset.key;
+      if(saved[k] !== undefined && saved[k] !== '') c.innerHTML = saved[k];
+    });
+  }
+  function saveNotes(){
+    const o = {};
+    document.querySelectorAll('[data-key]').forEach(c=>{ o[c.dataset.key] = c.innerHTML; });
+    try { localStorage.setItem(KEY, JSON.stringify(o)); } catch(e){}
+  }
+  function clearNotes(){
+    if(!confirm('确定清空你的全部修改并恢复默认内容？此操作不可撤销。')) return;
+    document.querySelectorAll('[data-key]').forEach(c=>{
+      const k = c.dataset.key;
+      if(ORIG[k] !== undefined) c.innerHTML = ORIG[k];
+    });
+    try { localStorage.removeItem(KEY); } catch(e){}
+  }
+
+    // 让表格所有内容单元格可编辑（批注列本身已带 .editable + data-key）
+    function initEditor(){
+      // 量刑起点一览表
+      makeEditable('#startTbl tbody td:nth-child(1)', 'st-tier');   // 起点档
+      makeEditable('#startTbl tbody td:nth-child(2)', 'st-type');   // 行为类型
+      makeEditable('#startTbl tbody td:nth-child(3) li', 'st-cond');// 具体情形（逐条，有列表的行）
+      makeEditable('#startTbl tbody td:nth-child(3):not(:has(ul))', 'st-condx'); // 具体情形（纯文本行：起哄闹事、第二幅度）
+      makeEditable('#startTbl tbody td:nth-child(4)', 'st-start');  // 量刑起点幅度
+      // 基准刑增量对照表
+      makeEditable('.cmp tbody td.c1, .cmp tbody td.c2', 'cm');
+      // 常见量刑情节表（第5列「设置比例」为输入框，排除可编辑）
+      makeEditable('.cmnTbl tbody td:not(:nth-child(5))', 'cmn');
+      // 从重 / 罚金 / 缓刑 各块
+      makeEditable('.block li', 'bl');
+      makeEditable('.block h3', 'bh');
+      // 此罪彼罪界限表（单元格已带 data-key，补开编辑）
+      document.querySelectorAll('.distTbl td.cedit').forEach(c=> c.setAttribute('contenteditable','true'));
+      // 绑定输入保存（含动态注入的单元格）
+      document.querySelectorAll('[data-key]').forEach(c=>{ c.addEventListener('input', saveNotes); });
+      // 拍快照（保存各单元格原始 HTML，供恢复默认）
+      document.querySelectorAll('[data-key]').forEach(c=>{ ORIG[c.dataset.key] = c.innerHTML; });
+      loadNotes();
+      loadParams();
+      bindParamEvents();
+    }
+
+  // ---- 第七项「设置比例」与第十项勾选框联动 + 持久化 ----
+  function saveParams(){
+    const o = {};
+    document.querySelectorAll('[data-def]').forEach(i=>{ if(i.id) o[i.id] = i.value; });
+    try { localStorage.setItem(KEY+'_params', JSON.stringify(o)); } catch(e){}
+  }
+  function loadParams(){
+    let saved = {};
+    try { saved = JSON.parse(localStorage.getItem(KEY+'_params') || '{}'); } catch(e){}
+    document.querySelectorAll('[data-def]').forEach(i=>{ if(i.id && saved[i.id] !== undefined) i.value = saved[i.id]; });
+  }
+  // 勾选框后动态显示第七项设置的比例（如「自首 −40%」）
+  function syncLabels(){
+    document.querySelectorAll('#genUp input[type=checkbox], #genDown input[type=checkbox]').forEach(c=>{
+      const span = c.parentElement.querySelector('.pct');
+      if(!span) return;
+      const v = parseFloat(document.getElementById(c.dataset.param).value) || 0;
+      const sign = c.closest('#genDown') ? '+' : '−';
+      span.textContent = c.checked ? ' ' + sign + v + '%' : '';
+    });
+  }
+  function bindParamEvents(){
+    document.querySelectorAll('[data-def]').forEach(i=>{
+      i.addEventListener('input', ()=>{ saveParams(); syncLabels(); if(typeof calc==='function') calc(); });
+    });
+    document.querySelectorAll('#genUp input[type=checkbox], #genDown input[type=checkbox]').forEach(c=>{
+      c.addEventListener('change', syncLabels);
+    });
+    syncLabels();
+  }
+
+  // ---- 起点快捷按钮 ----
+  document.querySelectorAll('#startChips .chip-btn').forEach(b=>{
+    b.addEventListener('click', ()=>{
+      document.getElementById('sMin').value = b.dataset.min;
+      document.getElementById('sMax').value = b.dataset.max;
+      document.querySelectorAll('#startChips .chip-btn').forEach(x=>x.classList.remove('on'));
+      b.classList.add('on');
+    });
+  });
+
+  // ---- 估算器 ----
+  function fmt(m){
+    m = Math.round(m);
+    const y = Math.floor(m/12), mo = m%12;
+    if(y===0) return mo + '个月';
+    if(mo===0) return y + '年';
+    return y + '年' + mo + '个月';
+  }
+  function calc(){
+    const tier = document.querySelector('input[name=tier]:checked').value;
+    let sMin = parseFloat(document.getElementById('sMin').value)||0;
+    let sMax = parseFloat(document.getElementById('sMax').value)||0;
+    const P = id => parseFloat(document.getElementById(id).value) || 0;
+    const cap = (window.SENTENCE_CAPS && window.SENTENCE_CAPS[tier]) ? window.SENTENCE_CAPS[tier] : (tier==='1' ? 36 : (tier==='2' ? 120 : 180));
+    // 基准刑增量：遍历「五、基准刑增量对照」表（cmpTbl），按所选幅度档(data-tier)取对应增率
+    let incMin = 0, incMax = 0;
+    document.querySelectorAll('.cmp tbody tr[data-f]').forEach(tr=>{
+      if(tr.dataset.tier && tr.dataset.tier !== tier) return;
+      const f = P(tr.dataset.f);
+      const rmin = P(tr.dataset.pmin), rmax = P(tr.dataset.pmax);
+      incMin += f*rmin; incMax += f*rmax;
+    });
+    let baseMin = Math.min(sMin + incMin, cap);
+    let baseMax = Math.min(sMax + incMax, cap);
+
+    // 本罪特定从重（比例取自参数面板「本罪特定从重」，#specHeavy 勾选生效）
+    let spPct = 0;
+    document.querySelectorAll('#specHeavy input[type=checkbox]:checked').forEach(c=> spPct += P(c.dataset.param));
+    let rMin = Math.min(baseMin*(1+spPct/100), cap);
+    let rMax = Math.min(baseMax*(1+spPct/100), cap);
+
+    // ---- 通用情节：分组取大 / 叠加 + 减幅上限（比例取自第七项设置）----
+    // A态度(最大) / B赔偿退赃(最大) / C身份能力(最大) / D法定减免(叠加)
+    let redA = 0, redB = 0, redC = 0, redD = 0;
+    document.querySelectorAll('#genUp input[type=checkbox]:checked').forEach(c=>{
+      const v = P(c.dataset.param);
+      const g = c.dataset.grp;
+      if(g === 'A') redA = Math.max(redA, v);
+      else if(g === 'B') redB = Math.max(redB, v);
+      else if(g === 'C') redC = Math.max(redC, v);
+      else if(g === 'D') redD += v;
+    });
+    let redTotal = redA + redB + redC + redD;
+
+    // 从重（可叠加）
+    let addTotal = 0;
+    document.querySelectorAll('#genDown input[type=checkbox]:checked').forEach(c=>{ addTotal += P(c.dataset.param); });
+
+    // 净调节 = 从重 - 从轻；但总减幅不超过基准刑的65%（指导意见隐含上限）
+    let netPct = addTotal - redTotal;
+    let effNet = netPct < -65 ? -65 : netPct;  // 减幅封顶 -65%
+
+    let fMin = rMin*(1+effNet/100);
+    let fMax = rMax*(1+effNet/100);
+
+    // 累犯保底不少于3个月
+    const recidEl = document.querySelector('#genDown input[data-param="p_recid"]');
+    const hasRecidivist = recidEl && recidEl.checked;
+    if(hasRecidivist){
+      fMin = Math.max(fMin, 3);
+      fMax = Math.max(fMax, 3);
+    }
+
+    // 最终结果不得为负、不得超过法定上限
+    fMin = Math.max(0.5, Math.min(Math.round(fMin), cap));  // 最低0.5月避免显示0
+    fMax = Math.max(0.5, Math.min(Math.round(fMax), cap));
+
+    // ---- 量刑建议三栏对比（取点比例可在参数面板调整）----
+    const at = r => Math.max(0.5, Math.min(fMin + (fMax - fMin) * (r/100), cap));
+    const vPro   = at(P('p_low'));    // 偏轻：认罪认罚后检察院建议刑
+    const vJudge = at(P('p_mid'));    // 中肯：法院最终宣告刑
+    const vHigh  = at(P('p_high'));   // 偏重：情形参考
+
+    // 缓刑空间提示（以法院宣告刑为准）
+    let ptext;
+    if(hasRecidivist){
+      ptext = '<span class="no">累犯，依法不适用缓刑。</span>';
+    } else if(vJudge <= 36){
+      let w = [];
+      if(document.querySelectorAll('#specHeavy input[type=checkbox]:checked').length) w.push('本罪特定从重情形');
+      if(w.length)
+        ptext = '<span class="warn">法院宣告刑≤3年，具备争取缓刑基础；但存在江西细则"一般不适用缓刑"情形（'
+              + w.join('、') + '），需重点评估。</span>';
+      else
+        ptext = '<span class="ok">法院宣告刑≤3年，具备争取缓刑的基础条件（仍须满足刑法第72条四要件，且排除其他一般不适用情形）。</span>';
+    } else {
+      ptext = '<span class="no">法院宣告刑已超过3年，一般不具备缓刑条件。</span>';
+    }
+
+    const col = (cls, title, val, ratio) =>
+      '<div class="sugcol ' + cls + '">'
+      + '<div class="ct">' + title + '</div>'
+      + '<div class="cv">约 ' + fmt(val) + '</div>'
+      + '<div class="cp">取点：区间 ' + ratio + '%</div>'
+      + '</div>';
+
+    const sugBox = '<div class="sugbox">'
+      + '<div class="sug-label">量刑建议对比（检方 / 法院 / 偏重情形）</div>'
+      + '<div class="sugcols">'
+      +   col('pro',   '认罪认罚后 · 检察院建议刑', vPro,   P('p_low'))
+      +   col('judge', '法院最终宣告刑',           vJudge, P('p_mid'))
+      +   col('high',  '偏重情形参考',             vHigh,  P('p_high'))
+      + '</div>'
+      + '<div class="sug-sub">测算区间：' + fmt(fMin) + ' – ' + fmt(fMax)
+      + '　｜　法定上限：' + (tier==='1'?'3年':'10年') + '</div>'
+      + '<div class="sug-extra">' + ptext + '</div>'
+      + '</div>';
+
+    // 三段式明细（供核对）
+    let html = '预估基准刑：<b>' + fmt(baseMin) + ' – ' + fmt(baseMax) + '</b>';
+    if(spPct>0)
+      html += '<br>叠加本罪特定从重(' + spPct + '%)：<b>' + fmt(rMin) + ' – ' + fmt(rMax) + '</b>';
+
+    let detail = [];
+    if(redA>0) detail.push('态度−' + redA + '%');
+    if(redB>0) detail.push('赔偿/退赃−' + redB + '%');
+    if(redC>0) detail.push('身份−' + redC + '%');
+    if(redD>0) detail.push('法定减免−' + redD + '%');
+    if(addTotal>0) detail.push('从重+' + addTotal + '%');
+    html += '<br>叠加通用情节'
+         + (detail.length ? '(' + detail.join(' ') + ')' : '')
+         + '：<b>' + fmt(fMin) + ' – ' + fmt(fMax) + '</b>';
+    html += '　<span style="font-size:12px;color:#5b6b78">（法定上限：'
+         + (tier==='1'?'3年':'10年') + '）</span>';
+
+    document.getElementById('out').innerHTML = sugBox + html;
+    syncLabels();
+  }
+
+  // ---- 反向测算：目标刑期 → 需哪些情节 ----
+  function reverseCalc(){
+    const tier = document.querySelector('input[name=tier]:checked').value;
+    const sMin = parseFloat(document.getElementById('sMin').value)||0;
+    const sMax = parseFloat(document.getElementById('sMax').value)||0;
+    const P = id => parseFloat(document.getElementById(id).value) || 0;
+    const cap = (window.SENTENCE_CAPS && window.SENTENCE_CAPS[tier]) ? window.SENTENCE_CAPS[tier] : (tier==='1' ? 36 : (tier==='2' ? 120 : 180));
+    // 基准刑增量：与正向估算一致，遍历 cmpTbl（按 data-tier 取当前幅度档）
+    let incMin = 0, incMax = 0;
+    document.querySelectorAll('.cmp tbody tr[data-f]').forEach(tr=>{
+      if(tr.dataset.tier && tr.dataset.tier !== tier) return;
+      const f = P(tr.dataset.f);
+      const rmin = P(tr.dataset.pmin), rmax = P(tr.dataset.pmax);
+      incMin += f*rmin; incMax += f*rmax;
+    });
+    let baseMin = Math.min(sMin + incMin, cap);
+    let baseMax = Math.min(sMax + incMax, cap);
+
+    let spPct = 0;
+    document.querySelectorAll('#specHeavy input[type=checkbox]:checked').forEach(c=> spPct += P(c.dataset.param));
+    let bMin = Math.min(baseMin*(1+spPct/100), cap);
+    let bMax = Math.min(baseMax*(1+spPct/100), cap);
+    let bMid = (bMin + bMax)/2;
+
+    const ry = +document.getElementById('rYear').value||0;
+    const rm = +document.getElementById('rMonth').value||0;
+    let T = ry*12 + rm;
+    if(T <= 0){ document.getElementById('revout').innerHTML = '请输入有效的目标刑期。'; return; }
+    T = Math.min(T, cap);
+
+    // 与正向估算一致的分组：A态度(最大)/B赔偿退赃(最大)/C身份能力(最大)/D法定减免(叠加)/E从重(叠加)
+    const grpVals = sel => Array.from(document.querySelectorAll('#genUp input[type=checkbox]:checked'+sel)).map(c=>P(c.dataset.param));
+    const grpMax = sel => grpVals(sel).reduce((m,v)=>Math.max(m,v),0);
+    const grpSum = sel => grpVals(sel).reduce((s,v)=>s+v,0);
+    const Am = grpMax('[data-grp="A"]'), Bm = grpMax('[data-grp="B"]'), Cm = grpMax('[data-grp="C"]');
+    const Ds = grpSum('[data-grp="D"]'), Es = grpSum('#genDown input[type=checkbox]:checked');
+    const lvl = (v,name)=> v>0 ? name : '';
+    let combos = [];
+    [0,Am].forEach(a=> [0,Bm].forEach(b=> [0,Cm].forEach(c=> [0,Ds].forEach(d=> [0,Es].forEach(e=>{
+      const red = a+b+c+d, add = e;
+      const parts = [lvl(a,'态度类'),lvl(b,'赔偿/退赃'),lvl(c,'身份能力'),lvl(d,'法定减免'),lvl(e,'从重')].filter(Boolean);
+      combos.push({ label: parts.length? parts.join('+') : '无通用情节', red, add });
+    })))));
+
+    let maxRed = 0;
+    combos.forEach(c=>{
+      const net = c.add - c.red;                       // 净调节：从重−从轻
+      const effNet = net < -65 ? -65 : net;            // 总减幅封顶65%
+      let f = bMid*(1 + effNet/100);
+      f = Math.max(0.5, Math.min(Math.round(f), cap));
+      c.final = f;
+      c.effRed = -effNet;                              // 减轻幅度（正=减）
+      if(c.red > maxRed) maxRed = c.red;
+    });
+
+    const lowestFinal = combos.reduce((m,c)=> Math.min(m, c.final), 999);
+    const needNet = (T/bMid - 1)*100;                  // 相对中点；负=需从轻
+    const needRed = -needNet;                          // 期望减幅（正）
+
+    // 组合表（按结果降序）
+    const sorted = combos.slice().sort((a,b)=> b.final - a.final);
+    const reach = combos.filter(c=> c.final <= T).sort((a,b)=> b.final - a.final);
+    const best = reach[0];                             // ≤目标且尽可能高（最小过度从轻）
+    let bestRow = best ? best.label + '|' + best.red : '';
+
+    const rows = sorted.map(c=>{
+      const ok = c.final <= T;
+      const isBest = best && c.label===best.label;
+      const cls = isBest ? ' class="best"' : (ok ? ' class="rok"' : ' class="rnok"');
+      return '<tr'+cls+'><td>'+c.label+'</td><td>−'+c.effRed+'%</td>'
+           + '<td>约 '+fmt(c.final)+'</td>'
+           + '<td>'+(ok?'✓ 可达':'✗ 超目标')+'</td></tr>';
+    }).join('');
+
+    let concl;
+    if(T > bMax){
+      concl = '<span class="warn">目标 <b>'+fmt(T)+'</b> 高于裸刑上限 '+fmt(bMax)
+            + '，需叠加<b>从重</b>约 '+needNet.toFixed(0)+'%（如累犯 +'+P('p_recid')+'%、前科 +'+P('p_prior')+'%，可叠加至该幅度）。</span>';
+    } else if(lowestFinal > T){
+      concl = '<span class="no">即便采用最强从轻组合（理论减 '+maxRed+'%，封顶 65% → 约 '+fmt(lowestFinal)
+            + '），仍高于目标 '+fmt(T)+'（差 '+Math.round(lowestFinal-T)+' 个月）。建议争取<b>降档</b>（如起点由重档调轻档）或定性/程序出罪。</span>';
+    } else {
+      const capNote = best.red > 65 ? '（注：该组合理论减幅 '+best.red+'%，实际被 65% 封顶）' : '';
+      concl = '<span class="ok">推荐：<b>'+best.label+'</b>（减 '+best.effRed+'%）→ 可达约 <b>'+fmt(best.final)
+            + '</b>，满足目标 '+fmt(T)+'。'+capNote+'</span>';
+    }
+
+    const tbl = '<table class="revtable"><thead><tr>'
+      + '<th>情节组合</th><th>减轻幅度</th><th>结果（约）</th><th>是否≤目标</th>'
+      + '</tr></thead><tbody>'+rows+'</tbody></table>';
+
+    document.getElementById('revout').innerHTML =
+        '<div style="margin-bottom:6px;">裸刑（无任何通用情节）：<b>'+fmt(bMin)+' – '+fmt(bMax)
+      + '</b>（中点 '+fmt(bMid)+'）　｜　目标：<b>'+fmt(T)+'</b>'
+      + (needRed>0 ? '　｜　期望从轻约 <b>'+needRed.toFixed(0)+'%</b>' : needRed<0 ? '　｜　需从重约 <b>'+(-needRed).toFixed(0)+'%</b>' : '')
+      + '</div>'
+      + tbl
+      + '<div class="sug-extra" style="margin-top:10px;">'+concl+'</div>'
+      + '<div class="sug-extra" style="margin-top:6px;color:#5b6b7d;">辅助参考，非裁判依据；组合效力以法院认定为准，且受 65% 减幅封顶与累犯保底 3 个月约束。</div>';
+  }
+
+  function resetParams(){
+    document.querySelectorAll('[data-def]').forEach(i=>{ if(i.id) i.value = i.dataset.def; });
+    try { localStorage.removeItem(KEY+'_params'); } catch(e){}
+    syncLabels();
+    if(typeof calc==='function') calc();
+  }
+
+  /* ---- 页面编辑模式 + 序列化 + 浏览器直传 GitHub Pages ---- */
+  const GH_OWNER='8585209713805', GH_REPO='xingfa-liangxing-zhinan';
+  function serializeCurrentPage(){
+    document.querySelectorAll('input, select, textarea').forEach(function(el){
+      if(el.type==='checkbox'||el.type==='radio'){ el.checked?el.setAttribute('checked','checked'):el.removeAttribute('checked'); }
+      else if(el.tagName==='SELECT'){ Array.from(el.options).forEach(function(o){ o.removeAttribute('selected'); }); if(el.selectedIndex>=0) el.options[el.selectedIndex].setAttribute('selected','selected'); }
+      else if(el.tagName==='TEXTAREA'){ el.textContent=el.value; }
+      else { el.setAttribute('value', el.value); }
+    });
+    var root=document.documentElement.cloneNode(true);
+    root.querySelector('body').classList.remove('page-edit');
+    var b=root.querySelector('#editBtn'); if(b) b.textContent='进入页面编辑模式';
+    var d=root.querySelector('#dlBtn'); if(d) d.style.display='none';
+    return '<!DOCTYPE html>\n'+new XMLSerializer().serializeToString(root);
+  }
+  function togglePageEdit(){
+    var body=document.body;
+    var isOn=!body.classList.contains('page-edit');
+    body.classList.toggle('page-edit', isOn);
+    document.designMode=isOn?'on':'off';
+    var btn=document.getElementById('editBtn');
+    var dl=document.getElementById('dlBtn');
+    if(btn) btn.textContent=isOn?'退出页面编辑模式':'进入页面编辑模式';
+    if(dl) dl.style.display=isOn?'inline-block':'none';
+  }
+  function downloadEditedPage(){
+    var html=serializeCurrentPage();
+    var blob=new Blob([html],{type:'text/html;charset=utf-8'});
+    var url=URL.createObjectURL(blob);
+    var a=document.createElement('a'); a.href=url; a.download=(document.title||'量刑指引')+'-修改版.html';
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(function(){ URL.revokeObjectURL(url); },2000);
+  }
+  function showToast(msg, ok){
+    var t=document.getElementById('ghToast');
+    if(!t){ t=document.createElement('div'); t.id='ghToast'; t.style.cssText='position:fixed;left:50%;top:18px;transform:translateX(-50%);z-index:9999;padding:10px 16px;border-radius:8px;font-size:14px;box-shadow:0 4px 16px rgba(0,0,0,.2);max-width:82%;line-height:1.5;'; document.body.appendChild(t); }
+    t.style.background=ok?'#1a7f37':'#c0392b'; t.style.color='#fff'; t.textContent=msg; t.style.display='block';
+    clearTimeout(t._tm); t._tm=setTimeout(function(){ t.style.display='none'; },6000);
+  }
+  async function uploadToSite(){
+    var pat=localStorage.getItem('gh_pat');
+    if(!pat){
+      pat=prompt('请输入 GitHub Personal Access Token（仅需输入一次，保存在本机浏览器 localStorage；可在控制台执行 localStorage.removeItem(\'gh_pat\') 清除）：','');
+      if(!pat){ showToast('已取消上传',false); return; }
+      localStorage.setItem('gh_pat', pat.trim());
+    }
+    var meta=document.querySelector('meta[name=repo-path]');
+    var path=meta?meta.getAttribute('content'):('crimes/'+document.title+'.html');
+    showToast('正在上传到网站…', true);
+    try{
+      var url='https://api.github.com/repos/'+GH_OWNER+'/'+GH_REPO+'/contents/'+encodeURIComponent(path);
+      var head=await fetch(url,{headers:{Authorization:'token '+pat, Accept:'application/vnd.github+json'}});
+      if(!head.ok) throw new Error('获取文件信息失败('+head.status+')');
+      var info=await head.json(); var sha=info.sha;
+      var content=btoa(unescape(encodeURIComponent(serializeCurrentPage())));
+      var put=await fetch(url,{method:'PUT',headers:{Authorization:'token '+pat,Accept:'application/vnd.github+json','Content-Type':'application/json'},body:JSON.stringify({message:'页面更新（浏览器直传）：'+path, content:content, sha:sha})});
+      if(!put.ok){ var e=await put.json().catch(function(){ return {}; }); throw new Error('上传失败('+put.status+') '+(e.message||'')); }
+      showToast('✅ 已上传到网站，GitHub Pages 将在约 1 分钟内自动更新', true);
+    }catch(err){ showToast('❌ '+err.message, false); }
+  }
+
+  function initOwner(){
+    try{
+      var q=new URLSearchParams(location.search);
+      if(q.get('owner')==='0'){ localStorage.removeItem('lx_owner'); }
+      else if(q.get('owner')==='1' || location.hash==='#owner'){ localStorage.setItem('lx_owner','1'); }
+      if(localStorage.getItem('lx_owner')==='1'){ document.body.classList.add('is-owner'); }
+    }catch(e){}
+  }
+  initEditor();
+  initOwner();
+</script>
+</body>
+</html>
