@@ -186,23 +186,21 @@
     table, .card, .block{box-shadow:none;} .editable{background:transparent;}
     .wrap{max-width:100%;}
   }
-  /* 实务案例参考 */
-  .cases{display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:14px 0 6px;}
-  .case{border:1px solid var(--line); border-radius:11px; padding:14px 16px; background:#fff;
-    box-shadow:0 1px 3px rgba(0,0,0,.05); display:flex; flex-direction:column;}
-  .case .ctop{display:flex; align-items:center; gap:7px; margin-bottom:4px; flex-wrap:wrap;}
-  .case .cname{font-size:14.5px; font-weight:700; color:var(--blue-deep);}
-  .case .csrc{font-size:11px; font-weight:700; color:#fff; border-radius:4px; padding:1px 7px; white-space:nowrap;}
-  .case .csrc.sup{background:var(--red);} .case .csrc.pro{background:var(--teal);}
-  .case .cmeta{font-size:12px; color:var(--muted); margin-bottom:6px;}
-  .case h4{font-size:12.5px; margin:8px 0 2px; color:var(--ink);}
-  .case p{margin:0 0 5px; font-size:12.5px; line-height:1.55;}
-  .case .note{font-size:12px; color:var(--muted); background:var(--bg); border-radius:7px; padding:6px 9px; margin-top:6px;}
-  .case .note .lab{font-weight:700; color:var(--amber);}
-  .case .src{margin-top:8px; font-size:12px;}
+  /* 实务案例参考（单列紧凑） */
+  .cases{display:flex; flex-direction:column; gap:10px; margin:14px 0 6px;}
+  .case{border:1px solid #e5e9ec; border-radius:8px; padding:12px 14px; background:#fff;}
+  .case .ctop{display:flex; justify-content:space-between; align-items:flex-start; gap:10px; margin-bottom:3px;}
+  .case .cname{font-size:14.5px; font-weight:700; color:var(--blue-deep); line-height:1.4;}
+  .case .csrc{font-size:10px; font-weight:600; color:#fff; border-radius:3px; padding:2px 6px; white-space:nowrap; flex-shrink:0; margin-top:2px;}
+  .case .csrc.sup{background:#c94a4a;} .case .csrc.pro{background:#3a9b8e;}
+  .case .cmeta{font-size:11.5px; color:#8a949b; margin-bottom:8px;}
+  .case h4{font-size:12px; margin:8px 0 2px; color:#4a5562; font-weight:600;}
+  .case p{margin:0 0 5px; font-size:12.5px; line-height:1.6; color:#3a444d;}
+  .case .note{font-size:11.5px; color:#6b7680; background:#f8f9fa; border-left:3px solid #d0d7dd; border-radius:0 6px 6px 0; padding:6px 10px; margin-top:8px;}
+  .case .note .lab{font-weight:600; color:#6b7680;}
+  .case .src{margin-top:8px; font-size:11.5px; color:#8a949b;}
   .case .src a{color:var(--blue); text-decoration:none;}
   .case .src a:hover{text-decoration:underline;}
-  @media(max-width:680px){.cases{grid-template-columns:1fr;}}
 </style>
 </head>
 <body>
@@ -239,9 +237,9 @@
 
   <!-- 编制依据说明 -->
   <div style="margin:14px 0;padding:12px 14px;border-left:4px solid #e0a100;background:#fffaf0;border-radius:8px;font-size:13px;color:#7a5a17;line-height:1.75">
-    <b>📌 编制依据说明：</b>本页「量刑起点 / 档位」均依页面顶部「依据」所列<b>法律、司法解释及江西省实施细则</b>整理（如法发〔2021〕21号、量刑指导意见（二）、赣高法〔2022〕115号 / 赣高法〔2025〕20号等）。
-    凡国家及江西省<b>尚无专门量刑起点细则</b>的罪名，本页仅列法定刑幅度、不预测量刑起点。
-    下方「基准刑增量表」「刑期估算器」中的“起点 / 增率 / 比例”等数值，均为<b>内部推演基准、非法定依据</b>；实际量刑由审理法院依法裁判，本页不替代裁判，可在批注区记录个案判断。
+    <b>📌 编制依据说明：</b>本页「量刑起点 / 档位」及「基准刑增量」均依据页面顶部「依据」所列<b>法律、司法解释及江西省实施细则</b>整理（如法发〔2021〕21号、赣高法〔2022〕115号等）。
+    本罪<b>有专门量刑起点细则</b>，本页所列起点、增率为该等文件规定（<b>法定依据</b>），非内部推演。
+    实际量刑由审理法院在法定刑幅度内依法裁量，本页不替代裁判，可在批注区记录个案判断。
   </div>
 
 
@@ -350,7 +348,7 @@
       <tr class="grp-second"><td><span class="tier t2">第二幅度</span></td><td>其他严重情节</td><td>诈骗残疾人/老年人/弱势群体、冒充机关/救灾募捐名义、造成被害人自杀等严重后果</td><td class="start s2">3年 – 4年</td><td class="editable" data-ph="点击添加批注" contenteditable="true" data-key="r5"></td></tr>
       <tr class="grp-first3"><td><span class="tier t3">第三幅度</span></td><td>数额特别巨大</td><td>诈骗价值 <b>50万元</b>（江西标准；国家幅度 50万元以上）或其他特别严重情节</td><td class="start s3">10年 – 12年</td><td class="editable" data-ph="点击添加批注" contenteditable="true" data-key="r6"></td></tr>
     </tbody>
-  </table>  <!-- 基准刑增量 -->  <h2 class="section">五、基准刑增量（推演参考，非法定依据）</h2>
+  </table>  <!-- 基准刑增量 -->  <h2 class="section">五、基准刑增量（依法发〔2021〕21号、赣高法〔2022〕115号）</h2>
   <table class="cmp">
     <thead>
       <tr><th style="width:40px">项</th><th class="c1">基准刑增量项</th><th class="c2">增率（月 / 单位）</th></tr>
@@ -590,7 +588,7 @@
 
   <h2 class="section">实务参考案例</h2>
   <div class="legend" style="margin-top:-2px;">
-    <span>下列案例选自 <b>最高人民法院</b>、<b>最高人民检察院</b> 公开发布的典型案例（官方来源可核实），供量刑与辩护思路参考；可在每张卡片「参考要点」处直接批注。</span>
+    <span>案例选自<b>最高人民法院</b>、<b>最高人民检察院</b>公开发布的典型案例（官方来源可核实），可在每张卡片「参考要点」处直接批注。</span>
   </div>
   <div class="cases">
 <div class="case">
