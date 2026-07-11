@@ -186,6 +186,15 @@
     table, .card, .block{box-shadow:none;} .editable{background:transparent;}
     .wrap{max-width:100%;}
   }
+  /* 各类型基准刑增量参考 */
+  .bizref{margin:10px 0 4px;}
+  .bizref .biz{border:1px solid var(--line); border-left:4px solid var(--blue); border-radius:8px; padding:10px 14px; margin:8px 0; background:#fff;}
+  .bizref .biz:nth-of-type(even){background:#fbfdff;}
+  .bizref .biz h4{margin:0 0 6px; font-size:14px; color:var(--blue-deep);}
+  .bizref .biz p{margin:3px 0; font-size:12.5px; line-height:1.7; color:#33414c;}
+  .bizref .biz b{color:var(--red-deep);}
+  .bizref .biz .t{color:var(--blue-deep); font-weight:700;}
+
   /* 实务案例参考（双列紧凑） */
   .cases{display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:14px 0 6px;}
   .case{border:1px solid #e5e9ec; border-radius:8px; padding:12px 14px; background:#fff; display:flex; flex-direction:column;}
@@ -209,7 +218,7 @@
 
   <header>
     <h1>非法经营罪 · 量刑指引表（可编辑）</h1>
-    <div class="sub">依据：最高人民法院、最高人民检察院《关于常见犯罪的量刑指导意见（二）（试行）》；江西省实施细则（赣高法〔2025〕20号）。本罪以"情节严重/情节特别严重"两档为量刑幅度；不同非法经营对象有专门数额标准。本表估算器以最常见的"非法经营烟草专卖品"为主要驱动，并在"五、基准刑增量"下列全部对象标准。</div>
+    <div class="sub">依据：最高人民法院、最高人民检察院《关于常见犯罪的量刑指导意见（二）（试行）》；江西省实施细则（赣高法〔2025〕20号）。本罪以"情节严重/情节特别严重"两档为量刑幅度；<b>江西高院对12类非法经营行为分别规定了独立的入罪标准与基准刑增量</b>。本表在"四"列全部类型入罪标准，在"五"逐条整理原文；"十、估算器"可选择经营类型自动套用对应增量，覆盖烟草专卖品、证券期货保险、买卖外汇/骗购外汇、POS套现、非法出版物、国际港澳台电信、网络删帖发帖、黑广播伪基站、赌博机、危害食品安全、非法放贷及其他兜底情形。</div>
   </header>
 
   <div class="toolbar">
@@ -222,12 +231,12 @@
     <div class="card first">
       <h3>情节严重（第一幅度）</h3>
       <div class="range">拘役 – 5年</div>
-      <div class="desc">基本档：非法经营烟草专卖品/证券期货保险/外汇/POS套现/出版物/电信/黑广播/赌博机/食品/非法放贷/其他，达"情节严重"标准，量刑起点 三个月拘役至一年。</div>
+      <div class="desc">基本档：下列任一类非法经营行为达"情节严重"标准即在拘役—5年区间量刑，量刑起点三个月拘役至一年——烟草专卖品、证券期货保险、买卖外汇/资金支付结算、骗购外汇、POS套现、非法出版物、国际港澳台电信、网络删帖发帖、黑广播伪基站、赌博机、危害食品安全（禁限原料/私屠等）、非法放贷、其他兜底。各类入罪数额见"四"。</div>
     </div>
     <div class="card second">
       <h3>情节特别严重（第二幅度）</h3>
       <div class="range">5年 – 15年</div>
-      <div class="desc">达"情节特别严重"标准，量刑起点 5年至6年；最高至15年，并处违法所得1–5倍罚金或没收财产。</div>
+      <div class="desc">达"情节特别严重"标准，量刑起点五年至六年，最高至十五年，并处违法所得1–5倍罚金或没收财产。非法放贷致人自杀、死亡、精神失常等特别严重后果的，起点一至二年。</div>
     </div>
   </div>
 
@@ -235,6 +244,7 @@
   <div style="margin:14px 0;padding:12px 14px;border-left:4px solid #e0a100;background:#fffaf0;border-radius:8px;font-size:13px;color:#7a5a17;line-height:1.75">
     <b>📌 编制依据说明：</b>本页「量刑起点 / 档位」及「基准刑增量」严格依据<b>《江西省高级人民法院、江西省人民检察院关于常见犯罪的量刑指导意见（二）（试行）实施细则（试行）》（赣高法〔2025〕20号，2025年4月2日印发）</b>整理。本罪属该细则明确的七种常见犯罪之一，<b>江西高院、省检已规定具体量刑起点幅度与基准刑增量标准</b>，故本页所列起点、增率均为该文件规定（法定依据），非内部推演。
     实际量刑由审理法院在法定刑幅度内依法裁量，本页不替代裁判，可在批注区记录个案判断。
+    本页已按原文【】类型逐条整理<b>全部12类</b>非法经营行为的入罪标准与基准刑增量（含买卖外汇、骗购外汇、证券期货保险、POS套现、非法出版物、国际港澳台电信、网络删帖发帖、黑广播伪基站、赌博机、危害食品安全、非法放贷及其他兜底），估算器支持按经营类型自动套用增量。
   </div>
 
 
@@ -292,7 +302,7 @@
   <div class="block info">
     <ul>
       <li><b>案件性质</b>：<b>公诉案件</b>；单位亦可构成本罪（双罚制）。</li>
-      <li><b>立案追诉门槛</b>：依各对象专门标准——如烟草（数额5万/违法所得2万/卷烟20万支）、证券期货保险（数额100万/违法所得10万）、买卖外汇（数额500万/违法所得10万）、POS套现（数额100万）、出版物（个人8万/单位25万）、电信（去话/来话100万）、网络删帖（个人5万/单位15万）、黑广播（设备3套/数额5万）、赌博机（个人5万）、食品（数额10万/违法所得5万）、非法放贷（个人200万/单位1000万）等。</li>
+      <li><b>立案追诉门槛</b>（依赣高法〔2025〕20号各类型"情节严重"标准）：烟草专卖品（数额5万/违法所得2万/卷烟20万支；曾受二次处罚又经营≥3万）；证券期货保险（数额100万/违法所得10万）；买卖外汇·资金支付结算（数额500万/违法所得10万；具四种情形降为250万/5万）；骗购外汇（数额500万美元/违法所得50万）；居间介绍骗购（数额100万美元/违法所得10万）；POS套现（数额100万/逾期资金20万/损失10万）；非法出版物（个人数额8万、违法所得2.5万、报纸5000份；单位数额25万、违法所得7万、报纸1.5万份）；国际港澳台电信（去话100万/来话资费损失100万）；网络删帖发帖（个人数额5万、违法所得2万；单位数额15万、违法所得5万）；黑广播伪基站（设备3套/数额5万）；赌博机（个人数额5万、违法所得1万；单位数额50万、违法所得10万）；危害食品安全（数额10万/违法所得5万）；非法放贷（个人数额200万、违法所得80万、对象50人；单位数额1000万、违法所得400万、对象150人；致人自杀等直接入罪）；其他兜底（个人数额5万、违法所得1万；单位数额50万、违法所得10万）。</li>
       <li><b>管辖法院</b>：犯罪地基层人民法院一审；情节特别严重可能由中级法院一审。</li>
       <li><b>追诉时效</b>：情节严重（5年以下）→ <b>5年或10年</b>；情节特别严重（5–15年）→ <b>15年</b>（刑法第87条）。</li>
       <li><b>程序适用</b>：认罪认罚可从宽；退缴违法所得、配合调查可从宽（部分对象可减基准刑40%以下，甚至不起诉/免罚）。</li>
@@ -309,55 +319,128 @@
     <span><i class="chip" style="background:#b9b09a"></i>批注（可编辑）</span>
   </div>
   <table id="startTbl">
-    <thead><tr><th style="width:72px">起点档</th><th style="width:120px">行为类型</th><th>具体情形（情节严重 / 特别严重）</th><th style="width:150px">量刑起点幅度</th><th style="width:200px">✎ 我的批注</th></tr></thead>
+    <thead><tr><th style="width:54px">类型</th><th style="width:210px">情节严重（入罪标准）</th><th style="width:96px">量刑起点幅度</th><th style="width:210px">情节特别严重（升档标准）</th><th style="width:96px">量刑起点幅度</th><th style="width:110px">✎ 批注</th></tr></thead>
     <tbody>
-      <tr class="grp-first1"><td><span class="tier t1d">第一幅度</span></td><td>非法经营（情节严重）</td><td>各对象达"情节严重"标准（如烟草：数额5万/违法所得2万/卷烟20万支；POS套现：数额100万）</td><td class="start s1">拘役 – 1年</td><td class="editable" data-ph="点击添加批注" contenteditable="true" data-key="r1"></td></tr>
-      <tr class="grp-second"><td><span class="tier t2">第二幅度</span></td><td>非法经营（情节特别严重）</td><td>各对象达"情节特别严重"标准（如烟草：数额25万/违法所得10万/卷烟100万支；POS套现：数额500万）</td><td class="start s2">5年 – 6年</td><td class="editable" data-ph="点击添加批注" contenteditable="true" data-key="r4"></td></tr>
+      <tr class="grp-first1"><td>①烟草</td><td>数额≥5万 / 违法所得≥2万 / 卷烟≥20万支 / 曾受二次处罚又经营且≥3万</td><td class="start s1">拘役–1年</td><td>数额≥25万 / 违法所得≥10万 / 卷烟≥100万支</td><td class="start s2">5年–6年</td><td class="editable" data-ph="批注" contenteditable="true" data-key="r1"></td></tr>
+      <tr class="grp-first1"><td>②证券期货保险</td><td>数额≥100万 / 违法所得≥10万</td><td class="start s1">拘役–1年</td><td>数额≥500万 / 违法所得≥50万</td><td class="start s2">5年–6年</td><td class="editable" data-ph="批注" contenteditable="true" data-key="r2"></td></tr>
+      <tr class="grp-first1"><td>③买卖外汇·支付结算</td><td>数额≥500万 / 违法所得≥10万（具四种情形降为250万/5万）</td><td class="start s1">拘役–1年</td><td>数额≥2500万 / 违法所得≥50万（具四种情形降为1250万/25万）</td><td class="start s2">5年–6年</td><td class="editable" data-ph="批注" contenteditable="true" data-key="r3"></td></tr>
+      <tr class="grp-first1"><td>④骗购外汇</td><td>数额≥500万美元 / 违法所得≥50万</td><td class="start s1">拘役–1年</td><td>数额≥2500万美元 / 违法所得≥250万</td><td class="start s2">5年–6年</td><td class="editable" data-ph="批注" contenteditable="true" data-key="r4"></td></tr>
+      <tr class="grp-first1"><td>⑤居间介绍骗购</td><td>数额≥100万美元 / 违法所得≥10万</td><td class="start s1">拘役–1年</td><td>数额≥500万美元 / 违法所得≥50万</td><td class="start s2">5年–6年</td><td class="editable" data-ph="批注" contenteditable="true" data-key="r5"></td></tr>
+      <tr class="grp-first1"><td>⑥POS套现</td><td>数额≥100万 / 逾期资金≥20万 / 损失≥10万</td><td class="start s1">拘役–1年</td><td>数额≥500万 / 逾期≥100万 / 损失≥50万</td><td class="start s2">5年–6年</td><td class="editable" data-ph="批注" contenteditable="true" data-key="r6"></td></tr>
+      <tr class="grp-first1"><td>⑦非法出版物（个人/单位）</td><td>个人：数额≥8万/违法所得≥2.5万/报纸≥5000份；单位：数额≥25万/违法所得≥7万/报纸≥1.5万份</td><td class="start s1">拘役–1年</td><td>个人：数额≥25万/违法所得≥7万/报纸≥1.5万份；单位：数额≥80万/违法所得≥20万/报纸≥5万份</td><td class="start s2">5年–6年</td><td class="editable" data-ph="批注" contenteditable="true" data-key="r7"></td></tr>
+      <tr class="grp-first1"><td>⑧国际港澳台电信</td><td>去话数额≥100万 / 来话资费损失≥100万</td><td class="start s1">拘役–1年</td><td>去话≥500万 / 来话损失≥500万</td><td class="start s2">5年–6年</td><td class="editable" data-ph="批注" contenteditable="true" data-key="r8"></td></tr>
+      <tr class="grp-first1"><td>⑨网络删帖/发帖（个人/单位）</td><td>个人：数额≥5万/违法所得≥2万；单位：数额≥15万/违法所得≥5万</td><td class="start s1">拘役–1年</td><td>个人：数额≥25万/违法所得≥10万；单位：数额≥75万/违法所得≥25万</td><td class="start s2">5年–6年</td><td class="editable" data-ph="批注" contenteditable="true" data-key="r9"></td></tr>
+      <tr class="grp-first1"><td>⑩黑广播/伪基站</td><td>设备≥3套 / 数额≥5万 / 二年内受二次处罚又经营</td><td class="start s1">拘役–1年</td><td>设备≥15套 / 数额≥25万</td><td class="start s2">5年–6年</td><td class="editable" data-ph="批注" contenteditable="true" data-key="r10"></td></tr>
+      <tr class="grp-first1"><td>⑪赌博机（个人/单位）</td><td>个人：数额≥5万/违法所得≥1万；单位：数额≥50万/违法所得≥10万</td><td class="start s1">拘役–1年</td><td>个人：数额≥25万/违法所得≥5万；单位：数额≥250万/违法所得≥50万</td><td class="start s2">5年–6年</td><td class="editable" data-ph="批注" contenteditable="true" data-key="r11"></td></tr>
+      <tr class="grp-first1"><td>⑫危害食品安全</td><td>数额≥10万 / 违法所得≥5万（禁限非食品原料、禁用农药、私设生猪屠宰等）</td><td class="start s1">拘役–1年</td><td>数额≥50万 / 违法所得≥25万</td><td class="start s2">5年–6年</td><td class="editable" data-ph="批注" contenteditable="true" data-key="r12"></td></tr>
+      <tr class="grp-second"><td>⑬非法放贷（个人/单位）</td><td>个人：数额≥200万/违法所得≥80万/对象≥50人；单位：数额≥1000万/违法所得≥400万/对象≥150人（致人自杀等起点1–2年）</td><td class="start s1">拘役–1年</td><td>个人：数额≥1000万/违法所得≥400万/对象≥250人；单位：数额≥5000万/违法所得≥2000万/对象≥750人</td><td class="start s2">5年–6年</td><td class="editable" data-ph="批注" contenteditable="true" data-key="r13"></td></tr>
+      <tr class="grp-second"><td>⑭其他兜底</td><td>个人：数额≥5万/违法所得≥1万；单位：数额≥50万/违法所得≥10万</td><td class="start s1">拘役–1年</td><td>违法所得≥500万 / 造成特别恶劣影响</td><td class="start s2">5年–6年</td><td class="editable" data-ph="批注" contenteditable="true" data-key="r14"></td></tr>
     </tbody>
-  </table>  <!-- 基准刑增量 -->  <h2 class="section">五、基准刑增量（依赣高法〔2025〕20号）</h2>
-  <p class="note-tip" style="margin:2px 0 8px;">估算器以"<b>非法经营烟草专卖品</b>"为主要驱动（下表①–④）。其余对象的专门增量如下，供办案直接引用（完整文本见赣高法〔2025〕20号原文）：</p>
-  <table class="cmp">
-    <thead><tr><th style="width:40px">项</th><th class="c1">基准刑增量项（烟草为代表）</th><th class="c2">增率（月 / 单位）</th></tr></thead>
-    <tbody>
-      <tr data-tier="1" data-f="f_amt1" data-pmin="p_amt1" data-pmax="p_amt1"><td>①</td><td class="c1">非法经营数额（情节档）每 +4000元</td><td class="c2">+1个月 / 4000元</td></tr>
-      <tr data-tier="1" data-f="f_amt2" data-pmin="p_amt2" data-pmax="p_amt2"><td>②</td><td class="c1">违法所得数额（情节档）每 +1600元</td><td class="c2">+1个月 / 1600元</td></tr>
-      <tr data-tier="2" data-f="f_amt3" data-pmin="p_amt3" data-pmax="p_amt3"><td>③</td><td class="c1">非法经营数额（特别严重档 25万–250万）每 +4.5万元</td><td class="c2">+1个月 / 4.5万元</td></tr>
-      <tr data-tier="2" data-f="f_times" data-pmin="p_times" data-pmax="p_times"><td>④</td><td class="c1">非法经营数额（特别严重档 &gt;250万）每 +40万元</td><td class="c2">+1个月 / 40万元</td></tr>
-    </tbody>
-  </table>
-  <div class="block info" style="margin-top:12px">
-    <h3>其他对象"情节严重/特别严重"增量速查（节选）</h3>
-    <ul>
-      <li><b>证券、期货、保险业务</b>：情节档 数额+8万/月、违法所得+8000元/月；特别严重档 数额(500万–5000万)+85万/月、(&gt;5亿)+750万/月。</li>
-      <li><b>资金支付结算/买卖外汇</b>：情节档 数额+40万/月、违法所得+8000元/月；特别严重档 数额(2500万–2.5亿)+420万/月、(&gt;2.5亿)+3750万/月。</li>
-      <li><b>POS信用卡套现</b>：情节档 数额+8万/月；特别严重档 数额(500万–5000万)+85万/月。</li>
-      <li><b>非法出版物</b>：个人 数额(8万–25万)+3500元/月、(&gt;250万)+40万/月；单位标准更高（详见原文）。</li>
-      <li><b>国际港澳台电信</b>：去话/来话 情节档+8万/月；特别严重档(500万–5000万)+85万/月。</li>
-      <li><b>网络有偿删帖/发帖</b>：个人 数额(5万–25万)+4000元/月；特别严重档(25万–250万)+4.5万/月。</li>
-      <li><b>黑广播/伪基站</b>：设备 情节档+1套(每套+4月)、特别严重档(15–150套)+3套/月。</li>
-      <li><b>赌博机</b>：个人 数额(5万–25万)+4000元/月；特别严重档(25万–250万)+4.5万/月。</li>
-      <li><b>危害食品安全</b>：数额(10万–50万)+8000元/月；特别严重档(50万–500万)+8.5万/月。</li>
-      <li><b>非法放贷</b>：个人 数额(200万–1000万)+15万/月、(&gt;1亿)+1500万/月；违法所得、对象人数同步增量。</li>
-    </ul>
-  </div>  <!-- 从重情节 -->  <h2 class="section">六、从重处罚情节（调节基准刑）</h2>
+  </table>  <!-- 基准刑增量 -->  <h2 class="section">五、各类型基准刑增量对照（依赣高法〔2025〕20号全文逐条整理）</h2>
+  <p class="note-tip" style="margin:2px 0 8px;">本罪对象众多，江西细则对每一类均规定了独立的"情节严重/情节特别严重"入罪标准与基准刑增量。以下按原文【】类型逐条整理（共12类），可直接用于办案对照；估算器在"十"选择对应类型即自动套用增量。各类型<b>个人/单位</b>、<b>人民币/美元</b>差异均已列明；带"＊"处为原文疑似笔误，已按区间衔接作了校正说明。</p>
+  <div class="bizref">
+
+    <div class="biz"><h4>【1】非法经营烟草专卖品</h4>
+      <p><span class="t">情节严重</span>（起点：三个月拘役–一年）：①非法经营数额每 +4000元 +1月；②违法所得数额每 +1600元 +1月；③非法经营卷烟数量每 +1.6万支 +1月；④曾因烟草三年内受二次以上处罚、又经营且数额3万–5万，每 +4000元 +1月。</p>
+      <p><span class="t">情节特别严重</span>（起点：五年–六年）：①数额 25万–250万 每 +4.5万 +1月；&gt;250万 每 +40万 +1月；②违法所得 10万–100万 每 +2万 +1月；&gt;100万 每 +15万 +1月；③卷烟 100万–1000万支 每 +17万支 +1月；&gt;1000万支 每 +150万支 +1月。</p>
+    </div>
+
+    <div class="biz"><h4>【2】非法经营证券、期货、保险业务</h4>
+      <p><span class="t">情节严重</span>（起点：三个月拘役–一年）：①非法经营数额每 +8万 +1月；②违法所得数额每 +8000元 +1月。</p>
+      <p><span class="t">情节特别严重</span>（起点：五年–六年）：①数额 500万–5000万 每 +85万 +1月；&gt;5亿 每 +750万 +1月；②违法所得 50万–500万 每 +8.5万 +1月；&gt;500万 每 +75万 +1月。</p>
+    </div>
+
+    <div class="biz"><h4>【3】非法从事资金支付结算业务、非法买卖外汇</h4>
+      <p><span class="t">情节严重（一般）</span>（起点：三个月拘役–一年）：①非法经营数额每 +40万 +1月；②违法所得每 +8000元 +1月。</p>
+      <p><span class="t">情节严重（具司法解释三种情形、降档）</span>：数额 250万–500万 每 +50万 +1月；违法所得 5万–10万 每 +1万 +1月。</p>
+      <p><span class="t">情节特别严重（一般）</span>（起点：五年–六年）：①数额 2500万–2.5亿 每 +420万 +1月；&gt;2.5亿 每 +3750万 +1月；②违法所得 50万–500万 每 +8.5万 +1月；&gt;500万 每 +75万 +1月。</p>
+      <p><span class="t">情节特别严重（具四种情形、降档）</span>：①数额 1250万–2500万 每 +125万 +1月；②违法所得 25万–50万 每 +2.5万 +1月。</p>
+      <p><b>骗购外汇（单位/个人向外汇指定银行骗购）</b>：情节 数额500万美元/违法所得50万 → 数额每 +40万美元 +1月、违法所得每 +4万 +1月；特别严重 数额2500万美元/违法所得250万 → 数额 2500万–2.5亿美元 每 +420万美元 +1月（&gt;2.5亿每+3750万）、违法所得 250万–2500万 每 +42万 +1月（&gt;2500万每+375万）。</p>
+      <p><b>居间介绍骗购外汇</b>：情节 数额100万美元/违法所得10万 → 数额每 +8万美元 +1月、违法所得每 +8000元 +1月；特别严重 数额500万美元/违法所得50万 → 数额 500万–5000万美元 每 +85万 +1月（&gt;5000万每+750万）、违法所得 50万–500万 每 +8.5万 +1月（&gt;500万每+75万）。</p>
+      <p>二次以上未经处理，数额/违法所得累计；同一案分别构成轻/重，按较重定。如实供述+认罪悔罪+配合调查+退缴违法所得，可减基准刑40%以下；情节轻微可不诉/免罚。违法所得难确定：按数额千分之一认定。</p>
+    </div>
+
+    <div class="biz"><h4>【4】非法使用POS机等方法进行信用卡套现</h4>
+      <p><span class="t">情节严重</span>（起点：三个月拘役–一年）：①数额每 +8万 +1月；②造成金融机构资金逾期未还每 +1.6万 +1月；③造成金融机构经济损失每 +8000元 +1月。</p>
+      <p><span class="t">情节特别严重</span>（起点：五年–六年）：①数额 500万–5000万 每 +85万 +1月；&gt;5000万 每 +750万 +1月；②逾期未还资金 100万–1000万 每 +17万 +1月；&gt;1000万 每 +150万 +1月；③经济损失 50万–500万 每 +8.5万 +1月；&gt;500万 每 +75万 +1月。</p>
+    </div>
+
+    <div class="biz"><h4>【5】出版、印刷、复制、发行非法出版物；非法从事出版物的出版、印刷、复制、发行业务</h4>
+      <p><span class="t">情节严重（个人）</span>（起点：三个月拘役–一年）：①数额每 +3500元 +1月；②违法所得每 +900元 +1月；③报纸每 +200份（或期刊200本/图书60册/音像20张） +1月。</p>
+      <p><span class="t">情节严重（单位）</span>：①数额每 +1.1万 +1月；②违法所得每 +2500元 +1月；③报纸每 +700份（期刊700本/图书200册/音像70张） +1月。</p>
+      <p><span class="t">情节特别严重（个人）</span>（起点：五年–六年）：①数额 25万–250万 每 +4.5万 +1月；&gt;250万 每 +40万 +1月；②违法所得 7万–70万 每 +1.2万 +1月；&gt;70万 每 +11万 +1月；③报纸 1.5万–15万份 每 +2500份 +1月（&gt;15万每+2.5万）。</p>
+      <p><span class="t">情节特别严重（单位）</span>：①数额 80万–800万 每 +15万 +1月；&gt;800万 每 +120万 +1月；②违法所得 20万–200万 每 +3.5万 +1月；&gt;200万 每 +30万 +1月；③报纸 5万–50万份 每 +1万 +1月（&gt;50万每+7.5万）。</p>
+      <p>经营数额＝定价×数量；违法所得＝获利。两年内受行政处罚2次以上/造成恶劣影响 → 增基准刑20%以下。</p>
+    </div>
+
+    <div class="biz"><h4>【6】非法经营国际及涉港澳台电信业务</h4>
+      <p><span class="t">情节严重</span>（起点：三个月拘役–一年）：①经营去话业务数额每 +8万 +1月；②经营来话业务造成电信资费损失每 +8万 +1月。</p>
+      <p><span class="t">情节特别严重</span>（起点：五年–六年）：①去话数额 500万–5000万 每 +85万 +1月；&gt;5000万 每 +750万 +1月；②来话资费损失同上。</p>
+      <p>数额/损失达"情节严重"标准80%并具解释第三条两种情形的，按情节特别严重对应档降档处理（去话80万–100万每+4万、来话损失80万–100万每+4万；特别严重400万–500万每+10万）。</p>
+    </div>
+
+    <div class="biz"><h4>【7】利用信息网络有偿提供删除信息服务或者有偿提供发布信息等服务</h4>
+      <p><span class="t">情节严重（个人）</span>（起点：三个月拘役–一年）：①非法经营数额每 +4000元 <b>或</b> 违法所得每 +1600元 +1月。</p>
+      <p><span class="t">情节严重（单位）</span>：①数额每 +1.2万 +1月 <b>或</b> 违法所得每 +4000元 +1月。</p>
+      <p><span class="t">情节特别严重（个人）</span>（起点：五年–六年）：①数额 25万–250万 每 +4.5万 +1月；&gt;250万 每 +37.5万 +1月；②违法所得 10万–100万 每 +2万 +1月；&gt;100万 每 +15万 +1月。</p>
+      <p><span class="t">情节特别严重（单位）</span>：①数额 75万–750万 每 +15万 +1月；&gt;750万 每 +115万 +1月；②违法所得 25万–250万 每 +4.5万 +1月；&gt;250万 每 +37.5万 +1月。</p>
+    </div>
+
+    <div class="biz"><h4>【8】非法生产、销售"黑广播""伪基站"、无线电干扰器等无线电设备</h4>
+      <p><span class="t">情节严重</span>（起点：三个月拘役–一年）：①设备每 +1套 +4个月；②非法经营数额每 +4000元 +1月。</p>
+      <p><span class="t">情节特别严重</span>（起点：五年–六年）：①设备 15–150套 每 +3套 +1月；&gt;150套 每 +25套 +1月；②数额 25万–250万 每 +4.5万 +1月；&gt;250万元＊ 每 +40万 +1月（原文作"超过2500万元"，按区间衔接取250万元）。</p>
+      <p>窝点零件：每三套广播信号调制器（激励器）＝1套"黑广播"，每三块主板＝1套"伪基站"。明知他人诈骗提供 → 可增基准刑20%以下。</p>
+    </div>
+
+    <div class="biz"><h4>【9】非法生产、销售赌博机</h4>
+      <p><span class="t">情节严重（个人）</span>（起点：三个月拘役–一年）：①数额每 +4000元 <b>或</b> 违法所得每 +800元 +1月。</p>
+      <p><span class="t">情节严重（单位）</span>：①数额每 +4万 <b>或</b> 违法所得每 +8000元 +1月。</p>
+      <p><span class="t">情节特别严重（个人）</span>（起点：五年–六年）：①数额 25万–250万 每 +4.5万 +1月；&gt;250万元＊ 每 +37.5万 +1月（原文作"超过2500万元"，按区间衔接取250万元）；②违法所得 5万–50万 每 +8500元 +1月；&gt;50万 每 +7.5万 +1月。</p>
+      <p><span class="t">情节特别严重（单位）</span>：①数额 250万–2500万 每 +45万 +1月；&gt;500万元＊ 每 +375万 +1月（原文作"超过5000万元"，按区间衔接取500万元）；②违法所得 50万–500万 每 +8.5万 +1月；&gt;5000万 每 +75万 +1月。</p>
+    </div>
+
+    <div class="biz"><h4>【10】危害食品安全（禁限用非食品原料 / 禁用农药 / 私设生猪屠宰等）</h4>
+      <p><span class="t">情节严重</span>（起点：三个月拘役–一年）：①非法经营数额每 +8000元 +1月；②违法所得数额每 +4000元 +1月。</p>
+      <p><span class="t">情节特别严重</span>（起点：五年–六年）：①数额 50万–500万 每 +8.5万 +1月；&gt;500万 每 +75万 +1月；②违法所得 25万–250万 每 +4.5万 +1月；&gt;250万 每 +37.5万 +1月。</p>
+      <p>持续时间6个月以上 / 私设屠宰厂屠宰来源不明生猪 → 增基准刑20%以上；严格适用缓刑、可宣告禁止令。</p>
+    </div>
+
+    <div class="biz"><h4>【11】非法放贷</h4>
+      <p><span class="t">情节严重（个人）</span>（起点：三个月拘役–一年；致人自杀/死亡/精神失常等特别严重后果起点一至二年）：①数额每 +15万 +1月；②违法所得每 +6万 +1月；③对象每 +4人 +1月。</p>
+      <p><span class="t">情节严重（单位）</span>：①数额每 +75万 +1月；②违法所得每 +30万 +1月；③对象每 +10人 +1月。</p>
+      <p><span class="t">情节特别严重（个人）</span>（起点：五年–六年）：①数额 1000万–1亿 每 +170万 +1月；&gt;1亿 每 +1500万 +1月；②违法所得 400万–4000万 每 +70万 +1月；&gt;4000万 每 +600万 +1月；③对象 250–2500人 每 +45人 +1月；&gt;2500人 每 +375人 +1月。</p>
+      <p><span class="t">情节特别严重（单位）</span>：①数额 5000万–5亿 每 +850万 +1月；&gt;5亿 每 +7500万 +1月；②违法所得 2000万–2亿 每 +340万 +1月；&gt;2亿 每 +3000万 +1月；③对象 250–2500人 每 +130人 +1月；&gt;2500人 每 +1125人 +1月。</p>
+      <p>黑恶势力/80%标准/40%标准等降档与加档情形、数额认定（实际出借本金、费率计入、累计）及从重情节（二年内处罚2次以上、超72%年利率10次以上、黑恶、滋扰讨债等 +20%以下）详见赣高法〔2025〕20号原文第（3）–（10）项。</p>
+    </div>
+
+    <div class="biz"><h4>【12】从事其他非法经营活动（兜底）</h4>
+      <p><span class="t">情节严重（个人/单位）</span>（起点：三个月拘役–一年）：个人 数额≥5万/违法所得≥1万；单位 数额≥50万/违法所得≥10万。增量：违法所得每 +10万 +1月。</p>
+      <p><span class="t">情节特别严重</span>（起点：五年–六年）：违法所得≥500万 / 造成特别恶劣社会影响。增量：违法所得 500万–5000万 每 +85万 +1月；&gt;5000万 每 +750万 +1月。</p>
+      <p>法律、司法解释对非法经营罪的数额标准另有规定的，依照其规定。</p>
+    </div>
+
+  </div>  <!-- 从重情节 -->  <h2 class="section">六、从重处罚与从宽情节（调节基准刑）</h2>
   <div class="block heavy">
-    <h3>⚠ 从重调节</h3>
+    <h3>⚠ 各类型特定从重（增加基准刑，已作为犯罪构成事实的除外；两种以上累计不超基准刑100%）</h3>
     <ul>
-      <li><b>增加基准刑 20% 以下</b>（已作为犯罪构成事实的除外；同时具有两种以上情形的，累计不得超过基准刑的 100%）：
-        <ul>
-          <li>（1）曾因非法经营行为受过刑事追究，或二年内因非法经营受过行政处罚；</li>
-          <li>（2）拒不交代赃款去向或拒不配合追缴，致使赃款无法追缴；</li>
-          <li>（3）造成恶劣社会影响或其他严重后果；</li>
-          <li>（4）烟草类：曾因非法经营烟草三年内受二次以上处罚、经营假冒伪劣/假冒注册商标烟草；</li>
-          <li>（5）外汇类：曾因买卖外汇受刑事追究/二年内受行政处罚、拒不交代资金去向、造成其他严重后果；</li>
-          <li>（6）食品类：持续时间6个月以上、私设屠宰厂宰售来源不明生猪；</li>
-          <li>（7）非法放贷类：二年内受行政处罚2次以上、以超72%年利率放贷10次以上、黑恶势力、纠集他人暴力讨债等。</li>
-        </ul>
-      </li>
-      <li>从宽：积极退赃退赔可减基准刑30%以下；未参与分赃/获利少可减20%以下（部分对象如实供述+退缴可减40%以下，情节轻微可不诉/免罚）。</li>
-      <li>具体比例见上方估算器「本罪特定从重」（默认 20%，可调；上限 30%以下）。</li>
+      <li><b>烟草</b>：曾因非法经营烟草三年内受二次以上行政处罚；经营假冒伪劣、假冒注册商标烟草制品 → +20%以下。尚未实际流入市场的，可减基准刑20%以下。</li>
+      <li><b>外汇/资金支付结算（【3】）</b>：曾受刑事追究/二年内受行政处罚、拒不交代资金去向、造成其他严重后果 → +20%以下。</li>
+      <li><b>非法出版物（【5】）</b>：两年内受行政处罚2次以上、造成恶劣社会影响或其他严重后果 → +20%以下。</li>
+      <li><b>黑广播/伪基站（【8】）</b>：明知他人实施诈骗等犯罪而提供设备发送信息 → +20%以下。</li>
+      <li><b>危害食品安全（【10】）</b>：持续时间6个月以上；私设屠宰厂（场）屠宰、销售来源不明生猪 → +20%以上。</li>
+      <li><b>非法放贷（【11】）</b>：二年内因非法放贷受行政处罚2次以上；以超72%年利率放贷10次以上；黑恶势力非法放贷；为放贷实施其他违法；纠集/指使/雇佣他人滋扰纠缠等强行讨债尚不构成犯罪 → +20%以下。</li>
+      <li><b>总则（第3条，适用全部类型）</b>：曾因非法经营受刑事追究或二年内受行政处罚；拒不交代赃款去向或拒不配合追缴；造成恶劣社会影响或其他严重后果；其他 → +20%以下。</li>
     </ul>
-  </div>  <!-- 常见量刑情节 -->
+  </div>
+  <div class="block pro-yes" style="margin-top:10px">
+    <h3>✓ 从宽（减少基准刑）</h3>
+    <ul>
+      <li><b>外汇类</b>：如实供述+认罪悔罪+配合调查+退缴违法所得 → 可减40%以下；情节轻微可不起诉/免罚。</li>
+      <li><b>总则（第4条）</b>：积极退赃退赔，按比例减30%以下；未参与分赃或获利较少，减20%以下；其他从轻情形，减20%以下。</li>
+      <li>通用从宽（自首/坦白/认罪认罚/赔偿谅解等）另见"七"，比例可叠加/取大，总减幅封顶65%。</li>
+    </ul>
+  </div>
+  <p class="note-tip" style="margin:6px 0 0;">具体比例见"十、估算器"「本罪特定从重」（默认 20%，可调；上限 30%以下）。</p>  <!-- 常见量刑情节 -->
   <h2 class="section" style="border-left-color:var(--amber)">七、常见量刑情节的适用（通用从宽 / 从重 · 赣高法〔2022〕115号「三、常见量刑情节的适用」原文）</h2>
   <p class="note-tip" style="margin:2px 0 10px;">
     以下为<b>通用量刑情节</b>的调节比例，逐条照录赣高法〔2022〕115号「三、常见量刑情节的适用」（一）—（二十二）。
@@ -430,11 +513,8 @@
       <summary>⚙ 计算参数覆盖（默认＝赣高法〔2022〕115号，修改后即时生效）</summary>
       <div class="pgrid">
         <div class="pgroup">
-          <h4>基准刑增量（增率，可调）</h4>
-          <div class="prow"><span>非法经营数额(情节档·烟草) 每+4000元</span><input type="number" id="p_amt1" data-def="1" value="0.25"><span>月</span></div>
-          <div class="prow"><span>违法所得数额(情节档·烟草) 每+1600元</span><input type="number" id="p_amt2" data-def="1" value="0.625"><span>月</span></div>
-          <div class="prow"><span>非法经营数额(特别严重档25–250万) 每+4.5万元</span><input type="number" id="p_amt3" data-def="1" value="0.222"><span>月</span></div>
-          <div class="prow"><span>非法经营数额(特别严重档&gt;250万) 每+40万元</span><input type="number" id="p_times" data-def="1" value="0.025"><span>月</span></div>
+          <h4>基准刑增量（自动套用）</h4>
+          <div class="prow" style="font-size:12px;color:#8a96a0;">增率由上方「经营类型」选择后自动套用（对应规则见"五、各类型基准刑增量"）。切换类型后，在「基准刑增量」区直接填入本案事实数额即可，无需在此手填。</div>
         </div>
         <div class="pgroup">
           <h4>本罪特定从重比例（%，可调）</h4>
@@ -465,15 +545,33 @@
       <span class="note-tip">或手动输入（月）：下限<input type="number" id="sMin" style="width:56px" value="3"> 上限<input type="number" id="sMax" style="width:56px" value="36"></span>
     </div>
     <div class="row">
-      <label>基准刑增量</label>
-      非法经营(情节档·烟草) 4<input type="number" id="f_amt1" value="0" min="0" style="width:60px"> <span class="note-tip unit">（每4000元）</span>
-      违法所得(情节档·烟草) 1<input type="number" id="f_amt2" value="0" min="0" style="width:60px"> <span class="note-tip unit">（每1600元）</span>
+      <label>经营类型</label>
+      <select id="bizType" onchange="renderMetrics()" style="font-size:13px;padding:5px 8px;border:1px solid var(--line);border-radius:6px;max-width:380px;">
+        <option value="tobacco">①非法经营烟草专卖品</option>
+        <option value="sec">②非法经营证券、期货、保险业务</option>
+        <option value="forex_cn">③非法买卖外汇/资金支付结算（人民币）</option>
+        <option value="forex_usd">④骗购外汇（美元）</option>
+        <option value="forex_usd_mid">⑤居间介绍骗购外汇（美元）</option>
+        <option value="pos">⑥POS机信用卡套现</option>
+        <option value="pub_p">⑦非法出版物（个人）</option>
+        <option value="pub_u">⑦非法出版物（单位）</option>
+        <option value="tele">⑧国际及涉港澳台电信业务</option>
+        <option value="net_p">⑨网络有偿删帖/发帖（个人）</option>
+        <option value="net_u">⑨网络有偿删帖/发帖（单位）</option>
+        <option value="radio">⑩黑广播/伪基站等无线电设备</option>
+        <option value="gamble_p">⑪非法生产销售赌博机（个人）</option>
+        <option value="gamble_u">⑪非法生产销售赌博机（单位）</option>
+        <option value="food">⑫危害食品安全（禁限原料/私屠等）</option>
+        <option value="loan_p">⑬非法放贷（个人）</option>
+        <option value="loan_u">⑬非法放贷（单位）</option>
+        <option value="other_p">⑭其他非法经营（兜底·个人）</option>
+        <option value="other_u">⑭其他非法经营（兜底·单位）</option>
+      </select>
     </div>
+    <div class="row"><label></label><span id="typeNote" class="note-tip"></span></div>
     <div class="row">
-      <label></label>
-      非法经营(特别严重档25–2<input type="number" id="f_amt3" value="0" min="0" style="width:60px"> <span class="note-tip unit">（每4.5万元）</span>
-      非法经营(特别严重档&gt;<input type="number" id="f_times" value="0" min="0" style="width:60px"> <span class="note-tip unit">（每40万元）</span>
-      <span class="note-tip" style="margin-left:8px">事实数值在此直接填写，增率可在上方「⚙ 计算参数覆盖」面板调整。</span>
+      <label>基准刑增量</label>
+      <div id="metricInputs" style="display:flex;flex-direction:column;gap:6px;flex:1"></div>
     </div>
     <div class="row">
       <label>本罪特定从重</label>
@@ -543,7 +641,7 @@
       <button class="btn" onclick="calc()">估算刑期区间</button>
     </div>
     <div class="result" id="out">点击"估算刑期区间"生成结果。</div>
-    <div class="disclaimer">说明：寻衅滋事特定从重按赣高法〔2022〕115号第（十八）条；通用情节比例按赣高法〔2022〕115号「三、常见量刑情节的适用」（与上方第七项「设置比例」列一致）。估算分组取大/叠加：态度类（自首/坦白/当庭认罪/认罪认罚）取最大，赔偿退赃类（赔偿谅解/刑事和解/退赃各档）取最大，身份能力类（未成年/老年/精神病人/聋哑盲人）取最大，法定减免类（防卫/避险过当、预备/未遂/中止、从犯/胁从、立功、羁押表现、救助）可叠加，从重类（累犯/前科/教唆未成年·精障+/弱势群体/灾害）可叠加；总减幅封顶65%（机械累加，未处理个案裁量）。"量刑建议"三栏（认罪认罚后检察院建议刑 / 法院最终宣告刑 / 偏重情形参考）为按参数面板中可调的取点比例（偏轻33%／中肯50%／偏重67%，默认）从测算区间取出的点估计，仅供律师评估检方、法官可能给出的刑期、做到心里有数，不作裁判依据；宣告刑受法定上限（第一幅度3年、第二幅度10年）约束，且累犯一般不少于3个月。缓刑提示仅为初步筛查，最终以法院认定为准。</div>
+    <div class="disclaimer">说明：非法经营罪特定从重按赣高法〔2025〕20号各类型规定（见"六"）；通用情节比例按赣高法〔2022〕115号「三、常见量刑情节的适用」（与上方第七项「设置比例」列一致）。估算分组取大/叠加：态度类（自首/坦白/当庭认罪/认罪认罚）取最大，赔偿退赃类（赔偿谅解/刑事和解/退赃各档）取最大，身份能力类（未成年/老年/精神病人/聋哑盲人）取最大，法定减免类（防卫/避险过当、预备/未遂/中止、从犯/胁从、立功、羁押表现、救助）可叠加，从重类（累犯/前科/教唆未成年·精障+/弱势群体/灾害）可叠加；总减幅封顶65%（机械累加，未处理个案裁量）。"量刑建议"三栏（认罪认罚后检察院建议刑 / 法院最终宣告刑 / 偏重情形参考）为按参数面板中可调的取点比例（偏轻33%／中肯50%／偏重67%，默认）从测算区间取出的点估计，仅供律师评估检方、法官可能给出的刑期、做到心里有数，不作裁判依据；宣告刑受法定上限（第一幅度3年、第二幅度10年、特别加重15年）约束，且累犯一般不少于3个月。缓刑提示仅为初步筛查，最终以法院认定为准。</div>
 
     <hr style="margin:20px 0; border:none; border-top:1px dashed var(--line);">
     <div class="rev-title">↩ 反向测算：输入目标刑期 → 反推需要哪些情节 / 减多少（沿用上方起点·增量·本罪特定从重设定）</div>
@@ -560,7 +658,7 @@
   </div>
 
   <p class="disclaimer" style="margin-top:24px;">
-    本表依据赣高法〔2022〕115号整理，仅供办案参考。正式引用请以官方发布文本为准。所有修改内容仅保存在本地浏览器，清除浏览器数据会丢失。
+    本表"量刑起点/类型/增量"依据《赣高法〔2025〕20号〈量刑指导意见（二）〉实施细则》全文逐条整理；通用情节比例依据赣高法〔2022〕115号。仅供办案参考，正式引用请以官方发布文本为准。所有修改内容仅保存在本地浏览器，清除浏览器数据会丢失。
   </p>
 
   <h2 class="section">实务参考案例</h2>
@@ -630,6 +728,136 @@
 
 <script>
 window.SENTENCE_CAPS = {1:60,2:180};
+
+  // ===== 非法经营各类型基准刑增量数据（依赣高法〔2025〕20号；t1=情节档 step=每X元+1月；t2=特别严重档 [[下限,上限,每X元+1月]]）=====
+  const BIZ = {
+    tobacco:{note:'烟草专卖品：数额/违法所得/卷烟三指标可同时填报，增量累加。', metrics:[
+      {key:'amt',label:'非法经营数额',unit:'元（每+4000元 → +1月）',th1:50000,t1:4000,t2:[[250000,2500000,45000],[2500000,Infinity,400000]]},
+      {key:'profit',label:'违法所得数额',unit:'元（每+1600元 → +1月）',th1:20000,t1:1600,t2:[[100000,1000000,20000],[1000000,Infinity,150000]]},
+      {key:'cig',label:'非法经营卷烟',unit:'支（每+1.6万支 → +1月）',th1:200000,t1:16000,t2:[[1000000,10000000,170000],[10000000,Infinity,1500000]]}
+    ]},
+    sec:{note:'证券、期货、保险业务：数额/违法所得两指标累加。', metrics:[
+      {key:'amt',label:'非法经营数额',unit:'元（每+8万 → +1月）',th1:1000000,t1:80000,t2:[[5000000,50000000,850000],[50000000,Infinity,7500000]]},
+      {key:'profit',label:'违法所得数额',unit:'元（每+8000 → +1月）',th1:100000,t1:8000,t2:[[500000,5000000,85000],[5000000,Infinity,750000]]}
+    ]},
+    forex_cn:{note:'买卖外汇/资金支付结算（人民币）：具四种情形降档标准的，对应增量见"五"。', metrics:[
+      {key:'amt',label:'非法经营数额',unit:'元（每+40万 → +1月）',th1:5000000,t1:400000,t2:[[25000000,250000000,4200000],[250000000,Infinity,37500000]]},
+      {key:'profit',label:'违法所得数额',unit:'元（每+8000 → +1月）',th1:100000,t1:8000,t2:[[500000,5000000,85000],[5000000,Infinity,750000]]}
+    ]},
+    forex_usd:{note:'骗购外汇（美元）：数额按美元填报。', metrics:[
+      {key:'amt',label:'非法经营数额（美元）',unit:'美元（每+40万 → +1月）',th1:5000000,t1:400000,t2:[[25000000,250000000,4200000],[250000000,Infinity,37500000]]},
+      {key:'profit',label:'违法所得数额',unit:'元（每+4万 → +1月）',th1:500000,t1:40000,t2:[[2500000,25000000,420000],[25000000,Infinity,3750000]]}
+    ]},
+    forex_usd_mid:{note:'居间介绍骗购外汇（美元）：数额按美元填报。', metrics:[
+      {key:'amt',label:'非法经营数额（美元）',unit:'美元（每+8万 → +1月）',th1:1000000,t1:80000,t2:[[5000000,50000000,850000],[50000000,Infinity,7500000]]},
+      {key:'profit',label:'违法所得数额',unit:'元（每+8000 → +1月）',th1:100000,t1:8000,t2:[[500000,5000000,85000],[5000000,Infinity,750000]]}
+    ]},
+    pos:{note:'POS机信用卡套现：数额/逾期未还资金/经济损失三指标累加。', metrics:[
+      {key:'amt',label:'套现数额',unit:'元（每+8万 → +1月）',th1:1000000,t1:80000,t2:[[5000000,50000000,850000],[50000000,Infinity,7500000]]},
+      {key:'overdue',label:'逾期未还资金',unit:'元（每+1.6万 → +1月）',th1:200000,t1:16000,t2:[[1000000,10000000,170000],[10000000,Infinity,1500000]]},
+      {key:'loss',label:'金融机构经济损失',unit:'元（每+8000 → +1月）',th1:100000,t1:8000,t2:[[500000,5000000,85000],[5000000,Infinity,750000]]}
+    ]},
+    pub_p:{note:'非法出版物（个人）：数额/违法所得/报纸份数累加；期刊/图书/音像按"五"对应比率折算。', metrics:[
+      {key:'amt',label:'非法经营数额（个人）',unit:'元（每+3500 → +1月）',th1:80000,t1:3500,t2:[[250000,2500000,45000],[2500000,Infinity,400000]]},
+      {key:'profit',label:'违法所得数额（个人）',unit:'元（每+900 → +1月）',th1:25000,t1:900,t2:[[70000,700000,12000],[700000,Infinity,110000]]},
+      {key:'news',label:'非法经营报纸（个人）',unit:'份（每+200 → +1月）',th1:5000,t1:200,t2:[[15000,150000,2500],[150000,Infinity,25000]]}
+    ]},
+    pub_u:{note:'非法出版物（单位）：数额/违法所得/报纸份数累加。', metrics:[
+      {key:'amt',label:'非法经营数额（单位）',unit:'元（每+1.1万 → +1月）',th1:250000,t1:11000,t2:[[800000,8000000,150000],[8000000,Infinity,1200000]]},
+      {key:'profit',label:'违法所得数额（单位）',unit:'元（每+2500 → +1月）',th1:70000,t1:2500,t2:[[200000,2000000,35000],[2000000,Infinity,300000]]},
+      {key:'news',label:'非法经营报纸（单位）',unit:'份（每+700 → +1月）',th1:15000,t1:700,t2:[[50000,500000,10000],[500000,Infinity,75000]]}
+    ]},
+    tele:{note:'国际及涉港澳台电信：去话数额/来话资费损失两指标累加。', metrics:[
+      {key:'out',label:'经营去话业务数额',unit:'元（每+8万 → +1月）',th1:1000000,t1:80000,t2:[[5000000,50000000,850000],[50000000,Infinity,7500000]]},
+      {key:'in',label:'来话资费损失数额',unit:'元（每+8万 → +1月）',th1:1000000,t1:80000,t2:[[5000000,50000000,850000],[50000000,Infinity,7500000]]}
+    ]},
+    net_p:{note:'网络有偿删帖/发帖（个人）：数额或违法所得择一填报（每+4000元或+1600元 → +1月）。', metrics:[
+      {key:'amt',label:'非法经营数额（个人）',unit:'元（每+4000 → +1月）',th1:50000,t1:4000,t2:[[250000,2500000,45000],[2500000,Infinity,375000]]},
+      {key:'profit',label:'违法所得数额（个人）',unit:'元（每+1600 → +1月）',th1:20000,t1:1600,t2:[[100000,1000000,20000],[1000000,Infinity,150000]]}
+    ]},
+    net_u:{note:'网络有偿删帖/发帖（单位）：数额或违法所得择一填报。', metrics:[
+      {key:'amt',label:'非法经营数额（单位）',unit:'元（每+1.2万 → +1月）',th1:150000,t1:12000,t2:[[750000,7500000,150000],[7500000,Infinity,1150000]]},
+      {key:'profit',label:'违法所得数额（单位）',unit:'元（每+4000 → +1月）',th1:50000,t1:4000,t2:[[250000,2500000,45000],[2500000,Infinity,375000]]}
+    ]},
+    radio:{note:'黑广播/伪基站：设备套数每+1套 → +4个月；数额另计。', metrics:[
+      {key:'dev',label:'无线电设备套数',unit:'套（每+1套 → +4个月）',th1:3,t1:0.25,t2:[[15,150,3],[150,Infinity,25]]},
+      {key:'amt',label:'非法经营数额',unit:'元（每+4000 → +1月）',th1:50000,t1:4000,t2:[[250000,2500000,45000],[2500000,Infinity,400000]]}
+    ]},
+    gamble_p:{note:'赌博机（个人）：数额或违法所得择一填报。', metrics:[
+      {key:'amt',label:'非法经营数额（个人）',unit:'元（每+4000 → +1月）',th1:50000,t1:4000,t2:[[250000,2500000,45000],[2500000,Infinity,375000]]},
+      {key:'profit',label:'违法所得数额（个人）',unit:'元（每+800 → +1月）',th1:10000,t1:800,t2:[[50000,500000,8500],[500000,Infinity,75000]]}
+    ]},
+    gamble_u:{note:'赌博机（单位）：数额或违法所得择一填报。', metrics:[
+      {key:'amt',label:'非法经营数额（单位）',unit:'元（每+4万 → +1月）',th1:500000,t1:40000,t2:[[2500000,25000000,450000],[25000000,Infinity,3750000]]},
+      {key:'profit',label:'违法所得数额（单位）',unit:'元（每+8000 → +1月）',th1:100000,t1:8000,t2:[[500000,5000000,85000],[5000000,Infinity,750000]]}
+    ]},
+    food:{note:'危害食品安全：数额/违法所得两指标累加。', metrics:[
+      {key:'amt',label:'非法经营数额',unit:'元（每+8000 → +1月）',th1:100000,t1:8000,t2:[[500000,5000000,85000],[5000000,Infinity,750000]]},
+      {key:'profit',label:'违法所得数额',unit:'元（每+4000 → +1月）',th1:50000,t1:4000,t2:[[250000,2500000,45000],[2500000,Infinity,375000]]}
+    ]},
+    loan_p:{note:'非法放贷（个人）：数额/违法所得/对象人数三指标累加；黑恶、80%、40%等降档标准见"五"。', metrics:[
+      {key:'amt',label:'非法放贷数额（个人）',unit:'元（每+15万 → +1月）',th1:2000000,t1:150000,t2:[[10000000,100000000,1700000],[100000000,Infinity,15000000]]},
+      {key:'profit',label:'违法所得数额（个人）',unit:'元（每+6万 → +1月）',th1:800000,t1:60000,t2:[[4000000,40000000,700000],[40000000,Infinity,6000000]]},
+      {key:'obj',label:'非法放贷对象（个人）',unit:'人（每+4人 → +1月）',th1:50,t1:4,t2:[[250,2500,45],[2500,Infinity,375]]}
+    ]},
+    loan_u:{note:'非法放贷（单位）：数额/违法所得/对象人数三指标累加。', metrics:[
+      {key:'amt',label:'非法放贷数额（单位）',unit:'元（每+75万 → +1月）',th1:10000000,t1:750000,t2:[[50000000,500000000,8500000],[500000000,Infinity,75000000]]},
+      {key:'profit',label:'违法所得数额（单位）',unit:'元（每+30万 → +1月）',th1:4000000,t1:300000,t2:[[20000000,200000000,3400000],[200000000,Infinity,30000000]]},
+      {key:'obj',label:'非法放贷对象（单位）',unit:'人（每+10人 → +1月）',th1:150,t1:10,t2:[[250,2500,130],[2500,Infinity,1125]]}
+    ]},
+    other_p:{note:'其他非法经营（兜底·个人）：仅违法所得指标。', metrics:[
+      {key:'profit',label:'违法所得数额（个人）',unit:'元（每+10万 → +1月）',th1:10000,t1:100000,t2:[[5000000,50000000,850000],[50000000,Infinity,7500000]]}
+    ]},
+    other_u:{note:'其他非法经营（兜底·单位）：仅违法所得指标。', metrics:[
+      {key:'profit',label:'违法所得数额（单位）',unit:'元（每+10万 → +1月）',th1:100000,t1:100000,t2:[[5000000,50000000,850000],[50000000,Infinity,7500000]]}
+    ]}
+  };
+
+  // 单指标增量（月数）：情节档 = (数额−入罪起点)/每元增量；特别严重档按区间累加
+  function incForMetric(v, m, tier){
+    v = Number(v)||0;
+    if(tier==='1'){
+      if(m.t1==null) return 0;
+      const th = m.th1||0;
+      return Math.max(0, v-th)/m.t1;
+    } else {
+      if(!m.t2) return 0;
+      let months=0;
+      for(const b of m.t2){
+        const lower=b[0], up=b[1], step=b[2];
+        const upper = (up===Infinity)?Infinity:up;
+        const portion = Math.max(0, Math.min(v, upper)-lower);
+        months += portion/step;
+      }
+      return months;
+    }
+  }
+
+  // 按所选经营类型渲染增量输入行
+  function renderMetrics(){
+    const key = document.getElementById('bizType').value;
+    const biz = BIZ[key];
+    const box = document.getElementById('metricInputs');
+    if(!box) return;
+    box.innerHTML = '';
+    const note = document.getElementById('typeNote');
+    if(note) note.textContent = biz ? biz.note : '';
+    (biz.metrics||[]).forEach(m=>{
+      const row = document.createElement('div');
+      row.style.cssText='display:flex;align-items:center;gap:8px;';
+      const lab = document.createElement('span');
+      lab.style.cssText='font-size:12.5px;color:#5b6b78;min-width:150px;';
+      lab.textContent = m.label;
+      const inp = document.createElement('input');
+      inp.type='number'; inp.id='m_'+m.key; inp.value='0'; inp.min='0';
+      inp.style.cssText='width:130px;padding:4px 6px;border:1px solid var(--line);border-radius:5px;';
+      const unit = document.createElement('span');
+      unit.className='note-tip'; unit.textContent = m.unit;
+      row.appendChild(lab); row.appendChild(inp); row.appendChild(unit);
+      box.appendChild(row);
+    });
+    if(typeof calc==='function') calc();
+  }
   // ---- 全表内容可编辑 + 自动保存 ----
   const KEY = "illegal_business_notes_v1";
   const ORIG = {};   // 默认内容快照（用于"恢复默认"）
@@ -674,8 +902,7 @@ window.SENTENCE_CAPS = {1:60,2:180};
       makeEditable('#startTbl tbody td:nth-child(3) li', 'st-cond');// 具体情形（逐条，有列表的行）
       makeEditable('#startTbl tbody td:nth-child(3):not(:has(ul))', 'st-condx'); // 具体情形（纯文本行：起哄闹事、第二幅度）
       makeEditable('#startTbl tbody td:nth-child(4)', 'st-start');  // 量刑起点幅度
-      // 基准刑增量对照表
-      makeEditable('.cmp tbody td.c1, .cmp tbody td.c2', 'cm');
+      // 基准刑增量（已由 BIZ 数据驱动，无独立 cmp 表）
       // 常见量刑情节表（第5列「设置比例」为输入框，排除可编辑）
       makeEditable('.cmnTbl tbody td:not(:nth-child(5))', 'cmn');
       // 从重 / 罚金 / 缓刑 各块
@@ -690,6 +917,7 @@ window.SENTENCE_CAPS = {1:60,2:180};
       loadNotes();
       loadParams();
       bindParamEvents();
+      renderMetrics();
     }
 
   // ---- 第七项「设置比例」与第十项勾选框联动 + 持久化 ----
@@ -752,16 +980,17 @@ window.SENTENCE_CAPS = {1:60,2:180};
     let sMax = parseFloat(document.getElementById('sMax').value)||0;
     const P = id => parseFloat(document.getElementById(id).value) || 0;
     const cap = (window.SENTENCE_CAPS && window.SENTENCE_CAPS[tier]!=null) ? window.SENTENCE_CAPS[tier] : (tier==='1' ? 36 : (tier==='2' ? 120 : 180));
-    // 基准刑增量：遍历「五、基准刑增量对照」表（cmpTbl），按所选幅度档(data-tier)取对应增率
-    let incMin = 0, incMax = 0;
-    document.querySelectorAll('.cmp tbody tr[data-f]').forEach(tr=>{
-      if(tr.dataset.tier && tr.dataset.tier !== tier) return;
-      const f = P(tr.dataset.f);
-      const rmin = P(tr.dataset.pmin), rmax = P(tr.dataset.pmax);
-      incMin += f*rmin; incMax += f*rmax;
+    // 基准刑增量：按所选经营类型(BIZ)与幅度档，逐指标计算（数额−入罪起点数额）/每元增量 对应增刑月数
+    const bizKey = document.getElementById('bizType').value;
+    const biz = BIZ[bizKey] || {metrics:[]};
+    let inc = 0;
+    (biz.metrics||[]).forEach(m=>{
+      const el = document.getElementById('m_'+m.key);
+      const v = el ? (parseFloat(el.value)||0) : 0;
+      inc += incForMetric(v, m, tier);
     });
-    let baseMin = Math.min(sMin + incMin, cap);
-    let baseMax = Math.min(sMax + incMax, cap);
+    let baseMin = Math.min(sMin + inc, cap);
+    let baseMax = Math.min(sMax + inc, cap);
 
     // 本罪特定从重（比例取自参数面板「本罪特定从重」，#specHeavy 勾选生效）
     let spPct = 0;
@@ -874,16 +1103,17 @@ window.SENTENCE_CAPS = {1:60,2:180};
     const sMax = parseFloat(document.getElementById('sMax').value)||0;
     const P = id => parseFloat(document.getElementById(id).value) || 0;
     const cap = (window.SENTENCE_CAPS && window.SENTENCE_CAPS[tier]!=null) ? window.SENTENCE_CAPS[tier] : (tier==='1' ? 36 : (tier==='2' ? 120 : 180));
-    // 基准刑增量：与正向估算一致，遍历 cmpTbl（按 data-tier 取当前幅度档）
-    let incMin = 0, incMax = 0;
-    document.querySelectorAll('.cmp tbody tr[data-f]').forEach(tr=>{
-      if(tr.dataset.tier && tr.dataset.tier !== tier) return;
-      const f = P(tr.dataset.f);
-      const rmin = P(tr.dataset.pmin), rmax = P(tr.dataset.pmax);
-      incMin += f*rmin; incMax += f*rmax;
+    // 基准刑增量：与正向估算一致，按所选经营类型(BIZ)逐指标计算
+    const bizKeyR = document.getElementById('bizType').value;
+    const bizR = BIZ[bizKeyR] || {metrics:[]};
+    let inc = 0;
+    (bizR.metrics||[]).forEach(m=>{
+      const el = document.getElementById('m_'+m.key);
+      const v = el ? (parseFloat(el.value)||0) : 0;
+      inc += incForMetric(v, m, tier);
     });
-    let baseMin = Math.min(sMin + incMin, cap);
-    let baseMax = Math.min(sMax + incMax, cap);
+    let baseMin = Math.min(sMin + inc, cap);
+    let baseMax = Math.min(sMax + inc, cap);
 
     let spPct = 0;
     document.querySelectorAll('#specHeavy input[type=checkbox]:checked').forEach(c=> spPct += P(c.dataset.param));
