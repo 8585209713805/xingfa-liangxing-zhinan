@@ -2,6 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
+  <meta name="repo-path" content="crimes/抢劫罪量刑指引（江西）.html">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>抢劫罪量刑指引（江西·法发〔2021〕21号 / 赣高法〔2022〕115号）</title>
 <style>
@@ -219,6 +220,7 @@
     <button class="btn" onclick="window.print()">打印 / 导出 PDF</button>
     <button class="btn" id="editBtn" onclick="togglePageEdit()">进入页面编辑模式</button>
     <button class="btn" id="dlBtn" onclick="downloadEditedPage()" style="display:none;color:#1f4e79;font-weight:600">下载修改版 HTML</button>
+    <button class="btn" id="upBtn" onclick="uploadToSite()" style="color:#1a7f37;font-weight:600">上传到网站</button>
     <span class="note-tip">表格内所有文字均可直接点击编辑，自动保存在本机浏览器（localStorage）；"恢复默认内容"可一键还原。需要自由改页面结构/文字时，点<b>进入页面编辑模式</b>，改完点<b>下载修改版 HTML</b>发给我，我再上传更新。</span>
   </div>
 
@@ -980,46 +982,65 @@
     if(typeof calc==='function') calc();
   }
 
-  /* ---- 页面编辑模式：让浏览器可直接 WYSIWYG 改整页，然后下载修改版 ---- */
+  /* ---- 页面编辑模式 + 序列化 + 浏览器直传 GitHub Pages ---- */
+  const GH_OWNER='8585209713805', GH_REPO='xingfa-liangxing-zhinan';
+  function serializeCurrentPage(){
+    document.querySelectorAll('input, select, textarea').forEach(function(el){
+      if(el.type==='checkbox'||el.type==='radio'){ el.checked?el.setAttribute('checked','checked'):el.removeAttribute('checked'); }
+      else if(el.tagName==='SELECT'){ Array.from(el.options).forEach(function(o){ o.removeAttribute('selected'); }); if(el.selectedIndex>=0) el.options[el.selectedIndex].setAttribute('selected','selected'); }
+      else if(el.tagName==='TEXTAREA'){ el.textContent=el.value; }
+      else { el.setAttribute('value', el.value); }
+    });
+    var root=document.documentElement.cloneNode(true);
+    root.querySelector('body').classList.remove('page-edit');
+    var b=root.querySelector('#editBtn'); if(b) b.textContent='进入页面编辑模式';
+    var d=root.querySelector('#dlBtn'); if(d) d.style.display='none';
+    return '<!DOCTYPE html>\n'+new XMLSerializer().serializeToString(root);
+  }
   function togglePageEdit(){
-    const body = document.body;
-    const isOn = !body.classList.contains('page-edit');
+    var body=document.body;
+    var isOn=!body.classList.contains('page-edit');
     body.classList.toggle('page-edit', isOn);
-    document.designMode = isOn ? 'on' : 'off';
-    const btn = document.getElementById('editBtn');
-    const dl  = document.getElementById('dlBtn');
-    if(btn) btn.textContent = isOn ? '退出页面编辑模式' : '进入页面编辑模式';
-    if(dl)  dl.style.display = isOn ? 'inline-block' : 'none';
+    document.designMode=isOn?'on':'off';
+    var btn=document.getElementById('editBtn');
+    var dl=document.getElementById('dlBtn');
+    if(btn) btn.textContent=isOn?'退出页面编辑模式':'进入页面编辑模式';
+    if(dl) dl.style.display=isOn?'inline-block':'none';
   }
   function downloadEditedPage(){
-    document.querySelectorAll('input, select, textarea').forEach(el=>{
-      if(el.type==='checkbox' || el.type==='radio'){
-        el.checked ? el.setAttribute('checked','checked') : el.removeAttribute('checked');
-      } else if(el.tagName==='SELECT'){
-        Array.from(el.options).forEach(opt=> opt.removeAttribute('selected'));
-        if(el.selectedIndex>=0) el.options[el.selectedIndex].setAttribute('selected','selected');
-      } else if(el.tagName==='TEXTAREA'){
-        el.textContent = el.value;
-      } else {
-        el.setAttribute('value', el.value);
-      }
-    });
-    const root = document.documentElement.cloneNode(true);
-    root.querySelector('body').classList.remove('page-edit');
-    const btn = root.querySelector('#editBtn');
-    const dl  = root.querySelector('#dlBtn');
-    if(btn) btn.textContent = '进入页面编辑模式';
-    if(dl)  dl.style.display = 'none';
-    const html = '<!DOCTYPE html>\n' + new XMLSerializer().serializeToString(root);
-    const blob = new Blob([html], {type:'text/html;charset=utf-8'});
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = (document.title || '量刑指引') + '-修改版.html';
-    document.body.appendChild(a);
-    a.click();
-    a.remove();
-    setTimeout(()=>URL.revokeObjectURL(url), 2000);
+    var html=serializeCurrentPage();
+    var blob=new Blob([html],{type:'text/html;charset=utf-8'});
+    var url=URL.createObjectURL(blob);
+    var a=document.createElement('a'); a.href=url; a.download=(document.title||'量刑指引')+'-修改版.html';
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(function(){ URL.revokeObjectURL(url); },2000);
+  }
+  function showToast(msg, ok){
+    var t=document.getElementById('ghToast');
+    if(!t){ t=document.createElement('div'); t.id='ghToast'; t.style.cssText='position:fixed;left:50%;top:18px;transform:translateX(-50%);z-index:9999;padding:10px 16px;border-radius:8px;font-size:14px;box-shadow:0 4px 16px rgba(0,0,0,.2);max-width:82%;line-height:1.5;'; document.body.appendChild(t); }
+    t.style.background=ok?'#1a7f37':'#c0392b'; t.style.color='#fff'; t.textContent=msg; t.style.display='block';
+    clearTimeout(t._tm); t._tm=setTimeout(function(){ t.style.display='none'; },6000);
+  }
+  async function uploadToSite(){
+    var pat=localStorage.getItem('gh_pat');
+    if(!pat){
+      pat=prompt('请输入 GitHub Personal Access Token（仅需输入一次，保存在本机浏览器 localStorage；可在控制台执行 localStorage.removeItem(\'gh_pat\') 清除）：','');
+      if(!pat){ showToast('已取消上传',false); return; }
+      localStorage.setItem('gh_pat', pat.trim());
+    }
+    var meta=document.querySelector('meta[name=repo-path]');
+    var path=meta?meta.getAttribute('content'):('crimes/'+document.title+'.html');
+    showToast('正在上传到网站…', true);
+    try{
+      var url='https://api.github.com/repos/'+GH_OWNER+'/'+GH_REPO+'/contents/'+encodeURIComponent(path);
+      var head=await fetch(url,{headers:{Authorization:'token '+pat, Accept:'application/vnd.github+json'}});
+      if(!head.ok) throw new Error('获取文件信息失败('+head.status+')');
+      var info=await head.json(); var sha=info.sha;
+      var content=btoa(unescape(encodeURIComponent(serializeCurrentPage())));
+      var put=await fetch(url,{method:'PUT',headers:{Authorization:'token '+pat,Accept:'application/vnd.github+json','Content-Type':'application/json'},body:JSON.stringify({message:'页面更新（浏览器直传）：'+path, content:content, sha:sha})});
+      if(!put.ok){ var e=await put.json().catch(function(){ return {}; }); throw new Error('上传失败('+put.status+') '+(e.message||'')); }
+      showToast('✅ 已上传到网站，GitHub Pages 将在约 1 分钟内自动更新', true);
+    }catch(err){ showToast('❌ '+err.message, false); }
   }
 
   initEditor();
