@@ -251,19 +251,10 @@ function renderTree(q){
       if(t){
         t.scrollIntoView({behavior:'smooth',block:'center'});
         t.classList.remove('flash'); void t.offsetWidth; t.classList.add('flash');
-      }
-    }; // 具体罪名 → 右侧定位
-    el.onmouseenter=()=>{
-      const t=document.getElementById(el.dataset.anchor);
-      if(t){
-        if(!inView(t)) t.scrollIntoView({behavior:'smooth',block:'center'});
         t.classList.add('locate');
+        setTimeout(()=>t.classList.remove('locate'),1200);
       }
-    }; // 悬停 → 右侧卡片高亮方框
-    el.onmouseleave=()=>{
-      const t=document.getElementById(el.dataset.anchor);
-      if(t) t.classList.remove('locate');
-    }; // 移出 → 取消高亮
+    }; // 点击左侧具体罪名 → 右侧定位
   });
 }
 
@@ -351,13 +342,18 @@ function restoreReturnPos(){
       el.scrollIntoView({behavior:'auto',block:'center'});   // 居中定位到原查看的罪名
       el.classList.add('locate');
       setTimeout(()=>el.classList.remove('locate'),1600);
-      // 同步展开并高亮左侧栏对应节点
+      // 同步展开并高亮左侧栏对应节点，并把侧边栏滚动到该节点
       const node=document.querySelector('.crime[data-anchor="crime-'+cid+'"]');
       if(node){
         const chap=node.closest('.chap'); if(chap) chap.classList.add('open');
         const sw=node.closest('.sec-wrap'); if(sw) sw.classList.add('open');
         node.classList.add('locate');
         setTimeout(()=>node.classList.remove('locate'),1600);
+        const side=document.querySelector('nav.side');
+        if(side){
+          const nRect=node.getBoundingClientRect(), sRect=side.getBoundingClientRect();
+          side.scrollTop += nRect.top - sRect.top - side.clientHeight/2 + nRect.height/2;
+        }
       }
     }else if(sy){
       window.scrollTo(0,sy);                            // 兜底：按原滚动位置恢复
