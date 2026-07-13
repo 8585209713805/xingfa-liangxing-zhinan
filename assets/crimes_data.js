@@ -2651,8 +2651,8 @@ window.ALL_CRIMES = [
     "sec": 3,
     "art": "刑法第318条",
     "guideline": false,
-    "file": null,
-    "note": "法条依据：刑法第318条"
+    "file": "crimes/组织他人偷越国（边）境罪量刑指引（江西）.html",
+    "note": "法条依据：刑法第318条；无专门量刑起点细则（B类）"
   },
   {
     "name": "骗取出境证件罪",
@@ -2660,8 +2660,8 @@ window.ALL_CRIMES = [
     "sec": 3,
     "art": "刑法第319条",
     "guideline": false,
-    "file": null,
-    "note": "法条依据：刑法第319条"
+    "file": "crimes/骗取出境证件罪量刑指引（江西）.html",
+    "note": "法条依据：刑法第319条；无专门量刑起点细则（B类）"
   },
   {
     "name": "出售出入境证件罪",
@@ -2669,8 +2669,8 @@ window.ALL_CRIMES = [
     "sec": 3,
     "art": "刑法第320条",
     "guideline": false,
-    "file": null,
-    "note": "法条依据：刑法第320条"
+    "file": "crimes/出售出入境证件罪量刑指引（江西）.html",
+    "note": "法条依据：刑法第320条；无专门量刑起点细则（B类）"
   },
   {
     "name": "提供伪造、变造的出入境证件罪",
@@ -2678,8 +2678,8 @@ window.ALL_CRIMES = [
     "sec": 3,
     "art": "刑法第320条",
     "guideline": false,
-    "file": null,
-    "note": "法条依据：刑法第320条"
+    "file": "crimes/提供伪造、变造的出入境证件罪量刑指引（江西）.html",
+    "note": "法条依据：刑法第320条；无专门量刑起点细则（B类）"
   },
   {
     "name": "运送他人偷越国（边）境罪",
@@ -2687,8 +2687,8 @@ window.ALL_CRIMES = [
     "sec": 3,
     "art": "刑法第321条",
     "guideline": false,
-    "file": null,
-    "note": "法条依据：刑法第321条"
+    "file": "crimes/运送他人偷越国（边）境罪量刑指引（江西）.html",
+    "note": "法条依据：刑法第321条；无专门量刑起点细则（B类）"
   },
   {
     "name": "偷越国（边）境罪",
