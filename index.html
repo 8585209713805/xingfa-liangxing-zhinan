@@ -312,6 +312,7 @@ function renderList(q){
       a.className='card'+(c.file?'':' pending');
       a.id='crime-'+c._id;
       if(c.file) a.href=c.file;
+      if(c.file) a.addEventListener('click',()=>saveReturnPos(c._id));
       a.innerHTML=tag
         +'<div class="cn">'+hl(c.name,q)+'</div>'
         +'<div class="cart">'+(c.art?('⚖ '+esc(c.art)):'')+'</div>'
@@ -323,10 +324,54 @@ function renderList(q){
   });
 }
 
+/* ===== 返回首页时恢复定位（停留在退出前查看的罪名位置）===== */
+function saveReturnPos(cid){
+  try{
+    sessionStorage.setItem('lx_return_q', document.getElementById('q').value||'');
+    sessionStorage.setItem('lx_return_scroll', String(window.scrollY));
+    sessionStorage.setItem('lx_return_crime', String(cid));
+  }catch(e){}
+}
+function restoreReturnPos(){
+  let cid, q, sy;
+  try{
+    cid=sessionStorage.getItem('lx_return_crime');
+    if(!cid) return;                                   // 全新访问，不恢复
+    q=sessionStorage.getItem('lx_return_q')||'';
+    sy=parseInt(sessionStorage.getItem('lx_return_scroll')||'0',10)||0;
+    // 取出即清除：刷新首页不会误恢复
+    sessionStorage.removeItem('lx_return_crime');
+    sessionStorage.removeItem('lx_return_q');
+    sessionStorage.removeItem('lx_return_scroll');
+  }catch(e){ return; }
+  if(q){ const inp=document.getElementById('q'); if(inp){ inp.value=q; renderTree(q); renderList(q); } }
+  requestAnimationFrame(()=>{
+    const el=document.getElementById('crime-'+cid);
+    if(el){
+      el.scrollIntoView({behavior:'auto',block:'center'});   // 居中定位到原查看的罪名
+      el.classList.add('locate');
+      setTimeout(()=>el.classList.remove('locate'),1600);
+      // 同步展开并高亮左侧栏对应节点
+      const node=document.querySelector('.crime[data-anchor="crime-'+cid+'"]');
+      if(node){
+        const chap=node.closest('.chap'); if(chap) chap.classList.add('open');
+        const sw=node.closest('.sec-wrap'); if(sw) sw.classList.add('open');
+        node.classList.add('locate');
+        setTimeout(()=>node.classList.remove('locate'),1600);
+      }
+    }else if(sy){
+      window.scrollTo(0,sy);                            // 兜底：按原滚动位置恢复
+    }
+  });
+}
+
 document.getElementById('q').addEventListener('input',e=>{
   const q=e.target.value; renderTree(q); renderList(q);
 });
 renderTree(''); renderList('');
+restoreReturnPos();
+// 兼容浏览器「后退」命中 bfcache（此时 load 不触发，仅 pageshow）
+window.addEventListener('pageshow',e=>{ if(e.persisted) restoreReturnPos(); });
 </script>
 </body>
 </html>
