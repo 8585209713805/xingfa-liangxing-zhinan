@@ -13,6 +13,7 @@ import sys, os, json, re, datetime
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
+CRIMES_DIR = os.path.abspath(os.path.join(HERE, "..", "crimes"))
 
 import crimes_full
 FRAGMENTS = ["_dir_ch6a", "_dir_ch6b", "_dir_ch7", "_dir_ch8", "_dir_ch9", "_dir_ch10"]
@@ -54,6 +55,11 @@ GUIDE = {
 def build_record(d, existing=None):
     name = d["name"]
     f, note = GUIDE.get(name, (None, None))
+    # 自动探测已生成的 B类 富页面（文件存在即链接，避免每次手工登记 GUIDE）
+    if not f:
+        cand = os.path.join(CRIMES_DIR, "%s量刑指引（江西）.html" % name)
+        if os.path.exists(cand):
+            f = "crimes/%s量刑指引（江西）.html" % name
     guideline = bool(d.get("guideline")) or (name in GUIDE)
     rec = {
         "name": name,
