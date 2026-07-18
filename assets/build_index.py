@@ -86,6 +86,12 @@ def build_record(d, existing=None):
             rec["note"] = ex["note"]
         if ex.get("guideline"):
             rec["guideline"] = True
+    # 规范化 file 路径：若仅写文件名（无目录前缀）且 crimes/ 下存在，则补全为 crimes/ 前缀，
+    # 避免历史遗留的裸文件名（如「背叛国家罪量刑指引（江西）.html」）导致线上 404 / “文件已删除”。
+    if rec.get("file") and "/" not in rec["file"]:
+        cand = os.path.join(CRIMES_DIR, rec["file"])
+        if os.path.exists(cand):
+            rec["file"] = "crimes/" + rec["file"]
     return rec
 
 
