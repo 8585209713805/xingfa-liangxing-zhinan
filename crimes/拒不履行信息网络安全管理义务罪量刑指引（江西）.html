@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+  <meta name="repo-path" content="crimes/拒不履行信息网络安全管理义务罪量刑指引（江西）.html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>拒不履行信息网络安全管理义务罪量刑指引（江西·刑法第286条之一）</title>
+<style>
+  :root{
+    --blue-deep:#1f4e79; --blue:#2e6da4; --blue-light:#dce9f5; --blue-lighter:#eef4fb;
+    --red-deep:#9c2b2b; --red:#c0392b; --red-light:#fbe3e1; --red-lighter:#fdf0ef;
+    --amber:#b8860b; --amber-light:#fdf3d8; --amber-lighter:#fefaf0;
+    --teal:#1f7a6e; --teal-light:#d8f0ec;
+    --green:#1e7a3a; --green-light:#dcf1e2; --green-lighter:#eef9f1;
+    --ink:#23303a; --muted:#5b6b78; --line:#d9e0e6; --bg:#f5f7f9;
+  }
+  *{box-sizing:border-box}
+  body{font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",sans-serif;
+    color:var(--ink); background:var(--bg); margin:0; line-height:1.6; font-size:14px;}
+  .wrap{max-width:1180px; margin:0 auto; padding:22px 20px 60px;}
+  header h1{font-size:21px; margin:0 0 4px; color:var(--blue-deep);}
+  header .sub{color:var(--muted); font-size:13px;}
+  .toolbar{margin:14px 0; display:flex; gap:10px; flex-wrap:wrap; align-items:center;}
+  .btn{background:#fff; border:1px solid var(--line); border-radius:7px; padding:6px 12px;
+    cursor:pointer; font-size:13px; color:var(--ink);}
+  .btn:hover{background:var(--blue-lighter); border-color:var(--blue);}
+  .note-tip{font-size:12px; color:var(--muted);}
+  .owner-only{display:none;}
+  body.is-owner button.owner-only{display:inline-block;}
+  body.is-owner span.owner-only{display:inline;}
+  body.page-edit .wrap{outline:2px dashed var(--blue); background:#fff; padding:18px 20px 60px; border-radius:8px;}
+  body.page-edit .toolbar .note-tip{color:var(--blue-deep); font-weight:500;}
+
+  /* 速览卡片 */
+  .overview{display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:16px 0 22px;}
+  .card{border-radius:11px; padding:14px 16px; border-left:7px solid;}
+  .card h3{margin:0 0 6px; font-size:15px;}
+  .card .range{font-size:26px; font-weight:700; letter-spacing:.5px;}
+  .card .desc{font-size:12.5px; color:var(--muted); margin-top:4px;}
+  .card.first{border-color:var(--blue); background:var(--blue-lighter);}
+  .card.first .range{color:var(--blue-deep);}
+  .card.second{border-color:var(--red); background:var(--red-lighter);}
+  .card.second .range{color:var(--red-deep);}
+
+  h2.section{font-size:16px; margin:26px 0 10px; padding-left:10px; border-left:5px solid var(--blue); color:var(--blue-deep);}
+  .legend{display:flex; gap:14px; flex-wrap:wrap; font-size:12px; color:var(--muted); margin:4px 0 10px;}
+  .legend span{display:inline-flex; align-items:center; gap:5px;}
+  .chip{width:14px; height:14px; border-radius:3px; display:inline-block;}
+
+  table{border-collapse:collapse; width:100%; background:#fff; font-size:13px;
+    box-shadow:0 1px 3px rgba(0,0,0,.06); border-radius:9px; overflow:hidden;}
+  th,td{border:1px solid var(--line); padding:8px 10px; vertical-align:top; text-align:left;}
+  thead th{background:#eef2f6; color:var(--ink); font-weight:600; font-size:12.5px;}
+  .tier{width:78px; text-align:center; font-weight:700; color:#fff; font-size:12px; border-radius:4px; padding:3px 0;}
+  .tier.t1{background:var(--blue);} .tier.t1d{background:var(--blue-deep);}
+  .tier.t2{background:var(--red);} .tier.t3{background:var(--amber);}
+  .tier.t4{background:var(--teal);} .tier.t5{background:var(--green);}
+  .bar{width:6px;}
+  .bar.b1{background:var(--blue);} .bar.b1d{background:var(--blue-deep);}
+  .bar.b2{background:var(--red);} .bar.b3{background:var(--amber);}
+  .bar.b4{background:var(--teal);} .bar.b5{background:var(--green);}
+  .grp-first1 td{background:var(--blue-light);}
+  .grp-first2 td{background:var(--blue-lighter);}
+  .grp-first3 td{background:var(--blue-lighter);}
+  .grp-second td{background:var(--red-light);}
+  .grp-third td{background:var(--amber-light);}
+  .start{font-weight:700; white-space:nowrap;}
+  .start.s1{color:var(--blue-deep);} .start.s2{color:var(--red-deep);} .start.s3{color:var(--amber);}
+  ul.cond{margin:0; padding-left:18px;}
+  ul.cond li{margin:2px 0;}
+
+  .editable{background:#fffdf5; cursor:text; min-height:22px;}
+  .editable:focus{outline:2px solid var(--amber); background:#fffbe9;}
+  .editable:empty:before{content:attr(data-ph); color:#b9b09a; font-style:italic;}
+
+  /* 全表内容可编辑 */
+  .cedit{cursor:text;}
+  .cedit:hover{background:#f4f8fc; outline:1px dashed #bcd2e6;}
+  .cedit:focus{outline:2px solid var(--amber); background:#fffbe9; box-shadow:0 0 0 2px rgba(184,134,11,.18);}
+
+  /* 增量对照 */
+  .cmp td.c1{background:var(--blue-lighter);} .cmp td.c2{background:var(--red-lighter);}
+  .cmp th.c1{background:var(--blue-light);} .cmp th.c2{background:var(--red-light);}
+
+  /* 块 */
+  .block{border-radius:10px; padding:12px 16px; margin:10px 0; border:1px solid var(--line);}
+  .block h3{margin:0 0 8px; font-size:14.5px;}
+  .block.heavy{background:var(--amber-lighter); border-color:var(--amber);}
+  .block.heavy h3{color:var(--amber);}
+  .block.fine{background:var(--teal-light); border-color:var(--teal);}
+  .block.fine h3{color:var(--teal);}
+  .block.pro-yes{background:var(--green-lighter); border-color:var(--green);}
+  .block.pro-yes h3{color:var(--green);}
+  .block.pro-no{background:var(--red-lighter); border-color:var(--red);}
+  .block.pro-no h3{color:var(--red-deep);}
+  .block ul{margin:4px 0; padding-left:20px;}
+  .block li{margin:3px 0;}
+
+  /* 法条依据（刑法 / 司法解释） */
+  .block.law{background:#f4f1fb; border-color:#8a63c0; border-left:6px solid #8a63c0; page-break-inside:avoid;}
+  .block.law h3{color:#5a3e87;}
+  .block.law li b{color:#5a3e87;}
+  .law-src{display:inline-block; font-size:11px; font-weight:700; color:#fff; background:#8a63c0;
+    border-radius:4px; padding:1px 7px; margin-right:6px; vertical-align:middle;}
+
+  /* 构成要件 / 立案追诉 */
+  .block.const{background:#eef6f0; border-color:#3f8f5f; border-left:6px solid #3f8f5f; page-break-inside:avoid;}
+  .block.const h3{color:#27613f;}
+  .block.const li b{color:#27613f;}
+  .block.info{background:#eef3f8; border-color:#4a78b0; border-left:6px solid #4a78b0; page-break-inside:avoid;}
+  .block.info h3{color:#2f5688;}
+  .block.info li b{color:#2f5688;}
+  .tag-const{display:inline-block; font-size:11px; font-weight:700; color:#fff; background:#3f8f5f;
+    border-radius:4px; padding:1px 7px; margin-right:6px; vertical-align:middle;}
+  .tag-info{display:inline-block; font-size:11px; font-weight:700; color:#fff; background:#4a78b0;
+    border-radius:4px; padding:1px 7px; margin-right:6px; vertical-align:middle;}
+  /* 此罪彼罪界限表 */
+  .distTbl th.c1{background:#dceaf6;}
+  .distTbl th.c2{background:#e7eef6;}
+  .distTbl th.c3{background:#f0eaf6;}
+  .distTbl td{vertical-align:top;}
+
+  /* 估算器 */
+  .calc{background:#fff; border:1px solid var(--line); border-radius:11px; padding:16px;
+    box-shadow:0 1px 3px rgba(0,0,0,.06);}
+  .calc .row{display:flex; flex-wrap:wrap; gap:14px; margin:8px 0; align-items:center;}
+  .calc label{font-size:12.5px; color:var(--muted); min-width:96px;}
+  .calc input[type=number]{width:70px; padding:4px 6px; border:1px solid var(--line); border-radius:5px;}
+  .calc .chips button{margin:0 4px 4px 0;}
+  .chip-btn{border:1px solid var(--line); background:#fff; border-radius:20px; padding:4px 11px;
+    cursor:pointer; font-size:12px;}
+  .chip-btn:hover{background:var(--blue-lighter);}
+  .chip-btn.on{background:var(--blue); color:#fff; border-color:var(--blue);}
+  .result{margin-top:12px; padding:12px 16px; background:var(--blue-lighter); border-radius:9px;
+    font-size:15px; }
+  .result b{font-size:22px; color:var(--blue-deep);}
+  .disclaimer{font-size:12px; color:var(--muted); margin-top:8px;}
+
+  /* 量刑建议高亮块 */
+  .sugbox{margin-top:14px; padding:16px 18px; border-radius:12px; text-align:center;
+    background:linear-gradient(135deg,#e8f1fb,#dcebfa); border:1px solid #9cc2e6;}
+  .sug-label{font-size:13px; color:#3a5b80; font-weight:600; letter-spacing:.5px; margin-bottom:10px;}
+  .sugcols{display:flex; gap:12px; justify-content:center; align-items:stretch; flex-wrap:wrap;}
+  .sugcol{flex:1 1 0; min-width:150px; background:#fff; border-radius:10px; padding:10px 8px;
+    border:1px solid #c4d8ee;}
+  .sugcol.judge{border:2px solid #2f6fb0; box-shadow:0 2px 10px rgba(47,111,176,.18);}
+  .sugcol.high{opacity:.92;}
+  .sugcol .ct{font-size:12px; color:#4a6285; font-weight:600; line-height:1.4;}
+  .sugcol .cv{font-size:30px; font-weight:800; color:#15406e; line-height:1.2; margin:3px 0;}
+  .sugcol.judge .cv{color:#13355c;}
+  .sugcol .cp{font-size:11px; color:#7a8aaa;}
+  .sug-sub{font-size:13px; color:#4a6285; margin-top:12px;}
+  .sug-extra{font-size:13px; color:#5a6b7d; margin-top:8px; line-height:1.6; text-align:left;
+    display:inline-block; max-width:680px;}
+  .sug-extra .ok{color:#1a7a3a; font-weight:700;}
+  .sug-extra .no{color:#b03a2e; font-weight:700;}
+  .sug-extra .warn{color:#b8860b; font-weight:700;}
+
+  /* 参数覆盖面板 */
+  .params{border:1px dashed var(--line); border-radius:9px; padding:10px 14px; margin:6px 0 12px; background:#fbfcfe;}
+  .params>summary{cursor:pointer; font-size:13px; color:var(--blue-deep); font-weight:600; user-select:none;}
+  .params .pgrid{display:grid; grid-template-columns:1fr 1fr; gap:6px 26px; margin-top:10px;}
+  .params .pgroup{min-width:0;}
+  .params h4{margin:4px 0 6px; font-size:12.5px; color:var(--muted);}
+  .params .prow{display:flex; align-items:center; gap:5px; font-size:12px; margin:2px 0;}
+  .params .prow>span{flex:1;}
+  .params .prow i{color:var(--muted); font-style:normal;}
+  .params .prow input{width:52px; padding:3px 5px; border:1px solid var(--line); border-radius:5px;}
+  .params .pbtns{margin-top:8px; grid-column:1 / -1;}
+
+  /* 反向测算表 */
+  .rev-title{font-size:14px; font-weight:700; color:var(--blue-deep); margin:4px 0 8px;}
+  .revtable{width:100%; border-collapse:collapse; margin-top:10px; font-size:13px;}
+  .revtable th,.revtable td{border:1px solid var(--line); padding:6px 10px; text-align:left;}
+  .revtable th{background:#eef2f6; font-size:12.5px; font-weight:600;}
+  .revtable .rok td{background:var(--green-lighter);}
+  .revtable .rnok td{background:#fbeaea;}
+  .revtable tr.best td{outline:2px solid var(--blue); background:#eaf2fb;}
+
+  /* 常见量刑情节表 */
+  .cmnTbl td:nth-child(2){font-weight:700;text-align:center;white-space:nowrap;}
+  .cmnTbl .up{color:var(--green);} .cmnTbl .down{color:var(--red-deep);}
+  .cmnTbl td:nth-child(5){text-align:center;vertical-align:middle;white-space:nowrap;}
+  .cmnTbl .pcol{color:#8a96a0;}
+  .pval{width:58px;text-align:center;border:1px solid var(--line);border-radius:4px;padding:2px 3px;font-size:13px;background:#fff;}
+  .pct{font-size:12px;color:#b8860b;font-weight:600;}
+  /* 参数面板区间提示 */
+  .params .prow i.rng{color:#a8741b;font-style:normal;font-size:11px;margin-left:3px;}
+
+  @media print{
+    body{background:#fff;} .toolbar,.params,.row,.note-tip,[name=tier]{display:none;}
+    .calc{display:block;} .sugbox,.sugcols,.revtable{-webkit-print-color-adjust:exact; print-color-adjust:exact;}
+    table, .card, .block{box-shadow:none;} .editable{background:transparent;}
+    .wrap{max-width:100%;}
+  }
+
+  /* 实务案例参考（双列紧凑） */
+  .cases{display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:14px 0 6px;}
+  .case{border:1px solid #e5e9ec; border-radius:8px; padding:12px 14px; background:#fff; display:flex; flex-direction:column;}
+  .case .ctop{display:flex; justify-content:space-between; align-items:flex-start; gap:10px; margin-bottom:3px;}
+  .case .cname{font-size:14.5px; font-weight:700; color:var(--blue-deep); line-height:1.4;}
+  .case .csrc{font-size:10px; font-weight:600; color:#fff; border-radius:3px; padding:2px 6px; white-space:nowrap; flex-shrink:0; margin-top:2px;}
+  .case .csrc.sup{background:#c94a4a;} .case .csrc.pro{background:#3a9b8e;}
+  .case .cmeta{font-size:11.5px; color:#8a949b; margin-bottom:8px;}
+  .case h4{font-size:12px; margin:8px 0 2px; color:#4a5562; font-weight:600;}
+  .case p{margin:0 0 5px; font-size:12.5px; line-height:1.6; color:#3a444d;}
+  .case .note{font-size:11.5px; color:#6b7680; background:#f8f9fa; border-left:3px solid #d0d7dd; border-radius:0 6px 6px 0; padding:6px 10px; margin-top:8px;}
+  .case .note .lab{font-weight:600; color:#6b7680;}
+  .case .src{margin-top:8px; font-size:11.5px; color:#8a949b;}
+  .case .src a{color:var(--blue); text-decoration:none;}
+  .case .src a:hover{text-decoration:underline;}
+  @media(max-width:680px){.cases{grid-template-columns:1fr;}}
+
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>拒不履行信息网络安全管理义务罪 · 量刑指引表（可编辑）</h1>
+    <div class="sub">依据：刑法第286条之一；法释〔2019〕15号《关于办理非法利用信息网络、帮助信息网络犯罪活动等刑事案件适用法律若干问题的解释》（网络服务提供者不履行信息网络安全管理义务，经责令改正而拒不改正，致违法信息大量传播/用户信息泄露造成严重后果等即构罪）；无江西专门量刑起点细则，量刑起点参照刑法第286条之一法定刑幅度推演（非法定依据）。本罪按情节分1个量刑幅度法定刑（拘役 – 3年），法定最高3年。本省及国家暂无本罪专门量刑起点细则，故本表不预测量刑起点，仅列法定刑幅度与情节档位（详见"编制依据说明"）。</div>
+  </header>
+
+  <div class="toolbar">
+    <button class="btn" onclick="clearNotes()">恢复默认内容</button>
+    <button class="btn" onclick="window.print()">打印 / 导出 PDF</button>
+    <button class="btn owner-only" id="editBtn" onclick="togglePageEdit()">进入页面编辑模式</button>
+    <button class="btn owner-only" id="dlBtn" onclick="downloadEditedPage()" style="display:none;color:#1f4e79;font-weight:600">下载修改版 HTML</button>
+    <button class="btn owner-only" id="upBtn" onclick="uploadToSite()" style="color:#1a7f37;font-weight:600">上传到网站</button>
+    <span class="note-tip owner-only">【编辑者模式·仅你本人可见】点<b>进入页面编辑模式</b>直接改整页文字/表格，改完点<b>上传到网站</b>即可推送更新（需 GitHub Token，仅存本机浏览器）；也可<b>下载修改版 HTML</b>留存。普通访客看不到这些按钮，无法修改本网站。</span>
+  </div>
+
+  <!-- 编制依据声明 -->  <div style="margin:10px 0 6px;padding:10px 14px;border-left:4px solid #c0392b;background:#fdf3f2;border-radius:4px;font-size:13px;line-height:1.7;color:#7a2e2a;">
+    <b>⚠ 编制依据说明：</b>本页内容严格依据《中华人民共和国刑法》刑法第286条之一及法释〔2019〕15号《关于办理非法利用信息网络、帮助信息网络犯罪活动等刑事案件适用法律若干问题的解释》（网络服务提供者不履行信息网络安全管理义务，经责令改正而拒不改正，致违法信息大量传播/用户信息泄露造成严重后果等即构罪）；无江西专门量刑起点细则，量刑起点参照刑法第286条之一法定刑幅度推演（非法定依据）整理，并参照赣高法〔2022〕115号（通用量刑情节部分）。
+    <b>本省（江西）及国家目前尚未出台针对本罪的专门量刑起点指导意见</b>，故本页<b>不预测、不列示具体量刑起点</b>；凡属推演性质的内容（估算器起点、基准刑增量等）均已<b>标注为非法定依据</b>，仅供内部办案参考，<b>实际量刑以审理法院裁判为准</b>。
+  </div>
+  <!-- 速览 -->
+    <div class="overview">
+    <div class="card first">
+      <h3>第1量刑幅度</h3>
+      <div class="range">拘役 – 3年</div>
+      <div class="desc">基本犯</div>
+    </div>
+    </div>
+  <!-- 法条依据 -->  <h2 class="section" style="border-left-color:var(--teal)">〇、刑法与司法解释规定（定罪依据）</h2>
+  <p class="note-tip" style="margin:2px 0 12px;">本表量刑的前提是行为已构成<b>拒不履行信息网络安全管理义务罪</b>。以下列明定罪所依据的刑法条文与司法解释关键条款（条文以官方发布文本为准，可点击编辑、补充批注）。</p>
+    <div class="block law">
+    <h3><span class="law-src">刑法</span>第二百八十六条之一【拒不履行信息网络安全管理义务罪】</h3>
+    <ul>
+      <li>网络服务提供者不履行法律、行政法规规定的信息网络安全管理义务，经监管部门责令采取改正措施而拒不改正，有下列情形之一的，处三年以下有期徒刑、拘役或者管制，并处或者单处罚金：（一）致使违法信息大量传播的；</li>
+      <li>（二）致使用户信息泄露，造成严重后果的；</li>
+      <li>（三）致使刑事案件证据灭失，情节严重的；</li>
+      <li>（四）有其他严重情节的。</li>
+      <li>单位犯前款罪的，对单位判处罚金，并对其直接负责的主管人员和其他直接责任人员，依照前款的规定处罚。</li>
+    </ul>
+  </div>
+  <div class="block law">
+    <h3><span class="law-src">法释〔2019〕15号</span>"致使违法信息大量传播"等认定</h3>
+    <ul>
+      <li>致使传播违法视频文件二百个以上、违法信息数量达到规定标准，或致使用户信息泄露造成重大影响、刑事案件证据灭失影响定罪量刑等，认定为相应严重情形；</li>
+      <li>"经监管部门责令采取改正措施而拒不改正"是构罪前提。</li>
+    </ul>
+  </div>
+
+  <!-- 一、构成要件与罪与非罪 -->  <h2 class="section" style="border-left-color:var(--green)">一、构成要件与罪与非罪界限（定罪分析）</h2>
+  <p class="note-tip" style="margin:2px 0 12px;">量刑的前提是行为已构成本罪。本节先拆解<b>构成要件</b>，再列出实务中最常用的<b>出罪/界分点</b>。</p>
+    <div class="block const">
+    <h3><span class="tag-const">四要件</span>本罪的犯罪构成</h3>
+    <ul>
+      <li><b>客体</b>：信息网络安全管理秩序。</li>
+      <li><b>客观方面</b>：网络服务提供者不履行法律、行政法规规定的信息网络安全管理义务，经监管部门责令采取改正措施而拒不改正，致违法信息大量传播、用户信息泄露造成严重后果、刑事案件证据灭失情节严重或有其他严重情节。</li>
+      <li><b>主体</b>：网络服务提供者（含单位）。</li>
+      <li><b>主观方面</b>：故意（拒不改正）。</li>    </ul>
+  </div>
+  <div class="block const">
+    <h3><span class="tag-const">出罪</span>罪与非罪的界限 · 出罪抗辩点</h3>
+    <ul>
+      <li>①<b>法益</b>：本罪客体为信息网络安全管理秩序，行为未侵犯该客体或不具备法定构成要件的不构成本罪。</li>
+      <li>②<b>立案门槛</b>：是否达到立案追诉标准（二）门槛，是罪与非罪的重要分界。</li>
+      <li>③<b>单位犯罪</b>：单位构成本罪的，依法实行双罚（单位罚金＋直接责任人员自由刑）。</li>
+      <li>④<b>罪名界分</b>：与相近罪名（见本节"此罪与彼罪"）的区分，是实务常见争点。</li>
+    </ul>
+  </div>
+
+  <!-- 二、此罪与彼罪 -->  <h2 class="section" style="border-left-color:#6a5acd">二、此罪与彼罪的界限（竞合 / 区分）</h2>
+  <p class="note-tip" style="margin:2px 0 12px;">本罪常与下列犯罪混淆。下表列明<b>关键区分点</b>与<b>处理规则</b>。</p>
+  <table class="distTbl" id="distTbl">
+    <thead><tr><th class="c1">易混淆罪名</th><th class="c2">关键区分点</th><th class="c3">处理规则（竞合 / 定性）</th></tr></thead>
+    <tbody>
+            <tr><td class="cedit" data-key="d1">帮助信息网络犯罪活动罪（第287条之二）</td><td class="cedit" data-key="d1b">本罪为不履行安全管理义务且经责令拒不改正；后者为明知他人犯罪提供帮助</td><td class="cedit" data-key="d1c">行为与前提不同</td></tr>
+      <tr><td class="cedit" data-key="d2">非法利用信息网络罪（第287条之一）</td><td class="cedit" data-key="d2b">本罪是消极不作为（拒不改正）；后者是积极设立网站、发布信息</td><td class="cedit" data-key="d2c">作为方式不同</td></tr>
+
+    </tbody>
+  </table>
+  <!-- 三、立案追诉标准 / 管辖 / 时效 -->  <h2 class="section" style="border-left-color:var(--teal)">三、立案追诉标准、管辖与时效</h2>
+  <p class="note-tip" style="margin:2px 0 12px;">本节速查本罪作为公诉案件的立案门槛、管辖与追诉时效等程序性要点。</p>
+  <div class="block info">
+    <ul>
+            <li><b>案件性质</b>：公诉案件；自然人、单位均可构罪（双罚）。</li>
+      <li><b>立案追诉门槛</b>：依法释〔2019〕15号《关于办理非法利用信息网络、帮助信息网络犯罪活动等刑事案件适用法律若干问题的解释》（网络服务提供者不履行信息网络安全管理义务，经责令改正而拒不改正，致违法信息大量传播/用户信息泄露造成严重后果等即构罪）；无江西专门量刑起点细则，量刑起点参照刑法第286条之一法定刑幅度推演（非法定依据）——网络服务提供者经监管部门责令改正而拒不改正，致违法信息大量传播、用户信息泄露造成严重后果、刑事案件证据灭失情节严重等的，即应立案追诉（法释〔2019〕15号）。</li>
+      <li><b>管辖法院</b>：基层（公安网安管辖）人民法院一审（法定最高3年）。</li>
+      <li><b>追诉时效</b>：按法定最高刑，依刑法第87条确定追诉时效（最高刑≥10年为15年、≥5年为10年、其余5年）。</li>
+      <li><b>程序适用</b>：认罪认罚可从宽；退缴、退赔、补救可从宽。</li>
+      <li><b>认罪认罚从宽</b>：可减基准刑30%以下（总则）。</li>
+
+    </ul>
+  </div>
+  <!-- 量刑起点一览 -->  <h2 class="section">四、法定刑幅度与数额档位对照（定罪量刑区间）</h2>
+  <p class="note-tip" style="margin:2px 0 10px;">
+    <b>结构说明：</b>蓝色块＝<b>第一量刑幅度</b>（基本犯，法定最高 3年）
+    <b>⚠ 关于"量刑起点"：</b>本省（江西）及国家<b>尚未出台针对本罪的具体量刑起点指导意见</b>。因此本表<b>不预测、不列示量刑起点</b>，仅列《刑法》刑法第286条之一明确规定的<b>法定刑幅度</b>与<b>情节档位</b>；具体量刑起点由审理法院在法定刑幅度内根据个案裁量，本页不替代裁判。
+  </p>
+  <div class="legend">
+<span><i class="chip" style="background:var(--blue)"></i>第一量刑幅度</span>
+<span><i class="chip" style="background:#b9b09a"></i>批注（可编辑）</span>
+  </div>
+  <table id="startTbl">
+    <thead><tr><th style="width:72px">幅度档</th><th style="width:120px">行为类型</th><th>具体情形（情节 / 目的）</th><th style="width:160px">法定刑幅度（依据）</th><th style="width:200px">✎ 我的批注</th></tr></thead>
+    <tbody>
+            <tr class="grp-first1"><td><span class="tier t1d">第一幅度</span></td><td>拒不履行网安义务</td><td>网络服务提供者经责令改正拒不改正，致违法信息大量传播等严重情形（刑法第286条之一）</td><td class="start s1">三年以下有期徒刑、拘役或者管制，并处或者单处罚金</td><td class="editable" data-ph="点击添加批注" contenteditable="true" data-key="r1"></td></tr>
+    </tbody>
+  </table>
+  <!-- 基准刑增量 -->  <h2 class="section">五、基准刑增量（推演参考，非法定依据）</h2>
+  <p class="note-tip" style="margin:2px 0 8px;">⚠ <b>本节为推演参考，非法定量刑依据。</b>本省（江西）及国家<b>无本罪专门量刑增量细则</b>，下表增率并非司法解释或文件规定，仅为内部估算思路模板；实务中基准刑如何随情节累加，<b>以审理法院裁判为准</b>。如需使用，请在本表或第十项估算器结合个案自行设定，勿作为依据引用。</p>
+  <table class="cmp">
+    <thead><tr><th style="width:40px">项</th><th class="c1">基准刑增量项（按幅度档）</th><th class="c2">增率（无专门细则，自行设定）</th></tr></thead>
+    <tbody>
+            <tr data-tier="1" data-f="f_ring" data-pmin="p_ring" data-pmax="p_ring"><td>①</td><td class="c1">严重情形（信息传播/信息泄露/证据灭失）每+1项</td><td class="c2">＋（非法定，按月自填）</td></tr>
+    </tbody>
+  </table>
+  <div class="block info" style="margin-top:12px">
+    <h3>其他影响基准刑的事实要素（节选，可编辑补充）</h3>
+    <ul>
+            <li>危害后果越重、拒不改正越顽固，刑越重；</li>
+      <li>及时整改、消除影响从宽。</li>
+
+    </ul>
+  </div>
+  <!-- 从重情节 -->  <h2 class="section">六、从重处罚情节（调节基准刑）</h2>
+  <div class="block heavy">
+    <h3>⚠ 从重调节</h3>
+    <li><b>可增基准刑 20% 以下</b>：<ul><li>（1）致违法信息大范围传播；</li><li>（2）致大量用户信息泄露、造成严重后果；</li><li>（3）致重大刑事案件证据灭失；</li><li>（4）多次被责令仍拒不改正；</li></ul></li><li><b>从宽</b>：初犯、认罪认罚、主动消除影响、取得谅解、退缴违法所得的从宽。</li>
+  </div>
+  <!-- 常见量刑情节 -->
+  <h2 class="section" style="border-left-color:var(--amber)">七、常见量刑情节的适用（通用从宽 / 从重 · 赣高法〔2022〕115号「三、常见量刑情节的适用」原文）</h2>
+  <p class="note-tip" style="margin:2px 0 10px;">
+    以下为<b>通用量刑情节</b>的调节比例，逐条照录赣高法〔2022〕115号「三、常见量刑情节的适用」（一）—（二十二）。
+    对黑恶势力犯罪、严重暴力犯罪、毒品犯罪、性侵未成年人犯罪等危害严重的犯罪，在确定从宽幅度时<b>应当从严掌握</b>；对犯罪情节较轻的犯罪，应当充分体现从宽。确定比例时应综合平衡调节幅度与实际增减刑罚量的关系，确保罪责刑相适应。
+    本表为"比例区间"（如自首主动投案＝减少基准刑的 <b>40%以下</b>，并非固定40%）；最右「设置比例」列是区间的可调代表值（默认取区间上限），<b>在此修改后，第十项勾选对应情节即自动套用该比例</b>，无需再翻原文件或去参数面板。
+  </p>
+  <table class="cmnTbl" id="cmnTbl">
+    <thead>
+      <tr><th style="width:158px">情节</th><th style="width:46px">性质</th><th style="width:300px">调节比例区间（赣高法〔2022〕115号原文）</th><th>适用要点 / 备注</th><th style="width:152px">设置比例(%)</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>（一）未成年人犯罪</td><td class="up">从宽</td><td>已满12不满16：减30%–60%<br>已满16不满18：减10%–50%<br>法定刑3年以下+特定情形+认罪悔罪→可免除处罚（刑37）<br>跨18周岁：前三条定幅度；同种犯罪适当从宽，减刑量不超对应刑罚量<br>同案多未成年人：均衡，因年龄刑期差异不宜过大</td><td>综合认知能力、动机目的、年龄、初/偶犯、悔罪、成长经历与一贯表现</td><td class="pcol">12–16岁：<input type="number" id="p_juv1" data-def="60" value="60" class="pval"><br>16–18岁：<input type="number" id="p_juv2" data-def="50" value="50" class="pval"></td></tr>
+      <tr><td>（二）老年人犯罪</td><td class="up">从宽</td><td>75周岁以上：减40%以下；过失犯罪减20%–50%<br>65周岁以上不满75周岁：减10%以下；过失犯罪减20%以下<br>跨年龄段：前二条定幅度；同种犯罪适当从宽，减刑量不超对应刑罚量</td><td>综合犯罪性质、情节、后果、人身危险性与再犯可能</td><td class="pcol">65–75：<input type="number" id="p_elder65" data-def="10" value="10" class="pval"><br>75+：<input type="number" id="p_elder75" data-def="40" value="40" class="pval"></td></tr>
+      <tr><td>（三）未完全丧失辨认/控制能力的精神病人犯罪</td><td class="up">从宽</td><td>减40%以下</td><td>综合犯罪性质及精神障碍对辨认、控制能力的影响</td><td class="pcol"><input type="number" id="p_psy" data-def="40" value="40" class="pval"></td></tr>
+      <tr><td>（四）又聋又哑的人或者盲人犯罪</td><td class="up">从宽</td><td>减50%以下；情节较轻减50%以上或者依法免除处罚</td><td>综合性质、情节、后果、控制能力、动机目的、认知、初犯、悔罪、一贯表现</td><td class="pcol"><input type="number" id="p_deaf" data-def="50" value="50" class="pval"></td></tr>
+      <tr><td>（五）防卫过当 / 避险过当</td><td class="up">从宽</td><td>防卫过当：减60%以上或者依法免除处罚<br>避险过当：减50%以上或者依法免除处罚</td><td>综合不法侵害/危险来源性质程度、过当程度原因、损害大小</td><td class="pcol">防卫过当：<input type="number" id="p_defn" data-def="60" value="60" class="pval"><br>避险过当：<input type="number" id="p_nec" data-def="50" value="50" class="pval"></td></tr>
+      <tr><td>（六）预备犯 / 未遂犯 / 中止犯</td><td class="up">从宽</td><td>预备犯：减50%以下；犯罪较轻减50%以上或者免除<br>未遂犯：减50%以下<br>中止犯：造成损害减30%–40%；损害较轻减40%–60%；无损害免除</td><td>比照既遂犯；综合实行程度、损害大小、未得逞原因、中止动机阶段等</td><td class="pcol">预备：<input type="number" id="p_prep" data-def="50" value="50" class="pval"><br>未遂：<input type="number" id="p_att" data-def="50" value="50" class="pval"><br>中止·损：<input type="number" id="p_dis1" data-def="40" value="40" class="pval"><br>中止·轻：<input type="number" id="p_dis2" data-def="60" value="60" class="pval"></td></tr>
+      <tr><td>（七）从犯 / 胁从犯 / 教唆犯</td><td class="up">从宽</td><td>从犯：减20%–50%；犯罪较轻减50%以上或者免除<br>胁从犯：减40%–60%；犯罪较轻减60%以上或者免除<br>被教唆未犯被教唆之罪：减50%以下<br>教唆不满18周岁：加10%–30%<br>教唆限制行为能力精神病人：加30%以下</td><td>综合在共同犯罪中的地位、作用、被教唆对象及是否实施实行行为</td><td class="pcol">从犯：<input type="number" id="p_acc" data-def="50" value="50" class="pval"><br>胁从：<input type="number" id="p_coer" data-def="60" value="60" class="pval"><br>教唆未成年+：<input type="number" id="p_inst1" data-def="30" value="30" class="pval"><br>教唆精障+：<input type="number" id="p_inst2" data-def="30" value="30" class="pval"></td></tr>
+      <tr><td>（八）自首</td><td class="up">从宽</td><td>①未被发觉主动直接投案：减40%以下<br>②已发觉未受调查谈话/讯问、未宣布措施主动投案：减35%以下<br>③已发觉主动投案：减30%以下<br>④如实供述未掌握不同种罪行（以自首论）：减30%以下<br>⑤亲友规劝陪同/送去投案：减30%以下<br>⑥形迹可疑盘问教育后主动交代：减30%以下<br>⑦脱逃/抗拒后再投案、一审前如实供述：减20%以下<br>⑧其他自首：减20%以下<br>⑨犯罪较轻自首：减40%以上或者依法免除处罚</td><td>综合动机、时间、方式、罪行轻重、供述程度、悔罪；恶意利用自首规避法律除外</td><td class="pcol"><input type="number" id="p_self" data-def="40" value="40" class="pval"></td></tr>
+      <tr><td>（九）坦白</td><td class="up">从宽</td><td>如实供述自己+同案犯：减20%以下<br>供述未掌握同种较重罪行：减10%–30%<br>避免特别严重后果发生：减30%–50%</td><td>综合阶段、程度、罪行轻重、悔罪</td><td class="pcol"><input type="number" id="p_conf" data-def="20" value="20" class="pval"></td></tr>
+      <tr><td>（十）当庭自愿认罪</td><td class="up">从宽</td><td>减10%以下（依法认定自首、坦白或者认罪认罚的除外）</td><td>综合犯罪性质、罪行轻重、认罪程度、悔罪表现</td><td class="pcol"><input type="number" id="p_court" data-def="10" value="10" class="pval"></td></tr>
+      <tr><td>（十一）立功</td><td class="up">从宽</td><td>一般立功：减20%以下<br>重大立功：减20%–50%；犯罪较轻减50%以上或者免除</td><td>综合立功大小、次数、内容、来源、效果、罪行轻重</td><td class="pcol">一般：<input type="number" id="p_merit1" data-def="20" value="20" class="pval"><br>重大：<input type="number" id="p_merit2" data-def="50" value="50" class="pval"></td></tr>
+      <tr><td>（十二）退赃、退赔</td><td class="up">从宽</td><td>积极配合追赃退赃+积极退赔+未造成损失：减30%以下；损失较小减20%以下<br>配合追赃退赃+未造成损失：减20%以下；损失较小减10%以下<br>配合追缴赃款未造成损失：减20%以下<br>共同犯罪：综合全案+实际参与数额/损失/分赃，减30%以下<br>抢劫等严重危害社会治安：从严，减不超10%且不超1年</td><td>综合犯罪性质、弥补程度、数额、主动程度</td><td class="pcol">追赃退赔：<input type="number" id="p_rest1" data-def="30" value="30" class="pval"><br>追赃未损：<input type="number" id="p_rest2" data-def="20" value="20" class="pval"><br>追缴未损：<input type="number" id="p_rest3" data-def="20" value="20" class="pval"><br>共同犯：<input type="number" id="p_rest4" data-def="30" value="30" class="pval"><br>抢劫从严≤10%：<input type="number" id="p_rest5" data-def="10" value="10" class="pval"></td></tr>
+      <tr><td>（十三）积极赔偿并取得谅解</td><td class="up">从宽</td><td>赔偿+谅解：减40%以下<br>赔偿未谅解：减30%以下<br>未赔偿但谅解：减20%以下<br>抢劫、强奸等严重危害社会治安：从严掌握</td><td>综合犯罪性质、赔偿合理性、能力、认罪悔罪</td><td class="pcol"><input type="number" id="p_comp" data-def="40" value="40" class="pval"></td></tr>
+      <tr><td>（十四）刑事和解（刑诉法第288条）</td><td class="up">从宽</td><td>减50%以下；犯罪较轻减50%以上或者依法免除处罚</td><td>综合犯罪性质、赔偿数额、赔礼道歉、真诚悔罪</td><td class="pcol"><input type="number" id="p_set" data-def="50" value="50" class="pval"></td></tr>
+      <tr><td>（十五）羁押期间表现好</td><td class="up">从宽</td><td>减10%以下</td><td>—</td><td class="pcol"><input type="number" id="p_det" data-def="10" value="10" class="pval"></td></tr>
+      <tr><td>（十六）认罪认罚</td><td class="up">从宽</td><td>签署具结+同意量刑建议：减30%以下（按阶段）<br>同时具自首/重大坦白/退赃退赔/赔偿谅解/刑事和解：减60%以下；犯罪较轻减60%以上或者免除<br>与自首、坦白、当庭认罪、退赃退赔、赔偿谅解、刑事和解、羁押表现好不作重复评价</td><td>综合犯罪性质、罪行轻重、阶段、程度、价值、悔罪</td><td class="pcol"><input type="number" id="p_plea" data-def="30" value="30" class="pval"></td></tr>
+      <tr><td>（十七）犯罪后积极救助被害人</td><td class="up">从宽</td><td>减25%以下（系行政法定义务除外）</td><td>综合犯罪性质、救助效果、人身损害后果</td><td class="pcol"><input type="number" id="p_rescue" data-def="25" value="25" class="pval"></td></tr>
+      <tr><td>（十八）累犯</td><td class="down">从重</td><td>加10%–40%（一般不少于3个月）</td><td>综合前后罪性质、执行完毕至再犯时间、前后罪轻重；依法不适用缓刑</td><td class="pcol"><input type="number" id="p_recid" data-def="30" value="30" class="pval"></td></tr>
+      <tr><td>（十九）前科</td><td class="down">从重</td><td>加10%以下（过失犯罪和未成年人犯罪除外）；已适用累犯不再适用本条</td><td>综合前科性质、间隔、次数、处罚轻重</td><td class="pcol"><input type="number" id="p_prior" data-def="10" value="10" class="pval"></td></tr>
+      <tr><td>（二十）犯罪对象为弱势群体</td><td class="down">从重</td><td>加20%以下</td><td>未成年人、老年人、残疾人、孕妇等；综合犯罪性质、严重程度</td><td class="pcol"><input type="number" id="p_weak" data-def="20" value="20" class="pval"></td></tr>
+      <tr><td>（二十一）重大灾害/疫情防控期间故意犯罪</td><td class="down">从重</td><td>加20%以下</td><td>重大自然灾害、预防控制突发传染病疫情等；按案件具体情况</td><td class="pcol"><input type="number" id="p_disaster" data-def="20" value="20" class="pval"></td></tr>
+      <tr><td>（二十二）调节方法冲突处理</td><td>规则</td><td>"常见量刑情节"的调节方法在"具体常见犯罪量刑"有特殊规定的，优先适用特殊规定，一般不重复调节基准刑比例</td><td>特殊规定优先</td><td class="pcol">—</td></tr>
+    </tbody>
+  </table>
+
+  <!-- 罚金 -->  <h2 class="section">八、罚金</h2>
+  <div class="block fine">
+    <h3>罚金幅度（刑法第286条之一）</h3>
+    <ul>
+            <li>本罪：本罪：并处或单处罚金（第一档可单处罚金）；单位犯本罪双罚。</li>
+      <li>单位犯本罪，对单位判处罚金，并对直接负责的主管人员和其他直接责任人员处自由刑（双罚）。</li>
+      <li>罚金/没收财产具体数额由法院依法裁量，综合犯罪数额、情节等。</li>
+
+    </ul>
+  </div>
+  <!-- 缓刑 -->  <h2 class="section">九、缓刑适用</h2>
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px;">
+    <div class="block pro-yes">
+      <h3>✓ 一般可以适用缓刑</h3>
+      <ul>
+              <li>①及时部分整改、危害较小；</li>
+      <li>②初犯、认罪认罚、消除影响；</li>
+      <li>③未造成重大后果；</li>
+      <li>④犯罪情节较轻（本罪3年以下）。</li>
+
+      </ul>
+    </div>
+    <div class="block pro-no">
+      <h3>✕ 一般不适用缓刑</h3>
+      <ul>
+              <li>①致违法信息大范围传播；</li>
+      <li>②致大量用户信息泄露、后果严重；</li>
+      <li>③致重大案件证据灭失；</li>
+      <li>④多次拒不改正。</li>
+
+      </ul>
+    </div>
+  </div>
+  <!-- 估算器 -->
+  <h2 class="section">十、情景 → 刑期估算器（附量刑建议，辅助，非裁判依据）</h2>
+  <p class="note-tip" style="margin:2px 0 10px;">⚠ <b>重要：</b>本省（江西）及国家<b>无本罪专门量刑起点与增量细则</b>，本估算器的"量刑起点""增率""比例"等数值<b>均为内部推演基准，非法定依据</b>。其中起点默认取各幅度<b>法定最低刑</b>，增率/比例可由你依个案设定。本工具仅供办案思路推演，<b>实际量刑以审理法院裁判为准</b>，请勿作为依据对外引用。</p>
+  <div class="calc">
+    <details class="params" id="calcParams">
+      <summary>⚙ 计算参数覆盖（默认＝赣高法〔2022〕115号，修改后即时生效）</summary>
+      <div class="pgrid">
+        <div class="pgroup">
+          <h4>基准刑增量（增率，可调）</h4>
+                    <div class="prow"><span>严重情形（信息传播/信息泄露/证据灭失）每+1项</span><input type="number" id="p_ring" data-def="4" value="4"><span>月</span></div>
+        </div>
+        <div class="pgroup">
+          <h4>本罪特定从重比例（比例值，可调）</h4>
+          <div class="prow"><span>本罪·特定从重(信息大量传播/用户信息泄露/证据灭失/多次拒改)<i class="rng">30%以下</i></span><input type="number" id="p_d_spec" data-def="20" value="20"></div>
+          <div class="prow" style="font-size:12px;color:#8a96a0;">（通用从重情节见下方「通用情节·从重」；通用情节比例见第七项「设置比例」列，在此处修改即时生效）</div>
+        </div>
+        <div class="pgroup">
+          <h4>量刑建议取点（占区间比例 %，可调）</h4>
+          <div class="prow"><span>偏轻（检察院建议）</span><input type="number" id="p_low" data-def="33" value="33"></div>
+          <div class="prow"><span>中肯（法院宣告）</span><input type="number" id="p_mid" data-def="50" value="50"></div>
+          <div class="prow"><span>偏重（情形参考）</span><input type="number" id="p_high" data-def="67" value="67"></div>
+        </div>
+      </div>
+      <div class="pbtns"><button type="button" class="btn" onclick="resetParams()">恢复默认参数</button></div>
+    </details>
+    <div class="row">
+      <label>量刑幅度</label>
+            <label><input type="radio" name="tier" value="1" checked> 第1幅度·基本犯（法定上限 3年）</label>
+    </div>
+    <div class="row">
+      <label>量刑起点（推演基准）</label>
+      <span class="chips" id="startChips">
+                <button type="button" class="chip-btn" data-min="1" data-max="36" data-tier="1">拘役 – 3年（第1幅度法定刑）</button>
+      </span>
+      <span class="note-tip">⚠ 本省/国家无本罪专门量刑起点细则，上方按钮<b>默认取法定最低刑为推演基准（非法定量刑起点）</b>；实际量刑起点由法院在法定刑幅度内裁量。手动输入（月）：下限<input type="number" id="sMin" style="width:56px" value="1"> 上限<input type="number" id="sMax" style="width:56px" value="36"></span>
+    </div>
+    <div class="row">
+      <label>基准刑增量</label>
+            严重情形（信息传播/信息泄露/证据灭失）每+1项 <input type="number" id="f_ring" value="0" min="0" style="width:60px"> <span class="note-tip unit">（勾选）</span>
+    </div>
+    <div class="row">
+      <label></label>
+      <span class="note-tip" style="margin-left:8px">事实数值在此直接填写；增率为推演参考（无专门细则，非法定），可在上方「⚙ 计算参数覆盖」面板自行设定。</span>
+    </div>
+    <div class="row">
+      <label>本罪特定从重</label>
+      <span class="chips" id="specHeavy">
+        <label title="本罪特定从重（比例见参数面板「本罪特定从重」）"><input type="checkbox" data-param="p_d_spec"> 特定情形(信息大量传播/用户信息泄露/证据灭失/多次拒改) +20%</label>
+      </span>
+    </div>
+    <div class="row">
+      <label>通用情节·从轻</label>
+      <span style="font-size:12px;color:#b8860b;display:block;margin-bottom:3px;">⚠ 分组取大 / 叠加规则（与赣高法115号「三、常见量刑情节的适用」逐条对应）：<b>态度类</b>（自首/坦白/当庭认罪/认罪认罚）取最大；<b>赔偿退赃类</b>（赔偿谅解/刑事和解/退赃各档）取最大；<b>身份能力类</b>（未成年/老年/精神病人/聋哑盲人）取最大；<b>法定减免类</b>（防卫/避险过当、预备/未遂/中止、从犯/胁从、立功、羁押表现、救助）可叠加；<b>从重类</b>（累犯/前科/教唆未成年·精障+/弱势群体/灾害）可叠加。<b>总减幅封顶65%</b>。勾选项比例＝第七项「设置比例」列的值，改第七项即时生效。</span>
+      <span class="chips" id="genUp">
+        <span class="gh" style="flex-basis:100%;font-weight:700;color:#3a4a57;margin:4px 0 2px;">身份 / 能力（取最大）</span>
+        <label title="身份能力类·取最大（比例见第七项设置）"><input type="checkbox" data-param="p_juv1" data-grp="C"> 未成年·12–16岁<span class="pct"></span></label>
+        <label title="身份能力类·取最大（比例见第七项设置）"><input type="checkbox" data-param="p_juv2" data-grp="C"> 未成年·16–18岁<span class="pct"></span></label>
+        <label title="身份能力类·取最大（比例见第七项设置）"><input type="checkbox" data-param="p_elder65" data-grp="C"> 老年·65–75<span class="pct"></span></label>
+        <label title="身份能力类·取最大（比例见第七项设置）"><input type="checkbox" data-param="p_elder75" data-grp="C"> 老年·75+<span class="pct"></span></label>
+        <label title="身份能力类·取最大（比例见第七项设置）"><input type="checkbox" data-param="p_psy" data-grp="C"> 精神病人(限制能力)<span class="pct"></span></label>
+        <label title="身份能力类·取最大（比例见第七项设置）"><input type="checkbox" data-param="p_deaf" data-grp="C"> 聋哑/盲人<span class="pct"></span></label>
+
+        <span class="gh" style="flex-basis:100%;font-weight:700;color:#3a4a57;margin:4px 0 2px;">犯罪形态 / 法定减免（可叠加）</span>
+        <label title="法定减免类·可叠加（比例见第七项设置）"><input type="checkbox" data-param="p_defn" data-grp="D"> 防卫过当<span class="pct"></span></label>
+        <label title="法定减免类·可叠加（比例见第七项设置）"><input type="checkbox" data-param="p_nec" data-grp="D"> 避险过当<span class="pct"></span></label>
+        <label title="法定减免类·可叠加（比例见第七项设置）"><input type="checkbox" data-param="p_prep" data-grp="D"> 预备犯<span class="pct"></span></label>
+        <label title="法定减免类·可叠加（比例见第七项设置）"><input type="checkbox" data-param="p_att" data-grp="D"> 未遂犯<span class="pct"></span></label>
+        <label title="法定减免类·可叠加（比例见第七项设置）"><input type="checkbox" data-param="p_dis1" data-grp="D"> 中止·造成损害<span class="pct"></span></label>
+        <label title="法定减免类·可叠加（比例见第七项设置）"><input type="checkbox" data-param="p_dis2" data-grp="D"> 中止·损害较轻<span class="pct"></span></label>
+        <label title="法定减免类·可叠加（比例见第七项设置）"><input type="checkbox" data-param="p_acc" data-grp="D"> 从犯<span class="pct"></span></label>
+        <label title="法定减免类·可叠加（比例见第七项设置）"><input type="checkbox" data-param="p_coer" data-grp="D"> 胁从犯<span class="pct"></span></label>
+        <label title="法定减免类·可叠加（比例见第七项设置）"><input type="checkbox" data-param="p_merit1" data-grp="D"> 立功·一般<span class="pct"></span></label>
+        <label title="法定减免类·可叠加（比例见第七项设置）"><input type="checkbox" data-param="p_merit2" data-grp="D"> 立功·重大<span class="pct"></span></label>
+        <label title="法定减免类·可叠加（比例见第七项设置）"><input type="checkbox" data-param="p_det" data-grp="D"> 羁押表现好<span class="pct"></span></label>
+        <label title="法定减免类·可叠加（比例见第七项设置）"><input type="checkbox" data-param="p_rescue" data-grp="D"> 积极救助<span class="pct"></span></label>
+
+        <span class="gh" style="flex-basis:100%;font-weight:700;color:#3a4a57;margin:4px 0 2px;">态度类（取最大）</span>
+        <label title="态度类·取最大（比例见第七项设置）"><input type="checkbox" data-param="p_self" data-grp="A"> 自首<span class="pct"></span></label>
+        <label title="态度类·取最大（比例见第七项设置）"><input type="checkbox" data-param="p_conf" data-grp="A"> 坦白<span class="pct"></span></label>
+        <label title="态度类·取最大（比例见第七项设置）"><input type="checkbox" data-param="p_court" data-grp="A"> 当庭认罪<span class="pct"></span></label>
+        <label title="态度类·取最大（比例见第七项设置）"><input type="checkbox" data-param="p_plea" data-grp="A"> 认罪认罚<span class="pct"></span></label>
+
+        <span class="gh" style="flex-basis:100%;font-weight:700;color:#3a4a57;margin:4px 0 2px;">赔偿 / 退赃（取最大）</span>
+        <label title="赔偿退赃类·取最大（比例见第七项设置）"><input type="checkbox" data-param="p_comp" data-grp="B"> 赔偿谅解<span class="pct"></span></label>
+        <label title="赔偿退赃类·取最大（比例见第七项设置）"><input type="checkbox" data-param="p_set" data-grp="B"> 刑事和解<span class="pct"></span></label>
+        <label title="赔偿退赃类·取最大（比例见第七项设置）"><input type="checkbox" data-param="p_rest1" data-grp="B"> 退赃·追赃退赔<span class="pct"></span></label>
+        <label title="赔偿退赃类·取最大（比例见第七项设置）"><input type="checkbox" data-param="p_rest2" data-grp="B"> 退赃·追赃未损<span class="pct"></span></label>
+        <label title="赔偿退赃类·取最大（比例见第七项设置）"><input type="checkbox" data-param="p_rest3" data-grp="B"> 退赃·追缴未损<span class="pct"></span></label>
+        <label title="赔偿退赃类·取最大（比例见第七项设置）"><input type="checkbox" data-param="p_rest4" data-grp="B"> 退赃·共同犯<span class="pct"></span></label>
+        <label title="赔偿退赃类·取最大（比例见第七项设置）"><input type="checkbox" data-param="p_rest5" data-grp="B"> 退赃·抢劫从严≤10<span class="pct"></span></label>
+      </span>
+    </div>
+    <div class="row">
+      <label>通用情节·从重</label>
+      <span class="chips" id="genDown">
+        <span class="gh" style="flex-basis:100%;font-weight:700;color:#a23b3b;margin:4px 0 2px;">从重（可叠加）</span>
+        <label><input type="checkbox" data-param="p_recid"> 累犯<span class="pct"></span></label>
+        <label><input type="checkbox" data-param="p_prior"> 前科<span class="pct"></span></label>
+        <label><input type="checkbox" data-param="p_inst1"> 教唆未成年+(重)<span class="pct"></span></label>
+        <label><input type="checkbox" data-param="p_inst2"> 教唆精障+(重)<span class="pct"></span></label>
+        <label><input type="checkbox" data-param="p_weak"> 弱势群体对象<span class="pct"></span></label>
+        <label><input type="checkbox" data-param="p_disaster"> 灾害/疫情期间<span class="pct"></span></label>
+      </span>
+      <span class="note-tip">比例区间见上方「七、常见量刑情节的适用」（赣高法〔2022〕115号「三、常见量刑情节的适用」原文）；累犯一般不少于3个月；自首/坦白/认罪认罚等原则上不重复评价，请择一或谨慎勾选。</span>
+    </div>
+    <div class="row">
+      <span class="note-tip">结果以三栏对比呈现：①<b>认罪认罚后·检察院建议刑</b>（按"偏轻"取点）②<b>法院最终宣告刑</b>（按"中肯"取点）③<b>偏重情形参考</b>（按"偏重"取点）。各取点比例可在上方"计算参数覆盖"面板调整。</span>
+    </div>
+    <div class="row">
+      <button class="btn" onclick="calc()">估算刑期区间</button>
+    </div>
+    <div class="result" id="out">点击"估算刑期区间"生成结果。</div>
+    <div class="disclaimer">说明：本罪特定从重按刑法刑法第286条之一及上述第六项；通用情节比例按赣高法〔2022〕115号「三、常见量刑情节的适用」（与上方第七项「设置比例」列一致）。估算分组取大/叠加：态度类（自首/坦白/当庭认罪/认罪认罚）取最大，赔偿退赃类（赔偿谅解/刑事和解/退赃各档）取最大，身份能力类（未成年/老年/精神病人/聋哑盲人）取最大，法定减免类（防卫/避险过当、预备/未遂/中止、从犯/胁从、立功、羁押表现、救助）可叠加，从重类（累犯/前科/教唆未成年·精障+/弱势群体/灾害）可叠加；总减幅封顶65%（机械累加，未处理个案裁量）。"量刑建议"三栏为按参数面板中可调的取点比例（偏轻33%／中肯50%／偏重67%，默认）从测算区间取出的点估计，仅供律师评估检方、法官可能给出的刑期、做到心里有数，不作裁判依据；宣告刑受法定上限（法定上限3年）约束，且累犯一般不少于3个月。缓刑提示仅为初步筛查，最终以法院认定为准。</div>
+
+    <hr style="margin:20px 0; border:none; border-top:1px dashed var(--line);">
+    <div class="rev-title">↩ 反向测算：输入目标刑期 → 反推需要哪些情节 / 减多少（沿用上方起点·增量·本罪特定从重设定）</div>
+    <div class="row">
+      <label>目标刑期</label>
+      年<input type="number" id="rYear" value="1" min="0" style="width:50px"> 月<input type="number" id="rMonth" value="0" min="0" style="width:50px">
+      <span class="note-tip">填你期望争取到的刑期（如实刑1年→1年；"判1缓2"→1年）。工具反推：在现有事实下，需叠加哪些从轻情节、减多少才能达到，并列出可行组合。</span>
+    </div>
+    <div class="row">
+      <button class="btn" onclick="reverseCalc()">反推情节需求</button>
+      <span class="note-tip">组合规则同前：态度类取最大、赔偿退赃类取最大、身份能力类取最大、法定减免类可叠加、从重类可叠加；总减幅封顶65%。</span>
+    </div>
+    <div class="result" id="revout">点击"反推情节需求"生成结果。</div>
+  </div>
+
+    <p class="disclaimer" style="margin-top:24px;">
+    本表依据《刑法》刑法第286条之一及法释〔2019〕15号《关于办理非法利用信息网络、帮助信息网络犯罪活动等刑事案件适用法律若干问题的解释》（网络服务提供者不履行信息网络安全管理义务，经责令改正而拒不改正，致违法信息大量传播/用户信息泄露造成严重后果等即构罪）；无江西专门量刑起点细则，量刑起点参照刑法第286条之一法定刑幅度推演（非法定依据）整理，仅供办案参考。正式引用请以官方发布文本为准。所有修改内容仅保存在本地浏览器，清除浏览器数据会丢失。
+    </p>
+  <h2 class="section">实务参考案例</h2>
+  <div class="legend" style="margin-top:-2px;">
+    <span>案例选自<b>最高人民法院</b>、<b>最高人民检察院</b>公开发布的典型案例（官方来源可核实），可在每张卡片「参考要点」处直接批注。</span>
+  </div>
+  <div class="note-tip" style="padding:14px 16px;border-left:4px solid #b8860b;background:#fffaf0;border-radius:4px;line-height:1.7;">
+    <b>暂无足够权威案例收录：</b>经检索，未找到<b>最高人民法院、最高人民检察院</b>公开发布且官方 URL 可核实的本罪专属典型案例（公开渠道多为律所评析、案例要览、地方法院新闻等非最高法/最高检官方来源）。本区暂不列案例，以免引用未经核实的材料；如后续最高法/最高检发布相关典型案例，将补充于此。
+  </div>
+</div>
+
+  <!-- CAPS_OVERRIDE -->
+<script>
+window.SENTENCE_CAPS = {1:36};
+  // ---- 全表内容可编辑 + 自动保存 ----
+  const KEY = "sec1_c21_286yi";
+  const ORIG = {};   // 默认内容快照（用于"恢复默认"）
+
+  // 自动把指定单元格/列表项变为可编辑，并生成稳定 data-key
+  function makeEditable(selector, prefix){
+    document.querySelectorAll(selector).forEach((el, i)=>{
+      if(el.hasAttribute('data-key')) return;          // 已有 key（如批注列）跳过
+      el.setAttribute('data-key', prefix + i);
+      el.setAttribute('contenteditable', 'true');
+      el.classList.add('cedit');
+    });
+  }
+
+  function loadNotes(){
+    let saved = {};
+    try { saved = JSON.parse(localStorage.getItem(KEY) || '{}'); } catch(e){}
+    document.querySelectorAll('[data-key]').forEach(c=>{
+      const k = c.dataset.key;
+      if(saved[k] !== undefined && saved[k] !== '') c.innerHTML = saved[k];
+    });
+  }
+  function saveNotes(){
+    const o = {};
+    document.querySelectorAll('[data-key]').forEach(c=>{ o[c.dataset.key] = c.innerHTML; });
+    try { localStorage.setItem(KEY, JSON.stringify(o)); } catch(e){}
+  }
+  function clearNotes(){
+    if(!confirm('确定清空你的全部修改并恢复默认内容？此操作不可撤销。')) return;
+    document.querySelectorAll('[data-key]').forEach(c=>{
+      const k = c.dataset.key;
+      if(ORIG[k] !== undefined) c.innerHTML = ORIG[k];
+    });
+    try { localStorage.removeItem(KEY); } catch(e){}
+  }
+
+    // 让表格所有内容单元格可编辑（批注列本身已带 .editable + data-key）
+    function initEditor(){
+      // 量刑起点一览表
+      makeEditable('#startTbl tbody td:nth-child(1)', 'st-tier');   // 起点档
+      makeEditable('#startTbl tbody td:nth-child(2)', 'st-type');   // 行为类型
+      makeEditable('#startTbl tbody td:nth-child(3) li', 'st-cond');// 具体情形（逐条，有列表的行）
+      makeEditable('#startTbl tbody td:nth-child(3):not(:has(ul))', 'st-condx'); // 具体情形（纯文本行：起哄闹事、第二幅度）
+      makeEditable('#startTbl tbody td:nth-child(4)', 'st-start');  // 量刑起点幅度
+      // 基准刑增量对照表
+      makeEditable('.cmp tbody td.c1, .cmp tbody td.c2', 'cm');
+      // 常见量刑情节表（第5列「设置比例」为输入框，排除可编辑）
+      makeEditable('.cmnTbl tbody td:not(:nth-child(5))', 'cmn');
+      // 从重 / 罚金 / 缓刑 各块
+      makeEditable('.block li', 'bl');
+      makeEditable('.block h3', 'bh');
+      // 此罪彼罪界限表（单元格已带 data-key，补开编辑）
+      document.querySelectorAll('.distTbl td.cedit').forEach(c=> c.setAttribute('contenteditable','true'));
+      // 绑定输入保存（含动态注入的单元格）
+      document.querySelectorAll('[data-key]').forEach(c=>{ c.addEventListener('input', saveNotes); });
+      // 拍快照（保存各单元格原始 HTML，供恢复默认）
+      document.querySelectorAll('[data-key]').forEach(c=>{ ORIG[c.dataset.key] = c.innerHTML; });
+      loadNotes();
+      loadParams();
+      bindParamEvents();
+    }
+
+  // ---- 第七项「设置比例」与第十项勾选框联动 + 持久化 ----
+  function saveParams(){
+    const o = {};
+    document.querySelectorAll('[data-def]').forEach(i=>{ if(i.id) o[i.id] = i.value; });
+    try { localStorage.setItem(KEY+'_params', JSON.stringify(o)); } catch(e){}
+  }
+  function loadParams(){
+    let saved = {};
+    try { saved = JSON.parse(localStorage.getItem(KEY+'_params') || '{}'); } catch(e){}
+    document.querySelectorAll('[data-def]').forEach(i=>{ if(i.id && saved[i.id] !== undefined) i.value = saved[i.id]; });
+  }
+  // 勾选框后动态显示第七项设置的比例（如「自首 −40%」）
+  function syncLabels(){
+    document.querySelectorAll('#genUp input[type=checkbox], #genDown input[type=checkbox]').forEach(c=>{
+      const span = c.parentElement.querySelector('.pct');
+      if(!span) return;
+      const v = parseFloat(document.getElementById(c.dataset.param).value) || 0;
+      const sign = c.closest('#genDown') ? '+' : '−';
+      span.textContent = c.checked ? ' ' + sign + v + '%' : '';
+    });
+  }
+  function bindParamEvents(){
+    document.querySelectorAll('[data-def]').forEach(i=>{
+      i.addEventListener('input', ()=>{ saveParams(); syncLabels(); if(typeof calc==='function') calc(); });
+    });
+    document.querySelectorAll('#genUp input[type=checkbox], #genDown input[type=checkbox]').forEach(c=>{
+      c.addEventListener('change', syncLabels);
+    });
+    syncLabels();
+  }
+
+  // ---- 起点快捷按钮 ----
+  document.querySelectorAll('#startChips .chip-btn').forEach(b=>{
+    b.addEventListener('click', ()=>{
+      document.getElementById('sMin').value = b.dataset.min;
+      document.getElementById('sMax').value = b.dataset.max;
+      if(b.dataset.tier){
+        const r = document.querySelector('input[name=tier][value="'+b.dataset.tier+'"]');
+        if(r){ r.checked = true; }
+      }
+      document.querySelectorAll('#startChips .chip-btn').forEach(x=>x.classList.remove('on'));
+      b.classList.add('on');
+      if(typeof calc==='function') calc();
+    });
+  });
+
+  // ---- 估算器 ----
+  function fmt(m){
+    m = Math.round(m);
+    const y = Math.floor(m/12), mo = m%12;
+    if(y===0) return mo + '个月';
+    if(mo===0) return y + '年';
+    return y + '年' + mo + '个月';
+  }
+  function calc(){
+    const tier = document.querySelector('input[name=tier]:checked').value;
+    let sMin = parseFloat(document.getElementById('sMin').value)||0;
+    let sMax = parseFloat(document.getElementById('sMax').value)||0;
+    const P = id => parseFloat(document.getElementById(id).value) || 0;
+    const cap = (window.SENTENCE_CAPS && window.SENTENCE_CAPS[tier]!=null) ? window.SENTENCE_CAPS[tier] : (tier==='1' ? 36 : (tier==='2' ? 120 : 180));
+    // 基准刑增量：遍历「五、基准刑增量对照」表（cmpTbl），按所选幅度档(data-tier)取对应增率
+    let incMin = 0, incMax = 0;
+    document.querySelectorAll('.cmp tbody tr[data-f]').forEach(tr=>{
+      if(tr.dataset.tier && tr.dataset.tier !== tier) return;
+      const f = P(tr.dataset.f);
+      const rmin = P(tr.dataset.pmin), rmax = P(tr.dataset.pmax);
+      incMin += f*rmin; incMax += f*rmax;
+    });
+    let baseMin = Math.min(sMin + incMin, cap);
+    let baseMax = Math.min(sMax + incMax, cap);
+
+    // 本罪特定从重（比例取自参数面板「本罪特定从重」，#specHeavy 勾选生效）
+    let spPct = 0;
+    document.querySelectorAll('#specHeavy input[type=checkbox]:checked').forEach(c=> spPct += P(c.dataset.param));
+    let rMin = Math.min(baseMin*(1+spPct/100), cap);
+    let rMax = Math.min(baseMax*(1+spPct/100), cap);
+
+    // ---- 通用情节：分组取大 / 叠加 + 减幅上限（比例取自第七项设置）----
+    // A态度(最大) / B赔偿退赃(最大) / C身份能力(最大) / D法定减免(叠加)
+    let redA = 0, redB = 0, redC = 0, redD = 0;
+    document.querySelectorAll('#genUp input[type=checkbox]:checked').forEach(c=>{
+      const v = P(c.dataset.param);
+      const g = c.dataset.grp;
+      if(g === 'A') redA = Math.max(redA, v);
+      else if(g === 'B') redB = Math.max(redB, v);
+      else if(g === 'C') redC = Math.max(redC, v);
+      else if(g === 'D') redD += v;
+    });
+    let redTotal = redA + redB + redC + redD;
+
+    // 从重（可叠加）
+    let addTotal = 0;
+    document.querySelectorAll('#genDown input[type=checkbox]:checked').forEach(c=>{ addTotal += P(c.dataset.param); });
+
+    // 净调节 = 从重 - 从轻；但总减幅不超过基准刑的65%（指导意见隐含上限）
+    let netPct = addTotal - redTotal;
+    let effNet = netPct < -65 ? -65 : netPct;  // 减幅封顶 -65%
+
+    let fMin = rMin*(1+effNet/100);
+    let fMax = rMax*(1+effNet/100);
+
+    // 累犯保底不少于3个月
+    const recidEl = document.querySelector('#genDown input[data-param="p_recid"]');
+    const hasRecidivist = recidEl && recidEl.checked;
+    if(hasRecidivist){
+      fMin = Math.max(fMin, 3);
+      fMax = Math.max(fMax, 3);
+    }
+
+    // 最终结果不得为负、不得超过法定上限
+    fMin = Math.max(0.5, Math.min(Math.round(fMin), cap));  // 最低0.5月避免显示0
+    fMax = Math.max(0.5, Math.min(Math.round(fMax), cap));
+
+    // ---- 量刑建议三栏对比（取点比例可在参数面板调整）----
+    const at = r => Math.max(0.5, Math.min(fMin + (fMax - fMin) * (r/100), cap));
+    const vPro   = at(P('p_low'));    // 偏轻：认罪认罚后检察院建议刑
+    const vJudge = at(P('p_mid'));    // 中肯：法院最终宣告刑
+    const vHigh  = at(P('p_high'));   // 偏重：情形参考
+
+    // 缓刑空间提示（以法院宣告刑为准）
+    let ptext;
+    if(hasRecidivist){
+      ptext = '<span class="no">累犯，依法不适用缓刑。</span>';
+    } else if(vJudge <= 36){
+      let w = [];
+      if(document.querySelectorAll('#specHeavy input[type=checkbox]:checked').length) w.push('本罪特定从重情形');
+      if(w.length)
+        ptext = '<span class="warn">法院宣告刑≤3年，具备争取缓刑基础；但存在江西细则"一般不适用缓刑"情形（'
+              + w.join('、') + '），需重点评估。</span>';
+      else
+        ptext = '<span class="ok">法院宣告刑≤3年，具备争取缓刑的基础条件（仍须满足刑法第72条四要件，且排除其他一般不适用情形）。</span>';
+    } else {
+      ptext = '<span class="no">法院宣告刑已超过3年，一般不具备缓刑条件。</span>';
+    }
+
+    const col = (cls, title, val, ratio) =>
+      '<div class="sugcol ' + cls + '">'
+      + '<div class="ct">' + title + '</div>'
+      + '<div class="cv">约 ' + fmt(val) + '</div>'
+      + '<div class="cp">取点：区间 ' + ratio + '%</div>'
+      + '</div>';
+
+    const sugBox = '<div class="sugbox">'
+      + '<div class="sug-label">量刑建议对比（检方 / 法院 / 偏重情形）</div>'
+      + '<div class="sugcols">'
+      +   col('pro',   '认罪认罚后 · 检察院建议刑', vPro,   P('p_low'))
+      +   col('judge', '法院最终宣告刑',           vJudge, P('p_mid'))
+      +   col('high',  '偏重情形参考',             vHigh,  P('p_high'))
+      + '</div>'
+      + '<div class="sug-sub">测算区间：' + fmt(fMin) + ' – ' + fmt(fMax)
+      + '　｜　法定上限：' + (cap===36?'3年以下':'') + '</div>'
+      + '<div class="sug-extra">' + ptext + '</div>'
+      + '</div>';
+
+    // 三段式明细（供核对）
+    let html = '预估基准刑：<b>' + fmt(baseMin) + ' – ' + fmt(baseMax) + '</b>';
+    if(spPct>0)
+      html += '<br>叠加本罪特定从重(' + spPct + '%)：<b>' + fmt(rMin) + ' – ' + fmt(rMax) + '</b>';
+
+    let detail = [];
+    if(redA>0) detail.push('态度−' + redA + '%');
+    if(redB>0) detail.push('赔偿/退赃−' + redB + '%');
+    if(redC>0) detail.push('身份−' + redC + '%');
+    if(redD>0) detail.push('法定减免−' + redD + '%');
+    if(addTotal>0) detail.push('从重+' + addTotal + '%');
+    html += '<br>叠加通用情节'
+         + (detail.length ? '(' + detail.join(' ') + ')' : '')
+         + '：<b>' + fmt(fMin) + ' – ' + fmt(fMax) + '</b>';
+    html += '　<span style="font-size:12px;color:#5b6b78">（法定上限：'
+         + (cap===36?'3年以下':'') + '）</span>';
+
+    document.getElementById('out').innerHTML = sugBox + html;
+    syncLabels();
+  }
+
+  // ---- 反向测算：目标刑期 → 需哪些情节 ----
+  function reverseCalc(){
+    const tier = document.querySelector('input[name=tier]:checked').value;
+    const sMin = parseFloat(document.getElementById('sMin').value)||0;
+    const sMax = parseFloat(document.getElementById('sMax').value)||0;
+    const P = id => parseFloat(document.getElementById(id).value) || 0;
+    const cap = (window.SENTENCE_CAPS && window.SENTENCE_CAPS[tier]!=null) ? window.SENTENCE_CAPS[tier] : (tier==='1' ? 36 : (tier==='2' ? 120 : 180));
+    // 基准刑增量：与正向估算一致，遍历 cmpTbl（按 data-tier 取当前幅度档）
+    let incMin = 0, incMax = 0;
+    document.querySelectorAll('.cmp tbody tr[data-f]').forEach(tr=>{
+      if(tr.dataset.tier && tr.dataset.tier !== tier) return;
+      const f = P(tr.dataset.f);
+      const rmin = P(tr.dataset.pmin), rmax = P(tr.dataset.pmax);
+      incMin += f*rmin; incMax += f*rmax;
+    });
+    let baseMin = Math.min(sMin + incMin, cap);
+    let baseMax = Math.min(sMax + incMax, cap);
+
+    let spPct = 0;
+    document.querySelectorAll('#specHeavy input[type=checkbox]:checked').forEach(c=> spPct += P(c.dataset.param));
+    let bMin = Math.min(baseMin*(1+spPct/100), cap);
+    let bMax = Math.min(baseMax*(1+spPct/100), cap);
+    let bMid = (bMin + bMax)/2;
+
+    const ry = +document.getElementById('rYear').value||0;
+    const rm = +document.getElementById('rMonth').value||0;
+    let T = ry*12 + rm;
+    if(T <= 0){ document.getElementById('revout').innerHTML = '请输入有效的目标刑期。'; return; }
+    T = Math.min(T, cap);
+
+    // 与正向估算一致的分组：A态度(最大)/B赔偿退赃(最大)/C身份能力(最大)/D法定减免(叠加)/E从重(叠加)
+    const grpVals = sel => Array.from(document.querySelectorAll('#genUp input[type=checkbox]:checked'+sel)).map(c=>P(c.dataset.param));
+    const grpMax = sel => grpVals(sel).reduce((m,v)=>Math.max(m,v),0);
+    const grpSum = sel => grpVals(sel).reduce((s,v)=>s+v,0);
+    const Am = grpMax('[data-grp="A"]'), Bm = grpMax('[data-grp="B"]'), Cm = grpMax('[data-grp="C"]');
+    const Ds = grpSum('[data-grp="D"]'), Es = grpSum('#genDown input[type=checkbox]:checked');
+    const lvl = (v,name)=> v>0 ? name : '';
+    let combos = [];
+    [0,Am].forEach(a=> [0,Bm].forEach(b=> [0,Cm].forEach(c=> [0,Ds].forEach(d=> [0,Es].forEach(e=>{
+      const red = a+b+c+d, add = e;
+      const parts = [lvl(a,'态度类'),lvl(b,'赔偿/退赃'),lvl(c,'身份能力'),lvl(d,'法定减免'),lvl(e,'从重')].filter(Boolean);
+      combos.push({ label: parts.length? parts.join('+') : '无通用情节', red, add });
+    })))));
+
+    let maxRed = 0;
+    combos.forEach(c=>{
+      const net = c.add - c.red;                       // 净调节：从重−从轻
+      const effNet = net < -65 ? -65 : net;            // 总减幅封顶65%
+      let f = bMid*(1 + effNet/100);
+      f = Math.max(0.5, Math.min(Math.round(f), cap));
+      c.final = f;
+      c.effRed = -effNet;                              // 减轻幅度（正=减）
+      if(c.red > maxRed) maxRed = c.red;
+    });
+
+    const lowestFinal = combos.reduce((m,c)=> Math.min(m, c.final), 999);
+    const needNet = (T/bMid - 1)*100;                  // 相对中点；负=需从轻
+    const needRed = -needNet;                          // 期望减幅（正）
+
+    // 组合表（按结果降序）
+    const sorted = combos.slice().sort((a,b)=> b.final - a.final);
+    const reach = combos.filter(c=> c.final <= T).sort((a,b)=> b.final - a.final);
+    const best = reach[0];                             // ≤目标且尽可能高（最小过度从轻）
+    let bestRow = best ? best.label + '|' + best.red : '';
+
+    const rows = sorted.map(c=>{
+      const ok = c.final <= T;
+      const isBest = best && c.label===best.label;
+      const cls = isBest ? ' class="best"' : (ok ? ' class="rok"' : ' class="rnok"');
+      return '<tr'+cls+'><td>'+c.label+'</td><td>−'+c.effRed+'%</td>'
+           + '<td>约 '+fmt(c.final)+'</td>'
+           + '<td>'+(ok?'✓ 可达':'✗ 超目标')+'</td></tr>';
+    }).join('');
+
+    let concl;
+    if(T > bMax){
+      concl = '<span class="warn">目标 <b>'+fmt(T)+'</b> 高于裸刑上限 '+fmt(bMax)
+            + '，需叠加<b>从重</b>约 '+needNet.toFixed(0)+'%（如累犯 +'+P('p_recid')+'%、前科 +'+P('p_prior')+'%，可叠加至该幅度）。</span>';
+    } else if(lowestFinal > T){
+      concl = '<span class="no">即便采用最强从轻组合（理论减 '+maxRed+'%，封顶 65% → 约 '+fmt(lowestFinal)
+            + '），仍高于目标 '+fmt(T)+'（差 '+Math.round(lowestFinal-T)+' 个月）。建议争取<b>降档</b>（如起点由重档调轻档）或定性/程序出罪。</span>';
+    } else {
+      const capNote = best.red > 65 ? '（注：该组合理论减幅 '+best.red+'%，实际被 65% 封顶）' : '';
+      concl = '<span class="ok">推荐：<b>'+best.label+'</b>（减 '+best.effRed+'%）→ 可达约 <b>'+fmt(best.final)
+            + '</b>，满足目标 '+fmt(T)+'。'+capNote+'</span>';
+    }
+
+    const tbl = '<table class="revtable"><thead><tr>'
+      + '<th>情节组合</th><th>减轻幅度</th><th>结果（约）</th><th>是否≤目标</th>'
+      + '</tr></thead><tbody>'+rows+'</tbody></table>';
+
+    document.getElementById('revout').innerHTML =
+        '<div style="margin-bottom:6px;">裸刑（无任何通用情节）：<b>'+fmt(bMin)+' – '+fmt(bMax)
+      + '</b>（中点 '+fmt(bMid)+'）　｜　目标：<b>'+fmt(T)+'</b>'
+      + (needRed>0 ? '　｜　期望从轻约 <b>'+needRed.toFixed(0)+'%</b>' : needRed<0 ? '　｜　需从重约 <b>'+(-needRed).toFixed(0)+'%</b>' : '')
+      + '</div>'
+      + tbl
+      + '<div class="sug-extra" style="margin-top:10px;">'+concl+'</div>'
+      + '<div class="sug-extra" style="margin-top:6px;color:#5b6b7d;">辅助参考，非裁判依据；组合效力以法院认定为准，且受 65% 减幅封顶与累犯保底 3 个月约束。</div>';
+  }
+
+  function resetParams(){
+    document.querySelectorAll('[data-def]').forEach(i=>{ if(i.id) i.value = i.dataset.def; });
+    try { localStorage.removeItem(KEY+'_params'); } catch(e){}
+    syncLabels();
+    if(typeof calc==='function') calc();
+  }
+
+  /* ---- 页面编辑模式 + 序列化 + 浏览器直传 GitHub Pages ---- */
+  const GH_OWNER='8585209713805', GH_REPO='xingfa-liangxing-zhinan';
+  function serializeCurrentPage(){
+    document.querySelectorAll('input, select, textarea').forEach(function(el){
+      if(el.type==='checkbox'||el.type==='radio'){ el.checked?el.setAttribute('checked','checked'):el.removeAttribute('checked'); }
+      else if(el.tagName==='SELECT'){ Array.from(el.options).forEach(function(o){ o.removeAttribute('selected'); }); if(el.selectedIndex>=0) el.options[el.selectedIndex].setAttribute('selected','selected'); }
+      else if(el.tagName==='TEXTAREA'){ el.textContent=el.value; }
+      else { el.setAttribute('value', el.value); }
+    });
+    var root=document.documentElement.cloneNode(true);
+    root.querySelector('body').classList.remove('page-edit');
+    var b=root.querySelector('#editBtn'); if(b) b.textContent='进入页面编辑模式';
+    var d=root.querySelector('#dlBtn'); if(d) d.style.display='none';
+    return '<!DOCTYPE html>\n'+new XMLSerializer().serializeToString(root);
+  }
+  function togglePageEdit(){
+    var body=document.body;
+    var isOn=!body.classList.contains('page-edit');
+    body.classList.toggle('page-edit', isOn);
+    document.designMode=isOn?'on':'off';
+    var btn=document.getElementById('editBtn');
+    var dl=document.getElementById('dlBtn');
+    if(btn) btn.textContent=isOn?'退出页面编辑模式':'进入页面编辑模式';
+    if(dl) dl.style.display=isOn?'inline-block':'none';
+  }
+  function downloadEditedPage(){
+    var html=serializeCurrentPage();
+    var blob=new Blob([html],{type:'text/html;charset=utf-8'});
+    var url=URL.createObjectURL(blob);
+    var a=document.createElement('a'); a.href=url; a.download=(document.title||'量刑指引')+'-修改版.html';
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(function(){ URL.revokeObjectURL(url); },2000);
+  }
+  function showToast(msg, ok){
+    var t=document.getElementById('ghToast');
+    if(!t){ t=document.createElement('div'); t.id='ghToast'; t.style.cssText='position:fixed;left:50%;top:18px;transform:translateX(-50%);z-index:9999;padding:10px 16px;border-radius:8px;font-size:14px;box-shadow:0 4px 16px rgba(0,0,0,.2);max-width:82%;line-height:1.5;'; document.body.appendChild(t); }
+    t.style.background=ok?'#1a7f37':'#c0392b'; t.style.color='#fff'; t.textContent=msg; t.style.display='block';
+    clearTimeout(t._tm); t._tm=setTimeout(function(){ t.style.display='none'; },6000);
+  }
+  async function uploadToSite(){
+    var pat=localStorage.getItem('gh_pat');
+    if(!pat){
+      pat=prompt('请输入 GitHub Personal Access Token（仅需输入一次，保存在本机浏览器 localStorage；可在控制台执行 localStorage.removeItem(\'gh_pat\') 清除）：','');
+      if(!pat){ showToast('已取消上传',false); return; }
+      localStorage.setItem('gh_pat', pat.trim());
+    }
+    var meta=document.querySelector('meta[name=repo-path]');
+    var path=meta?meta.getAttribute('content'):('crimes/'+document.title+'.html');
+    showToast('正在上传到网站…', true);
+    try{
+      var url='https://api.github.com/repos/'+GH_OWNER+'/'+GH_REPO+'/contents/'+encodeURIComponent(path);
+      var head=await fetch(url,{headers:{Authorization:'token '+pat, Accept:'application/vnd.github+json'}});
+      if(!head.ok) throw new Error('获取文件信息失败('+head.status+')');
+      var info=await head.json(); var sha=info.sha;
+      var content=btoa(unescape(encodeURIComponent(serializeCurrentPage())));
+      var put=await fetch(url,{method:'PUT',headers:{Authorization:'token '+pat,Accept:'application/vnd.github+json','Content-Type':'application/json'},body:JSON.stringify({message:'页面更新（浏览器直传）：'+path, content:content, sha:sha})});
+      if(!put.ok){ var e=await put.json().catch(function(){ return {}; }); throw new Error('上传失败('+put.status+') '+(e.message||'')); }
+      showToast('✅ 已上传到网站，GitHub Pages 将在约 1 分钟内自动更新', true);
+    }catch(err){ showToast('❌ '+err.message, false); }
+  }
+
+  function initOwner(){
+    try{
+      var q=new URLSearchParams(location.search);
+      if(q.get('owner')==='0'){ localStorage.removeItem('lx_owner'); }
+      else if(q.get('owner')==='1' || location.hash==='#owner'){ localStorage.setItem('lx_owner','1'); }
+      if(localStorage.getItem('lx_owner')==='1'){ document.body.classList.add('is-owner'); }
+    }catch(e){}
+  }
+  initEditor();
+  initOwner();
+</script>
+</body>
+</html>

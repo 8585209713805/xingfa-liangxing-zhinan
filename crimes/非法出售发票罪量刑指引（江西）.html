@@ -778,7 +778,7 @@ window.SENTENCE_CAPS = {1:24,2:84};
       +   col('high',  '偏重情形参考',             vHigh,  P('p_high'))
       + '</div>'
       + '<div class="sug-sub">测算区间：' + fmt(fMin) + ' – ' + fmt(fMax)
-      + '　｜　法定上限：' + (cap===24?'2年':(cap===84?'7年':?)) + '</div>'
+      + '　｜　法定上限：' + (cap===24?'2年':(cap===84?'7年':'')) + '</div>'
       + '<div class="sug-extra">' + ptext + '</div>'
       + '</div>';
 
@@ -797,7 +797,7 @@ window.SENTENCE_CAPS = {1:24,2:84};
          + (detail.length ? '(' + detail.join(' ') + ')' : '')
          + '：<b>' + fmt(fMin) + ' – ' + fmt(fMax) + '</b>';
     html += '　<span style="font-size:12px;color:#5b6b78">（法定上限：'
-         + (cap===24?'2年':(cap===84?'7年':?)) + '）</span>';
+         + (cap===24?'2年':(cap===84?'7年':'')) + '）</span>';
 
     document.getElementById('out').innerHTML = sugBox + html;
     syncLabels();
